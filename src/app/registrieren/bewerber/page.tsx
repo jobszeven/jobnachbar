@@ -3,8 +3,9 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { Briefcase, ArrowLeft, ArrowRight, CheckCircle, Loader2 } from 'lucide-react'
+import { ArrowLeft, ArrowRight, CheckCircle, Loader2 } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
+import Logo from '@/components/Logo'
 
 const INDUSTRIES = [
   { value: 'handwerk', label: 'Handwerk' },
@@ -184,14 +185,11 @@ export default function BewerberRegistrierung() {
   return (
     <div className="min-h-screen bg-brand-dark">
       {/* Header */}
-      <nav className="border-b border-gray-800">
+      <nav className="border-b border-gray-800 bg-brand-dark sticky top-0 z-50 safe-area-top">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-brand-blue rounded-lg flex items-center justify-center">
-                <Briefcase className="w-6 h-6 text-brand-navy" />
-              </div>
-              <span className="text-xl font-bold text-white">JobNachbar</span>
+            <Link href="/" className="flex items-center">
+              <Logo size="md" />
             </Link>
             <Link href="/login" className="text-gray-300 hover:text-white transition-colors">
               Bereits registriert? Anmelden

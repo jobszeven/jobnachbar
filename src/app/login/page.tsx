@@ -78,10 +78,10 @@ export default function Login() {
 
   return (
     <div className="min-h-screen bg-brand-dark flex flex-col">
-      <nav className="border-b border-gray-800">
+      <nav className="border-b border-gray-800 bg-brand-dark sticky top-0 z-50 safe-area-top">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/">
+            <Link href="/" className="flex items-center">
               <Logo size="md" />
             </Link>
           </div>

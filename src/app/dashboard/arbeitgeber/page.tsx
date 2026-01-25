@@ -3,8 +3,8 @@
 import { useEffect, useState, Suspense } from 'react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { 
-  Briefcase, Users, Bell, Building2, Settings, LogOut, 
+import {
+  Briefcase, Users, Bell, MapPin, Settings, LogOut,
   Plus, ChevronRight, Clock, Eye, CheckCircle, XCircle,
   FileText, TrendingUp, CreditCard, Mail, Phone, Calendar
 } from 'lucide-react'
@@ -426,7 +426,7 @@ function ArbeitgeberDashboardContent() {
                       <div className="flex flex-wrap items-center gap-4 mt-2 text-sm text-gray-400">
                         {app.users?.city && (
                           <span className="flex items-center">
-                            <Building2 className="w-4 h-4 mr-1" />
+                            <MapPin className="w-4 h-4 mr-1" />
                             {app.users.city}
                           </span>
                         )}
