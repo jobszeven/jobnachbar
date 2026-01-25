@@ -70,7 +70,7 @@ export default function BewerberFavoriten() {
       .in('id', ids)
       .eq('status', 'active')
 
-    setJobs(jobsData || [])
+    setJobs((jobsData as Job[]) || [])
     setLoading(false)
   }
 
