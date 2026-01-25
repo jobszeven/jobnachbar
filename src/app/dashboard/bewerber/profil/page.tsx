@@ -117,7 +117,7 @@ export default function BewerberProfil() {
     const filePath = `${userId}/${Date.now()}.${fileExt}`
 
     const { data, error: uploadError } = await supabase.storage
-      .from('cvs')
+      .from('resumes')
       .upload(filePath, file)
 
     if (uploadError) {
@@ -127,7 +127,7 @@ export default function BewerberProfil() {
     }
 
     const { data: { publicUrl } } = supabase.storage
-      .from('cvs')
+      .from('resumes')
       .getPublicUrl(filePath)
 
     setCvUrl(publicUrl)
