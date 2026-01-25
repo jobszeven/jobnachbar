@@ -310,7 +310,7 @@ export default function BewerbungstippsPage() {
             <div className="card mb-8">
               <h3 className="text-white font-semibold mb-4">Tipps für die Verhandlung:</h3>
               <ul className="space-y-3">
-                {tips[4]?.content.tips.map((tip, i) => (
+                {tips[4]??.content?.tips?.map((tip, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-300">
                     <ChevronRight className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
                     {tip}
