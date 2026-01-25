@@ -288,7 +288,7 @@ export default function BewerbungstippsPage() {
             <p className="text-gray-400 text-lg mb-8">{tips[3].content.intro}</p>
             
             <div className="space-y-4">
-              {tips[3].content.branches.map((item, i) => (
+              {tips[3]?.content?.branches?.map((item, i) => (
                 <div key={i} className="card flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
                   <span className="text-white font-medium min-w-[160px]">{item.name}</span>
                   <span className="text-gray-400">{item.style}</span>
@@ -300,17 +300,17 @@ export default function BewerbungstippsPage() {
           {/* Gehalt */}
           <div id="gehalt" className="scroll-mt-24">
             <div className="flex items-center gap-4 mb-6">
-              <div className={`w-14 h-14 ${tips[4].bgColor} rounded-xl flex items-center justify-center`}>
-                <Euro className={`w-7 h-7 ${tips[4].color}`} />
+              <div className={`w-14 h-14 ${tips[4]?.bgColor} rounded-xl flex items-center justify-center`}>
+                <Euro className={`w-7 h-7 ${tips[4]?.color}`} />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">{tips[4].title}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-white">{tips[4]?.title}</h2>
             </div>
-            <p className="text-gray-400 text-lg mb-8">{tips[4].content.intro}</p>
+            <p className="text-gray-400 text-lg mb-8">{tips[4]?.content.intro}</p>
             
             <div className="card mb-8">
               <h3 className="text-white font-semibold mb-4">Tipps für die Verhandlung:</h3>
               <ul className="space-y-3">
-                {tips[4].content.tips.map((tip, i) => (
+                {tips[4]?.content.tips.map((tip, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-300">
                     <ChevronRight className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
                     {tip}
@@ -322,7 +322,7 @@ export default function BewerbungstippsPage() {
             <div className="card">
               <h3 className="text-white font-semibold mb-4">Typische Gehälter in der Region (brutto/Monat):</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {tips[4].content.examples.map((item, i) => (
+                {tips[4]?.content.examples.map((item, i) => (
                   <div key={i} className="flex justify-between items-center p-3 bg-brand-dark rounded-lg">
                     <span className="text-gray-300">{item.job}</span>
                     <span className="text-yellow-400 font-medium">{item.range}</span>
@@ -335,15 +335,15 @@ export default function BewerbungstippsPage() {
           {/* Häufige Fehler */}
           <div id="fehler" className="scroll-mt-24">
             <div className="flex items-center gap-4 mb-6">
-              <div className={`w-14 h-14 ${tips[5].bgColor} rounded-xl flex items-center justify-center`}>
-                <AlertTriangle className={`w-7 h-7 ${tips[5].color}`} />
+              <div className={`w-14 h-14 ${tips[5]?.bgColor} rounded-xl flex items-center justify-center`}>
+                <AlertTriangle className={`w-7 h-7 ${tips[5]?.color}`} />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">{tips[5].title}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-white">{tips[5]?.title}</h2>
             </div>
-            <p className="text-gray-400 text-lg mb-8">{tips[5].content.intro}</p>
+            <p className="text-gray-400 text-lg mb-8">{tips[5]?.content.intro}</p>
             
             <div className="space-y-4">
-              {tips[5].content.mistakes.map((item, i) => (
+              {tips[5]?.content.mistakes.map((item, i) => (
                 <div key={i} className="card">
                   <div className="flex items-start gap-4">
                     <XCircle className="w-6 h-6 text-red-400 flex-shrink-0 mt-1" />
