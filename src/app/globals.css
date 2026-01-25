@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-red: #E63946;
+  --brand-red-dark: #C62E3A;
+  --brand-red-light: #FF4D5A;
+  --brand-dark: #1D1D1F;
+  --brand-dark-lighter: #2D2D2F;
+  --brand-dark-card: #252527;
+  --brand-white: #F8F8F8;
+  --brand-cream: #F5F5F5;
+  --brand-gray: #8E8E93;
+  --brand-emerald: #34d399;
+  /* Legacy support */
+  --brand-navy: #1D1D1F;
+  --brand-slate: #2D2D2F;
+  --brand-blue: #E63946;
+  --brand-cyan: #E63946;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--brand-dark);
+  color: var(--brand-white);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--brand-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-dark-lighter);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-red);
+}
+
+/* Form input styles */
+.input-field {
+  @apply w-full px-4 py-3 bg-brand-dark-lighter border border-gray-700 rounded-lg 
+         text-white placeholder-gray-400 
+         focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red
+         transition-colors;
+}
+
+.input-field-with-icon {
+  @apply w-full pl-12 pr-4 py-3 bg-brand-dark-lighter border border-gray-700 rounded-lg 
+         text-white placeholder-gray-400 
+         focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red
+         transition-colors;
+}
+
+.input-label {
+  @apply block text-sm font-medium text-gray-300 mb-2;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply px-6 py-3 bg-brand-red text-white font-semibold rounded-lg
+         hover:bg-brand-red-dark transition-colors
+         focus:outline-none focus:ring-2 focus:ring-brand-red focus:ring-offset-2 focus:ring-offset-brand-dark;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-transparent border-2 border-brand-red text-brand-red font-semibold rounded-lg
+         hover:bg-brand-red hover:text-white transition-colors;
+}
+
+.btn-white {
+  @apply px-6 py-3 bg-white text-brand-dark font-semibold rounded-lg
+         hover:bg-gray-100 transition-colors
+         focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-dark;
+}
+
+.btn-arbeitgeber {
+  @apply px-6 py-3 bg-brand-red text-white font-semibold rounded-lg
+         hover:bg-brand-red-dark transition-colors;
+}
+
+.btn-bewerber {
+  @apply px-6 py-3 bg-white text-brand-dark font-semibold rounded-lg
+         hover:bg-gray-100 transition-colors;
+}
+
+/* Card styles */
+.card {
+  @apply bg-brand-dark-card rounded-xl p-6 border border-gray-700;
+}
+
+/* Badge styles */
+.badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.badge-red {
+  @apply bg-brand-red/20 text-brand-red;
+}
+
+.badge-emerald {
+  @apply bg-brand-emerald/20 text-brand-emerald;
+}
+
+.badge-bewerber {
+  @apply bg-white/20 text-white;
+}
+
+.badge-arbeitgeber {
+  @apply bg-brand-red/20 text-brand-red;
+}
+
+/* Legacy support */
+.badge-blue {
+  @apply bg-brand-red/20 text-brand-red;
+}
+
+/* Price comparison strikethrough */
+.price-original {
+  @apply text-gray-500 line-through text-lg;
+}
+
+.price-discount {
+  @apply text-brand-red font-bold;
+}
+
+/* Scarcity counter */
+.scarcity-bar {
+  @apply h-3 bg-gray-700 rounded-full overflow-hidden;
+}
+
+.scarcity-fill {
+  @apply h-full bg-gradient-to-r from-brand-red to-brand-red-light rounded-full transition-all duration-500;
+}
