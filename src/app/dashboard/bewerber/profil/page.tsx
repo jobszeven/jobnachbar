@@ -159,7 +159,7 @@ export default function BewerberProfil() {
         whatsapp_notifications: whatsappNotifications,
         updated_at: new Date().toISOString(),
       })
-      .eq('id', userId)
+      .eq('auth_id', (await supabase.auth.getUser()).data.user?.id)
 
     setSaving(false)
 
