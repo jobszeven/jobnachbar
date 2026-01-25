@@ -192,7 +192,7 @@ export default function BewerbungstippsPage() {
                   <CheckCircle className="w-5 h-5" /> Das solltest du tun
                 </h3>
                 <ul className="space-y-3">
-                  {tips[0].content.dos.map((item, i) => (
+                  {tips[0]?.content?.dos?.map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-gray-300">
                       <CheckCircle className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
                       {item}
@@ -205,7 +205,7 @@ export default function BewerbungstippsPage() {
                   <XCircle className="w-5 h-5" /> Das solltest du vermeiden
                 </h3>
                 <ul className="space-y-3">
-                  {tips[0].content.donts.map((item, i) => (
+                  {tips[0]?.content?.donts?.map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-gray-300">
                       <XCircle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
                       {item}
@@ -232,7 +232,7 @@ export default function BewerbungstippsPage() {
                   <CheckCircle className="w-5 h-5" /> Das solltest du tun
                 </h3>
                 <ul className="space-y-3">
-                  {tips[1].content.dos.map((item, i) => (
+                  {tips[1]?.content?.dos?.map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-gray-300">
                       <CheckCircle className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
                       {item}
@@ -245,7 +245,7 @@ export default function BewerbungstippsPage() {
                   <XCircle className="w-5 h-5" /> Das solltest du vermeiden
                 </h3>
                 <ul className="space-y-3">
-                  {tips[1].content.donts.map((item, i) => (
+                  {tips[1]?.content?.donts?.map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-gray-300">
                       <XCircle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
                       {item}
