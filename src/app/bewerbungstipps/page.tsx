@@ -268,7 +268,7 @@ export default function BewerbungstippsPage() {
             
             <div className="space-y-4">
               <h3 className="text-white font-semibold text-lg">Die 5 häufigsten Fragen:</h3>
-              {tips[2].content.questions.map((item, i) => (
+              {tips[2]?.content?.questions?.map((item, i) => (
                 <div key={i} className="card">
                   <p className="text-brand-red font-medium mb-2">„{item.q}"</p>
                   <p className="text-gray-400">{item.a}</p>
