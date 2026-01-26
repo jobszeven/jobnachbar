@@ -11,6 +11,7 @@ import {
 import { createClient } from '@/lib/supabase/client'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { OnboardingModal } from '@/components/onboarding'
 
 const EMPLOYMENT_TYPES = {
   vollzeit: 'Vollzeit',
@@ -38,6 +39,20 @@ function ArbeitgeberDashboardContent() {
   const [jobs, setJobs] = useState<any[]>([])
   const [applications, setApplications] = useState<any[]>([])
   const [activeTab, setActiveTab] = useState('uebersicht')
+  const [showOnboarding, setShowOnboarding] = useState(false)
+
+  useEffect(() => {
+    // Show onboarding if first visit or welcome param
+    const hasSeenOnboarding = localStorage.getItem('jobnachbar_onboarding_arbeitgeber')
+    if (!hasSeenOnboarding || isWelcome) {
+      setShowOnboarding(true)
+    }
+  }, [isWelcome])
+
+  const handleOnboardingComplete = () => {
+    localStorage.setItem('jobnachbar_onboarding_arbeitgeber', 'true')
+    setShowOnboarding(false)
+  }
 
   useEffect(() => {
     loadData()
@@ -143,6 +158,11 @@ function ArbeitgeberDashboardContent() {
   return (
     <div className="min-h-screen bg-brand-dark">
       <Header variant="arbeitgeber" />
+      <OnboardingModal
+        userType="employer"
+        isOpen={showOnboarding}
+        onComplete={handleOnboardingComplete}
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Welcome Message */}
