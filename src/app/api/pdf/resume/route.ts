@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { renderToBuffer } from '@react-pdf/renderer'
 import { createClient } from '@/lib/supabase/server'
-import { ModernResume, ClassicResume, CreativeResume, ResumeData } from '@/lib/pdf'
+import { ModernResume, ClassicResume, CreativeResume, MinimalResume, ProfessionalResume, ElegantResume, ExecutiveResume, TechResume, AcademicResume, CompactResume, ResumeData } from '@/lib/pdf'
 import * as React from 'react'
 
 export async function POST(request: NextRequest) {
@@ -32,6 +32,27 @@ export async function POST(request: NextRequest) {
         break
       case 'creative':
         TemplateComponent = CreativeResume
+        break
+      case 'minimal':
+        TemplateComponent = MinimalResume
+        break
+      case 'professional':
+        TemplateComponent = ProfessionalResume
+        break
+      case 'elegant':
+        TemplateComponent = ElegantResume
+        break
+      case 'executive':
+        TemplateComponent = ExecutiveResume
+        break
+      case 'tech':
+        TemplateComponent = TechResume
+        break
+      case 'academic':
+        TemplateComponent = AcademicResume
+        break
+      case 'compact':
+        TemplateComponent = CompactResume
         break
       case 'modern':
       default:

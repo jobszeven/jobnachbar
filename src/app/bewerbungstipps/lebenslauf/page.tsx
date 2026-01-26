@@ -7,7 +7,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import toast from 'react-hot-toast'
 
-type DesignTemplate = 'modern' | 'klassisch' | 'kreativ'
+type DesignTemplate = 'modern' | 'klassisch' | 'kreativ' | 'minimal' | 'professionell' | 'elegant' | 'executive' | 'tech' | 'akademisch' | 'kompakt'
 
 interface AnalysisResult {
   score: number
@@ -96,9 +96,16 @@ export default function LebenslaufPage() {
   }
 
   const templates = [
-    { id: 'modern' as const, name: 'Modern', description: 'Klares, zeitgemäßes Design' },
-    { id: 'klassisch' as const, name: 'Klassisch', description: 'Traditionell und seriös' },
-    { id: 'kreativ' as const, name: 'Kreativ', description: 'Auffällig und individuell' },
+    { id: 'modern' as const, name: 'Modern', description: 'Zeitgemäß' },
+    { id: 'klassisch' as const, name: 'Klassisch', description: 'Traditionell' },
+    { id: 'kreativ' as const, name: 'Kreativ', description: 'Auffällig' },
+    { id: 'minimal' as const, name: 'Minimal', description: 'Schlicht' },
+    { id: 'professionell' as const, name: 'Professional', description: 'Business' },
+    { id: 'elegant' as const, name: 'Elegant', description: 'Stilvoll' },
+    { id: 'executive' as const, name: 'Executive', description: 'Premium' },
+    { id: 'tech' as const, name: 'Tech', description: 'Developer' },
+    { id: 'akademisch' as const, name: 'Akademisch', description: 'Wissenschaft' },
+    { id: 'kompakt' as const, name: 'Kompakt', description: 'Einseiter' },
   ]
 
   const analyzeResume = async () => {
@@ -172,6 +179,13 @@ export default function LebenslaufPage() {
         modern: 'modern',
         klassisch: 'classic',
         kreativ: 'creative',
+        minimal: 'minimal',
+        professionell: 'professional',
+        elegant: 'elegant',
+        executive: 'executive',
+        tech: 'tech',
+        akademisch: 'academic',
+        kompakt: 'compact',
       }
 
       const response = await fetch('/api/pdf/resume', {
@@ -330,7 +344,7 @@ export default function LebenslaufPage() {
                 <p className="text-gray-400 text-sm mb-4">
                   Wähle eine Design-Vorlage und erstelle ein professionelles PDF.
                 </p>
-                <div className="grid grid-cols-3 gap-3 mb-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 mb-4">
                   {templates.map((template) => (
                     <button
                       key={template.id}

@@ -1,4 +1,4 @@
-export { ModernResume, ClassicResume, CreativeResume } from './resume-templates'
+export { ModernResume, ClassicResume, CreativeResume, MinimalResume, ProfessionalResume, ElegantResume, ExecutiveResume, TechResume, AcademicResume, CompactResume } from './resume-templates'
 export type { ResumeData, PersonalInfo, Experience, Education } from './resume-templates'
 
 export { CoverLetterPDF } from './cover-letter-template'
