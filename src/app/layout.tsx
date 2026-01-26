@@ -116,7 +116,7 @@ export default async function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <IntlProvider locale={locale} messages={messages as Record<string, unknown>}>
+        <IntlProvider locale={locale} messages={messages}>
           {children}
           <FeedbackButton />
           <CookieBanner />
