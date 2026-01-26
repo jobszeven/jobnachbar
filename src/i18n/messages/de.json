@@ -645,6 +645,42 @@
     "unsubscribe": "E-Mail-Einstellungen ändern",
     "footer": "Diese E-Mail wurde automatisch von JobNachbar versendet."
   },
+  "tipsPage": {
+    "badge": "KI-gestützte Tools",
+    "title": "Bewerbungstipps",
+    "subtitle": "Alles was du für deine erfolgreiche Bewerbung brauchst. Nutze unsere KI-Tools für Lebenslauf, Anschreiben und mehr.",
+    "tools": {
+      "resume": {
+        "title": "Lebenslauf",
+        "description": "Lass deinen Lebenslauf von unserer KI prüfen und erhalte Verbesserungsvorschläge. Erstelle professionelle PDFs.",
+        "cta": "Lebenslauf prüfen",
+        "features": ["KI-Analyse", "PDF-Generator", "10 Design-Vorlagen"]
+      },
+      "coverLetter": {
+        "title": "Anschreiben",
+        "description": "Generiere individuelle Anschreiben für jede Stelle. Unsere KI hilft dir, den perfekten Ton zu treffen.",
+        "cta": "Anschreiben erstellen",
+        "features": ["KI-Generator", "PDF-Export", "Individuell anpassbar"]
+      },
+      "interview": {
+        "title": "Vorstellungsgespräch",
+        "description": "Bereite dich mit unserem KI-Interview-Coach auf häufige Fragen vor und übe deine Antworten.",
+        "cta": "Interview üben",
+        "features": ["Branchen-Fragen", "KI-Feedback", "Tipps & Tricks"]
+      },
+      "salary": {
+        "title": "Gehaltsverhandlung",
+        "description": "Erfahre, was du in deiner Region und Branche verdienen kannst. Mit Verhandlungstipps.",
+        "cta": "Gehalt vergleichen",
+        "features": ["Regionale Daten", "Branchen-Vergleich", "Verhandlungstipps"]
+      }
+    },
+    "premium": {
+      "title": "Unbegrenzt mit Premium",
+      "description": "Mit JobNachbar Premium erhältst du unbegrenzten Zugang zu allen KI-Tools, PDF-Generator und exklusive Features für nur 4,99€/Monat.",
+      "cta": "Premium entdecken"
+    }
+  },
   "aboutPage": {
     "title": "Unsere Geschichte",
     "story": {

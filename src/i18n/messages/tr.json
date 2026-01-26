@@ -645,6 +645,42 @@
     "unsubscribe": "E-posta ayarlarını değiştir",
     "footer": "Bu e-posta JobNachbar tarafından otomatik olarak gönderilmiştir."
   },
+  "tipsPage": {
+    "badge": "AI Destekli Araçlar",
+    "title": "Başvuru İpuçları",
+    "subtitle": "Başarılı bir başvuru için ihtiyacınız olan her şey. Özgeçmiş, ön yazı ve daha fazlası için AI araçlarımızı kullanın.",
+    "tools": {
+      "resume": {
+        "title": "Özgeçmiş",
+        "description": "Özgeçmişinizi AI'mız tarafından kontrol ettirin ve iyileştirme önerileri alın. Profesyonel PDF'ler oluşturun.",
+        "cta": "Özgeçmiş Kontrol Et",
+        "features": ["AI Analizi", "PDF Oluşturucu", "10 Tasarım Şablonu"]
+      },
+      "coverLetter": {
+        "title": "Ön Yazı",
+        "description": "Her pozisyon için bireysel ön yazılar oluşturun. AI'mız mükemmel tonu yakalamanıza yardımcı olur.",
+        "cta": "Ön Yazı Oluştur",
+        "features": ["AI Oluşturucu", "PDF Dışa Aktarma", "Tamamen Özelleştirilebilir"]
+      },
+      "interview": {
+        "title": "İş Görüşmesi",
+        "description": "AI mülakat koçumuzla sık sorulan sorulara hazırlanın ve cevaplarınızı pratik yapın.",
+        "cta": "Görüşme Pratiği",
+        "features": ["Sektör Soruları", "AI Geri Bildirimi", "İpuçları ve Püf Noktaları"]
+      },
+      "salary": {
+        "title": "Maaş Pazarlığı",
+        "description": "Bölgenizde ve sektörünüzde ne kazanabileceğinizi öğrenin. Pazarlık ipuçlarıyla.",
+        "cta": "Maaş Karşılaştır",
+        "features": ["Bölgesel Veriler", "Sektör Karşılaştırması", "Pazarlık İpuçları"]
+      }
+    },
+    "premium": {
+      "title": "Premium ile Sınırsız",
+      "description": "JobNachbar Premium ile tüm AI araçlarına, PDF oluşturucuya ve özel özelliklere sadece aylık 4,99€ karşılığında sınırsız erişim elde edin.",
+      "cta": "Premium'u Keşfet"
+    }
+  },
   "aboutPage": {
     "title": "Hikayemiz",
     "story": {

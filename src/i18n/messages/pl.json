@@ -645,6 +645,42 @@
     "unsubscribe": "Zmień ustawienia e-mail",
     "footer": "Ta wiadomość została wysłana automatycznie przez JobNachbar."
   },
+  "tipsPage": {
+    "badge": "Narzędzia wspierane AI",
+    "title": "Porady Aplikacyjne",
+    "subtitle": "Wszystko, czego potrzebujesz do udanej aplikacji. Użyj naszych narzędzi AI do CV, listu motywacyjnego i więcej.",
+    "tools": {
+      "resume": {
+        "title": "CV",
+        "description": "Sprawdź swoje CV przez nasze AI i otrzymaj sugestie ulepszeń. Twórz profesjonalne PDF-y.",
+        "cta": "Sprawdź CV",
+        "features": ["Analiza AI", "Generator PDF", "10 Szablonów Projektowych"]
+      },
+      "coverLetter": {
+        "title": "List Motywacyjny",
+        "description": "Generuj indywidualne listy motywacyjne na każde stanowisko. Nasze AI pomoże Ci trafić w idealny ton.",
+        "cta": "Utwórz List",
+        "features": ["Generator AI", "Eksport PDF", "W pełni konfigurowalny"]
+      },
+      "interview": {
+        "title": "Rozmowa Kwalifikacyjna",
+        "description": "Przygotuj się na częste pytania z naszym trenerem AI i ćwicz odpowiedzi.",
+        "cta": "Ćwicz Rozmowę",
+        "features": ["Pytania Branżowe", "Feedback AI", "Wskazówki i Triki"]
+      },
+      "salary": {
+        "title": "Negocjacje Płacowe",
+        "description": "Dowiedz się, ile możesz zarobić w swoim regionie i branży. Ze wskazówkami negocjacyjnymi.",
+        "cta": "Porównaj Wynagrodzenie",
+        "features": ["Dane Regionalne", "Porównanie Branżowe", "Wskazówki Negocjacyjne"]
+      }
+    },
+    "premium": {
+      "title": "Bez Limitów z Premium",
+      "description": "Z JobNachbar Premium otrzymujesz nieograniczony dostęp do wszystkich narzędzi AI, generatora PDF i ekskluzywnych funkcji za jedyne 4,99€/miesiąc.",
+      "cta": "Odkryj Premium"
+    }
+  },
   "aboutPage": {
     "title": "Nasza Historia",
     "story": {

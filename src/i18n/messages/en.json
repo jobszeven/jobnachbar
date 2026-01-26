@@ -645,6 +645,42 @@
     "unsubscribe": "Change email settings",
     "footer": "This email was automatically sent by JobNachbar."
   },
+  "tipsPage": {
+    "badge": "AI-Powered Tools",
+    "title": "Application Tips",
+    "subtitle": "Everything you need for a successful application. Use our AI tools for resume, cover letter and more.",
+    "tools": {
+      "resume": {
+        "title": "Resume",
+        "description": "Have your resume checked by our AI and get improvement suggestions. Create professional PDFs.",
+        "cta": "Check Resume",
+        "features": ["AI Analysis", "PDF Generator", "10 Design Templates"]
+      },
+      "coverLetter": {
+        "title": "Cover Letter",
+        "description": "Generate individual cover letters for each position. Our AI helps you strike the perfect tone.",
+        "cta": "Create Cover Letter",
+        "features": ["AI Generator", "PDF Export", "Fully Customizable"]
+      },
+      "interview": {
+        "title": "Job Interview",
+        "description": "Prepare for common questions with our AI interview coach and practice your answers.",
+        "cta": "Practice Interview",
+        "features": ["Industry Questions", "AI Feedback", "Tips & Tricks"]
+      },
+      "salary": {
+        "title": "Salary Negotiation",
+        "description": "Find out what you can earn in your region and industry. With negotiation tips.",
+        "cta": "Compare Salary",
+        "features": ["Regional Data", "Industry Comparison", "Negotiation Tips"]
+      }
+    },
+    "premium": {
+      "title": "Unlimited with Premium",
+      "description": "With JobNachbar Premium you get unlimited access to all AI tools, PDF generator and exclusive features for only €4.99/month.",
+      "cta": "Discover Premium"
+    }
+  },
   "aboutPage": {
     "title": "Our Story",
     "story": {
