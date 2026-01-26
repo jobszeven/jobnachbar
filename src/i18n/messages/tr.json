@@ -645,6 +645,132 @@
     "unsubscribe": "E-posta ayarlarını değiştir",
     "footer": "Bu e-posta JobNachbar tarafından otomatik olarak gönderilmiştir."
   },
+  "coverLetterPage": {
+    "title": "Ön Yazı Oluşturucu",
+    "subtitle": "AI ile bireysel ön yazılar oluşturun",
+    "backLink": "Başvuru İpuçlarına Dön",
+    "form": {
+      "title": "Bilgileriniz",
+      "jobTitle": "İş Unvanı",
+      "jobTitlePlaceholder": "örn. Satış Danışmanı, Oto Tamircisi",
+      "company": "Şirket",
+      "companyPlaceholder": "Şirket adı",
+      "yourName": "Adınız",
+      "yourNamePlaceholder": "Tam adınız",
+      "experience": "İş Deneyimi",
+      "experiencePlaceholder": "İlgili iş deneyiminizi kısaca açıklayın...",
+      "skills": "Yetenekler ve Güçlü Yönler",
+      "skillsPlaceholder": "Hangi yetenekleri getiriyorsunuz?",
+      "motivation": "Motivasyon",
+      "motivationPlaceholder": "Neden bu şirkette çalışmak istiyorsunuz?",
+      "required": "*"
+    },
+    "generate": "Ön Yazı Oluştur",
+    "generating": "Oluşturuluyor...",
+    "result": {
+      "title": "Ön Yazınız",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "exportTitle": "PDF olarak dışa aktar",
+      "download": "PDF İndir",
+      "noResult": "Henüz ön yazı yok",
+      "noResultHint": "Formu doldurun ve \"Ön Yazı Oluştur\"a tıklayın"
+    },
+    "templates": {
+      "modern": "Modern",
+      "klassisch": "Klasik",
+      "kreativ": "Yaratıcı"
+    },
+    "errors": {
+      "fillRequired": "Lütfen en azından iş unvanı, şirket ve adınızı doldurun"
+    }
+  },
+  "interviewPage": {
+    "title": "Mülakat Koçu",
+    "subtitle": "Sektörünüz için tipik sorularla pratik yapın",
+    "backLink": "Başvuru İpuçlarına Dön",
+    "setup": {
+      "title": "Hangi iş için pratik yapmak istiyorsunuz?",
+      "industry": "Sektör",
+      "industryPlaceholder": "Sektör seçin...",
+      "jobTitle": "İş Unvanı",
+      "jobTitlePlaceholder": "örn. Satış Danışmanı, Hemşire",
+      "start": "Mülakatı Başlat",
+      "loading": "Sorular yükleniyor..."
+    },
+    "practice": {
+      "questionOf": "Soru {current} / {total}",
+      "restart": "Yeniden Başlat",
+      "interviewer": "Mülakat yapan soruyor:",
+      "tips": "Bu soru için ipuçları:",
+      "yourAnswer": "Cevabınız",
+      "answerPlaceholder": "Cevabınızı buraya yazın...",
+      "getFeedback": "Geri Bildirim Al",
+      "analyzing": "Analiz ediliyor...",
+      "nextQuestion": "Sonraki Soru",
+      "feedback": "Geri Bildirim",
+      "exampleAnswer": "Örnek Cevap"
+    },
+    "industries": ["El Sanatları", "Perakende", "Gastronomi ve Otel", "Sağlık Hizmetleri", "Lojistik ve Nakliye", "Ofis ve Yönetim", "BT ve Teknoloji", "Sanayi ve Üretim"],
+    "errors": {
+      "selectBoth": "Lütfen bir sektör seçin ve iş unvanını girin",
+      "enterAnswer": "Lütfen bir cevap girin"
+    }
+  },
+  "salaryPage": {
+    "title": "Maaş Hesaplayıcı",
+    "subtitle": "Bölgenizde ne kazanabilirsiniz?",
+    "backLink": "Başvuru İpuçlarına Dön",
+    "form": {
+      "title": "Maaş Hesapla",
+      "industry": "Sektör",
+      "industryPlaceholder": "Sektör seçin...",
+      "experience": "İş Deneyimi",
+      "experiencePlaceholder": "Deneyim seçin...",
+      "jobTitle": "İş Unvanı (isteğe bağlı)",
+      "jobTitlePlaceholder": "örn. Satış Danışmanı",
+      "calculate": "Maaş Hesapla",
+      "calculating": "Hesaplanıyor..."
+    },
+    "region": {
+      "title": "Bölge: Rotenburg İlçesi",
+      "description": "Maaşlar Zeven ve çevresinden alınan verilere dayanmaktadır."
+    },
+    "result": {
+      "estimatedSalary": "Tahmini Brüt Maaş/Ay",
+      "minimum": "Minimum",
+      "maximum": "Maksimum",
+      "hints": "Notlar",
+      "negotiationTips": "Pazarlık İpuçları",
+      "loadTips": "AI pazarlık ipuçlarını yükle",
+      "noResult": "Maaş Tahmini",
+      "noResultHint": "Tahmin almak için sektör ve deneyim seçin."
+    },
+    "industries": {
+      "handwerk": "El Sanatları",
+      "einzelhandel": "Perakende",
+      "gastro": "Gastronomi ve Otel",
+      "pflege": "Sağlık Hizmetleri",
+      "logistik": "Lojistik ve Nakliye",
+      "buero": "Ofis ve Yönetim",
+      "it": "BT ve Teknoloji",
+      "industrie": "Sanayi ve Üretim"
+    },
+    "experienceLevels": {
+      "entry": "Giriş Seviyesi (0-2 yıl)",
+      "mid": "Deneyimli (3-5 yıl)",
+      "senior": "Kıdemli (6-10 yıl)",
+      "expert": "Uzman (10+ yıl)"
+    },
+    "defaultTips": [
+      "Pozisyonunuz için tam piyasa değerini araştırın",
+      "Tatil, eğitim gibi ek faydaları göz önünde bulundurun",
+      "Her zaman sadece iş teklifini aldıktan sonra pazarlık yapın"
+    ],
+    "errors": {
+      "selectBoth": "Lütfen sektör ve deneyim seçin"
+    }
+  },
   "tipsPage": {
     "badge": "AI Destekli Araçlar",
     "title": "Başvuru İpuçları",

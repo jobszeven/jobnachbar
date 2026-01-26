@@ -645,6 +645,132 @@
     "unsubscribe": "E-Mail-Einstellungen ändern",
     "footer": "Diese E-Mail wurde automatisch von JobNachbar versendet."
   },
+  "coverLetterPage": {
+    "title": "Anschreiben-Generator",
+    "subtitle": "Erstelle individuelle Anschreiben mit KI",
+    "backLink": "Zurück zu Bewerbungstipps",
+    "form": {
+      "title": "Deine Angaben",
+      "jobTitle": "Job-Titel",
+      "jobTitlePlaceholder": "z.B. Verkäufer/in, Kfz-Mechatroniker/in",
+      "company": "Unternehmen",
+      "companyPlaceholder": "Name des Unternehmens",
+      "yourName": "Dein Name",
+      "yourNamePlaceholder": "Dein vollständiger Name",
+      "experience": "Berufserfahrung",
+      "experiencePlaceholder": "Beschreibe kurz deine relevante Berufserfahrung...",
+      "skills": "Fähigkeiten & Stärken",
+      "skillsPlaceholder": "Welche Fähigkeiten bringst du mit?",
+      "motivation": "Motivation",
+      "motivationPlaceholder": "Warum möchtest du bei diesem Unternehmen arbeiten?",
+      "required": "*"
+    },
+    "generate": "Anschreiben generieren",
+    "generating": "Generiere...",
+    "result": {
+      "title": "Dein Anschreiben",
+      "copy": "Kopieren",
+      "copied": "Kopiert!",
+      "exportTitle": "Als PDF exportieren",
+      "download": "PDF herunterladen",
+      "noResult": "Noch kein Anschreiben",
+      "noResultHint": "Fülle das Formular aus und klicke auf \"Anschreiben generieren\""
+    },
+    "templates": {
+      "modern": "Modern",
+      "klassisch": "Klassisch",
+      "kreativ": "Kreativ"
+    },
+    "errors": {
+      "fillRequired": "Bitte fülle mindestens Job-Titel, Unternehmen und deinen Namen aus"
+    }
+  },
+  "interviewPage": {
+    "title": "Interview-Coach",
+    "subtitle": "Übe mit typischen Fragen für deine Branche",
+    "backLink": "Zurück zu Bewerbungstipps",
+    "setup": {
+      "title": "Für welchen Job möchtest du üben?",
+      "industry": "Branche",
+      "industryPlaceholder": "Branche wählen...",
+      "jobTitle": "Job-Titel",
+      "jobTitlePlaceholder": "z.B. Verkäufer/in, Pflegefachkraft",
+      "start": "Interview starten",
+      "loading": "Lade Fragen..."
+    },
+    "practice": {
+      "questionOf": "Frage {current} von {total}",
+      "restart": "Neu starten",
+      "interviewer": "Interviewer fragt:",
+      "tips": "Tipps für diese Frage:",
+      "yourAnswer": "Deine Antwort",
+      "answerPlaceholder": "Schreibe hier deine Antwort...",
+      "getFeedback": "Feedback erhalten",
+      "analyzing": "Analysiere...",
+      "nextQuestion": "Nächste Frage",
+      "feedback": "Feedback",
+      "exampleAnswer": "Beispielantwort"
+    },
+    "industries": ["Handwerk", "Einzelhandel", "Gastronomie & Hotel", "Pflege & Gesundheit", "Logistik & Transport", "Büro & Verwaltung", "IT & Technik", "Industrie & Produktion"],
+    "errors": {
+      "selectBoth": "Bitte wähle eine Branche und gib den Job-Titel ein",
+      "enterAnswer": "Bitte gib eine Antwort ein"
+    }
+  },
+  "salaryPage": {
+    "title": "Gehaltsrechner",
+    "subtitle": "Was kannst du in deiner Region verdienen?",
+    "backLink": "Zurück zu Bewerbungstipps",
+    "form": {
+      "title": "Gehalt berechnen",
+      "industry": "Branche",
+      "industryPlaceholder": "Branche wählen...",
+      "experience": "Berufserfahrung",
+      "experiencePlaceholder": "Erfahrung wählen...",
+      "jobTitle": "Job-Titel (optional)",
+      "jobTitlePlaceholder": "z.B. Verkäufer/in",
+      "calculate": "Gehalt berechnen",
+      "calculating": "Berechne..."
+    },
+    "region": {
+      "title": "Region: Landkreis Rotenburg",
+      "description": "Die Gehälter basieren auf Daten aus Zeven und Umgebung."
+    },
+    "result": {
+      "estimatedSalary": "Geschätztes Bruttogehalt/Monat",
+      "minimum": "Minimum",
+      "maximum": "Maximum",
+      "hints": "Hinweise",
+      "negotiationTips": "Verhandlungstipps",
+      "loadTips": "KI-Verhandlungstipps laden",
+      "noResult": "Gehaltsschätzung",
+      "noResultHint": "Wähle Branche und Erfahrung aus, um eine Schätzung zu erhalten."
+    },
+    "industries": {
+      "handwerk": "Handwerk",
+      "einzelhandel": "Einzelhandel",
+      "gastro": "Gastronomie & Hotel",
+      "pflege": "Pflege & Gesundheit",
+      "logistik": "Logistik & Transport",
+      "buero": "Büro & Verwaltung",
+      "it": "IT & Technik",
+      "industrie": "Industrie & Produktion"
+    },
+    "experienceLevels": {
+      "entry": "Berufseinsteiger (0-2 Jahre)",
+      "mid": "Mit Erfahrung (3-5 Jahre)",
+      "senior": "Senior (6-10 Jahre)",
+      "expert": "Experte (10+ Jahre)"
+    },
+    "defaultTips": [
+      "Recherchiere den genauen Marktwert für deine Position",
+      "Berücksichtige Zusatzleistungen wie Urlaub, Weiterbildung",
+      "Verhandle immer erst nach dem Jobangebot"
+    ],
+    "errors": {
+      "selectBoth": "Bitte wähle Branche und Erfahrung aus"
+    }
+  },
   "tipsPage": {
     "badge": "KI-gestützte Tools",
     "title": "Bewerbungstipps",

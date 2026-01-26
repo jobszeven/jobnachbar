@@ -645,6 +645,132 @@
     "unsubscribe": "Change email settings",
     "footer": "This email was automatically sent by JobNachbar."
   },
+  "coverLetterPage": {
+    "title": "Cover Letter Generator",
+    "subtitle": "Create individual cover letters with AI",
+    "backLink": "Back to Application Tips",
+    "form": {
+      "title": "Your Information",
+      "jobTitle": "Job Title",
+      "jobTitlePlaceholder": "e.g. Sales Associate, Automotive Mechanic",
+      "company": "Company",
+      "companyPlaceholder": "Company name",
+      "yourName": "Your Name",
+      "yourNamePlaceholder": "Your full name",
+      "experience": "Work Experience",
+      "experiencePlaceholder": "Briefly describe your relevant work experience...",
+      "skills": "Skills & Strengths",
+      "skillsPlaceholder": "What skills do you bring?",
+      "motivation": "Motivation",
+      "motivationPlaceholder": "Why do you want to work at this company?",
+      "required": "*"
+    },
+    "generate": "Generate Cover Letter",
+    "generating": "Generating...",
+    "result": {
+      "title": "Your Cover Letter",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "exportTitle": "Export as PDF",
+      "download": "Download PDF",
+      "noResult": "No cover letter yet",
+      "noResultHint": "Fill out the form and click \"Generate Cover Letter\""
+    },
+    "templates": {
+      "modern": "Modern",
+      "klassisch": "Classic",
+      "kreativ": "Creative"
+    },
+    "errors": {
+      "fillRequired": "Please fill in at least job title, company and your name"
+    }
+  },
+  "interviewPage": {
+    "title": "Interview Coach",
+    "subtitle": "Practice with typical questions for your industry",
+    "backLink": "Back to Application Tips",
+    "setup": {
+      "title": "Which job do you want to practice for?",
+      "industry": "Industry",
+      "industryPlaceholder": "Select industry...",
+      "jobTitle": "Job Title",
+      "jobTitlePlaceholder": "e.g. Sales Associate, Nurse",
+      "start": "Start Interview",
+      "loading": "Loading questions..."
+    },
+    "practice": {
+      "questionOf": "Question {current} of {total}",
+      "restart": "Restart",
+      "interviewer": "Interviewer asks:",
+      "tips": "Tips for this question:",
+      "yourAnswer": "Your Answer",
+      "answerPlaceholder": "Write your answer here...",
+      "getFeedback": "Get Feedback",
+      "analyzing": "Analyzing...",
+      "nextQuestion": "Next Question",
+      "feedback": "Feedback",
+      "exampleAnswer": "Example Answer"
+    },
+    "industries": ["Crafts", "Retail", "Gastronomy & Hotel", "Healthcare", "Logistics & Transport", "Office & Administration", "IT & Technology", "Industry & Production"],
+    "errors": {
+      "selectBoth": "Please select an industry and enter the job title",
+      "enterAnswer": "Please enter an answer"
+    }
+  },
+  "salaryPage": {
+    "title": "Salary Calculator",
+    "subtitle": "What can you earn in your region?",
+    "backLink": "Back to Application Tips",
+    "form": {
+      "title": "Calculate Salary",
+      "industry": "Industry",
+      "industryPlaceholder": "Select industry...",
+      "experience": "Work Experience",
+      "experiencePlaceholder": "Select experience...",
+      "jobTitle": "Job Title (optional)",
+      "jobTitlePlaceholder": "e.g. Sales Associate",
+      "calculate": "Calculate Salary",
+      "calculating": "Calculating..."
+    },
+    "region": {
+      "title": "Region: Rotenburg District",
+      "description": "Salaries are based on data from Zeven and surrounding area."
+    },
+    "result": {
+      "estimatedSalary": "Estimated Gross Salary/Month",
+      "minimum": "Minimum",
+      "maximum": "Maximum",
+      "hints": "Notes",
+      "negotiationTips": "Negotiation Tips",
+      "loadTips": "Load AI negotiation tips",
+      "noResult": "Salary Estimate",
+      "noResultHint": "Select industry and experience to get an estimate."
+    },
+    "industries": {
+      "handwerk": "Crafts",
+      "einzelhandel": "Retail",
+      "gastro": "Gastronomy & Hotel",
+      "pflege": "Healthcare",
+      "logistik": "Logistics & Transport",
+      "buero": "Office & Administration",
+      "it": "IT & Technology",
+      "industrie": "Industry & Production"
+    },
+    "experienceLevels": {
+      "entry": "Entry Level (0-2 years)",
+      "mid": "Experienced (3-5 years)",
+      "senior": "Senior (6-10 years)",
+      "expert": "Expert (10+ years)"
+    },
+    "defaultTips": [
+      "Research the exact market value for your position",
+      "Consider additional benefits like vacation, training",
+      "Always negotiate only after receiving the job offer"
+    ],
+    "errors": {
+      "selectBoth": "Please select industry and experience"
+    }
+  },
   "tipsPage": {
     "badge": "AI-Powered Tools",
     "title": "Application Tips",

@@ -2,21 +2,11 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import { Users, Sparkles, ArrowLeft, Loader2, MessageSquare, ThumbsUp, AlertTriangle, RefreshCw } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import toast from 'react-hot-toast'
-
-const industries = [
-  'Handwerk',
-  'Einzelhandel',
-  'Gastronomie & Hotel',
-  'Pflege & Gesundheit',
-  'Logistik & Transport',
-  'Büro & Verwaltung',
-  'IT & Technik',
-  'Industrie & Produktion',
-]
 
 interface InterviewQuestion {
   question: string
@@ -25,6 +15,10 @@ interface InterviewQuestion {
 }
 
 export default function VorstellungsgespraechPage() {
+  const t = useTranslations('interviewPage')
+
+  const industries = t.raw('industries') as string[]
+
   const [selectedIndustry, setSelectedIndustry] = useState('')
   const [jobTitle, setJobTitle] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -36,7 +30,7 @@ export default function VorstellungsgespraechPage() {
 
   const generateQuestions = async () => {
     if (!selectedIndustry || !jobTitle) {
-      toast.error('Bitte wähle eine Branche und gib den Job-Titel ein')
+      toast.error(t('errors.selectBoth'))
       return
     }
 
@@ -51,7 +45,7 @@ export default function VorstellungsgespraechPage() {
       const data = await response.json()
 
       if (!response.ok) {
-        throw new Error(data.error || 'Fehler beim Laden')
+        throw new Error(data.error || 'Error loading')
       }
 
       setQuestions(data.questions)
@@ -59,7 +53,7 @@ export default function VorstellungsgespraechPage() {
       setUserAnswer('')
       setFeedback(null)
       toast.success('Interview-Fragen generiert!')
-    } catch (error) {
+    } catch {
       toast.error('Fehler beim Generieren. Bitte versuche es erneut.')
     } finally {
       setIsLoading(false)
@@ -68,12 +62,11 @@ export default function VorstellungsgespraechPage() {
 
   const getFeedback = async () => {
     if (!userAnswer.trim()) {
-      toast.error('Bitte gib eine Antwort ein')
+      toast.error(t('errors.enterAnswer'))
       return
     }
 
     setIsGettingFeedback(true)
-    // Simulate AI feedback (in real app, call API)
     setTimeout(() => {
       setFeedback({
         rating: userAnswer.length > 100 ? 'Gut' : 'Ausbaufähig',
@@ -105,7 +98,7 @@ export default function VorstellungsgespraechPage() {
           {/* Back Link */}
           <Link href="/bewerbungstipps" className="inline-flex items-center text-gray-400 hover:text-white mb-6">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Zurück zu Bewerbungstipps
+            {t('backLink')}
           </Link>
 
           {/* Header */}
@@ -114,8 +107,8 @@ export default function VorstellungsgespraechPage() {
               <Users className="w-8 h-8 text-brand-red" />
             </div>
             <div>
-              <h1 className="text-3xl font-bold text-white">Interview-Coach</h1>
-              <p className="text-gray-400">Übe mit typischen Fragen für deine Branche</p>
+              <h1 className="text-3xl font-bold text-white">{t('title')}</h1>
+              <p className="text-gray-400">{t('subtitle')}</p>
             </div>
           </div>
 
@@ -123,18 +116,18 @@ export default function VorstellungsgespraechPage() {
             /* Setup Form */
             <div className="card max-w-xl mx-auto">
               <h2 className="text-lg font-semibold text-white mb-6">
-                Für welchen Job möchtest du üben?
+                {t('setup.title')}
               </h2>
 
               <div className="space-y-4">
                 <div>
-                  <label className="input-label">Branche</label>
+                  <label className="input-label">{t('setup.industry')}</label>
                   <select
                     value={selectedIndustry}
                     onChange={(e) => setSelectedIndustry(e.target.value)}
                     className="input-field"
                   >
-                    <option value="">Branche wählen...</option>
+                    <option value="">{t('setup.industryPlaceholder')}</option>
                     {industries.map((industry) => (
                       <option key={industry} value={industry}>
                         {industry}
@@ -144,12 +137,12 @@ export default function VorstellungsgespraechPage() {
                 </div>
 
                 <div>
-                  <label className="input-label">Job-Titel</label>
+                  <label className="input-label">{t('setup.jobTitle')}</label>
                   <input
                     type="text"
                     value={jobTitle}
                     onChange={(e) => setJobTitle(e.target.value)}
-                    placeholder="z.B. Verkäufer/in, Pflegefachkraft"
+                    placeholder={t('setup.jobTitlePlaceholder')}
                     className="input-field"
                   />
                 </div>
@@ -162,12 +155,12 @@ export default function VorstellungsgespraechPage() {
                   {isLoading ? (
                     <>
                       <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                      Lade Fragen...
+                      {t('setup.loading')}
                     </>
                   ) : (
                     <>
                       <Sparkles className="w-5 h-5 mr-2" />
-                      Interview starten
+                      {t('setup.start')}
                     </>
                   )}
                 </button>
@@ -179,7 +172,7 @@ export default function VorstellungsgespraechPage() {
               {/* Progress */}
               <div className="flex items-center justify-between mb-4">
                 <span className="text-gray-400">
-                  Frage {activeQuestion + 1} von {questions.length}
+                  {t('practice.questionOf', { current: activeQuestion + 1, total: questions.length })}
                 </span>
                 <button
                   onClick={() => {
@@ -190,7 +183,7 @@ export default function VorstellungsgespraechPage() {
                   className="text-gray-400 hover:text-white flex items-center"
                 >
                   <RefreshCw className="w-4 h-4 mr-1" />
-                  Neu starten
+                  {t('practice.restart')}
                 </button>
               </div>
 
@@ -201,7 +194,7 @@ export default function VorstellungsgespraechPage() {
                     <MessageSquare className="w-5 h-5 text-brand-red" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400 mb-1">Interviewer fragt:</p>
+                    <p className="text-sm text-gray-400 mb-1">{t('practice.interviewer')}</p>
                     <p className="text-xl text-white font-medium">
                       {questions[activeQuestion].question}
                     </p>
@@ -210,7 +203,7 @@ export default function VorstellungsgespraechPage() {
 
                 {/* Tips */}
                 <div className="bg-brand-dark p-4 rounded-lg mb-6">
-                  <p className="text-sm font-medium text-gray-300 mb-2">Tipps für diese Frage:</p>
+                  <p className="text-sm font-medium text-gray-300 mb-2">{t('practice.tips')}</p>
                   <ul className="space-y-1">
                     {questions[activeQuestion].tips.map((tip, i) => (
                       <li key={i} className="text-gray-400 text-sm flex items-start">
@@ -223,11 +216,11 @@ export default function VorstellungsgespraechPage() {
 
                 {/* User Answer */}
                 <div className="mb-4">
-                  <label className="input-label">Deine Antwort</label>
+                  <label className="input-label">{t('practice.yourAnswer')}</label>
                   <textarea
                     value={userAnswer}
                     onChange={(e) => setUserAnswer(e.target.value)}
-                    placeholder="Schreibe hier deine Antwort..."
+                    placeholder={t('practice.answerPlaceholder')}
                     className="input-field h-32"
                   />
                 </div>
@@ -241,18 +234,18 @@ export default function VorstellungsgespraechPage() {
                     {isGettingFeedback ? (
                       <>
                         <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                        Analysiere...
+                        {t('practice.analyzing')}
                       </>
                     ) : (
                       <>
                         <Sparkles className="w-5 h-5 mr-2" />
-                        Feedback erhalten
+                        {t('practice.getFeedback')}
                       </>
                     )}
                   </button>
                   {activeQuestion < questions.length - 1 && (
                     <button onClick={nextQuestion} className="btn-secondary">
-                      Nächste Frage
+                      {t('practice.nextQuestion')}
                     </button>
                   )}
                 </div>
@@ -267,7 +260,7 @@ export default function VorstellungsgespraechPage() {
                     ) : (
                       <AlertTriangle className="w-5 h-5 mr-2 text-yellow-400" />
                     )}
-                    Feedback: {feedback.rating}
+                    {t('practice.feedback')}: {feedback.rating}
                   </h3>
                   <ul className="space-y-2">
                     {feedback.tips.map((tip, i) => (
@@ -282,7 +275,7 @@ export default function VorstellungsgespraechPage() {
 
               {/* Example Answer */}
               <div className="card">
-                <h3 className="font-semibold text-white mb-3">Beispielantwort</h3>
+                <h3 className="font-semibold text-white mb-3">{t('practice.exampleAnswer')}</h3>
                 <p className="text-gray-400 italic">
                   &ldquo;{questions[activeQuestion].exampleAnswer}&rdquo;
                 </p>

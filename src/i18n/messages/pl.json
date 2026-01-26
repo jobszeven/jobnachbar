@@ -645,6 +645,132 @@
     "unsubscribe": "Zmień ustawienia e-mail",
     "footer": "Ta wiadomość została wysłana automatycznie przez JobNachbar."
   },
+  "coverLetterPage": {
+    "title": "Generator Listu Motywacyjnego",
+    "subtitle": "Twórz indywidualne listy motywacyjne z AI",
+    "backLink": "Wróć do Porad Aplikacyjnych",
+    "form": {
+      "title": "Twoje Dane",
+      "jobTitle": "Stanowisko",
+      "jobTitlePlaceholder": "np. Sprzedawca, Mechanik Samochodowy",
+      "company": "Firma",
+      "companyPlaceholder": "Nazwa firmy",
+      "yourName": "Twoje Imię",
+      "yourNamePlaceholder": "Twoje pełne imię i nazwisko",
+      "experience": "Doświadczenie Zawodowe",
+      "experiencePlaceholder": "Krótko opisz swoje doświadczenie zawodowe...",
+      "skills": "Umiejętności i Mocne Strony",
+      "skillsPlaceholder": "Jakie umiejętności posiadasz?",
+      "motivation": "Motywacja",
+      "motivationPlaceholder": "Dlaczego chcesz pracować w tej firmie?",
+      "required": "*"
+    },
+    "generate": "Wygeneruj List",
+    "generating": "Generowanie...",
+    "result": {
+      "title": "Twój List Motywacyjny",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!",
+      "exportTitle": "Eksportuj jako PDF",
+      "download": "Pobierz PDF",
+      "noResult": "Brak listu motywacyjnego",
+      "noResultHint": "Wypełnij formularz i kliknij \"Wygeneruj List\""
+    },
+    "templates": {
+      "modern": "Nowoczesny",
+      "klassisch": "Klasyczny",
+      "kreativ": "Kreatywny"
+    },
+    "errors": {
+      "fillRequired": "Proszę wypełnić przynajmniej stanowisko, firmę i imię"
+    }
+  },
+  "interviewPage": {
+    "title": "Trener Rozmów",
+    "subtitle": "Ćwicz z typowymi pytaniami dla Twojej branży",
+    "backLink": "Wróć do Porad Aplikacyjnych",
+    "setup": {
+      "title": "Na jakie stanowisko chcesz się przygotować?",
+      "industry": "Branża",
+      "industryPlaceholder": "Wybierz branżę...",
+      "jobTitle": "Stanowisko",
+      "jobTitlePlaceholder": "np. Sprzedawca, Pielęgniarka",
+      "start": "Rozpocznij Rozmowę",
+      "loading": "Ładowanie pytań..."
+    },
+    "practice": {
+      "questionOf": "Pytanie {current} z {total}",
+      "restart": "Zacznij od nowa",
+      "interviewer": "Rekruter pyta:",
+      "tips": "Wskazówki do tego pytania:",
+      "yourAnswer": "Twoja Odpowiedź",
+      "answerPlaceholder": "Napisz swoją odpowiedź tutaj...",
+      "getFeedback": "Otrzymaj Opinię",
+      "analyzing": "Analizowanie...",
+      "nextQuestion": "Następne Pytanie",
+      "feedback": "Opinia",
+      "exampleAnswer": "Przykładowa Odpowiedź"
+    },
+    "industries": ["Rzemiosło", "Handel Detaliczny", "Gastronomia i Hotelarstwo", "Opieka Zdrowotna", "Logistyka i Transport", "Biuro i Administracja", "IT i Technologia", "Przemysł i Produkcja"],
+    "errors": {
+      "selectBoth": "Proszę wybrać branżę i wpisać stanowisko",
+      "enterAnswer": "Proszę wpisać odpowiedź"
+    }
+  },
+  "salaryPage": {
+    "title": "Kalkulator Wynagrodzenia",
+    "subtitle": "Ile możesz zarobić w swoim regionie?",
+    "backLink": "Wróć do Porad Aplikacyjnych",
+    "form": {
+      "title": "Oblicz Wynagrodzenie",
+      "industry": "Branża",
+      "industryPlaceholder": "Wybierz branżę...",
+      "experience": "Doświadczenie Zawodowe",
+      "experiencePlaceholder": "Wybierz doświadczenie...",
+      "jobTitle": "Stanowisko (opcjonalnie)",
+      "jobTitlePlaceholder": "np. Sprzedawca",
+      "calculate": "Oblicz Wynagrodzenie",
+      "calculating": "Obliczanie..."
+    },
+    "region": {
+      "title": "Region: Powiat Rotenburg",
+      "description": "Wynagrodzenia oparte są na danych z Zeven i okolic."
+    },
+    "result": {
+      "estimatedSalary": "Szacowane Wynagrodzenie Brutto/Miesiąc",
+      "minimum": "Minimum",
+      "maximum": "Maksimum",
+      "hints": "Uwagi",
+      "negotiationTips": "Wskazówki Negocjacyjne",
+      "loadTips": "Załaduj wskazówki AI do negocjacji",
+      "noResult": "Szacunek Wynagrodzenia",
+      "noResultHint": "Wybierz branżę i doświadczenie, aby otrzymać szacunek."
+    },
+    "industries": {
+      "handwerk": "Rzemiosło",
+      "einzelhandel": "Handel Detaliczny",
+      "gastro": "Gastronomia i Hotelarstwo",
+      "pflege": "Opieka Zdrowotna",
+      "logistik": "Logistyka i Transport",
+      "buero": "Biuro i Administracja",
+      "it": "IT i Technologia",
+      "industrie": "Przemysł i Produkcja"
+    },
+    "experienceLevels": {
+      "entry": "Początkujący (0-2 lata)",
+      "mid": "Doświadczony (3-5 lat)",
+      "senior": "Senior (6-10 lat)",
+      "expert": "Ekspert (10+ lat)"
+    },
+    "defaultTips": [
+      "Zbadaj dokładną wartość rynkową dla Twojego stanowiska",
+      "Weź pod uwagę dodatkowe świadczenia jak urlop, szkolenia",
+      "Negocjuj zawsze dopiero po otrzymaniu oferty pracy"
+    ],
+    "errors": {
+      "selectBoth": "Proszę wybrać branżę i doświadczenie"
+    }
+  },
   "tipsPage": {
     "badge": "Narzędzia wspierane AI",
     "title": "Porady Aplikacyjne",

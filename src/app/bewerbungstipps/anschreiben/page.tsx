@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import { PenTool, Download, Sparkles, ArrowLeft, Loader2, Copy, Check } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -10,6 +11,8 @@ import toast from 'react-hot-toast'
 type DesignTemplate = 'modern' | 'klassisch' | 'kreativ'
 
 export default function AnschreibenPage() {
+  const t = useTranslations('coverLetterPage')
+
   const [formData, setFormData] = useState({
     jobTitle: '',
     company: '',
@@ -23,21 +26,20 @@ export default function AnschreibenPage() {
   const [selectedTemplate, setSelectedTemplate] = useState<DesignTemplate>('modern')
   const [copied, setCopied] = useState(false)
 
-  const templates = [
-    { id: 'modern' as const, name: 'Modern', description: 'Klares, zeitgemäßes Design' },
-    { id: 'klassisch' as const, name: 'Klassisch', description: 'Traditionell und seriös' },
-    { id: 'kreativ' as const, name: 'Kreativ', description: 'Auffällig und individuell' },
+  const templates: { id: DesignTemplate; name: string }[] = [
+    { id: 'modern', name: t('templates.modern') },
+    { id: 'klassisch', name: t('templates.klassisch') },
+    { id: 'kreativ', name: t('templates.kreativ') },
   ]
 
   const generateLetter = async () => {
     if (!formData.jobTitle || !formData.company || !formData.yourName) {
-      toast.error('Bitte fülle mindestens Job-Titel, Unternehmen und deinen Namen aus')
+      toast.error(t('errors.fillRequired'))
       return
     }
 
     setIsGenerating(true)
     try {
-      // Build API request with correct field names
       const apiData = {
         jobTitle: formData.jobTitle,
         companyName: formData.company,
@@ -54,10 +56,9 @@ export default function AnschreibenPage() {
       const data = await response.json()
 
       if (!response.ok) {
-        throw new Error(data.message || data.error || 'Generierung fehlgeschlagen')
+        throw new Error(data.message || data.error || 'Generation failed')
       }
 
-      // API returns result.coverLetter
       setGeneratedLetter(data.result?.coverLetter || data.coverLetter || '')
       toast.success('Anschreiben generiert!')
     } catch (error) {
@@ -91,7 +92,7 @@ export default function AnschreibenPage() {
           {/* Back Link */}
           <Link href="/bewerbungstipps" className="inline-flex items-center text-gray-400 hover:text-white mb-6">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Zurück zu Bewerbungstipps
+            {t('backLink')}
           </Link>
 
           {/* Header */}
@@ -100,76 +101,76 @@ export default function AnschreibenPage() {
               <PenTool className="w-8 h-8 text-brand-red" />
             </div>
             <div>
-              <h1 className="text-3xl font-bold text-white">Anschreiben-Generator</h1>
-              <p className="text-gray-400">Erstelle individuelle Anschreiben mit KI</p>
+              <h1 className="text-3xl font-bold text-white">{t('title')}</h1>
+              <p className="text-gray-400">{t('subtitle')}</p>
             </div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Input Form */}
             <div className="card">
-              <h2 className="text-lg font-semibold text-white mb-6">Deine Angaben</h2>
+              <h2 className="text-lg font-semibold text-white mb-6">{t('form.title')}</h2>
 
               <div className="space-y-4">
                 <div>
-                  <label className="input-label">Job-Titel *</label>
+                  <label className="input-label">{t('form.jobTitle')} {t('form.required')}</label>
                   <input
                     type="text"
                     value={formData.jobTitle}
                     onChange={(e) => setFormData({ ...formData, jobTitle: e.target.value })}
-                    placeholder="z.B. Verkäufer/in, Kfz-Mechatroniker/in"
+                    placeholder={t('form.jobTitlePlaceholder')}
                     className="input-field"
                   />
                 </div>
 
                 <div>
-                  <label className="input-label">Unternehmen *</label>
+                  <label className="input-label">{t('form.company')} {t('form.required')}</label>
                   <input
                     type="text"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    placeholder="Name des Unternehmens"
+                    placeholder={t('form.companyPlaceholder')}
                     className="input-field"
                   />
                 </div>
 
                 <div>
-                  <label className="input-label">Dein Name *</label>
+                  <label className="input-label">{t('form.yourName')} {t('form.required')}</label>
                   <input
                     type="text"
                     value={formData.yourName}
                     onChange={(e) => setFormData({ ...formData, yourName: e.target.value })}
-                    placeholder="Dein vollständiger Name"
+                    placeholder={t('form.yourNamePlaceholder')}
                     className="input-field"
                   />
                 </div>
 
                 <div>
-                  <label className="input-label">Berufserfahrung</label>
+                  <label className="input-label">{t('form.experience')}</label>
                   <textarea
                     value={formData.experience}
                     onChange={(e) => setFormData({ ...formData, experience: e.target.value })}
-                    placeholder="Beschreibe kurz deine relevante Berufserfahrung..."
+                    placeholder={t('form.experiencePlaceholder')}
                     className="input-field h-24"
                   />
                 </div>
 
                 <div>
-                  <label className="input-label">Fähigkeiten & Stärken</label>
+                  <label className="input-label">{t('form.skills')}</label>
                   <textarea
                     value={formData.skills}
                     onChange={(e) => setFormData({ ...formData, skills: e.target.value })}
-                    placeholder="Welche Fähigkeiten bringst du mit?"
+                    placeholder={t('form.skillsPlaceholder')}
                     className="input-field h-24"
                   />
                 </div>
 
                 <div>
-                  <label className="input-label">Motivation</label>
+                  <label className="input-label">{t('form.motivation')}</label>
                   <textarea
                     value={formData.motivation}
                     onChange={(e) => setFormData({ ...formData, motivation: e.target.value })}
-                    placeholder="Warum möchtest du bei diesem Unternehmen arbeiten?"
+                    placeholder={t('form.motivationPlaceholder')}
                     className="input-field h-24"
                   />
                 </div>
@@ -182,12 +183,12 @@ export default function AnschreibenPage() {
                   {isGenerating ? (
                     <>
                       <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                      Generiere...
+                      {t('generating')}
                     </>
                   ) : (
                     <>
                       <Sparkles className="w-5 h-5 mr-2" />
-                      Anschreiben generieren
+                      {t('generate')}
                     </>
                   )}
                 </button>
@@ -200,7 +201,7 @@ export default function AnschreibenPage() {
                 <>
                   <div className="card">
                     <div className="flex items-center justify-between mb-4">
-                      <h2 className="text-lg font-semibold text-white">Dein Anschreiben</h2>
+                      <h2 className="text-lg font-semibold text-white">{t('result.title')}</h2>
                       <button
                         onClick={copyToClipboard}
                         className="btn-secondary text-sm py-2"
@@ -208,12 +209,12 @@ export default function AnschreibenPage() {
                         {copied ? (
                           <>
                             <Check className="w-4 h-4 mr-1" />
-                            Kopiert!
+                            {t('result.copied')}
                           </>
                         ) : (
                           <>
                             <Copy className="w-4 h-4 mr-1" />
-                            Kopieren
+                            {t('result.copy')}
                           </>
                         )}
                       </button>
@@ -227,7 +228,7 @@ export default function AnschreibenPage() {
 
                   {/* PDF Export */}
                   <div className="card">
-                    <h3 className="font-semibold text-white mb-4">Als PDF exportieren</h3>
+                    <h3 className="font-semibold text-white mb-4">{t('result.exportTitle')}</h3>
                     <div className="grid grid-cols-3 gap-3 mb-4">
                       {templates.map((template) => (
                         <button
@@ -245,7 +246,7 @@ export default function AnschreibenPage() {
                     </div>
                     <button onClick={downloadPDF} className="btn-secondary w-full">
                       <Download className="w-5 h-5 mr-2" />
-                      PDF herunterladen
+                      {t('result.download')}
                     </button>
                   </div>
                 </>
@@ -253,10 +254,10 @@ export default function AnschreibenPage() {
                 <div className="card text-center py-16">
                   <PenTool className="w-16 h-16 text-gray-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-white mb-2">
-                    Noch kein Anschreiben
+                    {t('result.noResult')}
                   </h3>
                   <p className="text-gray-400">
-                    Fülle das Formular aus und klicke auf &ldquo;Anschreiben generieren&rdquo;
+                    {t('result.noResultHint')}
                   </p>
                 </div>
               )}
