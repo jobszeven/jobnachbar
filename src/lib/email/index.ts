@@ -338,7 +338,7 @@ export async function sendPremiumSubscriptionConfirmation(options: {
         automatisch aktiviert und du erhältst eine Bestätigung per E-Mail.
       </p>
 
-      <p style="color: #D1D5DB;">Bei Fragen erreichst du uns unter <a href="mailto:premium@jobnachbar.com" style="color: #E63946;">premium@jobnachbar.com</a>.</p>
+      <p style="color: #D1D5DB;">Bei Fragen erreichst du uns unter <a href="mailto:info@jobnachbar.com" style="color: #E63946;">info@jobnachbar.com</a>.</p>
 
       <p style="color: #D1D5DB;">Viele Grüße,<br>Dein JobNachbar-Team</p>
 

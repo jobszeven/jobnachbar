@@ -45,15 +45,99 @@
   },
   "home": {
     "hero": {
-      "title": "İşini bul",
-      "titleHighlight": "yakınındaki",
-      "subtitle": "Zeven, Rotenburg ve çevresi için yerel iş ilanları. Hızlı, kolay ve bölgesel.",
+      "badge": "24 saat içinde onay",
+      "title": "Yakınındaki işler.",
+      "titleHighlight": "Hızlı ve kolay.",
+      "subtitle": "Zeven, Rotenburg ve tüm ilçe için yerel iş ilanları. Pahalı aracılar olmadan uygun pozisyonlar veya nitelikli adaylar bulun.",
+      "findJob": "İş bul",
+      "findEmployee": "Çalışan bul",
+      "radius": "Zeven çevresinde 30 km",
+      "regional": "%100 bölgesel",
+      "matching": "Otomatik eşleştirme",
       "searchPlaceholder": "İş, meslek veya anahtar kelime",
       "searchButton": "İş Ara",
       "stats": {
         "jobs": "Aktif İlanlar",
         "companies": "Şirketler",
         "locations": "Lokasyonlar"
+      }
+    },
+    "howItWorks": {
+      "jobseeker": {
+        "title": "İş arayanlar için nasıl çalışır",
+        "subtitle": "3 dakikada kayıt ol - uygun işler doğrudan gelen kutunda.",
+        "step1": {
+          "title": "Profil oluştur",
+          "desc": "Ne aradığını gir: sektör, çalışma saatleri, istenen maaş ve nerede çalışmak istediğin."
+        },
+        "step2": {
+          "title": "Eşleşmeleri al",
+          "desc": "Sistemimiz uygun pozisyonları bulur ve e-posta veya WhatsApp ile gönderir."
+        },
+        "step3": {
+          "title": "Başvur",
+          "desc": "Tek tıkla başvur - profilin doğrudan işverene gider."
+        },
+        "cta": "Şimdi ücretsiz kayıt ol"
+      },
+      "employer": {
+        "title": "İşverenler için nasıl çalışır",
+        "subtitle": "Pahalı iş ilanı siteleri olmadan bölgeden nitelikli adaylara ulaşın.",
+        "step1": {
+          "title": "İlan yayınla",
+          "desc": "Pozisyonu ve sunduklarınızı tanımlayın. Biz inceler ve onaylarız."
+        },
+        "step2": {
+          "title": "Başvuruları al",
+          "desc": "Uygun adaylar otomatik eşleştirilir ve e-posta ile bilgilendirilirsiniz."
+        },
+        "step3": {
+          "title": "İşe al",
+          "desc": "İlginç adaylarla doğrudan iletişime geçin ve işe alın."
+        },
+        "cta": "Şimdi ilan yayınla"
+      }
+    },
+    "pricing": {
+      "badge": "LANSMAN TEKLİFİ: %60 indirim",
+      "title": "İşverenler için adil fiyatlar",
+      "subtitle": "Gizli maliyet yok. Ücretsiz başla, sadece ihtiyacın olana öde.",
+      "popular": "Popüler",
+      "starter": {
+        "name": "Starter",
+        "price": "0€",
+        "desc": "1 ilan • 30 gün"
+      },
+      "basic": {
+        "name": "Basic",
+        "oldPrice": "99€",
+        "price": "39€",
+        "desc": "5 ilan • 10 iletişim"
+      },
+      "premium": {
+        "name": "Premium",
+        "oldPrice": "199€",
+        "price": "79€",
+        "desc": "Sınırsız • Her şey dahil"
+      },
+      "cta": "Tüm fiyatları karşılaştır"
+    },
+    "trust": {
+      "fast": {
+        "title": "Hızlı onay",
+        "desc": "24 saat içinde"
+      },
+      "gdpr": {
+        "title": "KVKK uyumlu",
+        "desc": "Almanya'da sunucular"
+      },
+      "fair": {
+        "title": "Adil fiyatlar",
+        "desc": "Gizli maliyet yok"
+      },
+      "local": {
+        "title": "%100 Bölgesel",
+        "desc": "Zeven ve çevresi"
       }
     },
     "features": {
@@ -81,8 +165,10 @@
       "applicants": "Başvuranlar"
     },
     "cta": {
-      "title": "Sonraki işin için hazır mısın?",
-      "subtitle": "Şimdi ücretsiz kayıt ol ve yakınındaki işleri keşfet.",
+      "title": "Bir sonraki çalışanını bulmaya hazır mısın?",
+      "subtitle": "Şimdi ücretsiz başla ve birkaç gün içinde ilk başvurunu al.",
+      "primary": "Şimdi ilan yayınla",
+      "secondary": "Soruların mı var? Bize ulaş",
       "button": "Ücretsiz Başla"
     }
   },

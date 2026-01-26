@@ -45,15 +45,99 @@
   },
   "home": {
     "hero": {
-      "title": "Finde deinen Job",
-      "titleHighlight": "in der Nachbarschaft",
-      "subtitle": "Die lokale Jobbörse für Zeven, Rotenburg und Umgebung. Schnell, einfach und regional.",
+      "badge": "Freigabe innerhalb von 24 Stunden",
+      "title": "Jobs in deiner Nähe.",
+      "titleHighlight": "Schnell & unkompliziert.",
+      "subtitle": "Die lokale Jobbörse für Zeven, Rotenburg und den gesamten Landkreis. Finde passende Stellen oder qualifizierte Bewerber – ohne teure Vermittler.",
+      "findJob": "Job finden",
+      "findEmployee": "Mitarbeiter finden",
+      "radius": "30 km Radius um Zeven",
+      "regional": "100% regional",
+      "matching": "Automatisches Matching",
       "searchPlaceholder": "Job, Beruf oder Stichwort",
       "searchButton": "Jobs suchen",
       "stats": {
         "jobs": "Aktive Jobs",
         "companies": "Unternehmen",
         "locations": "Orte"
+      }
+    },
+    "howItWorks": {
+      "jobseeker": {
+        "title": "So funktioniert's für Jobsuchende",
+        "subtitle": "In 3 Minuten registriert – passende Jobs direkt in deinem Postfach.",
+        "step1": {
+          "title": "Profil erstellen",
+          "desc": "Trag ein, was du suchst: Branche, Arbeitszeit, Wunschgehalt und wo du arbeiten möchtest."
+        },
+        "step2": {
+          "title": "Matches erhalten",
+          "desc": "Unser System findet passende Stellen und schickt sie dir per E-Mail oder WhatsApp."
+        },
+        "step3": {
+          "title": "Bewerben",
+          "desc": "Mit einem Klick bewerben – dein Profil geht direkt an den Arbeitgeber."
+        },
+        "cta": "Jetzt kostenlos registrieren"
+      },
+      "employer": {
+        "title": "So funktioniert's für Arbeitgeber",
+        "subtitle": "Erreichen Sie qualifizierte Bewerber aus der Region – ohne teure Jobbörsen.",
+        "step1": {
+          "title": "Stelle ausschreiben",
+          "desc": "Beschreiben Sie die Position und was Sie bieten. Wir prüfen und schalten frei."
+        },
+        "step2": {
+          "title": "Bewerber erhalten",
+          "desc": "Passende Kandidaten werden automatisch gematcht und Sie per E-Mail informiert."
+        },
+        "step3": {
+          "title": "Einstellen",
+          "desc": "Kontaktieren Sie interessante Bewerber direkt und stellen Sie ein."
+        },
+        "cta": "Jetzt Stelle ausschreiben"
+      }
+    },
+    "pricing": {
+      "badge": "LAUNCH-ANGEBOT: 60% Rabatt",
+      "title": "Faire Preise für Arbeitgeber",
+      "subtitle": "Keine versteckten Kosten. Starten Sie kostenlos und zahlen Sie nur für das, was Sie brauchen.",
+      "popular": "Beliebt",
+      "starter": {
+        "name": "Starter",
+        "price": "0€",
+        "desc": "1 Stelle • 30 Tage"
+      },
+      "basic": {
+        "name": "Basic",
+        "oldPrice": "99€",
+        "price": "39€",
+        "desc": "5 Stellen • 10 Kontakte"
+      },
+      "premium": {
+        "name": "Premium",
+        "oldPrice": "199€",
+        "price": "79€",
+        "desc": "Unbegrenzt • All-Inclusive"
+      },
+      "cta": "Alle Preise vergleichen"
+    },
+    "trust": {
+      "fast": {
+        "title": "Schnelle Freischaltung",
+        "desc": "Innerhalb von 24h"
+      },
+      "gdpr": {
+        "title": "DSGVO-konform",
+        "desc": "Server in Deutschland"
+      },
+      "fair": {
+        "title": "Faire Preise",
+        "desc": "Keine versteckten Kosten"
+      },
+      "local": {
+        "title": "100% Regional",
+        "desc": "Zeven & Umgebung"
       }
     },
     "features": {
@@ -81,8 +165,10 @@
       "applicants": "Bewerber"
     },
     "cta": {
-      "title": "Bereit für deinen nächsten Job?",
-      "subtitle": "Jetzt kostenlos registrieren und Jobs in deiner Nähe entdecken.",
+      "title": "Bereit, deinen nächsten Mitarbeiter zu finden?",
+      "subtitle": "Starte jetzt kostenlos und erhalte deine erste Bewerbung innerhalb weniger Tage.",
+      "primary": "Jetzt Stelle ausschreiben",
+      "secondary": "Fragen? Kontaktiere uns",
       "button": "Kostenlos starten"
     }
   },

@@ -45,15 +45,99 @@
   },
   "home": {
     "hero": {
-      "title": "Znajdź pracę",
-      "titleHighlight": "w sąsiedztwie",
-      "subtitle": "Lokalny portal pracy dla Zeven, Rotenburg i okolic. Szybko, łatwo i regionalnie.",
+      "badge": "Zatwierdzenie w ciągu 24 godzin",
+      "title": "Praca w pobliżu.",
+      "titleHighlight": "Szybko i łatwo.",
+      "subtitle": "Lokalny portal pracy dla Zeven, Rotenburg i całego powiatu. Znajdź odpowiednie stanowiska lub wykwalifikowanych kandydatów - bez drogich pośredników.",
+      "findJob": "Znajdź pracę",
+      "findEmployee": "Znajdź pracownika",
+      "radius": "30 km od Zeven",
+      "regional": "100% regionalnie",
+      "matching": "Automatyczne dopasowanie",
       "searchPlaceholder": "Praca, zawód lub słowo kluczowe",
       "searchButton": "Szukaj pracy",
       "stats": {
         "jobs": "Aktywne oferty",
         "companies": "Firmy",
         "locations": "Lokalizacje"
+      }
+    },
+    "howItWorks": {
+      "jobseeker": {
+        "title": "Jak to działa dla szukających pracy",
+        "subtitle": "Rejestracja w 3 minuty - pasujące oferty prosto do skrzynki.",
+        "step1": {
+          "title": "Utwórz profil",
+          "desc": "Wpisz czego szukasz: branża, godziny pracy, oczekiwana pensja i gdzie chcesz pracować."
+        },
+        "step2": {
+          "title": "Otrzymuj dopasowania",
+          "desc": "Nasz system znajduje pasujące oferty i wysyła je e-mailem lub WhatsApp."
+        },
+        "step3": {
+          "title": "Aplikuj",
+          "desc": "Aplikuj jednym kliknięciem - Twój profil trafia bezpośrednio do pracodawcy."
+        },
+        "cta": "Zarejestruj się za darmo"
+      },
+      "employer": {
+        "title": "Jak to działa dla pracodawców",
+        "subtitle": "Dotrzyj do wykwalifikowanych kandydatów z regionu - bez drogich portali pracy.",
+        "step1": {
+          "title": "Dodaj ofertę",
+          "desc": "Opisz stanowisko i co oferujesz. Sprawdzamy i zatwierdzamy."
+        },
+        "step2": {
+          "title": "Otrzymuj aplikacje",
+          "desc": "Pasujący kandydaci są automatycznie dopasowywani, a Ty otrzymujesz powiadomienie e-mail."
+        },
+        "step3": {
+          "title": "Zatrudnij",
+          "desc": "Skontaktuj się bezpośrednio z interesującymi kandydatami i zatrudnij."
+        },
+        "cta": "Dodaj ofertę teraz"
+      }
+    },
+    "pricing": {
+      "badge": "OFERTA STARTOWA: 60% zniżki",
+      "title": "Uczciwe ceny dla pracodawców",
+      "subtitle": "Bez ukrytych kosztów. Zacznij za darmo i płać tylko za to, czego potrzebujesz.",
+      "popular": "Popularne",
+      "starter": {
+        "name": "Starter",
+        "price": "0€",
+        "desc": "1 oferta • 30 dni"
+      },
+      "basic": {
+        "name": "Basic",
+        "oldPrice": "99€",
+        "price": "39€",
+        "desc": "5 ofert • 10 kontaktów"
+      },
+      "premium": {
+        "name": "Premium",
+        "oldPrice": "199€",
+        "price": "79€",
+        "desc": "Bez limitu • Wszystko w cenie"
+      },
+      "cta": "Porównaj wszystkie ceny"
+    },
+    "trust": {
+      "fast": {
+        "title": "Szybkie zatwierdzenie",
+        "desc": "W ciągu 24h"
+      },
+      "gdpr": {
+        "title": "Zgodność z RODO",
+        "desc": "Serwery w Niemczech"
+      },
+      "fair": {
+        "title": "Uczciwe ceny",
+        "desc": "Bez ukrytych kosztów"
+      },
+      "local": {
+        "title": "100% Regionalnie",
+        "desc": "Zeven i okolice"
       }
     },
     "features": {
@@ -81,8 +165,10 @@
       "applicants": "Kandydaci"
     },
     "cta": {
-      "title": "Gotowy na następną pracę?",
-      "subtitle": "Zarejestruj się za darmo i odkryj oferty w pobliżu.",
+      "title": "Gotowy znaleźć kolejnego pracownika?",
+      "subtitle": "Zacznij za darmo i otrzymaj pierwszą aplikację w ciągu kilku dni.",
+      "primary": "Dodaj ofertę teraz",
+      "secondary": "Pytania? Skontaktuj się z nami",
       "button": "Zacznij za darmo"
     }
   },

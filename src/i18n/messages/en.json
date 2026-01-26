@@ -45,15 +45,99 @@
   },
   "home": {
     "hero": {
-      "title": "Find your job",
-      "titleHighlight": "in the neighborhood",
-      "subtitle": "The local job board for Zeven, Rotenburg and surroundings. Fast, easy and regional.",
+      "badge": "Approval within 24 hours",
+      "title": "Jobs near you.",
+      "titleHighlight": "Fast & easy.",
+      "subtitle": "The local job board for Zeven, Rotenburg and the entire district. Find suitable positions or qualified applicants – without expensive intermediaries.",
+      "findJob": "Find a job",
+      "findEmployee": "Find employees",
+      "radius": "30 km radius around Zeven",
+      "regional": "100% regional",
+      "matching": "Automatic matching",
       "searchPlaceholder": "Job, profession or keyword",
       "searchButton": "Search jobs",
       "stats": {
         "jobs": "Active Jobs",
         "companies": "Companies",
         "locations": "Locations"
+      }
+    },
+    "howItWorks": {
+      "jobseeker": {
+        "title": "How it works for job seekers",
+        "subtitle": "Register in 3 minutes – matching jobs directly in your inbox.",
+        "step1": {
+          "title": "Create profile",
+          "desc": "Enter what you're looking for: industry, working hours, desired salary and where you want to work."
+        },
+        "step2": {
+          "title": "Receive matches",
+          "desc": "Our system finds matching positions and sends them to you via email or WhatsApp."
+        },
+        "step3": {
+          "title": "Apply",
+          "desc": "Apply with one click – your profile goes directly to the employer."
+        },
+        "cta": "Register for free now"
+      },
+      "employer": {
+        "title": "How it works for employers",
+        "subtitle": "Reach qualified applicants from the region – without expensive job boards.",
+        "step1": {
+          "title": "Post a job",
+          "desc": "Describe the position and what you offer. We review and approve."
+        },
+        "step2": {
+          "title": "Receive applicants",
+          "desc": "Matching candidates are automatically matched and you are notified by email."
+        },
+        "step3": {
+          "title": "Hire",
+          "desc": "Contact interesting applicants directly and hire."
+        },
+        "cta": "Post a job now"
+      }
+    },
+    "pricing": {
+      "badge": "LAUNCH OFFER: 60% off",
+      "title": "Fair prices for employers",
+      "subtitle": "No hidden costs. Start for free and only pay for what you need.",
+      "popular": "Popular",
+      "starter": {
+        "name": "Starter",
+        "price": "€0",
+        "desc": "1 job • 30 days"
+      },
+      "basic": {
+        "name": "Basic",
+        "oldPrice": "€99",
+        "price": "€39",
+        "desc": "5 jobs • 10 contacts"
+      },
+      "premium": {
+        "name": "Premium",
+        "oldPrice": "€199",
+        "price": "€79",
+        "desc": "Unlimited • All-inclusive"
+      },
+      "cta": "Compare all prices"
+    },
+    "trust": {
+      "fast": {
+        "title": "Fast approval",
+        "desc": "Within 24h"
+      },
+      "gdpr": {
+        "title": "GDPR compliant",
+        "desc": "Servers in Germany"
+      },
+      "fair": {
+        "title": "Fair prices",
+        "desc": "No hidden costs"
+      },
+      "local": {
+        "title": "100% Regional",
+        "desc": "Zeven & surroundings"
       }
     },
     "features": {
@@ -81,8 +165,10 @@
       "applicants": "Applicants"
     },
     "cta": {
-      "title": "Ready for your next job?",
-      "subtitle": "Register for free now and discover jobs near you.",
+      "title": "Ready to find your next employee?",
+      "subtitle": "Start for free now and receive your first application within days.",
+      "primary": "Post a job now",
+      "secondary": "Questions? Contact us",
       "button": "Start for free"
     }
   },
