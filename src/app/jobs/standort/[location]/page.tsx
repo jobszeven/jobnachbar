@@ -197,7 +197,8 @@ export default async function LocationJobsPage({ params }: PageProps) {
             {jobs && jobs.length > 0 ? (
               <div className="space-y-4">
                 {jobs.map((job) => {
-                  const company = job.companies as { name: string; logo_url?: string } | null
+                  const companyData = job.companies as unknown
+                  const company = (Array.isArray(companyData) ? companyData[0] : companyData) as { name: string; logo_url?: string } | null
                   return (
                     <Link
                       key={job.id}
