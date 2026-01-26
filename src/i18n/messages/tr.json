@@ -645,6 +645,82 @@
     "unsubscribe": "E-posta ayarlarını değiştir",
     "footer": "Bu e-posta JobNachbar tarafından otomatik olarak gönderilmiştir."
   },
+  "faqPage": {
+    "title": "Sık Sorulan Sorular",
+    "subtitle": "JobNachbar hakkında en önemli soruların cevapları",
+    "forApplicants": "Adaylar İçin",
+    "forEmployers": "İşverenler İçin",
+    "generalSection": "Genel",
+    "stillQuestions": "Hâlâ sorularınız mı var?",
+    "contactMessage": "Size yardımcı olmaktan mutluluk duyarız. Bize ulaşın veya geri bildirim butonunu kullanın.",
+    "contactUs": "Bize Ulaşın",
+    "applicant": {
+      "free": {
+        "question": "JobNachbar ücretsiz mi?",
+        "answer": "Evet, adaylar için temel sürüm tamamen ücretsizdir. Bir kuruş ödemeden kayıt olabilir, iş arayabilir ve başvurabilirsiniz. Sınırsız AI araçları gibi gelişmiş özellikler için JobNachbar Premium var."
+      },
+      "region": {
+        "question": "JobNachbar hangi bölgeyi kapsıyor?",
+        "answer": "Zeven ve 30km yarıçapına odaklanıyoruz. Buna Rotenburg (Wümme), Bremervörde, Sittensen, Tarmstedt, Scheeßel ve daha birçok yer dahildir."
+      },
+      "howApply": {
+        "question": "Bir işe nasıl başvurabilirim?",
+        "answer": "Bir işe tıklayın, ardından 'Şimdi Başvur'a tıklayın. Özgeçmişinizi yükleyebilir ve ön yazı ekleyebilirsiniz. İşveren başvurunuzu doğrudan alır."
+      },
+      "uploadCv": {
+        "question": "Özgeçmişimi yükleyebilir miyim?",
+        "answer": "Evet! Panelinizdeki 'Profil' bölümüne gidin ve özgeçmişinizi PDF olarak yükleyin. Her başvuruda otomatik olarak gönderilecektir."
+      },
+      "premium": {
+        "question": "JobNachbar Premium nedir?",
+        "answer": "Premium (aylık 4,99€) ile AI araçlarımıza sınırsız erişim elde edersiniz: Özgeçmiş Oluşturucu, Ön Yazı Oluşturucu, Mülakat Koçu ve daha fazlası."
+      },
+      "notifications": {
+        "question": "Yeni uygun işleri nasıl öğrenebilirim?",
+        "answer": "Profilinizde e-posta bildirimlerini etkinleştirin. Tercihlerinize uyan yeni işleri otomatik olarak göndereceğiz."
+      },
+      "dataSafe": {
+        "question": "Verilerim güvende mi?",
+        "answer": "Evet. Verilerinizi Almanya'da GDPR uyumlu olarak saklıyoruz. Profiliniz yalnızca başvurduğunuz işverenlere görünür."
+      }
+    },
+    "employer": {
+      "cost": {
+        "question": "Bir iş ilanı ne kadar?",
+        "answer": "Çeşitli paketler sunuyoruz - ayda 29€'dan başlayan fiyatlarla. Tüm detayları fiyat sayfamızda bulabilirsiniz."
+      },
+      "duration": {
+        "question": "İlanım ne kadar süre yayında kalır?",
+        "answer": "Pakete bağlı olarak 30, 60 veya 90 gün. İstediğiniz zaman uzatabilir veya duraklatabilirsiniz."
+      },
+      "multipleJobs": {
+        "question": "Aynı anda birden fazla iş yayınlayabilir miyim?",
+        "answer": "Evet, Starter ve Professional paketlerimizle aynı anda birden fazla pozisyonunuz çevrimiçi olabilir."
+      },
+      "receiveApplications": {
+        "question": "Başvurular bana nasıl ulaşır?",
+        "answer": "Bir e-posta bildirimi alırsınız ve tüm başvuruları panelinizde yönetebilir ve yanıtlayabilirsiniz."
+      }
+    },
+    "general": {
+      "whoIsBehind": {
+        "question": "JobNachbar'ın arkasında kim var?",
+        "answer": "JobNachbar 2026'da kuruldu. 'Hakkımızda' sayfamızdan daha fazla bilgi edinebilirsiniz."
+      },
+      "feedback": {
+        "question": "Bir hata buldum / bir fikrim var",
+        "answer": "Harika! Herhangi bir sayfadaki geri bildirim butonunu kullanın veya iletişim formu aracılığıyla bize ulaşın."
+      },
+      "deleteAccount": {
+        "question": "Hesabımı nasıl silebilirim?",
+        "answer": "info@jobnachbar.com adresine kısa bir e-posta gönderin, 48 saat içinde tüm verilerinizi sileceğiz."
+      },
+      "mobileApp": {
+        "question": "JobNachbar için bir uygulama var mı?",
+        "answer": "JobNachbar, Aşamalı Web Uygulaması (PWA) olarak optimize edilmiştir. Web sitesini telefonunuzun ana ekranına ekleyebilir ve uygulama mağazasından indirmeye gerek kalmadan bir uygulama gibi kullanabilirsiniz."
+      }
+    }
+  },
   "help": {
     "title": "Yardım ve Öğreticiler",
     "subtitle": "JobNachbar'ı en iyi şekilde kullanmak için bilmeniz gereken her şey",

@@ -645,6 +645,82 @@
     "unsubscribe": "Zmień ustawienia e-mail",
     "footer": "Ta wiadomość została wysłana automatycznie przez JobNachbar."
   },
+  "faqPage": {
+    "title": "Najczęściej zadawane pytania",
+    "subtitle": "Odpowiedzi na najważniejsze pytania o JobNachbar",
+    "forApplicants": "Dla Kandydatów",
+    "forEmployers": "Dla Pracodawców",
+    "generalSection": "Ogólne",
+    "stillQuestions": "Masz jeszcze pytania?",
+    "contactMessage": "Chętnie pomożemy. Skontaktuj się z nami lub użyj przycisku opinii.",
+    "contactUs": "Skontaktuj się",
+    "applicant": {
+      "free": {
+        "question": "Czy JobNachbar jest darmowy?",
+        "answer": "Tak, podstawowa wersja jest całkowicie darmowa dla kandydatów. Możesz się zarejestrować, szukać pracy i aplikować bez płacenia ani grosza. Dla zaawansowanych funkcji jak nieograniczone narzędzia AI jest JobNachbar Premium."
+      },
+      "region": {
+        "question": "Jaki region obejmuje JobNachbar?",
+        "answer": "Koncentrujemy się na Zeven i promieniu 30km. Obejmuje to Rotenburg (Wümme), Bremervörde, Sittensen, Tarmstedt, Scheeßel i wiele innych miejsc."
+      },
+      "howApply": {
+        "question": "Jak aplikować o pracę?",
+        "answer": "Kliknij na ofertę pracy, następnie kliknij 'Aplikuj teraz'. Możesz przesłać CV i dodać list motywacyjny. Pracodawca otrzymuje Twoją aplikację bezpośrednio."
+      },
+      "uploadCv": {
+        "question": "Czy mogę przesłać CV?",
+        "answer": "Tak! Przejdź do panelu w sekcji 'Profil' i prześlij CV jako PDF. Będzie ono automatycznie wysyłane z każdą aplikacją."
+      },
+      "premium": {
+        "question": "Co to jest JobNachbar Premium?",
+        "answer": "Z Premium (4,99€/miesiąc) otrzymujesz nieograniczony dostęp do naszych narzędzi AI: Generator CV, Generator listu motywacyjnego, Trener rozmów i więcej."
+      },
+      "notifications": {
+        "question": "Jak mogę dowiedzieć się o nowych pasujących ofertach?",
+        "answer": "Włącz powiadomienia e-mail w profilu. Będziemy automatycznie wysyłać Ci nowe oferty odpowiadające Twoim preferencjom."
+      },
+      "dataSafe": {
+        "question": "Czy moje dane są bezpieczne?",
+        "answer": "Tak. Przechowujemy dane zgodnie z RODO w Niemczech. Twój profil jest widoczny tylko dla pracodawców, do których aplikujesz."
+      }
+    },
+    "employer": {
+      "cost": {
+        "question": "Ile kosztuje ogłoszenie o pracę?",
+        "answer": "Oferujemy różne pakiety - już od 29€ miesięcznie. Wszystkie szczegóły znajdziesz na stronie cenowej."
+      },
+      "duration": {
+        "question": "Jak długo trwa moje ogłoszenie?",
+        "answer": "W zależności od pakietu 30, 60 lub 90 dni. Możesz je przedłużyć lub wstrzymać w dowolnym momencie."
+      },
+      "multipleJobs": {
+        "question": "Czy mogę publikować wiele ofert jednocześnie?",
+        "answer": "Tak, z pakietami Starter i Professional możesz mieć wiele pozycji online jednocześnie."
+      },
+      "receiveApplications": {
+        "question": "Jak otrzymuję aplikacje?",
+        "answer": "Otrzymasz powiadomienie e-mail i możesz zarządzać i odpowiadać na wszystkie aplikacje w panelu."
+      }
+    },
+    "general": {
+      "whoIsBehind": {
+        "question": "Kto stoi za JobNachbar?",
+        "answer": "JobNachbar został założony w 2026 roku. Dowiedz się więcej na stronie 'O nas'."
+      },
+      "feedback": {
+        "question": "Znalazłem błąd / mam pomysł",
+        "answer": "Świetnie! Użyj przycisku opinii na dowolnej stronie lub skontaktuj się przez formularz kontaktowy."
+      },
+      "deleteAccount": {
+        "question": "Jak mogę usunąć konto?",
+        "answer": "Wyślij nam krótki e-mail na info@jobnachbar.com, a usuniemy wszystkie Twoje dane w ciągu 48 godzin."
+      },
+      "mobileApp": {
+        "question": "Czy jest aplikacja dla JobNachbar?",
+        "answer": "JobNachbar jest zoptymalizowany jako Progressive Web App (PWA). Możesz dodać stronę do ekranu głównego telefonu i używać jej jak aplikacji - bez pobierania ze sklepu."
+      }
+    }
+  },
   "help": {
     "title": "Pomoc i Poradniki",
     "subtitle": "Wszystko, co musisz wiedzieć, aby w pełni korzystać z JobNachbar",

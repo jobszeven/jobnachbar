@@ -645,6 +645,82 @@
     "unsubscribe": "Change email settings",
     "footer": "This email was automatically sent by JobNachbar."
   },
+  "faqPage": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to the most important questions about JobNachbar",
+    "forApplicants": "For Applicants",
+    "forEmployers": "For Employers",
+    "generalSection": "General",
+    "stillQuestions": "Still have questions?",
+    "contactMessage": "We're happy to help. Contact us or use the feedback button.",
+    "contactUs": "Contact Us",
+    "applicant": {
+      "free": {
+        "question": "Is JobNachbar free?",
+        "answer": "Yes, the basic version is completely free for applicants. You can register, search for jobs and apply without paying a cent. For advanced features like unlimited AI tools, there's JobNachbar Premium."
+      },
+      "region": {
+        "question": "Which region does JobNachbar cover?",
+        "answer": "We focus on Zeven and a 30km radius. This includes Rotenburg (Wümme), Bremervörde, Sittensen, Tarmstedt, Scheeßel and many other places."
+      },
+      "howApply": {
+        "question": "How do I apply for a job?",
+        "answer": "Click on a job, then click 'Apply Now'. You can upload your resume and add a cover letter. The employer receives your application directly."
+      },
+      "uploadCv": {
+        "question": "Can I upload my resume?",
+        "answer": "Yes! Go to your dashboard under 'Profile' and upload your resume as PDF. It will then be sent automatically with every application."
+      },
+      "premium": {
+        "question": "What is JobNachbar Premium?",
+        "answer": "With Premium (€4.99/month) you get unlimited access to our AI tools: Resume Generator, Cover Letter Generator, Interview Coach and more."
+      },
+      "notifications": {
+        "question": "How do I find out about new matching jobs?",
+        "answer": "Enable email notifications in your profile. We'll then automatically send you new jobs that match your preferences."
+      },
+      "dataSafe": {
+        "question": "Is my data safe?",
+        "answer": "Yes. We store your data GDPR-compliant in Germany. Your profile is only visible to employers you apply to."
+      }
+    },
+    "employer": {
+      "cost": {
+        "question": "What does a job posting cost?",
+        "answer": "We offer various packages - starting from €29 per month. You can find all details on our pricing page."
+      },
+      "duration": {
+        "question": "How long does my listing run?",
+        "answer": "Depending on the package, 30, 60 or 90 days. You can extend or pause it at any time."
+      },
+      "multipleJobs": {
+        "question": "Can I post multiple jobs at once?",
+        "answer": "Yes, with our Starter and Professional packages you can have multiple positions online simultaneously."
+      },
+      "receiveApplications": {
+        "question": "How do applications reach me?",
+        "answer": "You'll receive an email notification and can manage and respond to all applications in your dashboard."
+      }
+    },
+    "general": {
+      "whoIsBehind": {
+        "question": "Who is behind JobNachbar?",
+        "answer": "JobNachbar was founded in 2026. Learn more on our 'About Us' page."
+      },
+      "feedback": {
+        "question": "I found a bug / have an idea",
+        "answer": "Great! Use the feedback button on any page or contact us via the contact form."
+      },
+      "deleteAccount": {
+        "question": "How can I delete my account?",
+        "answer": "Send us a short email to info@jobnachbar.com and we'll delete all your data within 48 hours."
+      },
+      "mobileApp": {
+        "question": "Is there an app for JobNachbar?",
+        "answer": "JobNachbar is optimized as a Progressive Web App (PWA). You can add the website to your phone's home screen and use it like an app - no app store download needed."
+      }
+    }
+  },
   "help": {
     "title": "Help & Tutorials",
     "subtitle": "Everything you need to know to get the most out of JobNachbar",
