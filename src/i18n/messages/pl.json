@@ -1,0 +1,555 @@
+{
+  "common": {
+    "loading": "Ładowanie...",
+    "error": "Wystąpił błąd",
+    "success": "Sukces!",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "delete": "Usuń",
+    "edit": "Edytuj",
+    "back": "Wstecz",
+    "next": "Dalej",
+    "submit": "Wyślij",
+    "search": "Szukaj",
+    "filter": "Filtruj",
+    "all": "Wszystkie",
+    "close": "Zamknij",
+    "yes": "Tak",
+    "no": "Nie",
+    "or": "lub",
+    "and": "i",
+    "required": "Wymagane",
+    "optional": "Opcjonalne",
+    "learnMore": "Dowiedz się więcej",
+    "seeAll": "Zobacz wszystkie",
+    "noResults": "Nie znaleziono wyników",
+    "tryAgain": "Spróbuj ponownie"
+  },
+  "nav": {
+    "home": "Strona główna",
+    "jobs": "Znajdź pracę",
+    "forEmployers": "Dla pracodawców",
+    "pricing": "Cennik",
+    "applicationTips": "Porady aplikacyjne",
+    "contact": "Kontakt",
+    "login": "Zaloguj się",
+    "register": "Zarejestruj się za darmo",
+    "dashboard": "Panel",
+    "profile": "Profil",
+    "settings": "Ustawienia",
+    "favorites": "Ulubione",
+    "logout": "Wyloguj się",
+    "notifications": "Powiadomienia",
+    "allRead": "Oznacz wszystkie jako przeczytane",
+    "noNotifications": "Brak powiadomień"
+  },
+  "home": {
+    "hero": {
+      "title": "Znajdź pracę",
+      "titleHighlight": "w sąsiedztwie",
+      "subtitle": "Lokalny portal pracy dla Zeven, Rotenburg i okolic. Szybko, łatwo i regionalnie.",
+      "searchPlaceholder": "Praca, zawód lub słowo kluczowe",
+      "searchButton": "Szukaj pracy",
+      "stats": {
+        "jobs": "Aktywne oferty",
+        "companies": "Firmy",
+        "locations": "Lokalizacje"
+      }
+    },
+    "features": {
+      "title": "Dlaczego JobNachbar?",
+      "local": {
+        "title": "100% Lokalnie",
+        "description": "Tylko prawdziwe oferty z Zeven i okolic 30km. Bez dojazdów do Hamburga."
+      },
+      "fast": {
+        "title": "Szybko i Łatwo",
+        "description": "Rejestracja w 5 minut, aplikacja w 5 sekund. Bezpośrednio do lokalnego pracodawcy."
+      },
+      "fair": {
+        "title": "Uczciwe dla wszystkich",
+        "description": "Bezpłatnie dla kandydatów. Uczciwe ceny dla lokalnych firm."
+      },
+      "smart": {
+        "title": "Inteligentne dopasowanie",
+        "description": "Znajdujemy oferty, które do Ciebie pasują. Automatycznie i za darmo."
+      }
+    },
+    "testimonials": {
+      "title": "Co mówią nasi użytkownicy",
+      "employers": "Pracodawcy",
+      "applicants": "Kandydaci"
+    },
+    "cta": {
+      "title": "Gotowy na następną pracę?",
+      "subtitle": "Zarejestruj się za darmo i odkryj oferty w pobliżu.",
+      "button": "Zacznij za darmo"
+    }
+  },
+  "jobs": {
+    "title": "Praca w pobliżu",
+    "subtitle": "Znajdź wymarzoną pracę w Zeven i okolicach",
+    "filters": {
+      "industry": "Branża",
+      "employmentType": "Rodzaj zatrudnienia",
+      "location": "Lokalizacja",
+      "salary": "Wynagrodzenie",
+      "allIndustries": "Wszystkie branże",
+      "allTypes": "Wszystkie typy"
+    },
+    "card": {
+      "posted": "Opublikowano",
+      "apply": "Aplikuj teraz",
+      "save": "Zapisz",
+      "saved": "Zapisano",
+      "views": "Wyświetlenia",
+      "applications": "Aplikacje",
+      "deadline": "Termin składania",
+      "startDate": "Data rozpoczęcia",
+      "boosted": "Wyróżnione"
+    },
+    "detail": {
+      "description": "Opis",
+      "requirements": "Wymagania",
+      "benefits": "Co oferujemy",
+      "about": "O firmie",
+      "applyNow": "Aplikuj teraz",
+      "share": "Udostępnij",
+      "report": "Zgłoś",
+      "similarJobs": "Podobne oferty"
+    },
+    "noJobs": "Nie znaleziono ofert. Spróbuj innych filtrów.",
+    "loadMore": "Załaduj więcej ofert"
+  },
+  "application": {
+    "title": "Aplikacja",
+    "coverLetter": "List motywacyjny",
+    "coverLetterPlaceholder": "Napisz tutaj swój list motywacyjny...",
+    "cv": "CV",
+    "uploadCv": "Prześlij CV",
+    "useSavedCv": "Użyj zapisanego CV",
+    "submit": "Wyślij aplikację",
+    "success": "Aplikacja wysłana pomyślnie!",
+    "successMessage": "Pracodawca został powiadomiony i skontaktuje się z Tobą.",
+    "alreadyApplied": "Już aplikowałeś na to stanowisko.",
+    "status": {
+      "new": "Nowa",
+      "viewed": "Wyświetlona",
+      "accepted": "Zaproszenie",
+      "rejected": "Odrzucona"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Witaj ponownie",
+      "subtitle": "Zaloguj się, aby kontynuować",
+      "email": "Adres e-mail",
+      "password": "Hasło",
+      "rememberMe": "Zapamiętaj mnie",
+      "forgotPassword": "Zapomniałeś hasła?",
+      "submit": "Zaloguj się",
+      "noAccount": "Nie masz konta?",
+      "register": "Zarejestruj się teraz",
+      "error": "Nieprawidłowy e-mail lub hasło"
+    },
+    "register": {
+      "title": "Utwórz konto",
+      "subtitle": "Rozpocznij poszukiwanie pracy",
+      "asApplicant": "Jako kandydat",
+      "asEmployer": "Jako pracodawca",
+      "applicantTitle": "Utwórz konto kandydata",
+      "employerTitle": "Utwórz konto pracodawcy",
+      "step": "Krok",
+      "of": "z",
+      "personalInfo": "Dane osobowe",
+      "location": "Lokalizacja",
+      "preferences": "Preferencje",
+      "profile": "Profil",
+      "complete": "Zakończ",
+      "email": "Adres e-mail",
+      "password": "Hasło",
+      "confirmPassword": "Potwierdź hasło",
+      "firstName": "Imię",
+      "lastName": "Nazwisko",
+      "phone": "Numer telefonu",
+      "birthdate": "Data urodzenia",
+      "zipCode": "Kod pocztowy",
+      "city": "Miasto",
+      "radius": "Promień wyszukiwania",
+      "industries": "Branże",
+      "employmentTypes": "Rodzaje zatrudnienia",
+      "experience": "Doświadczenie zawodowe",
+      "availableFrom": "Dostępny od",
+      "salary": "Oczekiwania płacowe",
+      "aboutMe": "O mnie",
+      "notifications": "Powiadomienia",
+      "emailNotifications": "Powiadomienia e-mail",
+      "whatsappNotifications": "Powiadomienia WhatsApp",
+      "termsAgree": "Akceptuję",
+      "terms": "Regulamin",
+      "privacy": "Politykę prywatności",
+      "submit": "Zarejestruj się",
+      "hasAccount": "Masz już konto?",
+      "login": "Zaloguj się",
+      "success": "Witaj w JobNachbar!",
+      "verifyEmail": "Potwierdź swój adres e-mail"
+    },
+    "forgotPassword": {
+      "title": "Zapomniałeś hasła",
+      "subtitle": "Wpisz swój e-mail, a wyślemy Ci link do resetowania.",
+      "email": "Adres e-mail",
+      "submit": "Wyślij link",
+      "success": "E-mail wysłany! Sprawdź skrzynkę odbiorczą.",
+      "backToLogin": "Wróć do logowania"
+    },
+    "resetPassword": {
+      "title": "Nowe hasło",
+      "subtitle": "Wpisz swoje nowe hasło.",
+      "password": "Nowe hasło",
+      "confirmPassword": "Potwierdź hasło",
+      "submit": "Zmień hasło",
+      "success": "Hasło zmienione pomyślnie!",
+      "error": "Link jest nieprawidłowy lub wygasł."
+    },
+    "verifyEmail": {
+      "title": "Weryfikacja e-mail",
+      "verifying": "Weryfikowanie e-maila...",
+      "success": "E-mail zweryfikowany pomyślnie!",
+      "error": "Link jest nieprawidłowy lub wygasł.",
+      "resend": "Wyślij ponownie"
+    }
+  },
+  "dashboard": {
+    "welcome": "Witaj ponownie",
+    "overview": "Przegląd",
+    "applicant": {
+      "title": "Mój panel",
+      "matches": "Pasujące oferty",
+      "applications": "Moje aplikacje",
+      "profile": "Mój profil",
+      "favorites": "Ulubione",
+      "noMatches": "Nie znaleziono pasujących ofert. Zaktualizuj profil dla lepszych wyników.",
+      "noApplications": "Nie wysłałeś jeszcze żadnych aplikacji.",
+      "profileComplete": "Profil kompletny",
+      "profileIncomplete": "Uzupełnij profil dla lepszych wyników"
+    },
+    "employer": {
+      "title": "Panel firmy",
+      "jobs": "Moje oferty",
+      "applications": "Aplikacje",
+      "company": "Firma",
+      "subscription": "Subskrypcja",
+      "createJob": "Dodaj ofertę",
+      "noJobs": "Nie dodałeś jeszcze żadnych ofert.",
+      "noApplications": "Brak nowych aplikacji.",
+      "viewAll": "Zobacz wszystkie"
+    }
+  },
+  "tips": {
+    "title": "Porady aplikacyjne",
+    "subtitle": "Wszystko, czego potrzebujesz do udanej aplikacji",
+    "cv": {
+      "title": "CV",
+      "description": "Porady dla idealnego CV",
+      "check": "Sprawdź CV",
+      "generator": "Utwórz CV"
+    },
+    "coverLetter": {
+      "title": "List motywacyjny",
+      "description": "Jak przekonać w liście motywacyjnym",
+      "generator": "Utwórz list"
+    },
+    "interview": {
+      "title": "Rozmowa kwalifikacyjna",
+      "description": "Porady na rozmowę kwalifikacyjną",
+      "coach": "Trener rozmów"
+    },
+    "salary": {
+      "title": "Wynagrodzenie",
+      "description": "Ile możesz zarobić?",
+      "calculator": "Kalkulator wynagrodzeń"
+    },
+    "industries": {
+      "title": "Branże",
+      "description": "Informacje o branżach w Twoim regionie"
+    },
+    "premium": {
+      "title": "Funkcje Premium",
+      "description": "Z JobNachbar Premium otrzymujesz nieograniczony dostęp do wszystkich narzędzi AI.",
+      "upgrade": "Zostań Premium"
+    },
+    "usage": {
+      "remaining": "Pozostało w tym miesiącu",
+      "unlimited": "Nieograniczone z Premium"
+    }
+  },
+  "pricing": {
+    "title": "Uczciwe ceny dla wszystkich",
+    "subtitle": "Wybierz odpowiedni pakiet dla swojej firmy",
+    "monthly": "Miesięcznie",
+    "yearly": "Rocznie",
+    "yearlyDiscount": "2 miesiące gratis",
+    "applicant": {
+      "title": "Dla kandydatów",
+      "free": {
+        "title": "Za darmo",
+        "price": "0€",
+        "features": [
+          "Szukaj i aplikuj na oferty",
+          "Utwórz profil",
+          "Prześlij CV",
+          "1x sprawdzenie CV/miesiąc",
+          "1x sprawdzenie listu/miesiąc",
+          "3 pytania rekrutacyjne"
+        ]
+      },
+      "premium": {
+        "title": "Premium",
+        "price": "4,99€",
+        "period": "/miesiąc",
+        "yearlyPrice": "29€/rok",
+        "features": [
+          "Wszystko z wersji darmowej",
+          "Nieograniczone narzędzia AI",
+          "Generator CV z PDF",
+          "Generator listów z PDF",
+          "Nieograniczony trener rozmów",
+          "Szczegółowe porównanie wynagrodzeń",
+          "Znaczek priorytetowy w aplikacjach"
+        ]
+      }
+    },
+    "employer": {
+      "title": "Dla pracodawców",
+      "starter": {
+        "title": "Starter",
+        "price": "29€",
+        "period": "/miesiąc",
+        "features": [
+          "1 aktywna oferta pracy",
+          "30 dni trwania",
+          "Zarządzanie aplikacjami",
+          "Powiadomienia e-mail"
+        ]
+      },
+      "professional": {
+        "title": "Professional",
+        "price": "59€",
+        "period": "/miesiąc",
+        "popular": true,
+        "features": [
+          "3 aktywne oferty pracy",
+          "60 dni trwania",
+          "Wyróżnione ogłoszenia",
+          "Wszystkie funkcje Starter",
+          "Priorytetowe wsparcie"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "price": "99€",
+        "period": "/miesiąc",
+        "features": [
+          "Nieograniczone oferty pracy",
+          "90 dni trwania",
+          "Wszystkie funkcje Professional",
+          "Osobisty opiekun",
+          "Branding pracodawcy"
+        ]
+      }
+    },
+    "cta": "Rozpocznij",
+    "contact": "Skontaktuj się",
+    "faq": "Często zadawane pytania"
+  },
+  "about": {
+    "title": "Nasza historia",
+    "subtitle": "Dlaczego założyliśmy JobNachbar"
+  },
+  "faq": {
+    "title": "Często zadawane pytania",
+    "subtitle": "Odpowiedzi na najważniejsze pytania",
+    "applicants": "Dla kandydatów",
+    "employers": "Dla pracodawców",
+    "general": "Ogólne"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Jesteśmy tu dla Ciebie",
+    "form": {
+      "name": "Imię i nazwisko",
+      "email": "E-mail",
+      "subject": "Temat",
+      "message": "Wiadomość",
+      "submit": "Wyślij wiadomość",
+      "success": "Wiadomość wysłana! Wkrótce się odezwiemy."
+    },
+    "info": {
+      "title": "Dane kontaktowe",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "address": "Adres"
+    }
+  },
+  "feedback": {
+    "title": "Przekaż opinię",
+    "rating": "Ocena",
+    "category": "Kategoria",
+    "categories": {
+      "bug": "Zgłoś błąd",
+      "improvement": "Sugestia ulepszenia",
+      "praise": "Pochwała",
+      "other": "Inne"
+    },
+    "message": "Twoja wiadomość",
+    "email": "E-mail (opcjonalnie)",
+    "emailHint": "W razie pytań",
+    "submit": "Wyślij opinię",
+    "success": "Dziękujemy za opinię!"
+  },
+  "cookies": {
+    "title": "Ustawienia plików cookie",
+    "description": "Używamy plików cookie, aby zapewnić Ci najlepsze doświadczenia.",
+    "necessary": "Niezbędne",
+    "necessaryDesc": "Te pliki cookie są wymagane do działania strony.",
+    "statistics": "Statystyki",
+    "statisticsDesc": "Pomagają nam zrozumieć, jak odwiedzający korzystają ze strony.",
+    "marketing": "Marketing",
+    "marketingDesc": "Służą do wyświetlania odpowiednich reklam.",
+    "acceptAll": "Akceptuj wszystkie",
+    "acceptNecessary": "Tylko niezbędne",
+    "settings": "Ustawienia",
+    "save": "Zapisz"
+  },
+  "onboarding": {
+    "welcome": "Witaj w JobNachbar!",
+    "skip": "Pomiń",
+    "dontShowAgain": "Nie pokazuj ponownie",
+    "applicant": {
+      "step1": {
+        "title": "Witaj w JobNachbar!",
+        "description": "Lokalny portal pracy dla Zeven i okolic."
+      },
+      "step2": {
+        "title": "Uzupełnij swój profil",
+        "description": "Im pełniejszy profil, tym lepsze propozycje pracy."
+      },
+      "step3": {
+        "title": "Prześlij swoje CV",
+        "description": "Twoje CV zostanie automatycznie dołączone do aplikacji."
+      },
+      "step4": {
+        "title": "Ustaw swoje preferencje",
+        "description": "Wybierz branże i rodzaje zatrudnienia, które Cię interesują."
+      },
+      "step5": {
+        "title": "Odkryj pasujące oferty",
+        "description": "Automatycznie pokazujemy Ci oferty dopasowane do profilu."
+      },
+      "step6": {
+        "title": "Korzystaj z narzędzi AI",
+        "description": "Sprawdzanie CV, generator listów motywacyjnych i więcej."
+      },
+      "step7": {
+        "title": "Włącz powiadomienia",
+        "description": "Otrzymuj informacje o nowych ofertach e-mailem."
+      }
+    },
+    "employer": {
+      "step1": {
+        "title": "Witaj w JobNachbar!",
+        "description": "Znajdź wykwalifikowanych pracowników z regionu."
+      },
+      "step2": {
+        "title": "Uzupełnij profil firmy",
+        "description": "Pełny profil wygląda profesjonalnie."
+      },
+      "step3": {
+        "title": "Dodaj pierwszą ofertę",
+        "description": "Opisz stanowisko i wymagania."
+      },
+      "step4": {
+        "title": "Zarządzaj aplikacjami",
+        "description": "Wszystkie aplikacje w jednym miejscu."
+      },
+      "step5": {
+        "title": "Wybierz subskrypcję",
+        "description": "Różne pakiety dla różnych potrzeb."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Lokalny portal pracy dla Zeven i okolic",
+    "applicants": "Dla kandydatów",
+    "employers": "Dla pracodawców",
+    "company": "Firma",
+    "legal": "Informacje prawne",
+    "links": {
+      "jobs": "Znajdź pracę",
+      "tips": "Porady aplikacyjne",
+      "faq": "FAQ",
+      "pricing": "Cennik",
+      "postJob": "Dodaj ofertę",
+      "about": "O nas",
+      "contact": "Kontakt",
+      "help": "Pomoc",
+      "imprint": "Impressum",
+      "privacy": "Polityka prywatności",
+      "terms": "Regulamin"
+    },
+    "copyright": "© {year} JobNachbar. Wszelkie prawa zastrzeżone."
+  },
+  "errors": {
+    "404": {
+      "title": "Nie znaleziono strony",
+      "description": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
+      "backHome": "Wróć do strony głównej"
+    },
+    "500": {
+      "title": "Błąd serwera",
+      "description": "Coś poszło nie tak. Spróbuj ponownie później."
+    },
+    "network": "Błąd sieci. Sprawdź połączenie internetowe.",
+    "unauthorized": "Nie masz uprawnień do wyświetlenia tej strony.",
+    "validation": {
+      "required": "To pole jest wymagane",
+      "email": "Wprowadź prawidłowy adres e-mail",
+      "password": "Hasło musi mieć co najmniej 8 znaków",
+      "passwordMatch": "Hasła nie są zgodne",
+      "phone": "Wprowadź prawidłowy numer telefonu",
+      "zipCode": "Wprowadź prawidłowy kod pocztowy",
+      "minLength": "Wymagane co najmniej {min} znaków",
+      "maxLength": "Maksymalnie {max} znaków dozwolonych"
+    }
+  },
+  "industries": {
+    "handwerk": "Rzemiosło",
+    "pflege_gesundheit": "Opieka zdrowotna",
+    "gastro_hotel": "Gastronomia i hotelarstwo",
+    "einzelhandel": "Handel detaliczny",
+    "logistik_transport": "Logistyka i transport",
+    "industrie_produktion": "Przemysł i produkcja",
+    "buero_verwaltung": "Biuro i administracja",
+    "it_technik": "IT i technologia",
+    "bau_architektur": "Budownictwo i architektura",
+    "landwirtschaft": "Rolnictwo",
+    "bildung_soziales": "Edukacja i praca socjalna",
+    "sonstiges": "Inne"
+  },
+  "employmentTypes": {
+    "vollzeit": "Pełny etat",
+    "teilzeit": "Część etatu",
+    "minijob": "Mini-job",
+    "ausbildung": "Praktyka zawodowa",
+    "praktikum": "Staż",
+    "werkstudent": "Student pracujący",
+    "freelance": "Freelance"
+  },
+  "email": {
+    "greeting": "Cześć {name}",
+    "regards": "Pozdrawiamy",
+    "team": "Zespół JobNachbar",
+    "unsubscribe": "Zmień ustawienia e-mail",
+    "footer": "Ta wiadomość została wysłana automatycznie przez JobNachbar."
+  }
+}

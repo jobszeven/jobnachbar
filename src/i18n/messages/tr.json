@@ -1,0 +1,555 @@
+{
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "success": "Başarılı!",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "back": "Geri",
+    "next": "İleri",
+    "submit": "Gönder",
+    "search": "Ara",
+    "filter": "Filtrele",
+    "all": "Tümü",
+    "close": "Kapat",
+    "yes": "Evet",
+    "no": "Hayır",
+    "or": "veya",
+    "and": "ve",
+    "required": "Zorunlu",
+    "optional": "İsteğe bağlı",
+    "learnMore": "Daha fazla bilgi",
+    "seeAll": "Tümünü gör",
+    "noResults": "Sonuç bulunamadı",
+    "tryAgain": "Tekrar dene"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "jobs": "İş Bul",
+    "forEmployers": "İşverenler İçin",
+    "pricing": "Fiyatlar",
+    "applicationTips": "Başvuru İpuçları",
+    "contact": "İletişim",
+    "login": "Giriş Yap",
+    "register": "Ücretsiz Kayıt",
+    "dashboard": "Kontrol Paneli",
+    "profile": "Profil",
+    "settings": "Ayarlar",
+    "favorites": "Favoriler",
+    "logout": "Çıkış Yap",
+    "notifications": "Bildirimler",
+    "allRead": "Tümünü okundu işaretle",
+    "noNotifications": "Bildirim yok"
+  },
+  "home": {
+    "hero": {
+      "title": "İşini bul",
+      "titleHighlight": "yakınındaki",
+      "subtitle": "Zeven, Rotenburg ve çevresi için yerel iş ilanları. Hızlı, kolay ve bölgesel.",
+      "searchPlaceholder": "İş, meslek veya anahtar kelime",
+      "searchButton": "İş Ara",
+      "stats": {
+        "jobs": "Aktif İlanlar",
+        "companies": "Şirketler",
+        "locations": "Lokasyonlar"
+      }
+    },
+    "features": {
+      "title": "Neden JobNachbar?",
+      "local": {
+        "title": "%100 Bölgesel",
+        "description": "Sadece Zeven ve 30km çevresinden gerçek iş ilanları. Hamburg'a gidiş geliş yok."
+      },
+      "fast": {
+        "title": "Hızlı & Kolay",
+        "description": "5 dakikada kayıt ol, 5 saniyede başvur. Doğrudan yerel işverene."
+      },
+      "fair": {
+        "title": "Herkes İçin Adil",
+        "description": "Başvuranlar için ücretsiz. Yerel işletmeler için adil fiyatlar."
+      },
+      "smart": {
+        "title": "Akıllı Eşleştirme",
+        "description": "Size uygun işleri buluyoruz. Otomatik ve ücretsiz."
+      }
+    },
+    "testimonials": {
+      "title": "Kullanıcılarımız ne diyor",
+      "employers": "İşverenler",
+      "applicants": "Başvuranlar"
+    },
+    "cta": {
+      "title": "Sonraki işin için hazır mısın?",
+      "subtitle": "Şimdi ücretsiz kayıt ol ve yakınındaki işleri keşfet.",
+      "button": "Ücretsiz Başla"
+    }
+  },
+  "jobs": {
+    "title": "Yakınındaki İşler",
+    "subtitle": "Zeven ve çevresinde hayalindeki işi bul",
+    "filters": {
+      "industry": "Sektör",
+      "employmentType": "Çalışma Şekli",
+      "location": "Konum",
+      "salary": "Maaş",
+      "allIndustries": "Tüm Sektörler",
+      "allTypes": "Tüm Türler"
+    },
+    "card": {
+      "posted": "Yayınlandı",
+      "apply": "Şimdi Başvur",
+      "save": "Kaydet",
+      "saved": "Kaydedildi",
+      "views": "Görüntüleme",
+      "applications": "Başvuru",
+      "deadline": "Son başvuru tarihi",
+      "startDate": "Başlangıç tarihi",
+      "boosted": "Öne Çıkan"
+    },
+    "detail": {
+      "description": "Açıklama",
+      "requirements": "Gereksinimler",
+      "benefits": "Neler Sunuyoruz",
+      "about": "Şirket Hakkında",
+      "applyNow": "Şimdi Başvur",
+      "share": "Paylaş",
+      "report": "Bildir",
+      "similarJobs": "Benzer İşler"
+    },
+    "noJobs": "İş bulunamadı. Farklı filtreler deneyin.",
+    "loadMore": "Daha fazla iş yükle"
+  },
+  "application": {
+    "title": "Başvuru",
+    "coverLetter": "Ön Yazı",
+    "coverLetterPlaceholder": "Ön yazınızı buraya yazın...",
+    "cv": "Özgeçmiş",
+    "uploadCv": "Özgeçmiş yükle",
+    "useSavedCv": "Kayıtlı özgeçmişi kullan",
+    "submit": "Başvuruyu gönder",
+    "success": "Başvuru başarıyla gönderildi!",
+    "successMessage": "İşveren bilgilendirildi ve sizinle iletişime geçecek.",
+    "alreadyApplied": "Bu pozisyona zaten başvurdunuz.",
+    "status": {
+      "new": "Yeni",
+      "viewed": "Görüntülendi",
+      "accepted": "Davet Edildi",
+      "rejected": "Reddedildi"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Tekrar hoş geldiniz",
+      "subtitle": "Devam etmek için giriş yapın",
+      "email": "E-posta adresi",
+      "password": "Şifre",
+      "rememberMe": "Beni hatırla",
+      "forgotPassword": "Şifremi unuttum?",
+      "submit": "Giriş Yap",
+      "noAccount": "Hesabınız yok mu?",
+      "register": "Şimdi kayıt olun",
+      "error": "E-posta veya şifre yanlış"
+    },
+    "register": {
+      "title": "Hesap oluştur",
+      "subtitle": "İş aramanıza şimdi başlayın",
+      "asApplicant": "Başvuran Olarak",
+      "asEmployer": "İşveren Olarak",
+      "applicantTitle": "Başvuran hesabı oluştur",
+      "employerTitle": "İşveren hesabı oluştur",
+      "step": "Adım",
+      "of": "/",
+      "personalInfo": "Kişisel Bilgiler",
+      "location": "Konum",
+      "preferences": "Tercihler",
+      "profile": "Profil",
+      "complete": "Tamamla",
+      "email": "E-posta adresi",
+      "password": "Şifre",
+      "confirmPassword": "Şifre tekrar",
+      "firstName": "Ad",
+      "lastName": "Soyad",
+      "phone": "Telefon numarası",
+      "birthdate": "Doğum tarihi",
+      "zipCode": "Posta kodu",
+      "city": "Şehir",
+      "radius": "Arama yarıçapı",
+      "industries": "Sektörler",
+      "employmentTypes": "Çalışma şekilleri",
+      "experience": "İş deneyimi",
+      "availableFrom": "Müsait olduğu tarih",
+      "salary": "Maaş beklentisi",
+      "aboutMe": "Hakkımda",
+      "notifications": "Bildirimler",
+      "emailNotifications": "E-posta bildirimleri",
+      "whatsappNotifications": "WhatsApp bildirimleri",
+      "termsAgree": "Kabul ediyorum",
+      "terms": "Kullanım Koşulları",
+      "privacy": "Gizlilik Politikası",
+      "submit": "Kayıt Ol",
+      "hasAccount": "Zaten hesabınız var mı?",
+      "login": "Şimdi giriş yapın",
+      "success": "JobNachbar'a hoş geldiniz!",
+      "verifyEmail": "Lütfen e-posta adresinizi doğrulayın"
+    },
+    "forgotPassword": {
+      "title": "Şifremi unuttum",
+      "subtitle": "E-posta adresinizi girin, size sıfırlama bağlantısı gönderelim.",
+      "email": "E-posta adresi",
+      "submit": "Bağlantı gönder",
+      "success": "E-posta gönderildi! Gelen kutunuzu kontrol edin.",
+      "backToLogin": "Giriş sayfasına dön"
+    },
+    "resetPassword": {
+      "title": "Yeni şifre",
+      "subtitle": "Yeni şifrenizi girin.",
+      "password": "Yeni şifre",
+      "confirmPassword": "Şifre tekrar",
+      "submit": "Şifreyi değiştir",
+      "success": "Şifre başarıyla değiştirildi!",
+      "error": "Bağlantı geçersiz veya süresi dolmuş."
+    },
+    "verifyEmail": {
+      "title": "E-posta doğrulama",
+      "verifying": "E-posta doğrulanıyor...",
+      "success": "E-posta başarıyla doğrulandı!",
+      "error": "Bağlantı geçersiz veya süresi dolmuş.",
+      "resend": "Yeni e-posta gönder"
+    }
+  },
+  "dashboard": {
+    "welcome": "Tekrar hoş geldiniz",
+    "overview": "Genel Bakış",
+    "applicant": {
+      "title": "Kontrol Panelim",
+      "matches": "Eşleşen İşler",
+      "applications": "Başvurularım",
+      "profile": "Profilim",
+      "favorites": "Favoriler",
+      "noMatches": "Eşleşen iş bulunamadı. Daha iyi sonuçlar için profilinizi güncelleyin.",
+      "noApplications": "Henüz başvuru göndermediniz.",
+      "profileComplete": "Profil tamamlandı",
+      "profileIncomplete": "Daha iyi sonuçlar için profilinizi tamamlayın"
+    },
+    "employer": {
+      "title": "Şirket Paneli",
+      "jobs": "İlanlarım",
+      "applications": "Başvurular",
+      "company": "Şirket",
+      "subscription": "Abonelik",
+      "createJob": "İlan Oluştur",
+      "noJobs": "Henüz ilan oluşturmadınız.",
+      "noApplications": "Yeni başvuru yok.",
+      "viewAll": "Tümünü gör"
+    }
+  },
+  "tips": {
+    "title": "Başvuru İpuçları",
+    "subtitle": "Başarılı başvurunuz için ihtiyacınız olan her şey",
+    "cv": {
+      "title": "Özgeçmiş",
+      "description": "Mükemmel özgeçmiş için ipuçları",
+      "check": "Özgeçmiş kontrol",
+      "generator": "Özgeçmiş oluştur"
+    },
+    "coverLetter": {
+      "title": "Ön Yazı",
+      "description": "Ön yazınızda nasıl ikna edersiniz",
+      "generator": "Ön yazı oluştur"
+    },
+    "interview": {
+      "title": "Mülakat",
+      "description": "İş görüşmeniz için ipuçları",
+      "coach": "Mülakat Koçu"
+    },
+    "salary": {
+      "title": "Maaş",
+      "description": "Ne kadar kazanabilirsiniz?",
+      "calculator": "Maaş Hesaplayıcı"
+    },
+    "industries": {
+      "title": "Sektörler",
+      "description": "Bölgeniz için sektör bilgileri"
+    },
+    "premium": {
+      "title": "Premium Özellikler",
+      "description": "JobNachbar Premium ile tüm yapay zeka araçlarına sınırsız erişim elde edin.",
+      "upgrade": "Premium Ol"
+    },
+    "usage": {
+      "remaining": "Bu ay kalan",
+      "unlimited": "Premium ile sınırsız"
+    }
+  },
+  "pricing": {
+    "title": "Herkes için adil fiyatlar",
+    "subtitle": "Şirketiniz için doğru paketi seçin",
+    "monthly": "Aylık",
+    "yearly": "Yıllık",
+    "yearlyDiscount": "2 ay ücretsiz",
+    "applicant": {
+      "title": "Başvuranlar İçin",
+      "free": {
+        "title": "Ücretsiz",
+        "price": "0€",
+        "features": [
+          "İş ara ve başvur",
+          "Profil oluştur",
+          "Özgeçmiş yükle",
+          "Ayda 1x özgeçmiş kontrolü",
+          "Ayda 1x ön yazı kontrolü",
+          "3 mülakat sorusu"
+        ]
+      },
+      "premium": {
+        "title": "Premium",
+        "price": "4,99€",
+        "period": "/ay",
+        "yearlyPrice": "29€/yıl",
+        "features": [
+          "Ücretsiz'deki her şey",
+          "Sınırsız yapay zeka araçları",
+          "PDF ile özgeçmiş oluşturucu",
+          "PDF ile ön yazı oluşturucu",
+          "Sınırsız mülakat koçu",
+          "Detaylı maaş karşılaştırması",
+          "Başvurularda öncelik rozeti"
+        ]
+      }
+    },
+    "employer": {
+      "title": "İşverenler İçin",
+      "starter": {
+        "title": "Başlangıç",
+        "price": "29€",
+        "period": "/ay",
+        "features": [
+          "1 aktif iş ilanı",
+          "30 gün süre",
+          "Başvuruları yönet",
+          "E-posta bildirimleri"
+        ]
+      },
+      "professional": {
+        "title": "Profesyonel",
+        "price": "59€",
+        "period": "/ay",
+        "popular": true,
+        "features": [
+          "3 aktif iş ilanı",
+          "60 gün süre",
+          "Öne çıkan ilanlar",
+          "Tüm Başlangıç özellikleri",
+          "Öncelikli destek"
+        ]
+      },
+      "enterprise": {
+        "title": "Kurumsal",
+        "price": "99€",
+        "period": "/ay",
+        "features": [
+          "Sınırsız iş ilanı",
+          "90 gün süre",
+          "Tüm Profesyonel özellikler",
+          "Kişisel temsilci",
+          "İşveren markalaması"
+        ]
+      }
+    },
+    "cta": "Başla",
+    "contact": "Bize ulaşın",
+    "faq": "Sık sorulan sorular"
+  },
+  "about": {
+    "title": "Hikayemiz",
+    "subtitle": "JobNachbar'ı neden kurduk"
+  },
+  "faq": {
+    "title": "Sık Sorulan Sorular",
+    "subtitle": "En önemli sorulara yanıtlar",
+    "applicants": "Başvuranlar İçin",
+    "employers": "İşverenler İçin",
+    "general": "Genel"
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Sizin için buradayız",
+    "form": {
+      "name": "Ad",
+      "email": "E-posta",
+      "subject": "Konu",
+      "message": "Mesaj",
+      "submit": "Mesaj gönder",
+      "success": "Mesaj gönderildi! Yakında size döneceğiz."
+    },
+    "info": {
+      "title": "İletişim Bilgileri",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "address": "Adres"
+    }
+  },
+  "feedback": {
+    "title": "Geri Bildirim",
+    "rating": "Değerlendirme",
+    "category": "Kategori",
+    "categories": {
+      "bug": "Hata bildir",
+      "improvement": "İyileştirme önerisi",
+      "praise": "Övgü",
+      "other": "Diğer"
+    },
+    "message": "Mesajınız",
+    "email": "E-posta (isteğe bağlı)",
+    "emailHint": "Sorularımız olursa",
+    "submit": "Geri bildirim gönder",
+    "success": "Geri bildiriminiz için teşekkürler!"
+  },
+  "cookies": {
+    "title": "Çerez Ayarları",
+    "description": "Size en iyi deneyimi sunmak için çerezler kullanıyoruz.",
+    "necessary": "Gerekli",
+    "necessaryDesc": "Bu çerezler web sitesinin çalışması için gereklidir.",
+    "statistics": "İstatistik",
+    "statisticsDesc": "Ziyaretçilerin web sitesiyle nasıl etkileşimde bulunduğunu anlamamıza yardımcı olur.",
+    "marketing": "Pazarlama",
+    "marketingDesc": "İlgili reklamları göstermek için kullanılır.",
+    "acceptAll": "Tümünü kabul et",
+    "acceptNecessary": "Sadece gerekli",
+    "settings": "Ayarlar",
+    "save": "Kaydet"
+  },
+  "onboarding": {
+    "welcome": "JobNachbar'a hoş geldiniz!",
+    "skip": "Atla",
+    "dontShowAgain": "Tekrar gösterme",
+    "applicant": {
+      "step1": {
+        "title": "JobNachbar'a hoş geldiniz!",
+        "description": "Zeven ve çevresi için yerel iş ilanları."
+      },
+      "step2": {
+        "title": "Profilinizi tamamlayın",
+        "description": "Profiliniz ne kadar eksiksizse, iş önerileri o kadar iyi."
+      },
+      "step3": {
+        "title": "Özgeçmişinizi yükleyin",
+        "description": "Özgeçmişiniz başvurulara otomatik olarak eklenir."
+      },
+      "step4": {
+        "title": "Tercihlerinizi ayarlayın",
+        "description": "İlgi alanlarınıza göre sektörleri ve çalışma şekillerini seçin."
+      },
+      "step5": {
+        "title": "Eşleşen işleri keşfedin",
+        "description": "Size uygun işleri otomatik olarak gösteriyoruz."
+      },
+      "step6": {
+        "title": "Yapay zeka araçlarımızı kullanın",
+        "description": "Özgeçmiş kontrolü, ön yazı oluşturucu ve daha fazlası."
+      },
+      "step7": {
+        "title": "Bildirimleri etkinleştirin",
+        "description": "Yeni eşleşen işler hakkında e-posta ile bilgilendirilir."
+      }
+    },
+    "employer": {
+      "step1": {
+        "title": "JobNachbar'a hoş geldiniz!",
+        "description": "Bölgeden nitelikli çalışanlar bulun."
+      },
+      "step2": {
+        "title": "Şirket profilinizi tamamlayın",
+        "description": "Eksiksiz bir profil profesyonel görünür."
+      },
+      "step3": {
+        "title": "İlk ilanınızı oluşturun",
+        "description": "Pozisyonu ve gereksinimleri tanımlayın."
+      },
+      "step4": {
+        "title": "Başvuruları yönetin",
+        "description": "Tüm başvurular tek bir yerde."
+      },
+      "step5": {
+        "title": "Aboneliğinizi seçin",
+        "description": "Farklı ihtiyaçlar için farklı paketler."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Zeven ve çevresi için yerel iş ilanları",
+    "applicants": "Başvuranlar İçin",
+    "employers": "İşverenler İçin",
+    "company": "Şirket",
+    "legal": "Yasal",
+    "links": {
+      "jobs": "İş Bul",
+      "tips": "Başvuru İpuçları",
+      "faq": "SSS",
+      "pricing": "Fiyatlar",
+      "postJob": "İlan Ver",
+      "about": "Hakkımızda",
+      "contact": "İletişim",
+      "help": "Yardım",
+      "imprint": "Künye",
+      "privacy": "Gizlilik Politikası",
+      "terms": "Kullanım Koşulları"
+    },
+    "copyright": "© {year} JobNachbar. Tüm hakları saklıdır."
+  },
+  "errors": {
+    "404": {
+      "title": "Sayfa bulunamadı",
+      "description": "Aradığınız sayfa mevcut değil veya taşındı.",
+      "backHome": "Ana sayfaya dön"
+    },
+    "500": {
+      "title": "Sunucu hatası",
+      "description": "Bir şeyler yanlış gitti. Lütfen daha sonra tekrar deneyin."
+    },
+    "network": "Ağ hatası. Lütfen internet bağlantınızı kontrol edin.",
+    "unauthorized": "Bu sayfayı görüntüleme yetkiniz yok.",
+    "validation": {
+      "required": "Bu alan gereklidir",
+      "email": "Lütfen geçerli bir e-posta adresi girin",
+      "password": "Şifre en az 8 karakter olmalıdır",
+      "passwordMatch": "Şifreler eşleşmiyor",
+      "phone": "Lütfen geçerli bir telefon numarası girin",
+      "zipCode": "Lütfen geçerli bir posta kodu girin",
+      "minLength": "En az {min} karakter gerekli",
+      "maxLength": "En fazla {max} karakter izin verilir"
+    }
+  },
+  "industries": {
+    "handwerk": "El Sanatları",
+    "pflege_gesundheit": "Sağlık Hizmetleri",
+    "gastro_hotel": "Gastronomi & Otel",
+    "einzelhandel": "Perakende",
+    "logistik_transport": "Lojistik & Nakliye",
+    "industrie_produktion": "Sanayi & Üretim",
+    "buero_verwaltung": "Ofis & Yönetim",
+    "it_technik": "BT & Teknoloji",
+    "bau_architektur": "İnşaat & Mimarlık",
+    "landwirtschaft": "Tarım",
+    "bildung_soziales": "Eğitim & Sosyal Hizmetler",
+    "sonstiges": "Diğer"
+  },
+  "employmentTypes": {
+    "vollzeit": "Tam Zamanlı",
+    "teilzeit": "Yarı Zamanlı",
+    "minijob": "Mini İş",
+    "ausbildung": "Staj",
+    "praktikum": "Pratik",
+    "werkstudent": "Çalışan Öğrenci",
+    "freelance": "Serbest"
+  },
+  "email": {
+    "greeting": "Merhaba {name}",
+    "regards": "Saygılarımızla",
+    "team": "JobNachbar Ekibiniz",
+    "unsubscribe": "E-posta ayarlarını değiştir",
+    "footer": "Bu e-posta JobNachbar tarafından otomatik olarak gönderilmiştir."
+  }
+}

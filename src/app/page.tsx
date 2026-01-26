@@ -1,7 +1,11 @@
 import Link from 'next/link'
+import { Suspense } from 'react'
 import { Users, Zap, MapPin, CheckCircle, ArrowRight, Clock, Shield, Euro } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import TestimonialsSlider from '@/components/TestimonialsSlider'
+import StatsSection from '@/components/StatsSection'
+import { Skeleton } from '@/components/ui/Skeleton'
 
 export default function Home() {
   return (
@@ -61,6 +65,34 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Slider */}
+      <TestimonialsSlider />
+
+      {/* Stats Section */}
+      <Suspense
+        fallback={
+          <section className="py-16 bg-brand-dark-lighter">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <Skeleton className="h-10 w-64 mx-auto mb-4" />
+                <Skeleton className="h-6 w-96 mx-auto" />
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                {[1, 2, 3, 4].map((i) => (
+                  <div key={i} className="card text-center">
+                    <Skeleton className="w-14 h-14 rounded-xl mx-auto mb-4" />
+                    <Skeleton className="h-12 w-24 mx-auto mb-2" />
+                    <Skeleton className="h-5 w-32 mx-auto" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        }
+      >
+        <StatsSection />
+      </Suspense>
 
       {/* How it Works - Job Seekers */}
       <section className="py-20 border-t border-gray-800">

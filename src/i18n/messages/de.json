@@ -1,0 +1,555 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "error": "Ein Fehler ist aufgetreten",
+    "success": "Erfolgreich!",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "back": "Zurück",
+    "next": "Weiter",
+    "submit": "Absenden",
+    "search": "Suchen",
+    "filter": "Filtern",
+    "all": "Alle",
+    "close": "Schließen",
+    "yes": "Ja",
+    "no": "Nein",
+    "or": "oder",
+    "and": "und",
+    "required": "Pflichtfeld",
+    "optional": "Optional",
+    "learnMore": "Mehr erfahren",
+    "seeAll": "Alle anzeigen",
+    "noResults": "Keine Ergebnisse gefunden",
+    "tryAgain": "Erneut versuchen"
+  },
+  "nav": {
+    "home": "Startseite",
+    "jobs": "Jobs finden",
+    "forEmployers": "Für Arbeitgeber",
+    "pricing": "Preise",
+    "applicationTips": "Bewerbungstipps",
+    "contact": "Kontakt",
+    "login": "Anmelden",
+    "register": "Kostenlos registrieren",
+    "dashboard": "Dashboard",
+    "profile": "Profil",
+    "settings": "Einstellungen",
+    "favorites": "Favoriten",
+    "logout": "Abmelden",
+    "notifications": "Benachrichtigungen",
+    "allRead": "Alle gelesen",
+    "noNotifications": "Keine Benachrichtigungen"
+  },
+  "home": {
+    "hero": {
+      "title": "Finde deinen Job",
+      "titleHighlight": "in der Nachbarschaft",
+      "subtitle": "Die lokale Jobbörse für Zeven, Rotenburg und Umgebung. Schnell, einfach und regional.",
+      "searchPlaceholder": "Job, Beruf oder Stichwort",
+      "searchButton": "Jobs suchen",
+      "stats": {
+        "jobs": "Aktive Jobs",
+        "companies": "Unternehmen",
+        "locations": "Orte"
+      }
+    },
+    "features": {
+      "title": "Warum JobNachbar?",
+      "local": {
+        "title": "100% Regional",
+        "description": "Nur echte Jobs aus Zeven und 30km Umgebung. Keine Pendelei nach Hamburg."
+      },
+      "fast": {
+        "title": "Schnell & Einfach",
+        "description": "In 5 Minuten registriert, in 5 Sekunden beworben. Direkt beim lokalen Arbeitgeber."
+      },
+      "fair": {
+        "title": "Fair für Alle",
+        "description": "Kostenlos für Bewerber. Faire Preise für lokale Unternehmen."
+      },
+      "smart": {
+        "title": "Intelligentes Matching",
+        "description": "Wir finden Jobs, die zu dir passen. Automatisch und kostenlos."
+      }
+    },
+    "testimonials": {
+      "title": "Das sagen unsere Nutzer",
+      "employers": "Arbeitgeber",
+      "applicants": "Bewerber"
+    },
+    "cta": {
+      "title": "Bereit für deinen nächsten Job?",
+      "subtitle": "Jetzt kostenlos registrieren und Jobs in deiner Nähe entdecken.",
+      "button": "Kostenlos starten"
+    }
+  },
+  "jobs": {
+    "title": "Jobs in deiner Nähe",
+    "subtitle": "Finde deinen Traumjob in Zeven und Umgebung",
+    "filters": {
+      "industry": "Branche",
+      "employmentType": "Anstellungsart",
+      "location": "Ort",
+      "salary": "Gehalt",
+      "allIndustries": "Alle Branchen",
+      "allTypes": "Alle Arten"
+    },
+    "card": {
+      "posted": "Veröffentlicht",
+      "apply": "Jetzt bewerben",
+      "save": "Merken",
+      "saved": "Gemerkt",
+      "views": "Aufrufe",
+      "applications": "Bewerbungen",
+      "deadline": "Bewerbungsfrist",
+      "startDate": "Startdatum",
+      "boosted": "Hervorgehoben"
+    },
+    "detail": {
+      "description": "Beschreibung",
+      "requirements": "Anforderungen",
+      "benefits": "Was wir bieten",
+      "about": "Über das Unternehmen",
+      "applyNow": "Jetzt bewerben",
+      "share": "Teilen",
+      "report": "Melden",
+      "similarJobs": "Ähnliche Jobs"
+    },
+    "noJobs": "Keine Jobs gefunden. Versuche andere Filter.",
+    "loadMore": "Weitere Jobs laden"
+  },
+  "application": {
+    "title": "Bewerbung",
+    "coverLetter": "Anschreiben",
+    "coverLetterPlaceholder": "Schreibe hier dein Anschreiben...",
+    "cv": "Lebenslauf",
+    "uploadCv": "Lebenslauf hochladen",
+    "useSavedCv": "Gespeicherten Lebenslauf verwenden",
+    "submit": "Bewerbung absenden",
+    "success": "Bewerbung erfolgreich gesendet!",
+    "successMessage": "Der Arbeitgeber wurde benachrichtigt und wird sich bei dir melden.",
+    "alreadyApplied": "Du hast dich bereits auf diese Stelle beworben.",
+    "status": {
+      "new": "Neu",
+      "viewed": "Angesehen",
+      "accepted": "Eingeladen",
+      "rejected": "Abgelehnt"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Willkommen zurück",
+      "subtitle": "Melde dich an, um fortzufahren",
+      "email": "E-Mail-Adresse",
+      "password": "Passwort",
+      "rememberMe": "Angemeldet bleiben",
+      "forgotPassword": "Passwort vergessen?",
+      "submit": "Anmelden",
+      "noAccount": "Noch kein Konto?",
+      "register": "Jetzt registrieren",
+      "error": "E-Mail oder Passwort ist falsch"
+    },
+    "register": {
+      "title": "Konto erstellen",
+      "subtitle": "Starte jetzt deine Jobsuche",
+      "asApplicant": "Als Bewerber",
+      "asEmployer": "Als Arbeitgeber",
+      "applicantTitle": "Bewerber-Konto erstellen",
+      "employerTitle": "Arbeitgeber-Konto erstellen",
+      "step": "Schritt",
+      "of": "von",
+      "personalInfo": "Persönliche Daten",
+      "location": "Standort",
+      "preferences": "Präferenzen",
+      "profile": "Profil",
+      "complete": "Fertig",
+      "email": "E-Mail-Adresse",
+      "password": "Passwort",
+      "confirmPassword": "Passwort bestätigen",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "phone": "Telefonnummer",
+      "birthdate": "Geburtsdatum",
+      "zipCode": "Postleitzahl",
+      "city": "Ort",
+      "radius": "Suchradius",
+      "industries": "Branchen",
+      "employmentTypes": "Anstellungsarten",
+      "experience": "Berufserfahrung",
+      "availableFrom": "Verfügbar ab",
+      "salary": "Gehaltsvorstellung",
+      "aboutMe": "Über mich",
+      "notifications": "Benachrichtigungen",
+      "emailNotifications": "E-Mail-Benachrichtigungen",
+      "whatsappNotifications": "WhatsApp-Benachrichtigungen",
+      "termsAgree": "Ich akzeptiere die",
+      "terms": "AGB",
+      "privacy": "Datenschutzerklärung",
+      "submit": "Registrieren",
+      "hasAccount": "Bereits ein Konto?",
+      "login": "Jetzt anmelden",
+      "success": "Willkommen bei JobNachbar!",
+      "verifyEmail": "Bitte bestätige deine E-Mail-Adresse"
+    },
+    "forgotPassword": {
+      "title": "Passwort vergessen",
+      "subtitle": "Gib deine E-Mail ein und wir senden dir einen Link zum Zurücksetzen.",
+      "email": "E-Mail-Adresse",
+      "submit": "Link senden",
+      "success": "E-Mail gesendet! Prüfe dein Postfach.",
+      "backToLogin": "Zurück zum Login"
+    },
+    "resetPassword": {
+      "title": "Neues Passwort",
+      "subtitle": "Gib dein neues Passwort ein.",
+      "password": "Neues Passwort",
+      "confirmPassword": "Passwort bestätigen",
+      "submit": "Passwort ändern",
+      "success": "Passwort erfolgreich geändert!",
+      "error": "Der Link ist ungültig oder abgelaufen."
+    },
+    "verifyEmail": {
+      "title": "E-Mail bestätigen",
+      "verifying": "E-Mail wird bestätigt...",
+      "success": "E-Mail erfolgreich bestätigt!",
+      "error": "Der Link ist ungültig oder abgelaufen.",
+      "resend": "Neue E-Mail senden"
+    }
+  },
+  "dashboard": {
+    "welcome": "Willkommen zurück",
+    "overview": "Übersicht",
+    "applicant": {
+      "title": "Mein Dashboard",
+      "matches": "Passende Jobs",
+      "applications": "Meine Bewerbungen",
+      "profile": "Mein Profil",
+      "favorites": "Favoriten",
+      "noMatches": "Keine passenden Jobs gefunden. Aktualisiere dein Profil für bessere Ergebnisse.",
+      "noApplications": "Du hast noch keine Bewerbungen gesendet.",
+      "profileComplete": "Profil vollständig",
+      "profileIncomplete": "Vervollständige dein Profil für bessere Ergebnisse"
+    },
+    "employer": {
+      "title": "Firmen-Dashboard",
+      "jobs": "Meine Stellen",
+      "applications": "Bewerbungen",
+      "company": "Unternehmen",
+      "subscription": "Abo",
+      "createJob": "Stelle erstellen",
+      "noJobs": "Du hast noch keine Stellen erstellt.",
+      "noApplications": "Keine neuen Bewerbungen.",
+      "viewAll": "Alle anzeigen"
+    }
+  },
+  "tips": {
+    "title": "Bewerbungstipps",
+    "subtitle": "Alles was du für deine erfolgreiche Bewerbung brauchst",
+    "cv": {
+      "title": "Lebenslauf",
+      "description": "Tipps für den perfekten Lebenslauf",
+      "check": "Lebenslauf prüfen",
+      "generator": "Lebenslauf erstellen"
+    },
+    "coverLetter": {
+      "title": "Anschreiben",
+      "description": "So überzeugst du im Anschreiben",
+      "generator": "Anschreiben erstellen"
+    },
+    "interview": {
+      "title": "Vorstellungsgespräch",
+      "description": "Tipps für dein Vorstellungsgespräch",
+      "coach": "Interview-Coach"
+    },
+    "salary": {
+      "title": "Gehalt",
+      "description": "Was kannst du verdienen?",
+      "calculator": "Gehaltsrechner"
+    },
+    "industries": {
+      "title": "Branchen",
+      "description": "Brancheninfos für deine Region"
+    },
+    "premium": {
+      "title": "Premium-Funktionen",
+      "description": "Mit JobNachbar Premium erhältst du unbegrenzten Zugang zu allen KI-Tools.",
+      "upgrade": "Premium werden"
+    },
+    "usage": {
+      "remaining": "Verbleibend diesen Monat",
+      "unlimited": "Unbegrenzt mit Premium"
+    }
+  },
+  "pricing": {
+    "title": "Faire Preise für alle",
+    "subtitle": "Wähle das passende Paket für dein Unternehmen",
+    "monthly": "Monatlich",
+    "yearly": "Jährlich",
+    "yearlyDiscount": "2 Monate gratis",
+    "applicant": {
+      "title": "Für Bewerber",
+      "free": {
+        "title": "Kostenlos",
+        "price": "0€",
+        "features": [
+          "Jobs suchen & bewerben",
+          "Profil erstellen",
+          "Lebenslauf hochladen",
+          "1x Lebenslauf-Check/Monat",
+          "1x Anschreiben-Check/Monat",
+          "3 Interview-Fragen"
+        ]
+      },
+      "premium": {
+        "title": "Premium",
+        "price": "4,99€",
+        "period": "/Monat",
+        "yearlyPrice": "29€/Jahr",
+        "features": [
+          "Alles aus Kostenlos",
+          "Unbegrenzt KI-Tools nutzen",
+          "Lebenslauf-Generator mit PDF",
+          "Anschreiben-Generator mit PDF",
+          "Interview-Coach unbegrenzt",
+          "Detaillierter Gehaltsvergleich",
+          "Priority-Badge bei Bewerbungen"
+        ]
+      }
+    },
+    "employer": {
+      "title": "Für Arbeitgeber",
+      "starter": {
+        "title": "Starter",
+        "price": "29€",
+        "period": "/Monat",
+        "features": [
+          "1 aktive Stellenanzeige",
+          "30 Tage Laufzeit",
+          "Bewerbungen verwalten",
+          "E-Mail-Benachrichtigungen"
+        ]
+      },
+      "professional": {
+        "title": "Professional",
+        "price": "59€",
+        "period": "/Monat",
+        "popular": true,
+        "features": [
+          "3 aktive Stellenanzeigen",
+          "60 Tage Laufzeit",
+          "Hervorgehobene Anzeigen",
+          "Alle Starter-Features",
+          "Priorisierter Support"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "price": "99€",
+        "period": "/Monat",
+        "features": [
+          "Unbegrenzte Stellenanzeigen",
+          "90 Tage Laufzeit",
+          "Alle Professional-Features",
+          "Persönlicher Ansprechpartner",
+          "Employer Branding"
+        ]
+      }
+    },
+    "cta": "Jetzt starten",
+    "contact": "Kontakt aufnehmen",
+    "faq": "Häufige Fragen"
+  },
+  "about": {
+    "title": "Unsere Geschichte",
+    "subtitle": "Warum wir JobNachbar gegründet haben"
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "subtitle": "Antworten auf die wichtigsten Fragen",
+    "applicants": "Für Bewerber",
+    "employers": "Für Arbeitgeber",
+    "general": "Allgemein"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Wir sind für dich da",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "submit": "Nachricht senden",
+      "success": "Nachricht gesendet! Wir melden uns bald."
+    },
+    "info": {
+      "title": "Kontaktdaten",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "address": "Adresse"
+    }
+  },
+  "feedback": {
+    "title": "Feedback geben",
+    "rating": "Bewertung",
+    "category": "Kategorie",
+    "categories": {
+      "bug": "Fehler melden",
+      "improvement": "Verbesserungsvorschlag",
+      "praise": "Lob",
+      "other": "Sonstiges"
+    },
+    "message": "Deine Nachricht",
+    "email": "E-Mail (optional)",
+    "emailHint": "Falls wir Rückfragen haben",
+    "submit": "Feedback senden",
+    "success": "Danke für dein Feedback!"
+  },
+  "cookies": {
+    "title": "Cookie-Einstellungen",
+    "description": "Wir verwenden Cookies, um dir die beste Erfahrung zu bieten.",
+    "necessary": "Notwendig",
+    "necessaryDesc": "Diese Cookies sind für die Funktion der Website erforderlich.",
+    "statistics": "Statistik",
+    "statisticsDesc": "Helfen uns zu verstehen, wie Besucher mit der Website interagieren.",
+    "marketing": "Marketing",
+    "marketingDesc": "Werden verwendet, um relevante Werbung anzuzeigen.",
+    "acceptAll": "Alle akzeptieren",
+    "acceptNecessary": "Nur notwendige",
+    "settings": "Einstellungen",
+    "save": "Speichern"
+  },
+  "onboarding": {
+    "welcome": "Willkommen bei JobNachbar!",
+    "skip": "Überspringen",
+    "dontShowAgain": "Nicht mehr anzeigen",
+    "applicant": {
+      "step1": {
+        "title": "Willkommen bei JobNachbar!",
+        "description": "Die lokale Jobbörse für Zeven und Umgebung."
+      },
+      "step2": {
+        "title": "Vervollständige dein Profil",
+        "description": "Je vollständiger dein Profil, desto bessere Job-Vorschläge."
+      },
+      "step3": {
+        "title": "Lade deinen Lebenslauf hoch",
+        "description": "Dein Lebenslauf wird automatisch bei Bewerbungen mitgeschickt."
+      },
+      "step4": {
+        "title": "Stelle deine Präferenzen ein",
+        "description": "Wähle Branchen und Anstellungsarten, die dich interessieren."
+      },
+      "step5": {
+        "title": "Entdecke passende Jobs",
+        "description": "Wir zeigen dir automatisch Jobs, die zu dir passen."
+      },
+      "step6": {
+        "title": "Nutze unsere KI-Tools",
+        "description": "Lebenslauf-Check, Anschreiben-Generator und mehr."
+      },
+      "step7": {
+        "title": "Aktiviere Benachrichtigungen",
+        "description": "Erhalte Infos über neue passende Jobs per E-Mail."
+      }
+    },
+    "employer": {
+      "step1": {
+        "title": "Willkommen bei JobNachbar!",
+        "description": "Finden Sie qualifizierte Mitarbeiter aus der Region."
+      },
+      "step2": {
+        "title": "Vervollständigen Sie Ihr Firmenprofil",
+        "description": "Ein vollständiges Profil wirkt professionell."
+      },
+      "step3": {
+        "title": "Erstellen Sie Ihre erste Stelle",
+        "description": "Beschreiben Sie die Position und Anforderungen."
+      },
+      "step4": {
+        "title": "Verwalten Sie Bewerbungen",
+        "description": "Alle Bewerbungen übersichtlich an einem Ort."
+      },
+      "step5": {
+        "title": "Wählen Sie Ihr Abo",
+        "description": "Verschiedene Pakete für unterschiedliche Bedürfnisse."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Die lokale Jobbörse für Zeven und Umgebung",
+    "applicants": "Für Bewerber",
+    "employers": "Für Arbeitgeber",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "links": {
+      "jobs": "Jobs finden",
+      "tips": "Bewerbungstipps",
+      "faq": "FAQ",
+      "pricing": "Preise",
+      "postJob": "Stelle schalten",
+      "about": "Über uns",
+      "contact": "Kontakt",
+      "help": "Hilfe",
+      "imprint": "Impressum",
+      "privacy": "Datenschutz",
+      "terms": "AGB"
+    },
+    "copyright": "© {year} JobNachbar. Alle Rechte vorbehalten."
+  },
+  "errors": {
+    "404": {
+      "title": "Seite nicht gefunden",
+      "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+      "backHome": "Zur Startseite"
+    },
+    "500": {
+      "title": "Server-Fehler",
+      "description": "Etwas ist schiefgelaufen. Bitte versuche es später erneut."
+    },
+    "network": "Netzwerkfehler. Bitte prüfe deine Internetverbindung.",
+    "unauthorized": "Du bist nicht berechtigt, diese Seite zu sehen.",
+    "validation": {
+      "required": "Dieses Feld ist erforderlich",
+      "email": "Bitte gib eine gültige E-Mail-Adresse ein",
+      "password": "Passwort muss mindestens 8 Zeichen haben",
+      "passwordMatch": "Passwörter stimmen nicht überein",
+      "phone": "Bitte gib eine gültige Telefonnummer ein",
+      "zipCode": "Bitte gib eine gültige Postleitzahl ein",
+      "minLength": "Mindestens {min} Zeichen erforderlich",
+      "maxLength": "Maximal {max} Zeichen erlaubt"
+    }
+  },
+  "industries": {
+    "handwerk": "Handwerk",
+    "pflege_gesundheit": "Pflege & Gesundheit",
+    "gastro_hotel": "Gastro & Hotel",
+    "einzelhandel": "Einzelhandel",
+    "logistik_transport": "Logistik & Transport",
+    "industrie_produktion": "Industrie & Produktion",
+    "buero_verwaltung": "Büro & Verwaltung",
+    "it_technik": "IT & Technik",
+    "bau_architektur": "Bau & Architektur",
+    "landwirtschaft": "Landwirtschaft",
+    "bildung_soziales": "Bildung & Soziales",
+    "sonstiges": "Sonstiges"
+  },
+  "employmentTypes": {
+    "vollzeit": "Vollzeit",
+    "teilzeit": "Teilzeit",
+    "minijob": "Minijob",
+    "ausbildung": "Ausbildung",
+    "praktikum": "Praktikum",
+    "werkstudent": "Werkstudent",
+    "freelance": "Freelance"
+  },
+  "email": {
+    "greeting": "Hallo {name}",
+    "regards": "Beste Grüße",
+    "team": "Dein JobNachbar Team",
+    "unsubscribe": "E-Mail-Einstellungen ändern",
+    "footer": "Diese E-Mail wurde automatisch von JobNachbar versendet."
+  }
+}

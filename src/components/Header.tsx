@@ -3,8 +3,10 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 import { Menu, X, ChevronRight, User, LogOut, Settings, Heart, Bell, Briefcase, CheckCircle, Download } from 'lucide-react'
 import Logo from './Logo'
+import LanguageSwitcher from './LanguageSwitcher'
 import { createClient } from '@/lib/supabase/client'
 
 interface HeaderProps {
@@ -22,6 +24,7 @@ interface Notification {
 }
 
 export default function Header({ variant = 'default' }: HeaderProps) {
+  const t = useTranslations('nav')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [user, setUser] = useState<any>(null)
   const [userRole, setUserRole] = useState<string | null>(null)
@@ -36,7 +39,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
 
   useEffect(() => {
     checkUser()
-    
+
     // PWA Install prompt
     const handleBeforeInstallPrompt = (e: Event) => {
       e.preventDefault()
@@ -44,9 +47,9 @@ export default function Header({ variant = 'default' }: HeaderProps) {
       // Show install button after a delay
       setTimeout(() => setShowInstallPrompt(true), 3000)
     }
-    
+
     window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
-    
+
     return () => {
       window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
     }
@@ -67,7 +70,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
     try {
       const supabase = createClient()
       const { data: { user } } = await supabase.auth.getUser()
-      
+
       if (user) {
         setUser(user)
         const { data: userData } = await supabase
@@ -75,7 +78,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
           .select('role, first_name')
           .eq('auth_id', user.id)
           .single()
-        
+
         if (userData) {
           setUserRole(userData.role)
           loadNotifications(userData.role)
@@ -89,7 +92,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
 
   function loadNotifications(role: string) {
     // Mock notifications - in real app, fetch from Supabase
-    const mockNotifications: Notification[] = role === 'jobseeker' 
+    const mockNotifications: Notification[] = role === 'jobseeker'
       ? [
           {
             id: '1',
@@ -143,7 +146,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
   }
 
   const markAsRead = (id: string) => {
-    setNotifications(prev => 
+    setNotifications(prev =>
       prev.map(n => n.id === id ? { ...n, read: true } : n)
     )
   }
@@ -171,13 +174,13 @@ export default function Header({ variant = 'default' }: HeaderProps) {
 
   const menuLinks = {
     main: [
-      { href: '/jobs', label: 'Jobs finden' },
-      { href: '/fuer-arbeitgeber', label: 'Für Arbeitgeber' },
+      { href: '/jobs', label: t('jobs') },
+      { href: '/fuer-arbeitgeber', label: t('forEmployers') },
       { href: '/preise', label: 'Preise' },
-      { href: '/bewerbungstipps', label: 'Bewerbungstipps' },
+      { href: '/bewerbungstipps', label: t('applicationTips') },
     ],
     footer: [
-      { href: '/kontakt', label: 'Kontakt' },
+      { href: '/kontakt', label: t('contact') },
       { href: '/impressum', label: 'Impressum' },
       { href: '/datenschutz', label: 'Datenschutz' },
       { href: '/agb', label: 'AGB' },
@@ -202,41 +205,47 @@ export default function Header({ variant = 'default' }: HeaderProps) {
       <nav className="border-b border-gray-800 bg-brand-dark sticky top-0 z-50 safe-area-top">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center">
+            {/* Logo - Left */}
+            <Link href="/" className="flex items-center flex-shrink-0">
               <Logo size="md" />
             </Link>
-            
-            <div className="hidden md:flex items-center space-x-8">
-              {menuLinks.main.slice(0, 3).map((link) => (
-                <Link 
+
+            {/* Navigation - Center/Right */}
+            <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+              {menuLinks.main.slice(0, 4).map((link) => (
+                <Link
                   key={link.href}
-                  href={link.href} 
-                  className={`transition-colors ${
-                    isActive(link.href) 
-                      ? 'text-brand-red' 
+                  href={link.href}
+                  className={`transition-colors whitespace-nowrap ${
+                    isActive(link.href)
+                      ? 'text-brand-red'
                       : 'text-gray-300 hover:text-white'
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
-              
+
+              {/* Language Switcher */}
+              <LanguageSwitcher variant="header" />
+
               {!loading && (
                 <>
                   {user ? (
-                    <div className="flex items-center space-x-4">
+                    <div className="flex items-center space-x-3">
                       {/* Favorites for jobseekers */}
                       {userRole === 'jobseeker' && (
-                        <Link href="/dashboard/bewerber/favoriten" className="text-gray-300 hover:text-white transition-colors" title="Favoriten">
+                        <Link href="/dashboard/bewerber/favoriten" className="text-gray-300 hover:text-white transition-colors p-2" title={t('favorites')}>
                           <Heart className="w-5 h-5" />
                         </Link>
                       )}
-                      
+
                       {/* Notifications Bell */}
                       <div className="relative" ref={notificationRef}>
                         <button
                           onClick={() => setShowNotifications(!showNotifications)}
                           className="relative p-2 text-gray-300 hover:text-white transition-colors"
+                          aria-label={t('notifications')}
                         >
                           <Bell className="w-5 h-5" />
                           {unreadCount > 0 && (
@@ -245,17 +254,17 @@ export default function Header({ variant = 'default' }: HeaderProps) {
                             </span>
                           )}
                         </button>
-                        
+
                         {showNotifications && (
                           <div className="absolute right-0 mt-2 w-80 bg-brand-dark-card border border-gray-700 rounded-lg shadow-xl z-50">
                             <div className="flex items-center justify-between p-4 border-b border-gray-700">
-                              <h3 className="font-semibold text-white">Benachrichtigungen</h3>
+                              <h3 className="font-semibold text-white">{t('notifications')}</h3>
                               {unreadCount > 0 && (
                                 <button
                                   onClick={markAllAsRead}
                                   className="text-xs text-brand-red hover:underline"
                                 >
-                                  Alle gelesen
+                                  {t('allRead')}
                                 </button>
                               )}
                             </div>
@@ -263,7 +272,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
                               {notifications.length === 0 ? (
                                 <div className="p-6 text-center">
                                   <Bell className="w-12 h-12 text-gray-600 mx-auto mb-2" />
-                                  <p className="text-gray-400">Keine Benachrichtigungen</p>
+                                  <p className="text-gray-400">{t('noNotifications')}</p>
                                 </div>
                               ) : (
                                 notifications.map((notification) => (
@@ -289,7 +298,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
                                             onClick={() => { markAsRead(notification.id); setShowNotifications(false) }}
                                             className="text-xs text-brand-red hover:underline mt-2 inline-block"
                                           >
-                                            Ansehen →
+                                            Ansehen
                                           </Link>
                                         )}
                                       </div>
@@ -301,7 +310,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
                           </div>
                         )}
                       </div>
-                      
+
                       {/* User Menu */}
                       <div className="relative group">
                         <button className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
@@ -310,57 +319,58 @@ export default function Header({ variant = 'default' }: HeaderProps) {
                           </div>
                         </button>
                         <div className="absolute right-0 mt-2 w-48 bg-brand-dark-card rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
-                          <Link 
-                            href={getDashboardLink()} 
+                          <Link
+                            href={getDashboardLink()}
                             className="flex items-center px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-t-lg"
                           >
                             <User className="w-4 h-4 mr-2" />
-                            Dashboard
+                            {t('dashboard')}
                           </Link>
                           {userRole === 'jobseeker' && (
-                            <Link 
-                              href="/dashboard/bewerber/favoriten" 
+                            <Link
+                              href="/dashboard/bewerber/favoriten"
                               className="flex items-center px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-700/50"
                             >
                               <Heart className="w-4 h-4 mr-2" />
-                              Favoriten
+                              {t('favorites')}
                             </Link>
                           )}
-                          <Link 
-                            href={userRole === 'employer' ? '/dashboard/arbeitgeber/einstellungen' : '/dashboard/bewerber/profil'} 
+                          <Link
+                            href={userRole === 'employer' ? '/dashboard/arbeitgeber/einstellungen' : '/dashboard/bewerber/profil'}
                             className="flex items-center px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-700/50"
                           >
                             <Settings className="w-4 h-4 mr-2" />
-                            Einstellungen
+                            {t('settings')}
                           </Link>
-                          <button 
+                          <button
                             onClick={handleLogout}
                             className="flex items-center w-full px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-b-lg"
                           >
                             <LogOut className="w-4 h-4 mr-2" />
-                            Abmelden
+                            {t('logout')}
                           </button>
                         </div>
                       </div>
                     </div>
                   ) : (
-                    <>
+                    <div className="flex items-center space-x-4">
                       <Link href="/login" className="text-gray-300 hover:text-white transition-colors">
-                        Anmelden
+                        {t('login')}
                       </Link>
                       <Link href="/registrieren" className="btn-primary text-sm">
-                        Kostenlos registrieren
+                        {t('register')}
                       </Link>
-                    </>
+                    </div>
                   )}
                 </>
               )}
             </div>
 
+            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(true)}
               className="md:hidden p-2 text-gray-300 hover:text-white"
-              aria-label="Menü öffnen"
+              aria-label="Menu"
             >
               <Menu className="w-6 h-6" />
             </button>
@@ -377,13 +387,13 @@ export default function Header({ variant = 'default' }: HeaderProps) {
               <span className="text-white text-sm">JobNachbar als App installieren?</span>
             </div>
             <div className="flex items-center gap-2">
-              <button 
+              <button
                 onClick={handleInstall}
                 className="px-3 py-1.5 bg-brand-red text-white text-sm rounded-lg hover:bg-brand-red-dark transition-colors"
               >
                 Installieren
               </button>
-              <button 
+              <button
                 onClick={() => setShowInstallPrompt(false)}
                 className="p-1.5 text-gray-400 hover:text-white"
               >
@@ -397,24 +407,24 @@ export default function Header({ variant = 'default' }: HeaderProps) {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
-          <div 
+          <div
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setIsMenuOpen(false)}
           />
-          
-          <div className="absolute right-0 top-0 h-full w-80 max-w-[85vw] bg-brand-dark border-l border-gray-800 shadow-xl">
+
+          <div className="absolute right-0 top-0 h-full w-80 max-w-[85vw] bg-brand-dark border-l border-gray-800 shadow-xl safe-area-top">
             <div className="flex items-center justify-between p-4 border-b border-gray-800">
               <Logo size="sm" />
               <button
                 onClick={() => setIsMenuOpen(false)}
                 className="p-2 text-gray-300 hover:text-white"
-                aria-label="Menü schließen"
+                aria-label="Close menu"
               >
                 <X className="w-6 h-6" />
               </button>
             </div>
 
-            <div className="flex flex-col h-[calc(100%-64px)]">
+            <div className="flex flex-col h-[calc(100%-64px)] overflow-y-auto">
               <div className="p-4 space-y-1">
                 {menuLinks.main.map((link) => (
                   <Link
@@ -433,6 +443,11 @@ export default function Header({ variant = 'default' }: HeaderProps) {
                 ))}
               </div>
 
+              {/* Language Switcher in Mobile Menu */}
+              <div className="px-4 py-3 border-t border-gray-800">
+                <LanguageSwitcher variant="mobile" />
+              </div>
+
               <div className="border-t border-gray-800 mx-4" />
 
               <div className="p-4 space-y-3">
@@ -444,7 +459,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
                       className="flex items-center w-full py-3 px-4 bg-brand-red text-white rounded-lg font-semibold"
                     >
                       <User className="w-5 h-5 mr-2" />
-                      Mein Dashboard
+                      {t('dashboard')}
                     </Link>
                     {userRole === 'jobseeker' && (
                       <Link
@@ -453,7 +468,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
                         className="flex items-center w-full py-3 px-4 border-2 border-gray-600 text-white rounded-lg"
                       >
                         <Heart className="w-5 h-5 mr-2" />
-                        Meine Favoriten
+                        {t('favorites')}
                       </Link>
                     )}
                     <button
@@ -464,7 +479,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
                       className="flex items-center w-full py-3 px-4 border-2 border-gray-600 text-gray-300 rounded-lg hover:border-red-500 hover:text-red-400"
                     >
                       <LogOut className="w-5 h-5 mr-2" />
-                      Abmelden
+                      {t('logout')}
                     </button>
                   </>
                 ) : (
@@ -474,14 +489,14 @@ export default function Header({ variant = 'default' }: HeaderProps) {
                       onClick={() => setIsMenuOpen(false)}
                       className="block w-full text-center py-3 px-4 border-2 border-gray-600 text-white rounded-lg hover:border-brand-red hover:text-brand-red transition-colors"
                     >
-                      Anmelden
+                      {t('login')}
                     </Link>
                     <Link
                       href="/registrieren"
                       onClick={() => setIsMenuOpen(false)}
                       className="block w-full text-center py-3 px-4 bg-brand-red text-white rounded-lg hover:bg-brand-red-dark transition-colors font-semibold"
                     >
-                      Kostenlos registrieren
+                      {t('register')}
                     </Link>
                   </>
                 )}
