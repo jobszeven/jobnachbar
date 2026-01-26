@@ -67,13 +67,73 @@ export default function LebenslaufPage() {
     setIsGenerating(true)
     toast.loading('PDF wird erstellt...', { id: 'pdf' })
 
-    // Simulate PDF generation (in a real app, this would call a PDF generation API)
-    setTimeout(() => {
+    try {
+      // Parse resume text into structured data (simplified parsing)
+      const lines = resumeText.split('\n').filter(l => l.trim())
+      const resumeData = {
+        personal: {
+          name: lines[0] || 'Name',
+          email: 'email@beispiel.de',
+          phone: '0123 456789',
+          address: 'Musterstraße 1, 27404 Zeven',
+        },
+        summary: 'Basierend auf dem eingefügten Lebenslauf.',
+        experience: [{
+          title: 'Position',
+          company: 'Unternehmen',
+          location: 'Ort',
+          startDate: '2020',
+          endDate: 'Heute',
+          description: lines.slice(1, 4).filter(l => l.length > 10),
+        }],
+        education: [{
+          degree: 'Abschluss',
+          institution: 'Institution',
+          location: 'Ort',
+          startDate: '2015',
+          endDate: '2020',
+        }],
+        skills: lines.filter(l => l.length < 30 && l.length > 3).slice(0, 8),
+      }
+
+      const templateMap: Record<string, string> = {
+        modern: 'modern',
+        klassisch: 'classic',
+        kreativ: 'creative',
+      }
+
+      const response = await fetch('/api/pdf/resume', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          template: templateMap[selectedTemplate] || 'modern',
+          data: resumeData,
+        }),
+      })
+
+      if (!response.ok) {
+        const error = await response.json()
+        throw new Error(error.message || 'PDF-Erstellung fehlgeschlagen')
+      }
+
+      // Download the PDF
+      const blob = await response.blob()
+      const url = window.URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = `lebenslauf-${selectedTemplate}.pdf`
+      document.body.appendChild(a)
+      a.click()
+      window.URL.revokeObjectURL(url)
+      document.body.removeChild(a)
+
+      toast.success('PDF wurde erstellt und heruntergeladen!', { id: 'pdf' })
+    } catch (error) {
+      console.error('PDF generation error:', error)
+      toast.error('Fehler bei der PDF-Erstellung. Bitte versuche es erneut.', { id: 'pdf' })
+    } finally {
       setIsGenerating(false)
-      toast.success('PDF wurde erstellt!', { id: 'pdf' })
-      // In a real implementation, this would trigger a download
-      toast('PDF-Download wird in Premium freigeschaltet', { icon: '💎' })
-    }, 2000)
+    }
   }
 
   return (

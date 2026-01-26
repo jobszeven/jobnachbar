@@ -73,6 +73,10 @@ const generalFaqs = [
     question: 'Wie kann ich meinen Account löschen?',
     answer: 'Schreib uns eine kurze E-Mail an info@jobnachbar.com und wir löschen alle deine Daten innerhalb von 48 Stunden.',
   },
+  {
+    question: 'Gibt es eine App für JobNachbar?',
+    answer: 'JobNachbar ist als Progressive Web App (PWA) optimiert. Du kannst die Webseite auf deinem Handy zum Homescreen hinzufügen und wie eine App nutzen - ohne Download aus dem App Store.',
+  },
 ]
 
 // Generate JSON-LD for FAQ Schema
