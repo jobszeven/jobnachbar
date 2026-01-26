@@ -570,19 +570,26 @@
     "employers": "Для роботодавців",
     "company": "Компанія",
     "legal": "Правова інформація",
+    "region": "Вакансії в регіоні",
+    "madeWith": "Made with ❤️ in Zeven",
     "links": {
       "jobs": "Знайти роботу",
+      "profile": "Створити профіль",
       "tips": "Поради для резюме",
-      "faq": "FAQ",
-      "pricing": "Ціни",
+      "premiumApplicant": "Premium для кандидатів",
       "postJob": "Розмістити вакансію",
-      "about": "Про нас",
+      "pricing": "Ціни та пакети",
+      "successStories": "Історії успіху",
       "contact": "Контакти",
-      "help": "Допомога",
+      "about": "Про нас",
+      "faq": "FAQ",
+      "help": "Центр допомоги",
       "imprint": "Impressum",
       "privacy": "Політика конфіденційності",
-      "terms": "Умови використання"
+      "terms": "Умови використання",
+      "cookies": "Налаштування cookies"
     },
+    "jobsIn": "Вакансії в {location}",
     "copyright": "© {year} JobNachbar. Усі права захищені."
   },
   "errors": {

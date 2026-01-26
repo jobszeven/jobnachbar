@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import Logo from './Logo'
 
 const locations = [
@@ -11,6 +14,7 @@ const locations = [
 ]
 
 export default function Footer() {
+  const t = useTranslations('footer')
   const currentYear = new Date().getFullYear()
 
   return (
@@ -23,32 +27,32 @@ export default function Footer() {
               <Logo size="md" />
             </div>
             <p className="text-gray-400 text-sm">
-              Die lokale Jobbörse für Zeven und Umgebung.
+              {t('tagline')}
             </p>
           </div>
 
           {/* Für Bewerber */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Für Bewerber</h4>
+            <h4 className="text-white font-semibold mb-4">{t('applicants')}</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
                 <Link href="/jobs" className="hover:text-brand-red transition-colors">
-                  Jobs finden
+                  {t('links.jobs')}
                 </Link>
               </li>
               <li>
                 <Link href="/registrieren/bewerber" className="hover:text-brand-red transition-colors">
-                  Profil erstellen
+                  {t('links.profile')}
                 </Link>
               </li>
               <li>
                 <Link href="/bewerbungstipps" className="hover:text-brand-red transition-colors">
-                  Bewerbungstipps
+                  {t('links.tips')}
                 </Link>
               </li>
               <li>
                 <Link href="/preise/bewerber" className="hover:text-brand-red transition-colors">
-                  Premium für Bewerber
+                  {t('links.premiumApplicant')}
                 </Link>
               </li>
             </ul>
@@ -56,26 +60,26 @@ export default function Footer() {
 
           {/* Für Arbeitgeber */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Für Arbeitgeber</h4>
+            <h4 className="text-white font-semibold mb-4">{t('employers')}</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
                 <Link href="/registrieren/arbeitgeber" className="hover:text-brand-red transition-colors">
-                  Stelle ausschreiben
+                  {t('links.postJob')}
                 </Link>
               </li>
               <li>
                 <Link href="/preise" className="hover:text-brand-red transition-colors">
-                  Preise & Pakete
+                  {t('links.pricing')}
                 </Link>
               </li>
               <li>
                 <Link href="/erfolgsgeschichten" className="hover:text-brand-red transition-colors">
-                  Erfolgsgeschichten
+                  {t('links.successStories')}
                 </Link>
               </li>
               <li>
                 <Link href="/kontakt" className="hover:text-brand-red transition-colors">
-                  Kontakt
+                  {t('links.contact')}
                 </Link>
               </li>
             </ul>
@@ -83,26 +87,26 @@ export default function Footer() {
 
           {/* Unternehmen */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Unternehmen</h4>
+            <h4 className="text-white font-semibold mb-4">{t('company')}</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
                 <Link href="/ueber-uns" className="hover:text-brand-red transition-colors">
-                  Über uns
+                  {t('links.about')}
                 </Link>
               </li>
               <li>
                 <Link href="/faq" className="hover:text-brand-red transition-colors">
-                  FAQ
+                  {t('links.faq')}
                 </Link>
               </li>
               <li>
                 <Link href="/hilfe" className="hover:text-brand-red transition-colors">
-                  Hilfe-Center
+                  {t('links.help')}
                 </Link>
               </li>
               <li>
                 <Link href="/kontakt" className="hover:text-brand-red transition-colors">
-                  Kontakt
+                  {t('links.contact')}
                 </Link>
               </li>
             </ul>
@@ -110,7 +114,7 @@ export default function Footer() {
 
           {/* Jobs in der Region */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Jobs in der Region</h4>
+            <h4 className="text-white font-semibold mb-4">{t('region')}</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               {locations.map((location) => (
                 <li key={location.slug}>
@@ -118,7 +122,7 @@ export default function Footer() {
                     href={`/jobs/standort/${location.slug}`}
                     className="hover:text-brand-red transition-colors"
                   >
-                    Jobs in {location.name}
+                    {t('jobsIn', { location: location.name })}
                   </Link>
                 </li>
               ))}
@@ -127,26 +131,26 @@ export default function Footer() {
 
           {/* Rechtliches */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Rechtliches</h4>
+            <h4 className="text-white font-semibold mb-4">{t('legal')}</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
                 <Link href="/impressum" className="hover:text-brand-red transition-colors">
-                  Impressum
+                  {t('links.imprint')}
                 </Link>
               </li>
               <li>
                 <Link href="/datenschutz" className="hover:text-brand-red transition-colors">
-                  Datenschutz
+                  {t('links.privacy')}
                 </Link>
               </li>
               <li>
                 <Link href="/agb" className="hover:text-brand-red transition-colors">
-                  AGB
+                  {t('links.terms')}
                 </Link>
               </li>
               <li>
                 <Link href="/cookies" className="hover:text-brand-red transition-colors">
-                  Cookie-Einstellungen
+                  {t('links.cookies')}
                 </Link>
               </li>
             </ul>
@@ -154,9 +158,9 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-          <p>© {currentYear} JobNachbar. Alle Rechte vorbehalten.</p>
+          <p>{t('copyright', { year: currentYear })}</p>
           <p className="mt-2 md:mt-0">
-            Made with ❤️ in Zeven
+            {t('madeWith')}
           </p>
         </div>
       </div>

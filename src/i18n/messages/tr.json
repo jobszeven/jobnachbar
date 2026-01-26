@@ -570,19 +570,26 @@
     "employers": "İşverenler İçin",
     "company": "Şirket",
     "legal": "Yasal",
+    "region": "Bölgedeki İşler",
+    "madeWith": "Made with ❤️ in Zeven",
     "links": {
       "jobs": "İş Bul",
+      "profile": "Profil Oluştur",
       "tips": "Başvuru İpuçları",
-      "faq": "SSS",
-      "pricing": "Fiyatlar",
+      "premiumApplicant": "Başvuranlar İçin Premium",
       "postJob": "İlan Ver",
-      "about": "Hakkımızda",
+      "pricing": "Fiyatlar ve Paketler",
+      "successStories": "Başarı Hikayeleri",
       "contact": "İletişim",
-      "help": "Yardım",
+      "about": "Hakkımızda",
+      "faq": "SSS",
+      "help": "Yardım Merkezi",
       "imprint": "Künye",
       "privacy": "Gizlilik Politikası",
-      "terms": "Kullanım Koşulları"
+      "terms": "Kullanım Koşulları",
+      "cookies": "Çerez Ayarları"
     },
+    "jobsIn": "{location} İşleri",
     "copyright": "© {year} JobNachbar. Tüm hakları saklıdır."
   },
   "errors": {

@@ -570,19 +570,26 @@
     "employers": "For Employers",
     "company": "Company",
     "legal": "Legal",
+    "region": "Jobs in the Region",
+    "madeWith": "Made with ❤️ in Zeven",
     "links": {
       "jobs": "Find Jobs",
+      "profile": "Create Profile",
       "tips": "Application Tips",
-      "faq": "FAQ",
-      "pricing": "Pricing",
+      "premiumApplicant": "Premium for Applicants",
       "postJob": "Post a Job",
-      "about": "About Us",
+      "pricing": "Pricing & Packages",
+      "successStories": "Success Stories",
       "contact": "Contact",
-      "help": "Help",
+      "about": "About Us",
+      "faq": "FAQ",
+      "help": "Help Center",
       "imprint": "Imprint",
       "privacy": "Privacy Policy",
-      "terms": "Terms of Service"
+      "terms": "Terms of Service",
+      "cookies": "Cookie Settings"
     },
+    "jobsIn": "Jobs in {location}",
     "copyright": "© {year} JobNachbar. All rights reserved."
   },
   "errors": {

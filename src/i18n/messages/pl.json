@@ -570,19 +570,26 @@
     "employers": "Dla pracodawców",
     "company": "Firma",
     "legal": "Informacje prawne",
+    "region": "Praca w regionie",
+    "madeWith": "Made with ❤️ in Zeven",
     "links": {
       "jobs": "Znajdź pracę",
+      "profile": "Utwórz profil",
       "tips": "Porady aplikacyjne",
-      "faq": "FAQ",
-      "pricing": "Cennik",
+      "premiumApplicant": "Premium dla kandydatów",
       "postJob": "Dodaj ofertę",
-      "about": "O nas",
+      "pricing": "Cennik i pakiety",
+      "successStories": "Historie sukcesu",
       "contact": "Kontakt",
-      "help": "Pomoc",
+      "about": "O nas",
+      "faq": "FAQ",
+      "help": "Centrum pomocy",
       "imprint": "Impressum",
       "privacy": "Polityka prywatności",
-      "terms": "Regulamin"
+      "terms": "Regulamin",
+      "cookies": "Ustawienia plików cookie"
     },
+    "jobsIn": "Praca w {location}",
     "copyright": "© {year} JobNachbar. Wszelkie prawa zastrzeżone."
   },
   "errors": {

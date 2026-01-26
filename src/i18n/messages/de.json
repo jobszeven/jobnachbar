@@ -570,19 +570,26 @@
     "employers": "Für Arbeitgeber",
     "company": "Unternehmen",
     "legal": "Rechtliches",
+    "region": "Jobs in der Region",
+    "madeWith": "Made with ❤️ in Zeven",
     "links": {
       "jobs": "Jobs finden",
+      "profile": "Profil erstellen",
       "tips": "Bewerbungstipps",
-      "faq": "FAQ",
-      "pricing": "Preise",
-      "postJob": "Stelle schalten",
-      "about": "Über uns",
+      "premiumApplicant": "Premium für Bewerber",
+      "postJob": "Stelle ausschreiben",
+      "pricing": "Preise & Pakete",
+      "successStories": "Erfolgsgeschichten",
       "contact": "Kontakt",
-      "help": "Hilfe",
+      "about": "Über uns",
+      "faq": "FAQ",
+      "help": "Hilfe-Center",
       "imprint": "Impressum",
       "privacy": "Datenschutz",
-      "terms": "AGB"
+      "terms": "AGB",
+      "cookies": "Cookie-Einstellungen"
     },
+    "jobsIn": "Jobs in {location}",
     "copyright": "© {year} JobNachbar. Alle Rechte vorbehalten."
   },
   "errors": {
