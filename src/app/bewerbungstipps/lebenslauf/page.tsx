@@ -1,8 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Link from 'next/link'
-import { FileText, Upload, Download, Sparkles, CheckCircle, AlertCircle, ArrowLeft, Loader2 } from 'lucide-react'
+import { FileText, Upload, Download, Sparkles, CheckCircle, AlertCircle, ArrowLeft, Loader2, File, X } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import toast from 'react-hot-toast'
@@ -22,6 +22,78 @@ export default function LebenslaufPage() {
   const [analysis, setAnalysis] = useState<AnalysisResult | null>(null)
   const [selectedTemplate, setSelectedTemplate] = useState<DesignTemplate>('modern')
   const [isGenerating, setIsGenerating] = useState(false)
+  const [uploadedFile, setUploadedFile] = useState<File | null>(null)
+  const [isUploading, setIsUploading] = useState(false)
+  const fileInputRef = useRef<HTMLInputElement>(null)
+
+  const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0]
+    if (!file) return
+
+    // Check file type
+    const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'text/plain']
+    if (!allowedTypes.includes(file.type)) {
+      toast.error('Bitte lade eine PDF, DOC, DOCX oder TXT Datei hoch')
+      return
+    }
+
+    // Check file size (max 5MB)
+    if (file.size > 5 * 1024 * 1024) {
+      toast.error('Die Datei ist zu groß. Maximal 5MB erlaubt.')
+      return
+    }
+
+    setUploadedFile(file)
+    setIsUploading(true)
+
+    try {
+      // For text files, read directly
+      if (file.type === 'text/plain') {
+        const text = await file.text()
+        setResumeText(text)
+        toast.success('Datei erfolgreich geladen!')
+        setIsUploading(false)
+        return
+      }
+
+      // For PDF/DOC files, use API to extract text
+      const formData = new FormData()
+      formData.append('file', file)
+
+      const response = await fetch('/api/extract-text', {
+        method: 'POST',
+        body: formData,
+      })
+
+      if (!response.ok) {
+        // If extraction fails, inform user to paste text manually
+        toast.error('Text konnte nicht extrahiert werden. Bitte kopiere den Text manuell.')
+        setUploadedFile(null)
+        setIsUploading(false)
+        return
+      }
+
+      const data = await response.json()
+      if (data.text) {
+        setResumeText(data.text)
+        toast.success('Text wurde aus der Datei extrahiert!')
+      }
+    } catch (error) {
+      console.error('File upload error:', error)
+      toast.error('Fehler beim Hochladen. Bitte versuche es erneut.')
+      setUploadedFile(null)
+    } finally {
+      setIsUploading(false)
+    }
+  }
+
+  const removeUploadedFile = () => {
+    setUploadedFile(null)
+    setResumeText('')
+    if (fileInputRef.current) {
+      fileInputRef.current.value = ''
+    }
+  }
 
   const templates = [
     { id: 'modern' as const, name: 'Modern', description: 'Klares, zeitgemäßes Design' },
@@ -167,11 +239,68 @@ export default function LebenslaufPage() {
                   <Upload className="w-5 h-5 mr-2 text-brand-red" />
                   Lebenslauf eingeben
                 </h2>
+
+                {/* File Upload Area */}
+                <div className="mb-4">
+                  <input
+                    ref={fileInputRef}
+                    type="file"
+                    accept=".pdf,.doc,.docx,.txt"
+                    onChange={handleFileUpload}
+                    className="hidden"
+                    id="file-upload"
+                  />
+
+                  {uploadedFile ? (
+                    <div className="flex items-center justify-between p-4 bg-brand-dark rounded-lg border border-gray-700">
+                      <div className="flex items-center">
+                        <File className="w-8 h-8 text-brand-red mr-3" />
+                        <div>
+                          <p className="text-white font-medium">{uploadedFile.name}</p>
+                          <p className="text-gray-400 text-sm">
+                            {(uploadedFile.size / 1024).toFixed(1)} KB
+                          </p>
+                        </div>
+                      </div>
+                      <button
+                        onClick={removeUploadedFile}
+                        className="p-2 text-gray-400 hover:text-white transition-colors"
+                      >
+                        <X className="w-5 h-5" />
+                      </button>
+                    </div>
+                  ) : (
+                    <label
+                      htmlFor="file-upload"
+                      className="flex flex-col items-center justify-center p-6 border-2 border-dashed border-gray-700 rounded-lg cursor-pointer hover:border-brand-red transition-colors"
+                    >
+                      {isUploading ? (
+                        <>
+                          <Loader2 className="w-10 h-10 text-brand-red animate-spin mb-2" />
+                          <p className="text-gray-400">Datei wird verarbeitet...</p>
+                        </>
+                      ) : (
+                        <>
+                          <Upload className="w-10 h-10 text-gray-500 mb-2" />
+                          <p className="text-white font-medium">Datei hochladen</p>
+                          <p className="text-gray-400 text-sm mt-1">PDF, DOC, DOCX oder TXT (max. 5MB)</p>
+                        </>
+                      )}
+                    </label>
+                  )}
+                </div>
+
+                <div className="relative">
+                  <div className="absolute inset-x-0 top-0 flex items-center justify-center -mt-3">
+                    <span className="px-3 bg-brand-dark-card text-gray-500 text-sm">oder Text einfügen</span>
+                  </div>
+                </div>
+
                 <textarea
                   value={resumeText}
                   onChange={(e) => setResumeText(e.target.value)}
                   placeholder="Füge hier deinen Lebenslauf-Text ein oder kopiere ihn aus einem Dokument..."
-                  className="input-field h-64 resize-none"
+                  className="input-field h-48 resize-none mt-4"
                 />
                 <button
                   onClick={analyzeResume}
