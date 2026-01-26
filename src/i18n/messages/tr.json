@@ -644,5 +644,141 @@
     "team": "JobNachbar Ekibiniz",
     "unsubscribe": "E-posta ayarlarını değiştir",
     "footer": "Bu e-posta JobNachbar tarafından otomatik olarak gönderilmiştir."
+  },
+  "help": {
+    "title": "Yardım ve Öğreticiler",
+    "subtitle": "JobNachbar'ı en iyi şekilde kullanmak için bilmeniz gereken her şey",
+    "searchPlaceholder": "Kılavuz ara...",
+    "forApplicants": "Adaylar İçin",
+    "forEmployers": "İşverenler İçin",
+    "notFound": "Aradığınızı bulamadınız mı?",
+    "supportMessage": "Destek ekibimiz size yardımcı olmaktan mutluluk duyar. Bize mesaj gönderin!",
+    "contactUs": "Bize Ulaşın",
+    "browseFaq": "SSS'ye Göz Atın",
+    "aboutUs": "Hakkımızda",
+    "dataProtection": "Gizlilik",
+    "applicantGuides": {
+      "account": {
+        "title": "Hesap Oluştur",
+        "description": "Adım adım kayıt kılavuzu",
+        "content": [
+          "1. Sağ üstteki 'Kayıt Ol'a tıklayın",
+          "2. 'Aday' seçin",
+          "3. E-posta ve güvenli bir şifre girin",
+          "4. Size gönderilen bağlantıyla e-postanızı onaylayın",
+          "5. Profilinizi kişisel bilgilerle tamamlayın"
+        ]
+      },
+      "profile": {
+        "title": "Profili Tamamla",
+        "description": "Etkileyici bir profil nasıl oluşturulur",
+        "content": [
+          "Tam bir profil, mülakat davetleri alma şansınızı artırır.",
+          "• Profesyonel bir fotoğraf ekleyin",
+          "• İş deneyiminizi ayrıntılı olarak açıklayın",
+          "• Becerilerinizi ve niteliklerinizi listeleyin",
+          "• Maaş beklentilerinizi belirtin",
+          "• Özgeçmişinizi PDF olarak yükleyin"
+        ]
+      },
+      "findJobs": {
+        "title": "İş Bul ve Başvur",
+        "description": "Etkili iş arama ipuçları",
+        "content": [
+          "• Uygun işleri bulmak için filtre seçeneklerini kullanın",
+          "• İlginç işleri favorilere kaydedin",
+          "• Yeni pozisyonlar için iş bildirimlerini etkinleştirin",
+          "• Tek tıklamayla doğrudan başvurun",
+          "• Başvuru durumunuzu panoda takip edin"
+        ]
+      },
+      "aiTools": {
+        "title": "AI Araçlarını Kullanma",
+        "description": "Özgeçmiş Kontrolü ve daha fazlası için kılavuz",
+        "content": [
+          "JobNachbar, başvurunuz için ücretsiz AI araçları sunar:",
+          "• Özgeçmiş Kontrolü: Özgeçmişinizi analiz ettirin ve iyileştirin",
+          "• Ön Yazı Oluşturucu: AI ile bireysel ön yazılar oluşturun",
+          "• Mülakat Koçu: Sektörünüz için tipik soruları çalışın",
+          "• Maaş Hesaplayıcı: Ne kazanabileceğinizi öğrenin",
+          "Tüm araçları menüde 'Başvuru İpuçları' altında bulabilirsiniz."
+        ]
+      },
+      "premium": {
+        "title": "Premium Avantajlar",
+        "description": "JobNachbar Premium ne sunar?",
+        "content": [
+          "Premium ile şunları elde edersiniz:",
+          "• Sınırsız AI aracı kullanımı",
+          "• Profiliniz işverenlere öncelikli gösterilir",
+          "• Genişletilmiş filtre seçenekleri",
+          "• Reklam yok",
+          "• Özel premium destek",
+          "Premium sadece aylık 4,99€ veya yıllık 39,99€."
+        ]
+      },
+      "privacy": {
+        "title": "Gizlilik ve Güvenlik",
+        "description": "Verilerinizi nasıl koruyoruz",
+        "content": [
+          "• Verileriniz aktarım ve depolama sırasında şifrelenir",
+          "• Verileri üçüncü taraflarla paylaşmıyoruz",
+          "• İşverenlerin hangi bilgileri görebileceğine siz karar verirsiniz",
+          "• Profiliniz her zaman görünmez yapılabilir",
+          "• Hesabınızı ve tüm verilerinizi her zaman silebilirsiniz",
+          "Gizlilik politikamızda daha fazla bilgi."
+        ]
+      }
+    },
+    "employerGuides": {
+      "companyProfile": {
+        "title": "Şirket Profili Oluştur",
+        "description": "Şirketinizi nasıl tanıtırsınız",
+        "content": [
+          "1. İşveren olarak kaydolun",
+          "2. Şirket logonuzu yükleyin",
+          "3. Şirketinizi ve kültürünüzü açıklayın",
+          "4. İşyeri fotoğrafları ekleyin",
+          "5. İletişim bilgileri ve konum sağlayın",
+          "Tam bir profil adaylara daha profesyonel görünür."
+        ]
+      },
+      "createJob": {
+        "title": "İş İlanı Oluştur",
+        "description": "Başarılı bir ilan için ipuçları",
+        "content": [
+          "• Açık, anlamlı bir başlık seçin",
+          "• Görevleri ayrıntılı olarak açıklayın",
+          "• Gerekli nitelikleri listeleyin",
+          "• Avantajları ve faydaları belirtin",
+          "• Maaş aralığını belirtin (başvuruları artırır)",
+          "• Doğru kategori ve konumu seçin"
+        ]
+      },
+      "manageApplications": {
+        "title": "Başvuruları Yönet",
+        "description": "Verimli aday yönetimi",
+        "content": [
+          "• Tüm başvurular panelde görünür",
+          "• Adayları duruma göre sıralayın (yeni, incelemede, davet edildi)",
+          "• Özgeçmişleri doğrudan indirin",
+          "• Tek tıklamayla adaylarla iletişime geçin",
+          "• Favori adayları işaretleyin",
+          "• Tamamlanan başvuruları arşivleyin"
+        ]
+      },
+      "subscription": {
+        "title": "Abonelik ve Ödeme",
+        "description": "Paketler ve ödeme seçenekleri",
+        "content": [
+          "JobNachbar işverenler için esnek paketler sunar:",
+          "• Başlangıç (ücretsiz): 1 aktif iş ilanı",
+          "• Profesyonel (29,99€/ay): 5 aktif ilan + aday veritabanı",
+          "• Kurumsal (79,99€/ay): Sınırsız + premium destek",
+          "Fatura, banka havalesi veya kredi kartıyla ödeme.",
+          "Tüm paketler aylık iptal edilebilir."
+        ]
+      }
+    }
   }
 }

@@ -644,5 +644,141 @@
     "team": "Zespół JobNachbar",
     "unsubscribe": "Zmień ustawienia e-mail",
     "footer": "Ta wiadomość została wysłana automatycznie przez JobNachbar."
+  },
+  "help": {
+    "title": "Pomoc i Poradniki",
+    "subtitle": "Wszystko, co musisz wiedzieć, aby w pełni korzystać z JobNachbar",
+    "searchPlaceholder": "Szukaj poradników...",
+    "forApplicants": "Dla Kandydatów",
+    "forEmployers": "Dla Pracodawców",
+    "notFound": "Nie znalazłeś tego, czego szukasz?",
+    "supportMessage": "Nasz zespół wsparcia chętnie pomoże. Wyślij nam wiadomość!",
+    "contactUs": "Skontaktuj się",
+    "browseFaq": "Przeglądaj FAQ",
+    "aboutUs": "O nas",
+    "dataProtection": "Prywatność",
+    "applicantGuides": {
+      "account": {
+        "title": "Utwórz konto",
+        "description": "Przewodnik rejestracji krok po kroku",
+        "content": [
+          "1. Kliknij 'Zarejestruj się' w prawym górnym rogu",
+          "2. Wybierz 'Kandydat'",
+          "3. Wprowadź e-mail i bezpieczne hasło",
+          "4. Potwierdź e-mail za pomocą wysłanego linku",
+          "5. Uzupełnij profil danymi osobowymi"
+        ]
+      },
+      "profile": {
+        "title": "Uzupełnij profil",
+        "description": "Jak stworzyć przekonujący profil",
+        "content": [
+          "Kompletny profil zwiększa szanse na zaproszenie na rozmowę.",
+          "• Dodaj profesjonalne zdjęcie",
+          "• Opisz szczegółowo doświadczenie zawodowe",
+          "• Wymień umiejętności i kwalifikacje",
+          "• Określ oczekiwania płacowe",
+          "• Prześlij CV w formacie PDF"
+        ]
+      },
+      "findJobs": {
+        "title": "Znajdź i aplikuj",
+        "description": "Wskazówki dotyczące efektywnego szukania pracy",
+        "content": [
+          "• Użyj filtrów, aby znaleźć pasujące oferty",
+          "• Zapisuj interesujące oferty w ulubionych",
+          "• Włącz powiadomienia o nowych stanowiskach",
+          "• Aplikuj bezpośrednio jednym kliknięciem",
+          "• Śledź status aplikacji w panelu"
+        ]
+      },
+      "aiTools": {
+        "title": "Używanie narzędzi AI",
+        "description": "Przewodnik po sprawdzaniu CV i więcej",
+        "content": [
+          "JobNachbar oferuje darmowe narzędzia AI do aplikacji:",
+          "• Sprawdzanie CV: Analiza i ulepszanie CV",
+          "• Generator listu motywacyjnego: Twórz indywidualne listy z AI",
+          "• Trener rozmów: Ćwicz typowe pytania dla branży",
+          "• Kalkulator wynagrodzenia: Sprawdź, ile możesz zarobić",
+          "Wszystkie narzędzia znajdziesz w menu 'Wskazówki aplikacyjne'."
+        ]
+      },
+      "premium": {
+        "title": "Korzyści Premium",
+        "description": "Co oferuje JobNachbar Premium?",
+        "content": [
+          "Z Premium otrzymujesz:",
+          "• Nieograniczone użycie narzędzi AI",
+          "• Twój profil jest pokazywany pracodawcom priorytetowo",
+          "• Rozszerzone opcje filtrowania",
+          "• Brak reklam",
+          "• Ekskluzywne wsparcie premium",
+          "Premium kosztuje tylko 4,99€/miesiąc lub 39,99€/rok."
+        ]
+      },
+      "privacy": {
+        "title": "Prywatność i bezpieczeństwo",
+        "description": "Jak chronimy Twoje dane",
+        "content": [
+          "• Dane są szyfrowane podczas przesyłania i przechowywania",
+          "• Nie udostępniamy danych stronom trzecim",
+          "• Decydujesz, jakie informacje widzą pracodawcy",
+          "• Profil można w każdej chwili ukryć",
+          "• Możesz usunąć konto i wszystkie dane w każdej chwili",
+          "Więcej informacji w polityce prywatności."
+        ]
+      }
+    },
+    "employerGuides": {
+      "companyProfile": {
+        "title": "Utwórz profil firmy",
+        "description": "Jak zaprezentować firmę",
+        "content": [
+          "1. Zarejestruj się jako pracodawca",
+          "2. Prześlij logo firmy",
+          "3. Opisz firmę i kulturę",
+          "4. Dodaj zdjęcia miejsca pracy",
+          "5. Podaj dane kontaktowe i lokalizację",
+          "Kompletny profil wygląda profesjonalniej dla kandydatów."
+        ]
+      },
+      "createJob": {
+        "title": "Utwórz ogłoszenie",
+        "description": "Wskazówki dla udanego ogłoszenia",
+        "content": [
+          "• Wybierz jasny, znaczący tytuł",
+          "• Opisz szczegółowo zadania",
+          "• Wymień wymagane kwalifikacje",
+          "• Wspomnij o benefitach",
+          "• Określ widełki płacowe (zwiększa aplikacje)",
+          "• Wybierz odpowiednią kategorię i lokalizację"
+        ]
+      },
+      "manageApplications": {
+        "title": "Zarządzaj aplikacjami",
+        "description": "Efektywne zarządzanie kandydatami",
+        "content": [
+          "• Wszystkie aplikacje pojawiają się w panelu",
+          "• Sortuj kandydatów według statusu (nowy, w recenzji, zaproszony)",
+          "• Pobieraj CV bezpośrednio",
+          "• Kontaktuj się z kandydatami jednym kliknięciem",
+          "• Oznaczaj ulubionych kandydatów",
+          "• Archiwizuj zakończone aplikacje"
+        ]
+      },
+      "subscription": {
+        "title": "Subskrypcja i płatność",
+        "description": "Pakiety i opcje płatności",
+        "content": [
+          "JobNachbar oferuje elastyczne pakiety dla pracodawców:",
+          "• Starter (bezpłatny): 1 aktywne ogłoszenie",
+          "• Professional (29,99€/miesiąc): 5 aktywnych ogłoszeń + baza kandydatów",
+          "• Enterprise (79,99€/miesiąc): Nieograniczone + wsparcie premium",
+          "Płatność fakturą, poleceniem zapłaty lub kartą kredytową.",
+          "Wszystkie pakiety z możliwością miesięcznego anulowania."
+        ]
+      }
+    }
   }
 }

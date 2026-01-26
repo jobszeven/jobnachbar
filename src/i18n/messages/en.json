@@ -644,5 +644,141 @@
     "team": "Your JobNachbar Team",
     "unsubscribe": "Change email settings",
     "footer": "This email was automatically sent by JobNachbar."
+  },
+  "help": {
+    "title": "Help & Tutorials",
+    "subtitle": "Everything you need to know to get the most out of JobNachbar",
+    "searchPlaceholder": "Search for guides...",
+    "forApplicants": "For Applicants",
+    "forEmployers": "For Employers",
+    "notFound": "Didn't find what you're looking for?",
+    "supportMessage": "Our support team is happy to help. Send us a message!",
+    "contactUs": "Contact Us",
+    "browseFaq": "Browse FAQ",
+    "aboutUs": "About Us",
+    "dataProtection": "Privacy",
+    "applicantGuides": {
+      "account": {
+        "title": "Create Account",
+        "description": "Step-by-step registration guide",
+        "content": [
+          "1. Click 'Register' at the top right",
+          "2. Select 'Applicant'",
+          "3. Enter your email and a secure password",
+          "4. Confirm your email via the link sent to you",
+          "5. Complete your profile with personal details"
+        ]
+      },
+      "profile": {
+        "title": "Complete Profile",
+        "description": "How to create a compelling profile",
+        "content": [
+          "A complete profile increases your chances of getting interview invitations.",
+          "• Add a professional photo",
+          "• Describe your work experience in detail",
+          "• List your skills and qualifications",
+          "• Specify your salary expectations",
+          "• Upload your resume as PDF"
+        ]
+      },
+      "findJobs": {
+        "title": "Find & Apply for Jobs",
+        "description": "Tips for effective job searching",
+        "content": [
+          "• Use filter options to find matching jobs",
+          "• Save interesting jobs as favorites",
+          "• Enable job notifications for new positions",
+          "• Apply directly with one click",
+          "• Track your application status in the dashboard"
+        ]
+      },
+      "aiTools": {
+        "title": "Using AI Tools",
+        "description": "Guide for Resume Check & more",
+        "content": [
+          "JobNachbar offers free AI tools for your application:",
+          "• Resume Check: Have your resume analyzed and improved",
+          "• Cover Letter Generator: Create individual cover letters with AI",
+          "• Interview Coach: Practice typical questions for your industry",
+          "• Salary Calculator: Find out what you can earn",
+          "Find all tools under 'Application Tips' in the menu."
+        ]
+      },
+      "premium": {
+        "title": "Premium Benefits",
+        "description": "What does JobNachbar Premium offer?",
+        "content": [
+          "With Premium you get:",
+          "• Unlimited AI tool usage",
+          "• Your profile is shown to employers with priority",
+          "• Extended filter options",
+          "• No advertising",
+          "• Exclusive premium support",
+          "Premium costs only €4.99/month or €39.99/year."
+        ]
+      },
+      "privacy": {
+        "title": "Privacy & Security",
+        "description": "How we protect your data",
+        "content": [
+          "• Your data is encrypted during transfer and storage",
+          "• We do not share data with third parties",
+          "• You decide what information employers can see",
+          "• Your profile can be made invisible at any time",
+          "• You can delete your account and all data at any time",
+          "More info in our privacy policy."
+        ]
+      }
+    },
+    "employerGuides": {
+      "companyProfile": {
+        "title": "Set Up Company Profile",
+        "description": "How to present your company",
+        "content": [
+          "1. Register as an employer",
+          "2. Upload your company logo",
+          "3. Describe your company and culture",
+          "4. Add workplace photos",
+          "5. Provide contact details and location",
+          "A complete profile looks more professional to applicants."
+        ]
+      },
+      "createJob": {
+        "title": "Create Job Posting",
+        "description": "Tips for a successful listing",
+        "content": [
+          "• Choose a clear, meaningful title",
+          "• Describe the tasks in detail",
+          "• List required qualifications",
+          "• Mention benefits and perks",
+          "• Specify salary range (increases applications)",
+          "• Select the right category and location"
+        ]
+      },
+      "manageApplications": {
+        "title": "Manage Applications",
+        "description": "Efficient applicant management",
+        "content": [
+          "• All applications appear in your dashboard",
+          "• Sort applicants by status (new, in review, invited)",
+          "• Download resumes directly",
+          "• Contact applicants with one click",
+          "• Mark favorite candidates",
+          "• Archive completed applications"
+        ]
+      },
+      "subscription": {
+        "title": "Subscription & Payment",
+        "description": "Packages and payment options",
+        "content": [
+          "JobNachbar offers flexible packages for employers:",
+          "• Starter (free): 1 active job posting",
+          "• Professional (€29.99/month): 5 active listings + applicant database",
+          "• Enterprise (€79.99/month): Unlimited + premium support",
+          "Payment by invoice, direct debit or credit card.",
+          "All packages cancellable monthly."
+        ]
+      }
+    }
   }
 }
