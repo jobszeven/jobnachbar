@@ -58,11 +58,11 @@ interface ApplicationsManagementProps {
 }
 
 const statusConfig = {
-  new: { label: 'Neu', color: 'blue', icon: Clock },
-  viewed: { label: 'Angesehen', color: 'gray', icon: Eye },
-  shortlisted: { label: 'Vorgemerkt', color: 'yellow', icon: Star },
-  invited: { label: 'Eingeladen', color: 'green', icon: CheckCircle },
-  rejected: { label: 'Abgesagt', color: 'red', icon: XCircle },
+  new: { label: 'Neu', color: 'blue' as const, icon: Clock },
+  viewed: { label: 'Angesehen', color: 'gray' as const, icon: Eye },
+  shortlisted: { label: 'Vorgemerkt', color: 'yellow' as const, icon: Star },
+  invited: { label: 'Eingeladen', color: 'green' as const, icon: CheckCircle },
+  rejected: { label: 'Abgesagt', color: 'red' as const, icon: XCircle },
 }
 
 export default function ApplicationsManagement({
