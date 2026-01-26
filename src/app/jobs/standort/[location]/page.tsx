@@ -66,6 +66,13 @@ const locations: Record<string, LocationInfo> = {
     population: '~4.500',
     distance: '25 km von Zeven',
   },
+  sottrum: {
+    name: 'Sottrum',
+    slug: 'sottrum',
+    description: 'Sottrum liegt zentral im Landkreis Rotenburg und bietet Jobs in verschiedenen Branchen wie Handwerk, Handel und Dienstleistungen.',
+    population: '~6.500',
+    distance: '20 km von Zeven',
+  },
 }
 
 interface PageProps {

@@ -14,6 +14,7 @@ interface Testimonial {
 }
 
 const testimonials: Testimonial[] = [
+  // Arbeitgeber
   {
     id: '1',
     type: 'employer',
@@ -25,19 +26,20 @@ const testimonials: Testimonial[] = [
   },
   {
     id: '2',
+    type: 'employer',
+    name: 'Autofix',
+    location: 'Zeven',
+    company: 'Autofix',
+    quote: 'Einen guten Kfz-Mechatroniker zu finden ist nicht leicht. Über JobNachbar hat es geklappt - schnell und unkompliziert.',
+    rating: 5,
+  },
+  // Bewerber
+  {
+    id: '3',
     type: 'applicant',
     name: 'Markus K.',
     location: 'Rotenburg',
     quote: 'Endlich eine Plattform nur für unsere Region. Keine Jobs aus Hamburg, sondern genau das was ich gesucht habe.',
-    rating: 5,
-  },
-  {
-    id: '3',
-    type: 'employer',
-    name: 'AutoFix',
-    location: 'Zeven',
-    company: 'AutoFix Werkstatt',
-    quote: 'Einen guten Kfz-Mechatroniker zu finden ist nicht leicht. Über JobNachbar hat es geklappt – schnell und unkompliziert.',
     rating: 5,
   },
   {
@@ -53,16 +55,23 @@ const testimonials: Testimonial[] = [
     type: 'applicant',
     name: 'Sarah M.',
     location: 'Zeven',
-    quote: 'Nach 2 Monaten Suche auf anderen Portalen – hier hatte ich nach einer Woche meinen neuen Job. Direkt in Zeven!',
+    quote: 'Nach 2 Monaten Suche auf anderen Portalen - hier hatte ich nach einer Woche meinen neuen Job. Direkt in Zeven!',
     rating: 5,
   },
   {
     id: '6',
-    type: 'employer',
-    name: 'Bäckerei Müller',
-    location: 'Sittensen',
-    company: 'Bäckerei Müller',
-    quote: 'Als kleiner Familienbetrieb brauchen wir Personal aus der Nähe. JobNachbar liefert genau das – lokale Bewerber, die bleiben wollen.',
+    type: 'applicant',
+    name: 'Thomas B.',
+    location: 'Bremervörde',
+    quote: 'Einfach zu bedienen, übersichtlich und nur lokale Jobs. Genau das hat gefehlt in unserer Region.',
+    rating: 5,
+  },
+  {
+    id: '7',
+    type: 'applicant',
+    name: 'Anna W.',
+    location: 'Tarmstedt',
+    quote: 'Ich wollte nicht mehr pendeln. Über JobNachbar habe ich einen Arbeitsplatz 10 Minuten von zuhause gefunden.',
     rating: 5,
   },
 ]

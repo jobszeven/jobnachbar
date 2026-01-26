@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { MapPin, Heart, Users, Target, ArrowRight } from 'lucide-react'
+import { MapPin, Heart, Users, Phone, ArrowRight } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -10,29 +10,6 @@ export const metadata: Metadata = {
 }
 
 export default function UeberUnsPage() {
-  const values = [
-    {
-      icon: MapPin,
-      title: '100% Regional',
-      description: 'Nur echte Jobs aus Zeven und 30km Umkreis',
-    },
-    {
-      icon: Heart,
-      title: 'Faire Preise',
-      description: 'Kostenlos für Bewerber, faire Preise für lokale Unternehmen',
-    },
-    {
-      icon: Users,
-      title: 'Persönlicher Support',
-      description: 'Wir kennen die Region, weil wir hier leben',
-    },
-    {
-      icon: Target,
-      title: 'Präzises Matching',
-      description: 'Wir verbinden passende Bewerber mit lokalen Arbeitgebern',
-    },
-  ]
-
   return (
     <div className="min-h-screen bg-brand-dark">
       <Header />
@@ -44,9 +21,6 @@ export default function UeberUnsPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Unsere Geschichte
             </h1>
-            <p className="text-xl text-gray-400">
-              Warum wir JobNachbar gegründet haben
-            </p>
           </div>
         </section>
 
@@ -72,7 +46,7 @@ export default function UeberUnsPage() {
                 <h2 className="text-2xl font-bold text-white mb-4">
                   Das wollten wir ändern.
                 </h2>
-                <p className="text-gray-300 leading-relaxed mb-4">
+                <p className="text-gray-300 leading-relaxed">
                   2026 haben wir JobNachbar gegründet. Mit einer einfachen Mission:
                   <span className="text-white font-semibold"> Menschen und Unternehmen in unserer Region zusammenbringen.</span>
                 </p>
@@ -80,7 +54,7 @@ export default function UeberUnsPage() {
 
               <div className="card mb-8">
                 <h2 className="text-2xl font-bold text-white mb-4">
-                  Warum "JobNachbar"?
+                  Warum &ldquo;JobNachbar&rdquo;?
                 </h2>
                 <p className="text-gray-300 leading-relaxed mb-4">
                   Weil der beste Job oft näher ist als man denkt. Beim Nachbarn um die Ecke.
@@ -102,15 +76,34 @@ export default function UeberUnsPage() {
               Unser Versprechen
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {values.map((value) => (
-                <div key={value.title} className="card text-center">
-                  <div className="w-14 h-14 bg-brand-red/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <value.icon className="w-7 h-7 text-brand-red" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">{value.title}</h3>
-                  <p className="text-gray-400 text-sm">{value.description}</p>
+              <div className="card text-center">
+                <div className="w-14 h-14 bg-brand-red/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <MapPin className="w-7 h-7 text-brand-red" />
                 </div>
-              ))}
+                <h3 className="text-lg font-semibold text-white mb-2">100% Regional</h3>
+                <p className="text-gray-400 text-sm">Nur echte Jobs aus Zeven und 30km Umkreis</p>
+              </div>
+              <div className="card text-center">
+                <div className="w-14 h-14 bg-brand-red/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Heart className="w-7 h-7 text-brand-red" />
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">Faire Preise</h3>
+                <p className="text-gray-400 text-sm">Für lokale Unternehmen</p>
+              </div>
+              <div className="card text-center">
+                <div className="w-14 h-14 bg-brand-red/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Phone className="w-7 h-7 text-brand-red" />
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">Persönlicher Support</h3>
+                <p className="text-gray-400 text-sm">Wir sind für Sie da</p>
+              </div>
+              <div className="card text-center">
+                <div className="w-14 h-14 bg-brand-red/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-7 h-7 text-brand-red" />
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">Wir kennen die Region</h3>
+                <p className="text-gray-400 text-sm">Weil wir hier leben</p>
+              </div>
             </div>
           </div>
         </section>
@@ -118,13 +111,8 @@ export default function UeberUnsPage() {
         {/* Team Section */}
         <section className="py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-2xl text-gray-300 italic mb-8">
-              "Wir sind davon überzeugt, dass gute Arbeit vor der Haustür beginnt.
-              Unser Ziel ist es, dass niemand mehr stundenlang pendeln muss,
-              um einen guten Job zu finden."
-            </p>
-            <p className="text-brand-red font-semibold">
-              – Das JobNachbar Team
+            <p className="text-xl text-gray-300 italic mb-8">
+              Das JobNachbar Team
             </p>
           </div>
         </section>

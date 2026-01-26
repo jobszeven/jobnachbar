@@ -83,8 +83,8 @@ export default function PremiumSuccessPage() {
 
           <p className="text-gray-500 text-sm mt-8">
             Fragen? Kontaktiere uns unter{' '}
-            <a href="mailto:premium@jobnachbar.com" className="text-brand-red hover:underline">
-              premium@jobnachbar.com
+            <a href="mailto:info@jobnachbar.com" className="text-brand-red hover:underline">
+              info@jobnachbar.com
             </a>
           </p>
         </div>

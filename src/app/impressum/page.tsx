@@ -32,8 +32,7 @@ export default function Impressum() {
           
           <h2 className="text-xl font-semibold text-white mt-8 mb-4">Kontakt</h2>
           <p className="text-gray-300">
-            Telefon: [wird noch ergänzt]<br />
-            E-Mail: [wird noch ergänzt]
+            E-Mail: <a href="mailto:info@jobnachbar.com" className="text-brand-red hover:underline">info@jobnachbar.com</a>
           </p>
 
           <h2 className="text-xl font-semibold text-white mt-8 mb-4">Berufsbezeichnung</h2>

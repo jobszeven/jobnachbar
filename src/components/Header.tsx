@@ -210,8 +210,11 @@ export default function Header({ variant = 'default' }: HeaderProps) {
               <Logo size="md" />
             </Link>
 
-            {/* Navigation - Center/Right */}
-            <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+            {/* Spacer */}
+            <div className="flex-1 min-w-[40px]" />
+
+            {/* Navigation - Right */}
+            <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
               {menuLinks.main.slice(0, 4).map((link) => (
                 <Link
                   key={link.href}

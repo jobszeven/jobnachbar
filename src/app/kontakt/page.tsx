@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Mail, Phone, MapPin, Send } from 'lucide-react'
+import { Mail, MapPin, Send } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -16,8 +16,7 @@ export default function KontaktPage() {
         <p className="text-gray-400 mb-12">Haben Sie Fragen? Wir helfen Ihnen gerne.</p>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
-            <div className="card"><div className="flex items-start gap-4"><div className="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center"><Mail className="w-6 h-6 text-brand-red" /></div><div><h3 className="text-white font-semibold mb-1">E-Mail</h3><p className="text-gray-400">kontakt@jobnachbar.com</p></div></div></div>
-            <div className="card"><div className="flex items-start gap-4"><div className="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center"><Phone className="w-6 h-6 text-brand-red" /></div><div><h3 className="text-white font-semibold mb-1">Telefon</h3><p className="text-gray-400">[wird ergänzt]</p></div></div></div>
+            <div className="card"><div className="flex items-start gap-4"><div className="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center"><Mail className="w-6 h-6 text-brand-red" /></div><div><h3 className="text-white font-semibold mb-1">E-Mail</h3><p className="text-gray-400"><a href="mailto:info@jobnachbar.com" className="hover:text-brand-red">info@jobnachbar.com</a></p></div></div></div>
             <div className="card"><div className="flex items-start gap-4"><div className="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center"><MapPin className="w-6 h-6 text-brand-red" /></div><div><h3 className="text-white font-semibold mb-1">Adresse</h3><p className="text-gray-400">Idris Akkurt<br/>Feldstraße 22<br/>27404 Zeven</p></div></div></div>
           </div>
           <div className="card">
