@@ -645,6 +645,52 @@
     "unsubscribe": "Change email settings",
     "footer": "This email was automatically sent by JobNachbar."
   },
+  "aboutPage": {
+    "title": "Our Story",
+    "story": {
+      "frustration": {
+        "title": "JobNachbar was born out of frustration.",
+        "p1": "Frustration that job seekers in Zeven and the surrounding area get lost on the big job portals. Hundreds of positions from Hamburg, but hardly any from your own region.",
+        "p2": "And frustration that small businesses here in Rotenburg district place expensive ads – and still can't find suitable applicants."
+      },
+      "change": {
+        "title": "We wanted to change that.",
+        "text": "In 2026, we founded JobNachbar. With a simple mission:",
+        "mission": "Connecting people and businesses in our region."
+      },
+      "whyName": {
+        "title": "Why \"JobNachbar\"?",
+        "p1": "Because the best job is often closer than you think. At the neighbor's around the corner. At the business you drive by every day.",
+        "p2": "We believe that work is more than earning money. It's about short commutes, community, and strengthening our region."
+      }
+    },
+    "promise": {
+      "title": "Our Promise",
+      "regional": {
+        "title": "100% Regional",
+        "desc": "Only real jobs from Zeven and 30km radius"
+      },
+      "fair": {
+        "title": "Fair Prices",
+        "desc": "For local businesses"
+      },
+      "support": {
+        "title": "Personal Support",
+        "desc": "We're here for you"
+      },
+      "local": {
+        "title": "We Know the Region",
+        "desc": "Because we live here"
+      }
+    },
+    "team": "The JobNachbar Team",
+    "cta": {
+      "title": "Become Part of the JobNachbar Community",
+      "subtitle": "Whether as an applicant or employer – we look forward to having you!",
+      "applicant": "Start as Applicant",
+      "employer": "Start as Employer"
+    }
+  },
   "faqPage": {
     "title": "Frequently Asked Questions",
     "subtitle": "Answers to the most important questions about JobNachbar",

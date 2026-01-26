@@ -645,6 +645,52 @@
     "unsubscribe": "E-Mail-Einstellungen ändern",
     "footer": "Diese E-Mail wurde automatisch von JobNachbar versendet."
   },
+  "aboutPage": {
+    "title": "Unsere Geschichte",
+    "story": {
+      "frustration": {
+        "title": "JobNachbar entstand aus Frust.",
+        "p1": "Frust darüber, dass man als Arbeitssuchender in Zeven und Umgebung auf den großen Jobportalen untergeht. Hunderte Stellen aus Hamburg, aber kaum welche aus der eigenen Region.",
+        "p2": "Und Frust darüber, dass kleine Betriebe hier im Landkreis Rotenburg teure Anzeigen schalten – und trotzdem keine passenden Bewerber finden."
+      },
+      "change": {
+        "title": "Das wollten wir ändern.",
+        "text": "2026 haben wir JobNachbar gegründet. Mit einer einfachen Mission:",
+        "mission": "Menschen und Unternehmen in unserer Region zusammenbringen."
+      },
+      "whyName": {
+        "title": "Warum \"JobNachbar\"?",
+        "p1": "Weil der beste Job oft näher ist als man denkt. Beim Nachbarn um die Ecke. Im Betrieb, an dem man jeden Tag vorbeifährt.",
+        "p2": "Wir glauben, dass Arbeit mehr ist als Geld verdienen. Es geht um kurze Wege, um Gemeinschaft, um die Stärkung unserer Region."
+      }
+    },
+    "promise": {
+      "title": "Unser Versprechen",
+      "regional": {
+        "title": "100% Regional",
+        "desc": "Nur echte Jobs aus Zeven und 30km Umkreis"
+      },
+      "fair": {
+        "title": "Faire Preise",
+        "desc": "Für lokale Unternehmen"
+      },
+      "support": {
+        "title": "Persönlicher Support",
+        "desc": "Wir sind für Sie da"
+      },
+      "local": {
+        "title": "Wir kennen die Region",
+        "desc": "Weil wir hier leben"
+      }
+    },
+    "team": "Das JobNachbar Team",
+    "cta": {
+      "title": "Werde Teil der JobNachbar-Community",
+      "subtitle": "Ob als Bewerber oder Arbeitgeber – wir freuen uns auf dich!",
+      "applicant": "Als Bewerber starten",
+      "employer": "Als Arbeitgeber starten"
+    }
+  },
   "faqPage": {
     "title": "Häufige Fragen",
     "subtitle": "Antworten auf die wichtigsten Fragen zu JobNachbar",

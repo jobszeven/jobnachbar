@@ -645,6 +645,52 @@
     "unsubscribe": "Zmień ustawienia e-mail",
     "footer": "Ta wiadomość została wysłana automatycznie przez JobNachbar."
   },
+  "aboutPage": {
+    "title": "Nasza Historia",
+    "story": {
+      "frustration": {
+        "title": "JobNachbar powstał z frustracji.",
+        "p1": "Frustracji, że osoby szukające pracy w Zeven i okolicach gubią się na dużych portalach z ofertami pracy. Setki stanowisk z Hamburga, ale prawie żadnych z własnego regionu.",
+        "p2": "I frustracji, że małe firmy tutaj w powiecie Rotenburg zamieszczają drogie ogłoszenia – i mimo to nie mogą znaleźć odpowiednich kandydatów."
+      },
+      "change": {
+        "title": "Chcieliśmy to zmienić.",
+        "text": "W 2026 roku założyliśmy JobNachbar. Z prostą misją:",
+        "mission": "Łączenie ludzi i firm w naszym regionie."
+      },
+      "whyName": {
+        "title": "Dlaczego \"JobNachbar\"?",
+        "p1": "Bo najlepsza praca jest często bliżej niż myślisz. U sąsiada za rogiem. W firmie, obok której codziennie przejeżdżasz.",
+        "p2": "Wierzymy, że praca to coś więcej niż zarabianie pieniędzy. Chodzi o krótkie dojazdy, społeczność i wzmacnianie naszego regionu."
+      }
+    },
+    "promise": {
+      "title": "Nasza Obietnica",
+      "regional": {
+        "title": "100% Regionalnie",
+        "desc": "Tylko prawdziwe oferty z Zeven i 30km promienia"
+      },
+      "fair": {
+        "title": "Uczciwe Ceny",
+        "desc": "Dla lokalnych firm"
+      },
+      "support": {
+        "title": "Osobiste Wsparcie",
+        "desc": "Jesteśmy tu dla Ciebie"
+      },
+      "local": {
+        "title": "Znamy Region",
+        "desc": "Bo tu mieszkamy"
+      }
+    },
+    "team": "Zespół JobNachbar",
+    "cta": {
+      "title": "Zostań Częścią Społeczności JobNachbar",
+      "subtitle": "Czy to jako kandydat czy pracodawca – cieszymy się na Ciebie!",
+      "applicant": "Zacznij jako kandydat",
+      "employer": "Zacznij jako pracodawca"
+    }
+  },
   "faqPage": {
     "title": "Najczęściej zadawane pytania",
     "subtitle": "Odpowiedzi na najważniejsze pytania o JobNachbar",

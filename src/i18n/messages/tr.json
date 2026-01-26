@@ -645,6 +645,52 @@
     "unsubscribe": "E-posta ayarlarını değiştir",
     "footer": "Bu e-posta JobNachbar tarafından otomatik olarak gönderilmiştir."
   },
+  "aboutPage": {
+    "title": "Hikayemiz",
+    "story": {
+      "frustration": {
+        "title": "JobNachbar hayal kırıklığından doğdu.",
+        "p1": "Zeven ve çevresindeki iş arayanların büyük iş portallarında kaybolmasından duyulan hayal kırıklığı. Hamburg'dan yüzlerce pozisyon, ama kendi bölgenizden neredeyse hiç yok.",
+        "p2": "Ve Rotenburg bölgesindeki küçük işletmelerin pahalı ilanlar vermesine rağmen uygun adaylar bulamamasından duyulan hayal kırıklığı."
+      },
+      "change": {
+        "title": "Bunu değiştirmek istedik.",
+        "text": "2026'da JobNachbar'ı kurduk. Basit bir misyonla:",
+        "mission": "Bölgemizdeki insanları ve işletmeleri bir araya getirmek."
+      },
+      "whyName": {
+        "title": "Neden \"JobNachbar\"?",
+        "p1": "Çünkü en iyi iş genellikle düşündüğünüzden daha yakındır. Köşedeki komşunuzda. Her gün önünden geçtiğiniz işletmede.",
+        "p2": "İşin para kazanmaktan fazlası olduğuna inanıyoruz. Kısa yolculuklar, topluluk ve bölgemizi güçlendirmekle ilgili."
+      }
+    },
+    "promise": {
+      "title": "Sözümüz",
+      "regional": {
+        "title": "%100 Bölgesel",
+        "desc": "Sadece Zeven ve 30km yarıçapından gerçek işler"
+      },
+      "fair": {
+        "title": "Adil Fiyatlar",
+        "desc": "Yerel işletmeler için"
+      },
+      "support": {
+        "title": "Kişisel Destek",
+        "desc": "Sizin için buradayız"
+      },
+      "local": {
+        "title": "Bölgeyi Tanıyoruz",
+        "desc": "Çünkü burada yaşıyoruz"
+      }
+    },
+    "team": "JobNachbar Ekibi",
+    "cta": {
+      "title": "JobNachbar Topluluğunun Bir Parçası Olun",
+      "subtitle": "İster aday ister işveren olun – sizi aramızda görmekten mutluluk duyarız!",
+      "applicant": "Aday olarak başla",
+      "employer": "İşveren olarak başla"
+    }
+  },
   "faqPage": {
     "title": "Sık Sorulan Sorular",
     "subtitle": "JobNachbar hakkında en önemli soruların cevapları",
