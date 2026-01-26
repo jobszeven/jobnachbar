@@ -77,13 +77,16 @@ export default function GehaltPage() {
   const getNegotiationTips = async () => {
     setIsLoading(true)
     try {
+      const industry = industries.find((i) => i.id === selectedIndustry)
+      const experience = experienceLevels.find((e) => e.id === selectedExperience)
+
       const response = await fetch('/api/ai/salary-negotiation', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          industry: selectedIndustry,
-          experience: selectedExperience,
-          jobTitle,
+          jobTitle: jobTitle || industry?.name || 'Position',
+          experience: experience?.name || 'Berufseinsteiger',
+          location: 'Zeven, Niedersachsen',
         }),
       })
 
@@ -93,7 +96,7 @@ export default function GehaltPage() {
         throw new Error(data.error || 'Fehler beim Laden')
       }
 
-      setNegotiationTips(data.tips)
+      setNegotiationTips(data.result?.tips || [])
       toast.success('Verhandlungstipps geladen!')
     } catch (error) {
       toast.error('Fehler beim Laden. Bitte versuche es erneut.')

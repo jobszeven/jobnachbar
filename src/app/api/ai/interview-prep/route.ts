@@ -31,15 +31,15 @@ export async function POST(request: Request) {
 
     const { jobTitle, companyName, industry } = await request.json()
 
-    if (!jobTitle || !companyName || !industry) {
+    if (!jobTitle || !industry) {
       return NextResponse.json({
         error: 'Fehlende Informationen',
-        message: 'Bitte fülle alle Felder aus.',
+        message: 'Bitte fülle Job-Titel und Branche aus.',
       }, { status: 400 })
     }
 
-    // Generate interview prep
-    const result = await generateInterviewPrep(jobTitle, companyName, industry)
+    // Generate interview prep - use industry as company context if no company specified
+    const result = await generateInterviewPrep(jobTitle, companyName || `Unternehmen in der ${industry}-Branche`, industry)
 
     // Update usage count for non-premium users
     if (!userData?.is_premium) {
@@ -51,9 +51,17 @@ export async function POST(request: Request) {
         .eq('id', user.id)
     }
 
+    // Transform result to match frontend expectations
+    const questions = result.commonQuestions.map((q) => ({
+      question: q.question,
+      tips: result.tips.slice(0, 3), // Use general tips for each question
+      exampleAnswer: q.suggestedAnswer,
+    }))
+
     return NextResponse.json({
       success: true,
-      result,
+      questions,
+      companyResearch: result.companyResearch,
       remainingUses: userData?.is_premium ? 'unlimited' : FREE_USES_LIMIT - (userData?.ai_interview_preps_used || 0) - 1,
     })
   } catch (error) {

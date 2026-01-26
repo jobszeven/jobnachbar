@@ -141,6 +141,15 @@ ALTER TABLE users ADD COLUMN IF NOT EXISTS ai_usage_interview INTEGER DEFAULT 0;
 ALTER TABLE users ADD COLUMN IF NOT EXISTS ai_usage_chat INTEGER DEFAULT 0;
 ALTER TABLE users ADD COLUMN IF NOT EXISTS ai_usage_reset_date DATE DEFAULT CURRENT_DATE;
 
+-- AI usage tracking (alternative column names used by API routes)
+ALTER TABLE users ADD COLUMN IF NOT EXISTS ai_resume_checks_used INTEGER DEFAULT 0;
+ALTER TABLE users ADD COLUMN IF NOT EXISTS ai_cover_letters_used INTEGER DEFAULT 0;
+ALTER TABLE users ADD COLUMN IF NOT EXISTS ai_interview_preps_used INTEGER DEFAULT 0;
+ALTER TABLE users ADD COLUMN IF NOT EXISTS ai_salary_tips_used INTEGER DEFAULT 0;
+
+-- Admin flag
+ALTER TABLE users ADD COLUMN IF NOT EXISTS is_admin BOOLEAN DEFAULT false;
+
 -- Onboarding
 ALTER TABLE users ADD COLUMN IF NOT EXISTS onboarding_completed BOOLEAN DEFAULT false;
 ALTER TABLE users ADD COLUMN IF NOT EXISTS onboarding_step INTEGER DEFAULT 0;

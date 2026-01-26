@@ -49,7 +49,7 @@ export default function LebenslaufPage() {
         throw new Error(data.error || 'Analyse fehlgeschlagen')
       }
 
-      setAnalysis(data)
+      setAnalysis(data.result)
       toast.success('Analyse abgeschlossen!')
     } catch (error) {
       toast.error('Fehler bei der Analyse. Bitte versuche es erneut.')

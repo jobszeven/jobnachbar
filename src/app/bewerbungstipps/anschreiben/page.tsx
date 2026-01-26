@@ -37,21 +37,31 @@ export default function AnschreibenPage() {
 
     setIsGenerating(true)
     try {
+      // Build API request with correct field names
+      const apiData = {
+        jobTitle: formData.jobTitle,
+        companyName: formData.company,
+        jobDescription: `Position: ${formData.jobTitle} bei ${formData.company}`,
+        userProfile: `Name: ${formData.yourName}\n${formData.experience ? `Erfahrung: ${formData.experience}\n` : ''}${formData.skills ? `Fähigkeiten: ${formData.skills}\n` : ''}${formData.motivation ? `Motivation: ${formData.motivation}` : ''}`,
+      }
+
       const response = await fetch('/api/ai/generate-cover-letter', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(apiData),
       })
 
       const data = await response.json()
 
       if (!response.ok) {
-        throw new Error(data.error || 'Generierung fehlgeschlagen')
+        throw new Error(data.message || data.error || 'Generierung fehlgeschlagen')
       }
 
-      setGeneratedLetter(data.coverLetter)
+      // API returns result.coverLetter
+      setGeneratedLetter(data.result?.coverLetter || data.coverLetter || '')
       toast.success('Anschreiben generiert!')
     } catch (error) {
+      console.error('Generation error:', error)
       toast.error('Fehler bei der Generierung. Bitte versuche es erneut.')
     } finally {
       setIsGenerating(false)
