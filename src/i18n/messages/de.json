@@ -771,6 +771,72 @@
       "selectBoth": "Bitte wähle Branche und Erfahrung aus"
     }
   },
+  "resumeCheckPage": {
+    "title": "Lebenslauf-Check",
+    "subtitle": "Lass deinen Lebenslauf von unserer KI analysieren",
+    "backLink": "Zurück zu Bewerbungstipps",
+    "input": {
+      "title": "Lebenslauf eingeben",
+      "orPaste": "oder Text einfügen",
+      "placeholder": "Füge hier deinen Lebenslauf-Text ein oder kopiere ihn aus einem Dokument..."
+    },
+    "upload": {
+      "title": "Datei hochladen",
+      "hint": "PDF, DOC, DOCX oder TXT (max. 5MB)",
+      "processing": "Datei wird verarbeitet..."
+    },
+    "analyze": {
+      "button": "Mit KI analysieren",
+      "analyzing": "Analysiere..."
+    },
+    "pdf": {
+      "title": "PDF erstellen",
+      "description": "Wähle eine Design-Vorlage und erstelle ein professionelles PDF.",
+      "download": "PDF herunterladen",
+      "generating": "Erstelle PDF...",
+      "creating": "PDF wird erstellt..."
+    },
+    "templates": {
+      "modern": { "name": "Modern", "desc": "Zeitgemäß" },
+      "classic": { "name": "Klassisch", "desc": "Traditionell" },
+      "creative": { "name": "Kreativ", "desc": "Auffällig" },
+      "minimal": { "name": "Minimal", "desc": "Schlicht" },
+      "professional": { "name": "Professional", "desc": "Business" },
+      "elegant": { "name": "Elegant", "desc": "Stilvoll" },
+      "executive": { "name": "Executive", "desc": "Premium" },
+      "tech": { "name": "Tech", "desc": "Developer" },
+      "academic": { "name": "Akademisch", "desc": "Wissenschaft" },
+      "compact": { "name": "Kompakt", "desc": "Einseiter" }
+    },
+    "result": {
+      "overallScore": "Gesamtbewertung",
+      "excellent": "Ausgezeichnet!",
+      "good": "Gut, mit Verbesserungspotenzial",
+      "needsWork": "Verbesserungen empfohlen",
+      "strengths": "Stärken",
+      "improvements": "Verbesserungsvorschläge",
+      "suggestions": "KI-Empfehlungen",
+      "noResult": "Noch keine Analyse",
+      "noResultHint": "Füge deinen Lebenslauf links ein und klicke auf \"Mit KI analysieren\""
+    },
+    "errors": {
+      "invalidFileType": "Bitte lade eine PDF, DOC, DOCX oder TXT Datei hoch",
+      "fileTooLarge": "Die Datei ist zu groß. Maximal 5MB erlaubt.",
+      "extractionFailed": "Text konnte nicht extrahiert werden. Bitte kopiere den Text manuell.",
+      "uploadFailed": "Fehler beim Hochladen. Bitte versuche es erneut.",
+      "noText": "Bitte füge deinen Lebenslauf-Text ein",
+      "analysisFailed": "Analyse fehlgeschlagen",
+      "analysisError": "Fehler bei der Analyse. Bitte versuche es erneut.",
+      "pdfFailed": "PDF-Erstellung fehlgeschlagen",
+      "pdfError": "Fehler bei der PDF-Erstellung. Bitte versuche es erneut."
+    },
+    "success": {
+      "fileLoaded": "Datei erfolgreich geladen!",
+      "textExtracted": "Text wurde aus der Datei extrahiert!",
+      "analysisComplete": "Analyse abgeschlossen!",
+      "pdfCreated": "PDF wurde erstellt und heruntergeladen!"
+    }
+  },
   "tipsPage": {
     "badge": "KI-gestützte Tools",
     "title": "Bewerbungstipps",

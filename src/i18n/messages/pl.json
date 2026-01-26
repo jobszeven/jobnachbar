@@ -771,6 +771,72 @@
       "selectBoth": "Proszę wybrać branżę i doświadczenie"
     }
   },
+  "resumeCheckPage": {
+    "title": "Sprawdzenie CV",
+    "subtitle": "Pozwól naszemu AI przeanalizować twoje CV",
+    "backLink": "Wróć do Porad Aplikacyjnych",
+    "input": {
+      "title": "Wprowadź CV",
+      "orPaste": "lub wklej tekst",
+      "placeholder": "Wklej tutaj tekst swojego CV lub skopiuj go z dokumentu..."
+    },
+    "upload": {
+      "title": "Prześlij plik",
+      "hint": "PDF, DOC, DOCX lub TXT (maks. 5MB)",
+      "processing": "Przetwarzanie pliku..."
+    },
+    "analyze": {
+      "button": "Analizuj z AI",
+      "analyzing": "Analizowanie..."
+    },
+    "pdf": {
+      "title": "Utwórz PDF",
+      "description": "Wybierz szablon projektu i utwórz profesjonalny PDF.",
+      "download": "Pobierz PDF",
+      "generating": "Tworzenie PDF...",
+      "creating": "Tworzenie PDF..."
+    },
+    "templates": {
+      "modern": { "name": "Nowoczesny", "desc": "Współczesny" },
+      "classic": { "name": "Klasyczny", "desc": "Tradycyjny" },
+      "creative": { "name": "Kreatywny", "desc": "Przyciągający wzrok" },
+      "minimal": { "name": "Minimalny", "desc": "Prosty" },
+      "professional": { "name": "Profesjonalny", "desc": "Biznesowy" },
+      "elegant": { "name": "Elegancki", "desc": "Stylowy" },
+      "executive": { "name": "Kierowniczy", "desc": "Premium" },
+      "tech": { "name": "Tech", "desc": "Deweloper" },
+      "academic": { "name": "Akademicki", "desc": "Naukowy" },
+      "compact": { "name": "Kompaktowy", "desc": "Jednostronicowy" }
+    },
+    "result": {
+      "overallScore": "Ogólna Ocena",
+      "excellent": "Doskonale!",
+      "good": "Dobrze, z potencjałem do poprawy",
+      "needsWork": "Zalecane poprawki",
+      "strengths": "Mocne Strony",
+      "improvements": "Propozycje Poprawek",
+      "suggestions": "Rekomendacje AI",
+      "noResult": "Brak analizy",
+      "noResultHint": "Wpisz swoje CV po lewej stronie i kliknij \"Analizuj z AI\""
+    },
+    "errors": {
+      "invalidFileType": "Proszę przesłać plik PDF, DOC, DOCX lub TXT",
+      "fileTooLarge": "Plik jest za duży. Maksymalnie 5MB dozwolone.",
+      "extractionFailed": "Nie można wyodrębnić tekstu. Proszę skopiować tekst ręcznie.",
+      "uploadFailed": "Przesyłanie nie powiodło się. Proszę spróbować ponownie.",
+      "noText": "Proszę wprowadzić tekst CV",
+      "analysisFailed": "Analiza nie powiodła się",
+      "analysisError": "Błąd podczas analizy. Proszę spróbować ponownie.",
+      "pdfFailed": "Tworzenie PDF nie powiodło się",
+      "pdfError": "Błąd tworzenia PDF. Proszę spróbować ponownie."
+    },
+    "success": {
+      "fileLoaded": "Plik załadowany pomyślnie!",
+      "textExtracted": "Tekst wyodrębniony z pliku!",
+      "analysisComplete": "Analiza zakończona!",
+      "pdfCreated": "PDF utworzony i pobrany!"
+    }
+  },
   "tipsPage": {
     "badge": "Narzędzia wspierane AI",
     "title": "Porady Aplikacyjne",

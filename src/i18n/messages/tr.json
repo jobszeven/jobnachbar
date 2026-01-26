@@ -771,6 +771,72 @@
       "selectBoth": "Lütfen sektör ve deneyim seçin"
     }
   },
+  "resumeCheckPage": {
+    "title": "Özgeçmiş Kontrolü",
+    "subtitle": "Özgeçmişinizi AI'mız tarafından analiz ettirin",
+    "backLink": "Başvuru İpuçlarına Dön",
+    "input": {
+      "title": "Özgeçmiş Girin",
+      "orPaste": "veya metin yapıştırın",
+      "placeholder": "Özgeçmiş metninizi buraya yapıştırın veya bir belgeden kopyalayın..."
+    },
+    "upload": {
+      "title": "Dosya yükle",
+      "hint": "PDF, DOC, DOCX veya TXT (maks. 5MB)",
+      "processing": "Dosya işleniyor..."
+    },
+    "analyze": {
+      "button": "AI ile Analiz Et",
+      "analyzing": "Analiz ediliyor..."
+    },
+    "pdf": {
+      "title": "PDF Oluştur",
+      "description": "Bir tasarım şablonu seçin ve profesyonel bir PDF oluşturun.",
+      "download": "PDF İndir",
+      "generating": "PDF oluşturuluyor...",
+      "creating": "PDF oluşturuluyor..."
+    },
+    "templates": {
+      "modern": { "name": "Modern", "desc": "Çağdaş" },
+      "classic": { "name": "Klasik", "desc": "Geleneksel" },
+      "creative": { "name": "Yaratıcı", "desc": "Dikkat çekici" },
+      "minimal": { "name": "Minimal", "desc": "Sade" },
+      "professional": { "name": "Profesyonel", "desc": "İş" },
+      "elegant": { "name": "Zarif", "desc": "Şık" },
+      "executive": { "name": "Yönetici", "desc": "Premium" },
+      "tech": { "name": "Teknoloji", "desc": "Geliştirici" },
+      "academic": { "name": "Akademik", "desc": "Bilimsel" },
+      "compact": { "name": "Kompakt", "desc": "Tek sayfa" }
+    },
+    "result": {
+      "overallScore": "Genel Puan",
+      "excellent": "Mükemmel!",
+      "good": "İyi, gelişim potansiyeli var",
+      "needsWork": "İyileştirmeler önerilir",
+      "strengths": "Güçlü Yönler",
+      "improvements": "İyileştirme Önerileri",
+      "suggestions": "AI Önerileri",
+      "noResult": "Henüz analiz yok",
+      "noResultHint": "Sol tarafa özgeçmişinizi girin ve \"AI ile Analiz Et\"e tıklayın"
+    },
+    "errors": {
+      "invalidFileType": "Lütfen PDF, DOC, DOCX veya TXT dosyası yükleyin",
+      "fileTooLarge": "Dosya çok büyük. Maksimum 5MB izin verilir.",
+      "extractionFailed": "Metin çıkarılamadı. Lütfen metni manuel olarak kopyalayın.",
+      "uploadFailed": "Yükleme başarısız. Lütfen tekrar deneyin.",
+      "noText": "Lütfen özgeçmiş metninizi girin",
+      "analysisFailed": "Analiz başarısız",
+      "analysisError": "Analiz sırasında hata. Lütfen tekrar deneyin.",
+      "pdfFailed": "PDF oluşturma başarısız",
+      "pdfError": "PDF oluşturulurken hata. Lütfen tekrar deneyin."
+    },
+    "success": {
+      "fileLoaded": "Dosya başarıyla yüklendi!",
+      "textExtracted": "Dosyadan metin çıkarıldı!",
+      "analysisComplete": "Analiz tamamlandı!",
+      "pdfCreated": "PDF oluşturuldu ve indirildi!"
+    }
+  },
   "tipsPage": {
     "badge": "AI Destekli Araçlar",
     "title": "Başvuru İpuçları",

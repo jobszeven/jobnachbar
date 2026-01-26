@@ -771,6 +771,72 @@
       "selectBoth": "Please select industry and experience"
     }
   },
+  "resumeCheckPage": {
+    "title": "Resume Check",
+    "subtitle": "Have your resume analyzed by our AI",
+    "backLink": "Back to Application Tips",
+    "input": {
+      "title": "Enter Resume",
+      "orPaste": "or paste text",
+      "placeholder": "Paste your resume text here or copy it from a document..."
+    },
+    "upload": {
+      "title": "Upload file",
+      "hint": "PDF, DOC, DOCX or TXT (max. 5MB)",
+      "processing": "Processing file..."
+    },
+    "analyze": {
+      "button": "Analyze with AI",
+      "analyzing": "Analyzing..."
+    },
+    "pdf": {
+      "title": "Create PDF",
+      "description": "Choose a design template and create a professional PDF.",
+      "download": "Download PDF",
+      "generating": "Creating PDF...",
+      "creating": "Creating PDF..."
+    },
+    "templates": {
+      "modern": { "name": "Modern", "desc": "Contemporary" },
+      "classic": { "name": "Classic", "desc": "Traditional" },
+      "creative": { "name": "Creative", "desc": "Eye-catching" },
+      "minimal": { "name": "Minimal", "desc": "Simple" },
+      "professional": { "name": "Professional", "desc": "Business" },
+      "elegant": { "name": "Elegant", "desc": "Stylish" },
+      "executive": { "name": "Executive", "desc": "Premium" },
+      "tech": { "name": "Tech", "desc": "Developer" },
+      "academic": { "name": "Academic", "desc": "Scientific" },
+      "compact": { "name": "Compact", "desc": "One-pager" }
+    },
+    "result": {
+      "overallScore": "Overall Score",
+      "excellent": "Excellent!",
+      "good": "Good, with room for improvement",
+      "needsWork": "Improvements recommended",
+      "strengths": "Strengths",
+      "improvements": "Improvement Suggestions",
+      "suggestions": "AI Recommendations",
+      "noResult": "No analysis yet",
+      "noResultHint": "Enter your resume on the left and click \"Analyze with AI\""
+    },
+    "errors": {
+      "invalidFileType": "Please upload a PDF, DOC, DOCX or TXT file",
+      "fileTooLarge": "File is too large. Maximum 5MB allowed.",
+      "extractionFailed": "Text could not be extracted. Please copy the text manually.",
+      "uploadFailed": "Upload failed. Please try again.",
+      "noText": "Please enter your resume text",
+      "analysisFailed": "Analysis failed",
+      "analysisError": "Error during analysis. Please try again.",
+      "pdfFailed": "PDF creation failed",
+      "pdfError": "Error creating PDF. Please try again."
+    },
+    "success": {
+      "fileLoaded": "File loaded successfully!",
+      "textExtracted": "Text extracted from file!",
+      "analysisComplete": "Analysis complete!",
+      "pdfCreated": "PDF created and downloaded!"
+    }
+  },
   "tipsPage": {
     "badge": "AI-Powered Tools",
     "title": "Application Tips",

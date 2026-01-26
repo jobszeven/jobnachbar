@@ -2,6 +2,7 @@
 
 import { useState, useRef } from 'react'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import { FileText, Upload, Download, Sparkles, CheckCircle, AlertCircle, ArrowLeft, Loader2, File, X } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -17,6 +18,7 @@ interface AnalysisResult {
 }
 
 export default function LebenslaufPage() {
+  const t = useTranslations('resumeCheckPage')
   const [resumeText, setResumeText] = useState('')
   const [isAnalyzing, setIsAnalyzing] = useState(false)
   const [analysis, setAnalysis] = useState<AnalysisResult | null>(null)
@@ -33,13 +35,13 @@ export default function LebenslaufPage() {
     // Check file type
     const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'text/plain']
     if (!allowedTypes.includes(file.type)) {
-      toast.error('Bitte lade eine PDF, DOC, DOCX oder TXT Datei hoch')
+      toast.error(t('errors.invalidFileType'))
       return
     }
 
     // Check file size (max 5MB)
     if (file.size > 5 * 1024 * 1024) {
-      toast.error('Die Datei ist zu groß. Maximal 5MB erlaubt.')
+      toast.error(t('errors.fileTooLarge'))
       return
     }
 
@@ -51,7 +53,7 @@ export default function LebenslaufPage() {
       if (file.type === 'text/plain') {
         const text = await file.text()
         setResumeText(text)
-        toast.success('Datei erfolgreich geladen!')
+        toast.success(t('success.fileLoaded'))
         setIsUploading(false)
         return
       }
@@ -67,7 +69,7 @@ export default function LebenslaufPage() {
 
       if (!response.ok) {
         // If extraction fails, inform user to paste text manually
-        toast.error('Text konnte nicht extrahiert werden. Bitte kopiere den Text manuell.')
+        toast.error(t('errors.extractionFailed'))
         setUploadedFile(null)
         setIsUploading(false)
         return
@@ -76,11 +78,11 @@ export default function LebenslaufPage() {
       const data = await response.json()
       if (data.text) {
         setResumeText(data.text)
-        toast.success('Text wurde aus der Datei extrahiert!')
+        toast.success(t('success.textExtracted'))
       }
     } catch (error) {
       console.error('File upload error:', error)
-      toast.error('Fehler beim Hochladen. Bitte versuche es erneut.')
+      toast.error(t('errors.uploadFailed'))
       setUploadedFile(null)
     } finally {
       setIsUploading(false)
@@ -96,21 +98,21 @@ export default function LebenslaufPage() {
   }
 
   const templates = [
-    { id: 'modern' as const, name: 'Modern', description: 'Zeitgemäß' },
-    { id: 'klassisch' as const, name: 'Klassisch', description: 'Traditionell' },
-    { id: 'kreativ' as const, name: 'Kreativ', description: 'Auffällig' },
-    { id: 'minimal' as const, name: 'Minimal', description: 'Schlicht' },
-    { id: 'professionell' as const, name: 'Professional', description: 'Business' },
-    { id: 'elegant' as const, name: 'Elegant', description: 'Stilvoll' },
-    { id: 'executive' as const, name: 'Executive', description: 'Premium' },
-    { id: 'tech' as const, name: 'Tech', description: 'Developer' },
-    { id: 'akademisch' as const, name: 'Akademisch', description: 'Wissenschaft' },
-    { id: 'kompakt' as const, name: 'Kompakt', description: 'Einseiter' },
+    { id: 'modern' as const, name: t('templates.modern.name'), description: t('templates.modern.desc') },
+    { id: 'klassisch' as const, name: t('templates.classic.name'), description: t('templates.classic.desc') },
+    { id: 'kreativ' as const, name: t('templates.creative.name'), description: t('templates.creative.desc') },
+    { id: 'minimal' as const, name: t('templates.minimal.name'), description: t('templates.minimal.desc') },
+    { id: 'professionell' as const, name: t('templates.professional.name'), description: t('templates.professional.desc') },
+    { id: 'elegant' as const, name: t('templates.elegant.name'), description: t('templates.elegant.desc') },
+    { id: 'executive' as const, name: t('templates.executive.name'), description: t('templates.executive.desc') },
+    { id: 'tech' as const, name: t('templates.tech.name'), description: t('templates.tech.desc') },
+    { id: 'akademisch' as const, name: t('templates.academic.name'), description: t('templates.academic.desc') },
+    { id: 'kompakt' as const, name: t('templates.compact.name'), description: t('templates.compact.desc') },
   ]
 
   const analyzeResume = async () => {
     if (!resumeText.trim()) {
-      toast.error('Bitte füge deinen Lebenslauf-Text ein')
+      toast.error(t('errors.noText'))
       return
     }
 
@@ -125,13 +127,13 @@ export default function LebenslaufPage() {
       const data = await response.json()
 
       if (!response.ok) {
-        throw new Error(data.error || 'Analyse fehlgeschlagen')
+        throw new Error(data.error || t('errors.analysisFailed'))
       }
 
       setAnalysis(data.result)
-      toast.success('Analyse abgeschlossen!')
+      toast.success(t('success.analysisComplete'))
     } catch (error) {
-      toast.error('Fehler bei der Analyse. Bitte versuche es erneut.')
+      toast.error(t('errors.analysisError'))
     } finally {
       setIsAnalyzing(false)
     }
@@ -139,12 +141,12 @@ export default function LebenslaufPage() {
 
   const generatePDF = async () => {
     if (!resumeText.trim()) {
-      toast.error('Bitte füge deinen Lebenslauf-Text ein')
+      toast.error(t('errors.noText'))
       return
     }
 
     setIsGenerating(true)
-    toast.loading('PDF wird erstellt...', { id: 'pdf' })
+    toast.loading(t('pdf.creating'), { id: 'pdf' })
 
     try {
       // Parse resume text into structured data (simplified parsing)
@@ -199,7 +201,7 @@ export default function LebenslaufPage() {
 
       if (!response.ok) {
         const error = await response.json()
-        throw new Error(error.message || 'PDF-Erstellung fehlgeschlagen')
+        throw new Error(error.message || t('errors.pdfFailed'))
       }
 
       // Download the PDF
@@ -213,10 +215,10 @@ export default function LebenslaufPage() {
       window.URL.revokeObjectURL(url)
       document.body.removeChild(a)
 
-      toast.success('PDF wurde erstellt und heruntergeladen!', { id: 'pdf' })
+      toast.success(t('success.pdfCreated'), { id: 'pdf' })
     } catch (error) {
       console.error('PDF generation error:', error)
-      toast.error('Fehler bei der PDF-Erstellung. Bitte versuche es erneut.', { id: 'pdf' })
+      toast.error(t('errors.pdfError'), { id: 'pdf' })
     } finally {
       setIsGenerating(false)
     }
@@ -231,7 +233,7 @@ export default function LebenslaufPage() {
           {/* Back Link */}
           <Link href="/bewerbungstipps" className="inline-flex items-center text-gray-400 hover:text-white mb-6">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Zurück zu Bewerbungstipps
+            {t('backLink')}
           </Link>
 
           {/* Header */}
@@ -240,8 +242,8 @@ export default function LebenslaufPage() {
               <FileText className="w-8 h-8 text-brand-red" />
             </div>
             <div>
-              <h1 className="text-3xl font-bold text-white">Lebenslauf-Check</h1>
-              <p className="text-gray-400">Lass deinen Lebenslauf von unserer KI analysieren</p>
+              <h1 className="text-3xl font-bold text-white">{t('title')}</h1>
+              <p className="text-gray-400">{t('subtitle')}</p>
             </div>
           </div>
 
@@ -251,7 +253,7 @@ export default function LebenslaufPage() {
               <div className="card">
                 <h2 className="text-lg font-semibold text-white mb-4 flex items-center">
                   <Upload className="w-5 h-5 mr-2 text-brand-red" />
-                  Lebenslauf eingeben
+                  {t('input.title')}
                 </h2>
 
                 {/* File Upload Area */}
@@ -291,13 +293,13 @@ export default function LebenslaufPage() {
                       {isUploading ? (
                         <>
                           <Loader2 className="w-10 h-10 text-brand-red animate-spin mb-2" />
-                          <p className="text-gray-400">Datei wird verarbeitet...</p>
+                          <p className="text-gray-400">{t('upload.processing')}</p>
                         </>
                       ) : (
                         <>
                           <Upload className="w-10 h-10 text-gray-500 mb-2" />
-                          <p className="text-white font-medium">Datei hochladen</p>
-                          <p className="text-gray-400 text-sm mt-1">PDF, DOC, DOCX oder TXT (max. 5MB)</p>
+                          <p className="text-white font-medium">{t('upload.title')}</p>
+                          <p className="text-gray-400 text-sm mt-1">{t('upload.hint')}</p>
                         </>
                       )}
                     </label>
@@ -306,14 +308,14 @@ export default function LebenslaufPage() {
 
                 <div className="relative">
                   <div className="absolute inset-x-0 top-0 flex items-center justify-center -mt-3">
-                    <span className="px-3 bg-brand-dark-card text-gray-500 text-sm">oder Text einfügen</span>
+                    <span className="px-3 bg-brand-dark-card text-gray-500 text-sm">{t('input.orPaste')}</span>
                   </div>
                 </div>
 
                 <textarea
                   value={resumeText}
                   onChange={(e) => setResumeText(e.target.value)}
-                  placeholder="Füge hier deinen Lebenslauf-Text ein oder kopiere ihn aus einem Dokument..."
+                  placeholder={t('input.placeholder')}
                   className="input-field h-48 resize-none mt-4"
                 />
                 <button
@@ -324,12 +326,12 @@ export default function LebenslaufPage() {
                   {isAnalyzing ? (
                     <>
                       <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                      Analysiere...
+                      {t('analyze.analyzing')}
                     </>
                   ) : (
                     <>
                       <Sparkles className="w-5 h-5 mr-2" />
-                      Mit KI analysieren
+                      {t('analyze.button')}
                     </>
                   )}
                 </button>
@@ -339,10 +341,10 @@ export default function LebenslaufPage() {
               <div className="card">
                 <h2 className="text-lg font-semibold text-white mb-4 flex items-center">
                   <Download className="w-5 h-5 mr-2 text-brand-red" />
-                  PDF erstellen
+                  {t('pdf.title')}
                 </h2>
                 <p className="text-gray-400 text-sm mb-4">
-                  Wähle eine Design-Vorlage und erstelle ein professionelles PDF.
+                  {t('pdf.description')}
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 mb-4">
                   {templates.map((template) => (
@@ -368,12 +370,12 @@ export default function LebenslaufPage() {
                   {isGenerating ? (
                     <>
                       <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                      Erstelle PDF...
+                      {t('pdf.generating')}
                     </>
                   ) : (
                     <>
                       <Download className="w-5 h-5 mr-2" />
-                      PDF herunterladen
+                      {t('pdf.download')}
                     </>
                   )}
                 </button>
@@ -386,12 +388,12 @@ export default function LebenslaufPage() {
                 <div className="space-y-6">
                   {/* Score */}
                   <div className="card text-center">
-                    <p className="text-gray-400 mb-2">Gesamtbewertung</p>
+                    <p className="text-gray-400 mb-2">{t('result.overallScore')}</p>
                     <div className="text-6xl font-bold text-brand-red mb-2">
                       {analysis.score}%
                     </div>
                     <p className="text-gray-400">
-                      {analysis.score >= 80 ? 'Ausgezeichnet!' : analysis.score >= 60 ? 'Gut, mit Verbesserungspotenzial' : 'Verbesserungen empfohlen'}
+                      {analysis.score >= 80 ? t('result.excellent') : analysis.score >= 60 ? t('result.good') : t('result.needsWork')}
                     </p>
                   </div>
 
@@ -399,7 +401,7 @@ export default function LebenslaufPage() {
                   <div className="card">
                     <h3 className="font-semibold text-white mb-3 flex items-center">
                       <CheckCircle className="w-5 h-5 mr-2 text-green-400" />
-                      Stärken
+                      {t('result.strengths')}
                     </h3>
                     <ul className="space-y-2">
                       {analysis.strengths.map((strength, i) => (
@@ -415,7 +417,7 @@ export default function LebenslaufPage() {
                   <div className="card">
                     <h3 className="font-semibold text-white mb-3 flex items-center">
                       <AlertCircle className="w-5 h-5 mr-2 text-yellow-400" />
-                      Verbesserungsvorschläge
+                      {t('result.improvements')}
                     </h3>
                     <ul className="space-y-2">
                       {analysis.improvements.map((improvement, i) => (
@@ -431,7 +433,7 @@ export default function LebenslaufPage() {
                   <div className="card">
                     <h3 className="font-semibold text-white mb-3 flex items-center">
                       <Sparkles className="w-5 h-5 mr-2 text-brand-red" />
-                      KI-Empfehlungen
+                      {t('result.suggestions')}
                     </h3>
                     <ul className="space-y-2">
                       {analysis.suggestions.map((suggestion, i) => (
@@ -447,10 +449,10 @@ export default function LebenslaufPage() {
                 <div className="card text-center py-16">
                   <FileText className="w-16 h-16 text-gray-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-white mb-2">
-                    Noch keine Analyse
+                    {t('result.noResult')}
                   </h3>
                   <p className="text-gray-400">
-                    Füge deinen Lebenslauf links ein und klicke auf &ldquo;Mit KI analysieren&rdquo;
+                    {t('result.noResultHint')}
                   </p>
                 </div>
               )}
