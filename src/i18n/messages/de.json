@@ -837,6 +837,125 @@
       "pdfCreated": "PDF wurde erstellt und heruntergeladen!"
     }
   },
+  "industriesPage": {
+    "title": "Branchen im Landkreis Rotenburg",
+    "subtitle": "Entdecke die wichtigsten Branchen in unserer Region, typische Berufe, Gehaltsaussichten und lokale Besonderheiten.",
+    "backLink": "Zurück zu Bewerbungstipps",
+    "stats": {
+      "radius": "Suchradius",
+      "population": "Einwohner",
+      "industries": "Branchen",
+      "average": "Durchschnitt"
+    },
+    "demand": {
+      "high": "Sehr gefragt",
+      "medium": "Gefragt",
+      "low": "Moderat"
+    },
+    "salaryLabel": "Gehalt",
+    "salaryUnit": "brutto/Monat",
+    "typicalJobs": "Typische Berufe",
+    "requirements": "Anforderungen",
+    "outlook": "Zukunftsaussichten",
+    "localInfo": "Lokale Info",
+    "findJobs": "Jobs in {industry} finden",
+    "cta": {
+      "title": "Bereit für deine Bewerbung?",
+      "subtitle": "Nutze unsere kostenlosen KI-Tools, um deine Bewerbung zu verbessern.",
+      "browseJobs": "Jobs durchsuchen",
+      "resumeCheck": "Lebenslauf-Check starten"
+    },
+    "data": {
+      "handwerk": {
+        "name": "Handwerk",
+        "description": "Das Handwerk ist das Rückgrat der Region. Von Tischlereien über Kfz-Werkstätten bis zu Elektrikern - die Nachfrage nach qualifizierten Fachkräften ist hoch.",
+        "jobs": ["Kfz-Mechatroniker/in", "Tischler/in", "Elektriker/in", "Dachdecker/in", "Maler/in", "Installateur/in"],
+        "requirements": ["Abgeschlossene Ausbildung", "Handwerkliches Geschick", "Führerschein oft erforderlich"],
+        "outlook": "Sehr gute Perspektiven aufgrund des Fachkräftemangels. Viele Betriebe suchen dringend Nachwuchs.",
+        "localInfo": "Im Landkreis Rotenburg gibt es über 2.000 Handwerksbetriebe mit mehr als 15.000 Beschäftigten."
+      },
+      "pflege_gesundheit": {
+        "name": "Pflege & Gesundheit",
+        "description": "Der Gesundheitssektor wächst stetig. Krankenhäuser, Pflegeheime und ambulante Dienste suchen permanent qualifiziertes Personal.",
+        "jobs": ["Pflegefachkraft", "Krankenpfleger/in", "Altenpfleger/in", "Medizinische Fachangestellte", "Physiotherapeut/in"],
+        "requirements": ["Staatlich anerkannte Ausbildung", "Empathie und Belastbarkeit", "Schichtbereitschaft"],
+        "outlook": "Langfristig sichere Branche mit wachsendem Bedarf durch den demografischen Wandel.",
+        "localInfo": "Das AGAPLESION Diakonieklinikum Rotenburg und zahlreiche Pflegeeinrichtungen bieten viele Arbeitsplätze."
+      },
+      "gastro_hotel": {
+        "name": "Gastronomie & Hotel",
+        "description": "Restaurants, Hotels und Catering-Unternehmen bieten vielfältige Einstiegsmöglichkeiten - auch ohne formale Ausbildung.",
+        "jobs": ["Koch/Köchin", "Servicekraft", "Hotelfachmann/-frau", "Küchenhilfe", "Restaurantleitung"],
+        "requirements": ["Je nach Position Ausbildung oder Erfahrung", "Flexibilität bei Arbeitszeiten", "Teamfähigkeit"],
+        "outlook": "Hohe Nachfrage, besonders in der Sommersaison. Viele Betriebe bieten Quereinsteigern Chancen.",
+        "localInfo": "Die Gastronomie in Zeven und Umgebung profitiert von Touristen und lokaler Kundschaft."
+      },
+      "einzelhandel": {
+        "name": "Einzelhandel",
+        "description": "Der lokale Einzelhandel bleibt ein wichtiger Arbeitgeber. Supermärkte, Fachgeschäfte und Baumärkte suchen regelmäßig Mitarbeiter.",
+        "jobs": ["Verkäufer/in", "Kassierer/in", "Filialleitung", "Lagerist/in", "Einzelhandelskaufmann/-frau"],
+        "requirements": ["Kundenorientierung", "Flexibilität", "Oft Samstagsarbeit"],
+        "outlook": "Stabile Nachfrage, besonders für Teilzeitkräfte und Minijobber.",
+        "localInfo": "Das Gewerbegebiet in Zeven bietet zahlreiche Einkaufsmöglichkeiten und damit Arbeitsplätze."
+      },
+      "logistik_transport": {
+        "name": "Logistik & Transport",
+        "description": "Die zentrale Lage zwischen Hamburg und Bremen macht die Region zu einem Logistik-Standort mit wachsender Bedeutung.",
+        "jobs": ["Lkw-Fahrer/in", "Lagerlogistiker/in", "Speditionskaufmann/-frau", "Staplerfahrer/in", "Kommissionierer/in"],
+        "requirements": ["Führerschein (CE für Lkw)", "Körperliche Fitness", "Zuverlässigkeit"],
+        "outlook": "Wachsende Branche mit gutem Bedarf an Fahrern und Lagerpersonal.",
+        "localInfo": "Mehrere Speditionen und Logistikunternehmen sind in der Region ansässig."
+      },
+      "industrie_produktion": {
+        "name": "Industrie & Produktion",
+        "description": "Produzierende Unternehmen in der Region bieten sichere Arbeitsplätze mit guter Bezahlung.",
+        "jobs": ["Produktionsmitarbeiter/in", "Maschinen- und Anlagenführer/in", "Industriemechaniker/in", "Qualitätsprüfer/in"],
+        "requirements": ["Technisches Verständnis", "Schichtbereitschaft", "Genauigkeit"],
+        "outlook": "Solide Perspektiven mit Automatisierungstrend, der neue Qualifikationen erfordert.",
+        "localInfo": "Mehrere mittelständische Produktionsunternehmen bieten Arbeitsplätze in der Region."
+      },
+      "buero_verwaltung": {
+        "name": "Büro & Verwaltung",
+        "description": "Kaufmännische Berufe in Verwaltung, Buchhaltung und Organisation sind gefragt.",
+        "jobs": ["Bürokaufmann/-frau", "Buchhalter/in", "Sachbearbeiter/in", "Sekretär/in", "Personalreferent/in"],
+        "requirements": ["Kaufmännische Ausbildung", "EDV-Kenntnisse", "Organisationstalent"],
+        "outlook": "Stabile Nachfrage mit zunehmender Digitalisierung der Arbeitsprozesse.",
+        "localInfo": "Die Kreisverwaltung in Rotenburg und lokale Unternehmen bieten vielfältige Bürojobs."
+      },
+      "it_technik": {
+        "name": "IT & Technik",
+        "description": "Auch in ländlichen Regionen wächst die Nachfrage nach IT-Fachkräften kontinuierlich.",
+        "jobs": ["IT-Systemadministrator/in", "Softwareentwickler/in", "IT-Support", "Webentwickler/in"],
+        "requirements": ["IT-Ausbildung oder Studium", "Aktuelle Technologie-Kenntnisse", "Problemlösungskompetenz"],
+        "outlook": "Sehr gute Zukunftsperspektiven mit steigendem Bedarf in allen Branchen.",
+        "localInfo": "Remote-Arbeit ermöglicht auch Jobs bei Arbeitgebern außerhalb der Region."
+      },
+      "bau_architektur": {
+        "name": "Bau & Architektur",
+        "description": "Die Baubranche boomt - sowohl im Neubau als auch bei Sanierungen ist viel zu tun.",
+        "jobs": ["Maurer/in", "Zimmermann/-frau", "Bauingenieur/in", "Bauleiter/in", "Fliesenleger/in"],
+        "requirements": ["Handwerkliche Ausbildung", "Körperliche Belastbarkeit", "Witterungsunabhängigkeit"],
+        "outlook": "Anhaltend hohe Nachfrage durch Neubau und energetische Sanierungen.",
+        "localInfo": "Viele lokale Bauunternehmen suchen permanent Fachkräfte."
+      },
+      "landwirtschaft": {
+        "name": "Landwirtschaft",
+        "description": "Die Landwirtschaft prägt die Region und bietet vielfältige Arbeitsplätze.",
+        "jobs": ["Landwirt/in", "Tierwirt/in", "Landmaschinenmechaniker/in", "Erntehelfer/in"],
+        "requirements": ["Landwirtschaftliche Ausbildung von Vorteil", "Führerschein", "Flexibilität"],
+        "outlook": "Stabile Branche mit Modernisierung und Spezialisierung.",
+        "localInfo": "Der Landkreis Rotenburg ist stark landwirtschaftlich geprägt."
+      },
+      "bildung_soziales": {
+        "name": "Bildung & Soziales",
+        "description": "Schulen, Kindergärten und soziale Einrichtungen suchen engagierte Mitarbeiter.",
+        "jobs": ["Erzieher/in", "Sozialarbeiter/in", "Lehrer/in", "Sozialpädagoge/in", "Heilerziehungspfleger/in"],
+        "requirements": ["Pädagogische Ausbildung", "Geduld und Empathie", "Erweitertes Führungszeugnis"],
+        "outlook": "Sehr gute Perspektiven durch Ausbau der Kinderbetreuung und Ganztagsschulen.",
+        "localInfo": "Mehrere Schulen und Kindertagesstätten in der Region suchen Personal."
+      }
+    }
+  },
   "tipsPage": {
     "badge": "KI-gestützte Tools",
     "title": "Bewerbungstipps",

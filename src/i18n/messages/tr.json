@@ -837,6 +837,125 @@
       "pdfCreated": "PDF oluşturuldu ve indirildi!"
     }
   },
+  "industriesPage": {
+    "title": "Rotenburg Bölgesi Sektörleri",
+    "subtitle": "Bölgemizdeki en önemli sektörleri, tipik meslekleri, maaş beklentilerini ve yerel özellikleri keşfedin.",
+    "backLink": "Başvuru İpuçlarına Dön",
+    "stats": {
+      "radius": "Arama yarıçapı",
+      "population": "Nüfus",
+      "industries": "Sektörler",
+      "average": "Ortalama"
+    },
+    "demand": {
+      "high": "Yüksek talep",
+      "medium": "Talep var",
+      "low": "Orta"
+    },
+    "salaryLabel": "Maaş",
+    "salaryUnit": "brüt/ay",
+    "typicalJobs": "Tipik Meslekler",
+    "requirements": "Gereksinimler",
+    "outlook": "Gelecek Görünümü",
+    "localInfo": "Yerel Bilgi",
+    "findJobs": "{industry} iş ilanlarını bul",
+    "cta": {
+      "title": "Başvurunuz için hazır mısınız?",
+      "subtitle": "Başvurunuzu geliştirmek için ücretsiz AI araçlarımızı kullanın.",
+      "browseJobs": "İşlere Göz At",
+      "resumeCheck": "Özgeçmiş Kontrolü Başlat"
+    },
+    "data": {
+      "handwerk": {
+        "name": "El Sanatları",
+        "description": "El sanatları bölgenin belkemiğidir. Marangozluklardan oto tamirhanelerine ve elektrikçilere kadar - nitelikli profesyonellere talep yüksektir.",
+        "jobs": ["Oto Tamircisi", "Marangoz", "Elektrikçi", "Çatı Ustası", "Boyacı", "Tesisatçı"],
+        "requirements": ["Tamamlanmış çıraklık", "El becerileri", "Ehliyet genellikle gerekli"],
+        "outlook": "Nitelikli işçi sıkıntısı nedeniyle çok iyi beklentiler. Birçok şirket acil olarak yeni yetenek arıyor.",
+        "localInfo": "Rotenburg bölgesinde 15.000'den fazla çalışanı olan 2.000'den fazla zanaat işletmesi bulunmaktadır."
+      },
+      "pflege_gesundheit": {
+        "name": "Sağlık Hizmetleri",
+        "description": "Sağlık sektörü istikrarlı bir şekilde büyüyor. Hastaneler, huzurevleri ve ayakta tedavi hizmetleri sürekli nitelikli personel arıyor.",
+        "jobs": ["Hemşire", "Sertifikalı Hemşire", "Yaşlı Bakım Hemşiresi", "Tıbbi Asistan", "Fizyoterapist"],
+        "requirements": ["Devlet onaylı eğitim", "Empati ve dayanıklılık", "Vardiyalı çalışma isteği"],
+        "outlook": "Demografik değişim nedeniyle artan taleple uzun vadeli güvenli sektör.",
+        "localInfo": "AGAPLESION Diakonieklinikum Rotenburg ve çok sayıda bakım tesisi birçok iş sunmaktadır."
+      },
+      "gastro_hotel": {
+        "name": "Gastronomi ve Otel",
+        "description": "Restoranlar, oteller ve catering şirketleri - resmi eğitim olmadan bile - çeşitli giriş fırsatları sunuyor.",
+        "jobs": ["Aşçı", "Garson", "Otel Profesyoneli", "Mutfak Yardımcısı", "Restoran Müdürü"],
+        "requirements": ["Pozisyona göre eğitim veya deneyim", "Çalışma saatlerinde esneklik", "Takım oyuncusu"],
+        "outlook": "Özellikle yaz sezonunda yüksek talep. Birçok işletme kariyer değiştirenler için fırsatlar sunuyor.",
+        "localInfo": "Zeven ve çevresindeki gastronomi turistlerden ve yerel müşterilerden yararlanıyor."
+      },
+      "einzelhandel": {
+        "name": "Perakende",
+        "description": "Yerel perakende önemli bir işveren olmaya devam ediyor. Süpermarketler, uzmanlık mağazaları ve yapı marketler düzenli olarak çalışan arıyor.",
+        "jobs": ["Satış Danışmanı", "Kasiyer", "Şube Müdürü", "Depo Görevlisi", "Perakende Satıcı"],
+        "requirements": ["Müşteri odaklılık", "Esneklik", "Genellikle Cumartesi çalışması"],
+        "outlook": "Özellikle yarı zamanlı çalışanlar ve mini-job'lar için istikrarlı talep.",
+        "localInfo": "Zeven'deki ticaret bölgesi çok sayıda alışveriş imkanı ve dolayısıyla iş sunuyor."
+      },
+      "logistik_transport": {
+        "name": "Lojistik ve Nakliye",
+        "description": "Hamburg ve Bremen arasındaki merkezi konum, bölgeyi artan öneme sahip bir lojistik merkezi yapıyor.",
+        "jobs": ["Kamyon Şoförü", "Depo Lojistik Uzmanı", "Nakliye Memuru", "Forklift Operatörü", "Sipariş Toplayıcı"],
+        "requirements": ["Ehliyet (kamyonlar için CE)", "Fiziksel kondisyon", "Güvenilirlik"],
+        "outlook": "Sürücüler ve depo personeli için iyi talepli büyüyen sektör.",
+        "localInfo": "Bölgede birçok nakliye ve lojistik şirketi bulunmaktadır."
+      },
+      "industrie_produktion": {
+        "name": "Sanayi ve Üretim",
+        "description": "Bölgedeki üretim şirketleri iyi maaşlı güvenli işler sunuyor.",
+        "jobs": ["Üretim İşçisi", "Makine Operatörü", "Endüstriyel Mekanik", "Kalite Kontrolcü"],
+        "requirements": ["Teknik anlayış", "Vardiyalı çalışma isteği", "Hassasiyet"],
+        "outlook": "Yeni nitelikler gerektiren otomasyon trendi ile sağlam beklentiler.",
+        "localInfo": "Bölgede birçok orta ölçekli üretim şirketi iş sunmaktadır."
+      },
+      "buero_verwaltung": {
+        "name": "Ofis ve Yönetim",
+        "description": "Yönetim, muhasebe ve organizasyon alanlarında ticari mesleklere talep var.",
+        "jobs": ["Ofis Memuru", "Muhasebeci", "İdari Asistan", "Sekreter", "İK Uzmanı"],
+        "requirements": ["Ticari eğitim", "BT becerileri", "Organizasyon yeteneği"],
+        "outlook": "İş süreçlerinin artan dijitalleşmesi ile istikrarlı talep.",
+        "localInfo": "Rotenburg'daki ilçe yönetimi ve yerel şirketler çeşitli ofis işleri sunuyor."
+      },
+      "it_technik": {
+        "name": "BT ve Teknoloji",
+        "description": "Kırsal bölgelerde bile BT profesyonellerine talep sürekli artıyor.",
+        "jobs": ["BT Sistem Yöneticisi", "Yazılım Geliştirici", "BT Desteği", "Web Geliştirici"],
+        "requirements": ["BT eğitimi veya derecesi", "Güncel teknoloji bilgisi", "Problem çözme becerileri"],
+        "outlook": "Tüm sektörlerde artan talep ile çok iyi gelecek beklentileri.",
+        "localInfo": "Uzaktan çalışma, bölge dışındaki işverenlerle de iş imkanı sağlıyor."
+      },
+      "bau_architektur": {
+        "name": "İnşaat ve Mimarlık",
+        "description": "İnşaat sektörü patlama yaşıyor - hem yeni inşaat hem de tadilatlar yüksek talep görüyor.",
+        "jobs": ["Duvarcı", "Marangoz", "İnşaat Mühendisi", "Şantiye Şefi", "Fayans Döşemeci"],
+        "requirements": ["Zanaat eğitimi", "Fiziksel dayanıklılık", "Hava koşullarından bağımsızlık"],
+        "outlook": "Yeni inşaat ve enerji verimli tadilatlar nedeniyle devam eden yüksek talep.",
+        "localInfo": "Birçok yerel inşaat şirketi sürekli nitelikli işçi arıyor."
+      },
+      "landwirtschaft": {
+        "name": "Tarım",
+        "description": "Tarım bölgeyi şekillendiriyor ve çeşitli işler sunuyor.",
+        "jobs": ["Çiftçi", "Hayvan Bakıcısı", "Tarım Makineleri Tamircisi", "Hasat İşçisi"],
+        "requirements": ["Tarım eğitimi avantajlı", "Ehliyet", "Esneklik"],
+        "outlook": "Modernizasyon ve uzmanlaşma ile istikrarlı sektör.",
+        "localInfo": "Rotenburg bölgesi güçlü tarımsal karaktere sahiptir."
+      },
+      "bildung_soziales": {
+        "name": "Eğitim ve Sosyal",
+        "description": "Okullar, anaokulları ve sosyal kurumlar kendini işine adamış çalışanlar arıyor.",
+        "jobs": ["Eğitimci", "Sosyal Hizmet Uzmanı", "Öğretmen", "Sosyal Pedagog", "Özel Gereksinim Bakıcısı"],
+        "requirements": ["Pedagojik eğitim", "Sabır ve empati", "Genişletilmiş güvenlik soruşturması"],
+        "outlook": "Çocuk bakımı ve tam gün okulların genişlemesi nedeniyle çok iyi beklentiler.",
+        "localInfo": "Bölgedeki birçok okul ve kreş personel arıyor."
+      }
+    }
+  },
   "tipsPage": {
     "badge": "AI Destekli Araçlar",
     "title": "Başvuru İpuçları",

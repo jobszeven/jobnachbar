@@ -837,6 +837,125 @@
       "pdfCreated": "PDF created and downloaded!"
     }
   },
+  "industriesPage": {
+    "title": "Industries in Rotenburg District",
+    "subtitle": "Discover the most important industries in our region, typical jobs, salary prospects, and local specifics.",
+    "backLink": "Back to Application Tips",
+    "stats": {
+      "radius": "Search radius",
+      "population": "Population",
+      "industries": "Industries",
+      "average": "Average"
+    },
+    "demand": {
+      "high": "High demand",
+      "medium": "In demand",
+      "low": "Moderate"
+    },
+    "salaryLabel": "Salary",
+    "salaryUnit": "gross/month",
+    "typicalJobs": "Typical Jobs",
+    "requirements": "Requirements",
+    "outlook": "Future Outlook",
+    "localInfo": "Local Info",
+    "findJobs": "Find jobs in {industry}",
+    "cta": {
+      "title": "Ready for your application?",
+      "subtitle": "Use our free AI tools to improve your application.",
+      "browseJobs": "Browse Jobs",
+      "resumeCheck": "Start Resume Check"
+    },
+    "data": {
+      "handwerk": {
+        "name": "Crafts",
+        "description": "Crafts are the backbone of the region. From carpentry to auto workshops to electricians - the demand for qualified professionals is high.",
+        "jobs": ["Automotive Mechanic", "Carpenter", "Electrician", "Roofer", "Painter", "Plumber"],
+        "requirements": ["Completed apprenticeship", "Manual skills", "Driver's license often required"],
+        "outlook": "Very good prospects due to skilled worker shortage. Many companies urgently seeking new talent.",
+        "localInfo": "Rotenburg district has over 2,000 craft businesses with more than 15,000 employees."
+      },
+      "pflege_gesundheit": {
+        "name": "Healthcare",
+        "description": "The healthcare sector is growing steadily. Hospitals, nursing homes, and outpatient services are constantly seeking qualified personnel.",
+        "jobs": ["Nurse", "Registered Nurse", "Geriatric Nurse", "Medical Assistant", "Physiotherapist"],
+        "requirements": ["State-recognized training", "Empathy and resilience", "Willingness to work shifts"],
+        "outlook": "Long-term secure industry with growing demand due to demographic change.",
+        "localInfo": "AGAPLESION Diakonieklinikum Rotenburg and numerous care facilities offer many jobs."
+      },
+      "gastro_hotel": {
+        "name": "Gastronomy & Hotel",
+        "description": "Restaurants, hotels, and catering companies offer diverse entry opportunities - even without formal training.",
+        "jobs": ["Chef", "Waiter/Waitress", "Hotel Professional", "Kitchen Helper", "Restaurant Manager"],
+        "requirements": ["Training or experience depending on position", "Flexibility with working hours", "Team player"],
+        "outlook": "High demand, especially in summer season. Many businesses offer opportunities for career changers.",
+        "localInfo": "The gastronomy in Zeven and surroundings benefits from tourists and local customers."
+      },
+      "einzelhandel": {
+        "name": "Retail",
+        "description": "Local retail remains an important employer. Supermarkets, specialty stores, and hardware stores regularly seek employees.",
+        "jobs": ["Sales Associate", "Cashier", "Branch Manager", "Warehouse Worker", "Retail Merchant"],
+        "requirements": ["Customer orientation", "Flexibility", "Often Saturday work"],
+        "outlook": "Stable demand, especially for part-time workers and mini-jobbers.",
+        "localInfo": "The commercial area in Zeven offers numerous shopping opportunities and thus jobs."
+      },
+      "logistik_transport": {
+        "name": "Logistics & Transport",
+        "description": "The central location between Hamburg and Bremen makes the region a logistics hub with growing importance.",
+        "jobs": ["Truck Driver", "Warehouse Logistics Specialist", "Freight Forwarding Clerk", "Forklift Operator", "Order Picker"],
+        "requirements": ["Driver's license (CE for trucks)", "Physical fitness", "Reliability"],
+        "outlook": "Growing industry with good demand for drivers and warehouse personnel.",
+        "localInfo": "Several freight forwarding and logistics companies are located in the region."
+      },
+      "industrie_produktion": {
+        "name": "Industry & Production",
+        "description": "Manufacturing companies in the region offer secure jobs with good pay.",
+        "jobs": ["Production Worker", "Machine Operator", "Industrial Mechanic", "Quality Inspector"],
+        "requirements": ["Technical understanding", "Willingness to work shifts", "Precision"],
+        "outlook": "Solid prospects with automation trend requiring new qualifications.",
+        "localInfo": "Several medium-sized manufacturing companies offer jobs in the region."
+      },
+      "buero_verwaltung": {
+        "name": "Office & Administration",
+        "description": "Commercial professions in administration, accounting, and organization are in demand.",
+        "jobs": ["Office Clerk", "Accountant", "Administrative Assistant", "Secretary", "HR Specialist"],
+        "requirements": ["Commercial training", "IT skills", "Organizational talent"],
+        "outlook": "Stable demand with increasing digitalization of work processes.",
+        "localInfo": "The district administration in Rotenburg and local companies offer diverse office jobs."
+      },
+      "it_technik": {
+        "name": "IT & Technology",
+        "description": "Even in rural regions, the demand for IT professionals is growing continuously.",
+        "jobs": ["IT System Administrator", "Software Developer", "IT Support", "Web Developer"],
+        "requirements": ["IT training or degree", "Current technology knowledge", "Problem-solving skills"],
+        "outlook": "Very good future prospects with increasing demand across all industries.",
+        "localInfo": "Remote work also enables jobs with employers outside the region."
+      },
+      "bau_architektur": {
+        "name": "Construction & Architecture",
+        "description": "The construction industry is booming - both new construction and renovations are in high demand.",
+        "jobs": ["Mason", "Carpenter", "Civil Engineer", "Site Manager", "Tile Setter"],
+        "requirements": ["Craft training", "Physical resilience", "Weather independence"],
+        "outlook": "Continuing high demand due to new construction and energy-efficient renovations.",
+        "localInfo": "Many local construction companies are permanently seeking skilled workers."
+      },
+      "landwirtschaft": {
+        "name": "Agriculture",
+        "description": "Agriculture shapes the region and offers diverse jobs.",
+        "jobs": ["Farmer", "Animal Keeper", "Agricultural Machinery Mechanic", "Harvest Helper"],
+        "requirements": ["Agricultural training advantageous", "Driver's license", "Flexibility"],
+        "outlook": "Stable industry with modernization and specialization.",
+        "localInfo": "Rotenburg district is strongly characterized by agriculture."
+      },
+      "bildung_soziales": {
+        "name": "Education & Social",
+        "description": "Schools, kindergartens, and social institutions are seeking dedicated employees.",
+        "jobs": ["Educator", "Social Worker", "Teacher", "Social Pedagogue", "Special Needs Carer"],
+        "requirements": ["Pedagogical training", "Patience and empathy", "Extended background check"],
+        "outlook": "Very good prospects due to expansion of childcare and all-day schools.",
+        "localInfo": "Several schools and daycare centers in the region are seeking staff."
+      }
+    }
+  },
   "tipsPage": {
     "badge": "AI-Powered Tools",
     "title": "Application Tips",

@@ -837,6 +837,125 @@
       "pdfCreated": "PDF utworzony i pobrany!"
     }
   },
+  "industriesPage": {
+    "title": "Branże w Powiecie Rotenburg",
+    "subtitle": "Odkryj najważniejsze branże w naszym regionie, typowe zawody, perspektywy płacowe i lokalne specyfiki.",
+    "backLink": "Wróć do Porad Aplikacyjnych",
+    "stats": {
+      "radius": "Promień wyszukiwania",
+      "population": "Populacja",
+      "industries": "Branże",
+      "average": "Średnia"
+    },
+    "demand": {
+      "high": "Wysokie zapotrzebowanie",
+      "medium": "Poszukiwane",
+      "low": "Umiarkowane"
+    },
+    "salaryLabel": "Wynagrodzenie",
+    "salaryUnit": "brutto/miesiąc",
+    "typicalJobs": "Typowe Zawody",
+    "requirements": "Wymagania",
+    "outlook": "Perspektywy na Przyszłość",
+    "localInfo": "Informacje Lokalne",
+    "findJobs": "Znajdź oferty pracy w {industry}",
+    "cta": {
+      "title": "Gotowy na swoją aplikację?",
+      "subtitle": "Użyj naszych darmowych narzędzi AI, aby ulepszyć swoją aplikację.",
+      "browseJobs": "Przeglądaj Oferty",
+      "resumeCheck": "Rozpocznij Sprawdzenie CV"
+    },
+    "data": {
+      "handwerk": {
+        "name": "Rzemiosło",
+        "description": "Rzemiosło jest kręgosłupem regionu. Od stolarni przez warsztaty samochodowe po elektryków - zapotrzebowanie na wykwalifikowanych specjalistów jest wysokie.",
+        "jobs": ["Mechanik Samochodowy", "Stolarz", "Elektryk", "Dekarz", "Malarz", "Hydraulik"],
+        "requirements": ["Ukończona nauka zawodu", "Umiejętności manualne", "Prawo jazdy często wymagane"],
+        "outlook": "Bardzo dobre perspektywy z powodu niedoboru wykwalifikowanych pracowników. Wiele firm pilnie poszukuje nowych talentów.",
+        "localInfo": "W powiecie Rotenburg działa ponad 2000 zakładów rzemieślniczych zatrudniających ponad 15000 pracowników."
+      },
+      "pflege_gesundheit": {
+        "name": "Opieka Zdrowotna",
+        "description": "Sektor opieki zdrowotnej stale się rozwija. Szpitale, domy opieki i usługi ambulatoryjne nieustannie poszukują wykwalifikowanego personelu.",
+        "jobs": ["Pielęgniarka", "Dyplomowana Pielęgniarka", "Pielęgniarz Geriatryczny", "Asystent Medyczny", "Fizjoterapeuta"],
+        "requirements": ["Uznawane przez państwo wykształcenie", "Empatia i odporność", "Gotowość do pracy zmianowej"],
+        "outlook": "Długoterminowo bezpieczna branża z rosnącym zapotrzebowaniem ze względu na zmiany demograficzne.",
+        "localInfo": "AGAPLESION Diakonieklinikum Rotenburg i liczne placówki opiekuńcze oferują wiele miejsc pracy."
+      },
+      "gastro_hotel": {
+        "name": "Gastronomia i Hotelarstwo",
+        "description": "Restauracje, hotele i firmy cateringowe oferują różnorodne możliwości wejścia - nawet bez formalnego wykształcenia.",
+        "jobs": ["Kucharz", "Kelner/Kelnerka", "Specjalista Hotelowy", "Pomoc Kuchenna", "Kierownik Restauracji"],
+        "requirements": ["Wykształcenie lub doświadczenie w zależności od stanowiska", "Elastyczność godzin pracy", "Gracz zespołowy"],
+        "outlook": "Wysokie zapotrzebowanie, szczególnie w sezonie letnim. Wiele firm oferuje możliwości dla osób zmieniających karierę.",
+        "localInfo": "Gastronomia w Zeven i okolicach korzysta z turystów i lokalnych klientów."
+      },
+      "einzelhandel": {
+        "name": "Handel Detaliczny",
+        "description": "Lokalny handel detaliczny pozostaje ważnym pracodawcą. Supermarkety, sklepy specjalistyczne i markety budowlane regularnie poszukują pracowników.",
+        "jobs": ["Sprzedawca", "Kasjer", "Kierownik Oddziału", "Magazynier", "Handlowiec Detaliczny"],
+        "requirements": ["Orientacja na klienta", "Elastyczność", "Często praca w soboty"],
+        "outlook": "Stabilne zapotrzebowanie, szczególnie na pracowników niepełnoetatowych i mini-jobberów.",
+        "localInfo": "Obszar handlowy w Zeven oferuje liczne możliwości zakupów, a tym samym miejsca pracy."
+      },
+      "logistik_transport": {
+        "name": "Logistyka i Transport",
+        "description": "Centralna lokalizacja między Hamburgiem a Bremą czyni region centrum logistycznym o rosnącym znaczeniu.",
+        "jobs": ["Kierowca Ciężarówki", "Specjalista ds. Logistyki Magazynowej", "Spedytor", "Operator Wózka Widłowego", "Kompletator Zamówień"],
+        "requirements": ["Prawo jazdy (CE dla ciężarówek)", "Sprawność fizyczna", "Niezawodność"],
+        "outlook": "Rozwijająca się branża z dobrym zapotrzebowaniem na kierowców i personel magazynowy.",
+        "localInfo": "W regionie działa kilka firm spedycyjnych i logistycznych."
+      },
+      "industrie_produktion": {
+        "name": "Przemysł i Produkcja",
+        "description": "Firmy produkcyjne w regionie oferują bezpieczne miejsca pracy z dobrym wynagrodzeniem.",
+        "jobs": ["Pracownik Produkcji", "Operator Maszyn", "Mechanik Przemysłowy", "Kontroler Jakości"],
+        "requirements": ["Zrozumienie techniczne", "Gotowość do pracy zmianowej", "Precyzja"],
+        "outlook": "Solidne perspektywy z trendem automatyzacji wymagającym nowych kwalifikacji.",
+        "localInfo": "Kilka średnich firm produkcyjnych oferuje miejsca pracy w regionie."
+      },
+      "buero_verwaltung": {
+        "name": "Biuro i Administracja",
+        "description": "Zawody handlowe w administracji, księgowości i organizacji są poszukiwane.",
+        "jobs": ["Pracownik Biurowy", "Księgowy", "Asystent Administracyjny", "Sekretarka", "Specjalista HR"],
+        "requirements": ["Wykształcenie handlowe", "Umiejętności IT", "Talent organizacyjny"],
+        "outlook": "Stabilne zapotrzebowanie przy rosnącej cyfryzacji procesów pracy.",
+        "localInfo": "Administracja powiatu w Rotenburgu i lokalne firmy oferują różnorodne prace biurowe."
+      },
+      "it_technik": {
+        "name": "IT i Technologia",
+        "description": "Nawet w regionach wiejskich zapotrzebowanie na specjalistów IT stale rośnie.",
+        "jobs": ["Administrator Systemów IT", "Programista", "Wsparcie IT", "Developer Webowy"],
+        "requirements": ["Wykształcenie IT lub dyplom", "Aktualna wiedza technologiczna", "Umiejętność rozwiązywania problemów"],
+        "outlook": "Bardzo dobre perspektywy na przyszłość z rosnącym zapotrzebowaniem we wszystkich branżach.",
+        "localInfo": "Praca zdalna umożliwia również pracę dla pracodawców spoza regionu."
+      },
+      "bau_architektur": {
+        "name": "Budownictwo i Architektura",
+        "description": "Branża budowlana przeżywa boom - zarówno nowe budownictwo, jak i renowacje cieszą się dużym zapotrzebowaniem.",
+        "jobs": ["Murarz", "Cieśla", "Inżynier Budownictwa", "Kierownik Budowy", "Glazurnik"],
+        "requirements": ["Wykształcenie rzemieślnicze", "Odporność fizyczna", "Niezależność od warunków pogodowych"],
+        "outlook": "Utrzymujące się wysokie zapotrzebowanie ze względu na nowe budownictwo i renowacje energooszczędne.",
+        "localInfo": "Wiele lokalnych firm budowlanych stale poszukuje wykwalifikowanych pracowników."
+      },
+      "landwirtschaft": {
+        "name": "Rolnictwo",
+        "description": "Rolnictwo kształtuje region i oferuje różnorodne miejsca pracy.",
+        "jobs": ["Rolnik", "Hodowca Zwierząt", "Mechanik Maszyn Rolniczych", "Pomocnik przy Zbiorach"],
+        "requirements": ["Wykształcenie rolnicze mile widziane", "Prawo jazdy", "Elastyczność"],
+        "outlook": "Stabilna branża z modernizacją i specjalizacją.",
+        "localInfo": "Powiat Rotenburg jest silnie charakteryzowany przez rolnictwo."
+      },
+      "bildung_soziales": {
+        "name": "Edukacja i Praca Socjalna",
+        "description": "Szkoły, przedszkola i instytucje społeczne poszukują oddanych pracowników.",
+        "jobs": ["Wychowawca", "Pracownik Socjalny", "Nauczyciel", "Pedagog Społeczny", "Opiekun Osób Niepełnosprawnych"],
+        "requirements": ["Wykształcenie pedagogiczne", "Cierpliwość i empatia", "Rozszerzone zaświadczenie o niekaralności"],
+        "outlook": "Bardzo dobre perspektywy ze względu na rozwój opieki nad dziećmi i szkół całodziennych.",
+        "localInfo": "Kilka szkół i przedszkoli w regionie poszukuje personelu."
+      }
+    }
+  },
   "tipsPage": {
     "badge": "Narzędzia wspierane AI",
     "title": "Porady Aplikacyjne",
