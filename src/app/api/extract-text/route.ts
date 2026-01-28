@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { PDFParse } from 'pdf-parse'
 
 export async function POST(request: NextRequest) {
   try {
@@ -16,51 +17,36 @@ export async function POST(request: NextRequest) {
     if (fileType === 'text/plain') {
       extractedText = await file.text()
     }
-    // Handle PDF files - simple text extraction
+    // Handle PDF files using pdf-parse
     else if (fileType === 'application/pdf') {
-      // For PDF, we'll try to extract using a simple approach
-      // In production, you might want to use pdf-parse or similar library
-      const arrayBuffer = await file.arrayBuffer()
-      const uint8Array = new Uint8Array(arrayBuffer)
+      try {
+        const arrayBuffer = await file.arrayBuffer()
+        const uint8Array = new Uint8Array(arrayBuffer)
 
-      // Convert to string and try to find readable text
-      // This is a simplified approach - works for text-based PDFs
-      let rawText = ''
-      for (let i = 0; i < uint8Array.length; i++) {
-        const char = uint8Array[i]
-        if (char >= 32 && char <= 126) {
-          rawText += String.fromCharCode(char)
-        } else if (char === 10 || char === 13) {
-          rawText += '\n'
+        // Use PDFParse class for proper PDF text extraction
+        const parser = new PDFParse({ data: uint8Array })
+        const textResult = await parser.getText()
+        await parser.destroy()
+
+        // Combine all pages text
+        extractedText = textResult.pages
+          .map(page => page.text)
+          .join('\n')
+
+        // Clean up the extracted text
+        extractedText = extractedText
+          .replace(/\s+/g, ' ')
+          .trim()
+
+        // If we couldn't extract meaningful text, return an error
+        if (extractedText.length < 50) {
+          return NextResponse.json({
+            error: 'PDF-Text konnte nicht extrahiert werden',
+            message: 'Bitte kopiere den Text manuell aus deinem PDF.',
+          }, { status: 422 })
         }
-      }
-
-      // Extract text between stream and endstream (PDF text content)
-      const streamMatches = rawText.match(/stream[\s\S]*?endstream/g)
-      if (streamMatches) {
-        for (const match of streamMatches) {
-          // Try to find readable text patterns
-          const textContent = match.replace(/stream|endstream/g, '')
-          // Look for text in parentheses (PDF text objects)
-          const parenMatches = textContent.match(/\(([^)]+)\)/g)
-          if (parenMatches) {
-            extractedText += parenMatches
-              .map(m => m.replace(/[()]/g, ''))
-              .join(' ') + '\n'
-          }
-        }
-      }
-
-      // Clean up the extracted text
-      extractedText = extractedText
-        .replace(/\\n/g, '\n')
-        .replace(/\\r/g, '')
-        .replace(/\s+/g, ' ')
-        .replace(/[^\w\s\-.,äöüÄÖÜß@]/g, '')
-        .trim()
-
-      // If we couldn't extract meaningful text, return an error
-      if (extractedText.length < 50) {
+      } catch (pdfError) {
+        console.error('PDF parse error:', pdfError)
         return NextResponse.json({
           error: 'PDF-Text konnte nicht extrahiert werden',
           message: 'Bitte kopiere den Text manuell aus deinem PDF.',

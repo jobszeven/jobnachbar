@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
+import { useTranslations } from 'next-intl'
 import { Star, ChevronLeft, ChevronRight, Quote, Building2, User } from 'lucide-react'
 
 interface Testimonial {
@@ -77,6 +78,7 @@ const testimonials: Testimonial[] = [
 ]
 
 export default function TestimonialsSlider() {
+  const t = useTranslations('testimonials')
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
 
@@ -121,10 +123,10 @@ export default function TestimonialsSlider() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Das sagen unsere Nutzer
+            {t('title')}
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Echte Erfolgsgeschichten von Arbeitgebern und Bewerbern aus der Region
+            {t('subtitle')}
           </p>
         </div>
 
@@ -148,12 +150,12 @@ export default function TestimonialsSlider() {
               {isEmployer ? (
                 <>
                   <Building2 className="w-4 h-4" />
-                  Arbeitgeber
+                  {t('employer')}
                 </>
               ) : (
                 <>
                   <User className="w-4 h-4" />
-                  Bewerber
+                  {t('applicant')}
                 </>
               )}
             </div>
@@ -210,14 +212,14 @@ export default function TestimonialsSlider() {
           <button
             onClick={handlePrev}
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 w-10 h-10 bg-brand-dark-card border border-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:border-brand-red transition-colors"
-            aria-label="Vorheriges Testimonial"
+            aria-label="Previous testimonial"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
           <button
             onClick={handleNext}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 w-10 h-10 bg-brand-dark-card border border-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:border-brand-red transition-colors"
-            aria-label="Nächstes Testimonial"
+            aria-label="Next testimonial"
           >
             <ChevronRight className="w-5 h-5" />
           </button>
@@ -233,7 +235,7 @@ export default function TestimonialsSlider() {
                     ? 'w-6 bg-brand-red'
                     : 'bg-gray-600 hover:bg-gray-500'
                 }`}
-                aria-label={`Gehe zu Testimonial ${index + 1}`}
+                aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
           </div>

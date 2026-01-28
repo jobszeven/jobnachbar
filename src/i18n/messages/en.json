@@ -1114,6 +1114,139 @@
       }
     }
   },
+  "forEmployersPage": {
+    "badge": "For Employers",
+    "hero": {
+      "title": "Find the best",
+      "titleHighlight": "employees in the region",
+      "subtitle": "JobNachbar connects local businesses with qualified applicants from Zeven and surroundings. Fast, easy, and affordable.",
+      "cta": "Start for free",
+      "viewPrices": "View prices"
+    },
+    "benefits": {
+      "title": "Why JobNachbar for employers?",
+      "regional": {
+        "title": "100% Regional",
+        "desc": "Reach only applicants from your region - no wasted reach."
+      },
+      "affordable": {
+        "title": "Affordable Prices",
+        "desc": "Fair conditions for local businesses, no hidden costs."
+      },
+      "fast": {
+        "title": "Fast Hiring",
+        "desc": "Average of 5 qualified applications within one week."
+      },
+      "matching": {
+        "title": "Smart Matching",
+        "desc": "Our system automatically finds matching candidates for you."
+      },
+      "qualified": {
+        "title": "Qualified Applicants",
+        "desc": "Verified profiles with complete documents."
+      },
+      "effective": {
+        "title": "High Success Rate",
+        "desc": "85% of our positions are filled within 30 days."
+      }
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "subtitle": "Get your new employee in just 3 steps",
+      "step1": {
+        "title": "Create job posting",
+        "desc": "Describe the position and your requirements. We review and approve within 24 hours."
+      },
+      "step2": {
+        "title": "Receive applications",
+        "desc": "Matching candidates are automatically notified and apply directly to you."
+      },
+      "step3": {
+        "title": "Hire employee",
+        "desc": "Select the best candidate and schedule an interview."
+      }
+    },
+    "pricing": {
+      "title": "Transparent pricing",
+      "subtitle": "Choose the right package for your company",
+      "starter": {
+        "name": "Starter",
+        "price": "Free",
+        "desc": "1 job posting for 30 days"
+      },
+      "basic": {
+        "name": "Basic",
+        "price": "€39",
+        "desc": "5 jobs, 10 applicant contacts"
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "€79",
+        "desc": "Unlimited jobs and contacts"
+      },
+      "perMonth": "/month",
+      "compare": "Compare all prices"
+    },
+    "cta": {
+      "title": "Ready to strengthen your team?",
+      "subtitle": "Start today and find the best talent from your region.",
+      "button": "Post a job now"
+    }
+  },
+  "testimonials": {
+    "title": "What our users say",
+    "subtitle": "Real success stories from employers and applicants in the region",
+    "employer": "Employer",
+    "applicant": "Applicant"
+  },
+  "jobsPage": {
+    "title": "Jobs in Zeven & Surroundings",
+    "subtitle": "Find your next job in the region",
+    "searchPlaceholder": "Job title, company or keyword...",
+    "allIndustries": "All Industries",
+    "allTypes": "All Types",
+    "industries": "Industry/ies",
+    "types": "Type(s)",
+    "selectIndustries": "Select industries:",
+    "selectTypes": "Select employment type:",
+    "resetAll": "Reset all",
+    "jobsFound": "jobs found",
+    "jobFound": "job found",
+    "sortNewest": "Newest first",
+    "sortOldest": "Oldest first",
+    "loading": "Loading jobs...",
+    "noJobsFound": "No jobs found",
+    "noJobsHint": "Try different search terms or filters.",
+    "resetFilters": "Reset filters",
+    "viewDetails": "View details",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "daysAgo": "{days} days ago",
+    "weeksAgo": "{weeks} weeks ago",
+    "linkCopied": "Link copied!",
+    "industries_list": {
+      "handwerk": "Trades & Crafts",
+      "pflege_gesundheit": "Healthcare & Nursing",
+      "gastro_hotel": "Hospitality",
+      "einzelhandel": "Retail",
+      "logistik_transport": "Logistics & Transport",
+      "industrie_produktion": "Industry & Production",
+      "buero_verwaltung": "Office & Administration",
+      "it_technik": "IT & Technology",
+      "bau_architektur": "Construction & Architecture",
+      "landwirtschaft": "Agriculture",
+      "bildung_soziales": "Education & Social Services",
+      "sonstiges": "Other"
+    },
+    "employment_types": {
+      "vollzeit": "Full-time",
+      "teilzeit": "Part-time",
+      "minijob": "Mini-job",
+      "ausbildung": "Apprenticeship",
+      "praktikum": "Internship",
+      "werkstudent": "Working Student"
+    }
+  },
   "help": {
     "title": "Help & Tutorials",
     "subtitle": "Everything you need to know to get the most out of JobNachbar",

@@ -6,45 +6,34 @@ import { MapPin, Clock, Building2, Search, Heart, Share2, ChevronDown, Euro } fr
 import { createClient } from '@/lib/supabase/client'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { useTranslations } from 'next-intl'
 
-const INDUSTRIES = [
-  { value: 'handwerk', label: 'Handwerk' },
-  { value: 'pflege_gesundheit', label: 'Pflege & Gesundheit' },
-  { value: 'gastro_hotel', label: 'Gastro & Hotel' },
-  { value: 'einzelhandel', label: 'Einzelhandel' },
-  { value: 'logistik_transport', label: 'Logistik & Transport' },
-  { value: 'industrie_produktion', label: 'Industrie & Produktion' },
-  { value: 'buero_verwaltung', label: 'Büro & Verwaltung' },
-  { value: 'it_technik', label: 'IT & Technik' },
-  { value: 'bau_architektur', label: 'Bau & Architektur' },
-  { value: 'landwirtschaft', label: 'Landwirtschaft' },
-  { value: 'bildung_soziales', label: 'Bildung & Soziales' },
-  { value: 'sonstiges', label: 'Sonstiges' },
+const INDUSTRY_KEYS = [
+  'handwerk',
+  'pflege_gesundheit',
+  'gastro_hotel',
+  'einzelhandel',
+  'logistik_transport',
+  'industrie_produktion',
+  'buero_verwaltung',
+  'it_technik',
+  'bau_architektur',
+  'landwirtschaft',
+  'bildung_soziales',
+  'sonstiges',
 ]
 
-const EMPLOYMENT_TYPES = [
-  { value: 'vollzeit', label: 'Vollzeit' },
-  { value: 'teilzeit', label: 'Teilzeit' },
-  { value: 'minijob', label: 'Minijob' },
-  { value: 'ausbildung', label: 'Ausbildung' },
-  { value: 'praktikum', label: 'Praktikum' },
-  { value: 'werkstudent', label: 'Werkstudent' },
+const EMPLOYMENT_TYPE_KEYS = [
+  'vollzeit',
+  'teilzeit',
+  'minijob',
+  'ausbildung',
+  'praktikum',
+  'werkstudent',
 ]
-
-function formatDate(dateString: string) {
-  const date = new Date(dateString)
-  const now = new Date()
-  const diffTime = Math.abs(now.getTime() - date.getTime())
-  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
-  
-  if (diffDays === 0) return 'Heute'
-  if (diffDays === 1) return 'Gestern'
-  if (diffDays < 7) return `vor ${diffDays} Tagen`
-  if (diffDays < 30) return `vor ${Math.floor(diffDays / 7)} Wochen`
-  return date.toLocaleDateString('de-DE')
-}
 
 export default function JobsPage() {
+  const t = useTranslations('jobsPage')
   const [jobs, setJobs] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
   const [searchQuery, setSearchQuery] = useState('')
@@ -62,7 +51,7 @@ export default function JobsPage() {
 
   async function loadJobs() {
     const supabase = createClient()
-    
+
     const { data, error } = await supabase
       .from('jobs')
       .select(`*, companies (company_name, logo_url, city)`)
@@ -70,7 +59,7 @@ export default function JobsPage() {
       .order('is_boosted', { ascending: false })
       .order('created_at', { ascending: false })
       .limit(100)
-    
+
     if (!error && data) {
       setJobs(data)
     }
@@ -107,34 +96,47 @@ export default function JobsPage() {
       }
     } else {
       navigator.clipboard.writeText(`${window.location.origin}/jobs/${job.id}`)
-      alert('Link kopiert!')
+      alert(t('linkCopied'))
     }
   }
 
   const toggleIndustry = (value: string) => {
-    setSelectedIndustries(prev => 
+    setSelectedIndustries(prev =>
       prev.includes(value) ? prev.filter(v => v !== value) : [...prev, value]
     )
   }
 
   const toggleType = (value: string) => {
-    setSelectedTypes(prev => 
+    setSelectedTypes(prev =>
       prev.includes(value) ? prev.filter(v => v !== value) : [...prev, value]
     )
   }
 
+  function formatDate(dateString: string) {
+    const date = new Date(dateString)
+    const now = new Date()
+    const diffTime = Math.abs(now.getTime() - date.getTime())
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
+
+    if (diffDays === 0) return t('today')
+    if (diffDays === 1) return t('yesterday')
+    if (diffDays < 7) return t('daysAgo', { days: diffDays })
+    if (diffDays < 30) return t('weeksAgo', { weeks: Math.floor(diffDays / 7) })
+    return date.toLocaleDateString('de-DE')
+  }
+
   // Filter jobs
   let filteredJobs = jobs.filter(job => {
-    const matchesSearch = !searchQuery || 
+    const matchesSearch = !searchQuery ||
       job.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       job.companies?.company_name?.toLowerCase().includes(searchQuery.toLowerCase())
-    
-    const matchesIndustry = selectedIndustries.length === 0 || 
+
+    const matchesIndustry = selectedIndustries.length === 0 ||
       selectedIndustries.includes(job.industry)
-    
-    const matchesType = selectedTypes.length === 0 || 
+
+    const matchesType = selectedTypes.length === 0 ||
       selectedTypes.includes(job.employment_type)
-    
+
     return matchesSearch && matchesIndustry && matchesType
   })
 
@@ -148,8 +150,8 @@ export default function JobsPage() {
       <Header />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Jobs in Zeven & Umgebung</h1>
-        <p className="text-gray-400 mb-8">Finde deinen nächsten Job in der Region</p>
+        <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">{t('title')}</h1>
+        <p className="text-gray-400 mb-8">{t('subtitle')}</p>
 
         {/* Search & Filters */}
         <div className="space-y-4 mb-8">
@@ -160,7 +162,7 @@ export default function JobsPage() {
             )}
             <input
               type="text"
-              placeholder="Jobtitel, Firma oder Stichwort..."
+              placeholder={t('searchPlaceholder')}
               className={`input-field w-full ${!searchQuery ? 'pl-12' : ''}`}
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
@@ -179,25 +181,25 @@ export default function JobsPage() {
                     : 'bg-brand-dark-card border-gray-600 text-gray-300'
                 }`}
               >
-                {selectedIndustries.length > 0 ? `${selectedIndustries.length} Branche(n)` : 'Alle Branchen'}
+                {selectedIndustries.length > 0 ? `${selectedIndustries.length} ${t('industries')}` : t('allIndustries')}
                 <ChevronDown className="w-4 h-4" />
               </button>
-              
+
               {showIndustryFilter && (
                 <div className="absolute top-full left-0 mt-2 w-72 bg-brand-dark-card border border-gray-700 rounded-lg shadow-xl z-50 p-4">
-                  <p className="text-sm text-gray-400 mb-3">Branchen auswählen:</p>
+                  <p className="text-sm text-gray-400 mb-3">{t('selectIndustries')}</p>
                   <div className="flex flex-wrap gap-2 max-h-64 overflow-y-auto">
-                    {INDUSTRIES.map(ind => (
+                    {INDUSTRY_KEYS.map(key => (
                       <button
-                        key={ind.value}
-                        onClick={() => toggleIndustry(ind.value)}
+                        key={key}
+                        onClick={() => toggleIndustry(key)}
                         className={`px-3 py-1.5 rounded-lg text-sm transition-colors ${
-                          selectedIndustries.includes(ind.value)
+                          selectedIndustries.includes(key)
                             ? 'bg-brand-red text-white'
                             : 'bg-brand-dark border border-gray-600 text-gray-300'
                         }`}
                       >
-                        {ind.label}
+                        {t(`industries_list.${key}`)}
                       </button>
                     ))}
                   </div>
@@ -206,7 +208,7 @@ export default function JobsPage() {
                       onClick={() => setSelectedIndustries([])}
                       className="mt-3 text-sm text-gray-400 hover:text-white"
                     >
-                      Alle zurücksetzen
+                      {t('resetAll')}
                     </button>
                   )}
                 </div>
@@ -223,25 +225,25 @@ export default function JobsPage() {
                     : 'bg-brand-dark-card border-gray-600 text-gray-300'
                 }`}
               >
-                {selectedTypes.length > 0 ? `${selectedTypes.length} Art(en)` : 'Alle Arten'}
+                {selectedTypes.length > 0 ? `${selectedTypes.length} ${t('types')}` : t('allTypes')}
                 <ChevronDown className="w-4 h-4" />
               </button>
-              
+
               {showTypeFilter && (
                 <div className="absolute top-full left-0 mt-2 w-64 bg-brand-dark-card border border-gray-700 rounded-lg shadow-xl z-50 p-4">
-                  <p className="text-sm text-gray-400 mb-3">Beschäftigungsart auswählen:</p>
+                  <p className="text-sm text-gray-400 mb-3">{t('selectTypes')}</p>
                   <div className="flex flex-wrap gap-2">
-                    {EMPLOYMENT_TYPES.map(type => (
+                    {EMPLOYMENT_TYPE_KEYS.map(key => (
                       <button
-                        key={type.value}
-                        onClick={() => toggleType(type.value)}
+                        key={key}
+                        onClick={() => toggleType(key)}
                         className={`px-3 py-1.5 rounded-lg text-sm transition-colors ${
-                          selectedTypes.includes(type.value)
+                          selectedTypes.includes(key)
                             ? 'bg-brand-red text-white'
                             : 'bg-brand-dark border border-gray-600 text-gray-300'
                         }`}
                       >
-                        {type.label}
+                        {t(`employment_types.${key}`)}
                       </button>
                     ))}
                   </div>
@@ -250,7 +252,7 @@ export default function JobsPage() {
                       onClick={() => setSelectedTypes([])}
                       className="mt-3 text-sm text-gray-400 hover:text-white"
                     >
-                      Alle zurücksetzen
+                      {t('resetAll')}
                     </button>
                   )}
                 </div>
@@ -262,15 +264,15 @@ export default function JobsPage() {
         {/* Results Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
           <p className="text-gray-400">
-            <span className="text-white font-semibold">{filteredJobs.length}</span> {filteredJobs.length === 1 ? 'Stelle' : 'Stellen'} gefunden
+            <span className="text-white font-semibold">{filteredJobs.length}</span> {filteredJobs.length === 1 ? t('jobFound') : t('jobsFound')}
           </p>
           <select
             className="input-field w-auto"
             value={sortBy}
             onChange={e => setSortBy(e.target.value)}
           >
-            <option value="newest">Neueste zuerst</option>
-            <option value="oldest">Älteste zuerst</option>
+            <option value="newest">{t('sortNewest')}</option>
+            <option value="oldest">{t('sortOldest')}</option>
           </select>
         </div>
 
@@ -278,18 +280,18 @@ export default function JobsPage() {
         {loading ? (
           <div className="text-center py-12">
             <div className="w-12 h-12 border-4 border-brand-red border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-            <p className="text-gray-400">Jobs werden geladen...</p>
+            <p className="text-gray-400">{t('loading')}</p>
           </div>
         ) : filteredJobs.length === 0 ? (
           <div className="card text-center py-12">
             <Search className="w-16 h-16 text-gray-600 mx-auto mb-4" />
-            <h2 className="text-xl font-semibold text-white mb-2">Keine Jobs gefunden</h2>
-            <p className="text-gray-400 mb-6">Versuche andere Suchbegriffe oder Filter.</p>
+            <h2 className="text-xl font-semibold text-white mb-2">{t('noJobsFound')}</h2>
+            <p className="text-gray-400 mb-6">{t('noJobsHint')}</p>
             <button
               onClick={() => { setSearchQuery(''); setSelectedIndustries([]); setSelectedTypes([]) }}
               className="btn-secondary"
             >
-              Filter zurücksetzen
+              {t('resetFilters')}
             </button>
           </div>
         ) : (
@@ -317,7 +319,7 @@ export default function JobsPage() {
                         </Link>
                         <p className="text-gray-400">{job.companies?.company_name}</p>
                       </div>
-                      
+
                       {/* Actions */}
                       <div className="flex items-center gap-2">
                         <button
@@ -349,7 +351,7 @@ export default function JobsPage() {
                       </span>
                       <span className="flex items-center gap-1">
                         <Clock className="w-4 h-4" />
-                        {EMPLOYMENT_TYPES.find(t => t.value === job.employment_type)?.label || job.employment_type}
+                        {t(`employment_types.${job.employment_type}`) || job.employment_type}
                       </span>
                       <span className="flex items-center gap-1">
                         <Clock className="w-4 h-4" />
@@ -369,7 +371,7 @@ export default function JobsPage() {
                         href={`/jobs/${job.id}`}
                         className="inline-flex items-center text-brand-red hover:underline text-sm font-medium"
                       >
-                        Details ansehen →
+                        {t('viewDetails')} →
                       </Link>
                     </div>
                   </div>

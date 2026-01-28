@@ -1114,6 +1114,139 @@
       }
     }
   },
+  "forEmployersPage": {
+    "badge": "Für Arbeitgeber",
+    "hero": {
+      "title": "Finden Sie die besten",
+      "titleHighlight": "Mitarbeiter der Region",
+      "subtitle": "JobNachbar verbindet lokale Unternehmen mit qualifizierten Bewerbern aus Zeven und Umgebung. Schnell, einfach und kostengünstig.",
+      "cta": "Jetzt kostenlos starten",
+      "viewPrices": "Preise ansehen"
+    },
+    "benefits": {
+      "title": "Warum JobNachbar für Arbeitgeber?",
+      "regional": {
+        "title": "100% Regional",
+        "desc": "Erreichen Sie nur Bewerber aus Ihrer Region - keine Streuverluste."
+      },
+      "affordable": {
+        "title": "Günstige Preise",
+        "desc": "Faire Konditionen für lokale Unternehmen, keine versteckten Kosten."
+      },
+      "fast": {
+        "title": "Schnelle Besetzung",
+        "desc": "Durchschnittlich 5 qualifizierte Bewerbungen innerhalb einer Woche."
+      },
+      "matching": {
+        "title": "Intelligentes Matching",
+        "desc": "Unser System findet passende Kandidaten automatisch für Sie."
+      },
+      "qualified": {
+        "title": "Qualifizierte Bewerber",
+        "desc": "Verifizierte Profile mit vollständigen Unterlagen."
+      },
+      "effective": {
+        "title": "Hohe Erfolgsquote",
+        "desc": "85% unserer Stellen werden innerhalb von 30 Tagen besetzt."
+      }
+    },
+    "howItWorks": {
+      "title": "So einfach geht's",
+      "subtitle": "In nur 3 Schritten zu Ihrem neuen Mitarbeiter",
+      "step1": {
+        "title": "Stelle erstellen",
+        "desc": "Beschreiben Sie die Position und Ihre Anforderungen. Wir prüfen und schalten innerhalb von 24 Stunden frei."
+      },
+      "step2": {
+        "title": "Bewerbungen erhalten",
+        "desc": "Passende Kandidaten werden automatisch benachrichtigt und bewerben sich direkt bei Ihnen."
+      },
+      "step3": {
+        "title": "Mitarbeiter einstellen",
+        "desc": "Wählen Sie den besten Kandidaten aus und vereinbaren Sie ein Vorstellungsgespräch."
+      }
+    },
+    "pricing": {
+      "title": "Transparente Preise",
+      "subtitle": "Wählen Sie das passende Paket für Ihr Unternehmen",
+      "starter": {
+        "name": "Starter",
+        "price": "Kostenlos",
+        "desc": "1 Stellenanzeige für 30 Tage"
+      },
+      "basic": {
+        "name": "Basic",
+        "price": "39€",
+        "desc": "5 Stellen, 10 Bewerberkontakte"
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "79€",
+        "desc": "Unbegrenzte Stellen und Kontakte"
+      },
+      "perMonth": "/Monat",
+      "compare": "Alle Preise vergleichen"
+    },
+    "cta": {
+      "title": "Bereit, Ihr Team zu verstärken?",
+      "subtitle": "Starten Sie noch heute und finden Sie die besten Talente aus Ihrer Region.",
+      "button": "Jetzt Stelle ausschreiben"
+    }
+  },
+  "testimonials": {
+    "title": "Das sagen unsere Nutzer",
+    "subtitle": "Echte Erfolgsgeschichten von Arbeitgebern und Bewerbern aus der Region",
+    "employer": "Arbeitgeber",
+    "applicant": "Bewerber"
+  },
+  "jobsPage": {
+    "title": "Jobs in Zeven & Umgebung",
+    "subtitle": "Finde deinen nächsten Job in der Region",
+    "searchPlaceholder": "Jobtitel, Firma oder Stichwort...",
+    "allIndustries": "Alle Branchen",
+    "allTypes": "Alle Arten",
+    "industries": "Branche(n)",
+    "types": "Art(en)",
+    "selectIndustries": "Branchen auswählen:",
+    "selectTypes": "Beschäftigungsart auswählen:",
+    "resetAll": "Alle zurücksetzen",
+    "jobsFound": "Stellen gefunden",
+    "jobFound": "Stelle gefunden",
+    "sortNewest": "Neueste zuerst",
+    "sortOldest": "Älteste zuerst",
+    "loading": "Jobs werden geladen...",
+    "noJobsFound": "Keine Jobs gefunden",
+    "noJobsHint": "Versuche andere Suchbegriffe oder Filter.",
+    "resetFilters": "Filter zurücksetzen",
+    "viewDetails": "Details ansehen",
+    "today": "Heute",
+    "yesterday": "Gestern",
+    "daysAgo": "vor {days} Tagen",
+    "weeksAgo": "vor {weeks} Wochen",
+    "linkCopied": "Link kopiert!",
+    "industries_list": {
+      "handwerk": "Handwerk",
+      "pflege_gesundheit": "Pflege & Gesundheit",
+      "gastro_hotel": "Gastro & Hotel",
+      "einzelhandel": "Einzelhandel",
+      "logistik_transport": "Logistik & Transport",
+      "industrie_produktion": "Industrie & Produktion",
+      "buero_verwaltung": "Büro & Verwaltung",
+      "it_technik": "IT & Technik",
+      "bau_architektur": "Bau & Architektur",
+      "landwirtschaft": "Landwirtschaft",
+      "bildung_soziales": "Bildung & Soziales",
+      "sonstiges": "Sonstiges"
+    },
+    "employment_types": {
+      "vollzeit": "Vollzeit",
+      "teilzeit": "Teilzeit",
+      "minijob": "Minijob",
+      "ausbildung": "Ausbildung",
+      "praktikum": "Praktikum",
+      "werkstudent": "Werkstudent"
+    }
+  },
   "help": {
     "title": "Hilfe & Tutorials",
     "subtitle": "Alles was du wissen musst, um JobNachbar optimal zu nutzen",

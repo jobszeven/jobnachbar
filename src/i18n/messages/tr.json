@@ -1114,6 +1114,139 @@
       }
     }
   },
+  "forEmployersPage": {
+    "badge": "İşverenler İçin",
+    "hero": {
+      "title": "Bölgenin en iyi",
+      "titleHighlight": "çalışanlarını bulun",
+      "subtitle": "JobNachbar, yerel işletmeleri Zeven ve çevresinden nitelikli adaylarla buluşturuyor. Hızlı, kolay ve uygun fiyatlı.",
+      "cta": "Ücretsiz başla",
+      "viewPrices": "Fiyatları gör"
+    },
+    "benefits": {
+      "title": "İşverenler için neden JobNachbar?",
+      "regional": {
+        "title": "%100 Bölgesel",
+        "desc": "Sadece bölgenizdeki adaylara ulaşın - israf yok."
+      },
+      "affordable": {
+        "title": "Uygun Fiyatlar",
+        "desc": "Yerel işletmeler için adil koşullar, gizli maliyet yok."
+      },
+      "fast": {
+        "title": "Hızlı İşe Alım",
+        "desc": "Bir hafta içinde ortalama 5 nitelikli başvuru."
+      },
+      "matching": {
+        "title": "Akıllı Eşleştirme",
+        "desc": "Sistemimiz sizin için otomatik olarak uygun adayları buluyor."
+      },
+      "qualified": {
+        "title": "Nitelikli Adaylar",
+        "desc": "Tam belgeli doğrulanmış profiller."
+      },
+      "effective": {
+        "title": "Yüksek Başarı Oranı",
+        "desc": "Pozisyonlarımızın %85'i 30 gün içinde doluyor."
+      }
+    },
+    "howItWorks": {
+      "title": "Nasıl çalışır",
+      "subtitle": "Sadece 3 adımda yeni çalışanınızı bulun",
+      "step1": {
+        "title": "İlan oluştur",
+        "desc": "Pozisyonu ve gereksinimlerinizi tanımlayın. 24 saat içinde inceleyip onaylıyoruz."
+      },
+      "step2": {
+        "title": "Başvuruları al",
+        "desc": "Uygun adaylar otomatik olarak bilgilendirilir ve doğrudan size başvurur."
+      },
+      "step3": {
+        "title": "Çalışan işe al",
+        "desc": "En iyi adayı seçin ve mülakat ayarlayın."
+      }
+    },
+    "pricing": {
+      "title": "Şeffaf fiyatlandırma",
+      "subtitle": "Şirketiniz için doğru paketi seçin",
+      "starter": {
+        "name": "Starter",
+        "price": "Ücretsiz",
+        "desc": "30 gün için 1 iş ilanı"
+      },
+      "basic": {
+        "name": "Basic",
+        "price": "39€",
+        "desc": "5 ilan, 10 aday iletişimi"
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "79€",
+        "desc": "Sınırsız ilan ve iletişim"
+      },
+      "perMonth": "/ay",
+      "compare": "Tüm fiyatları karşılaştır"
+    },
+    "cta": {
+      "title": "Ekibinizi güçlendirmeye hazır mısınız?",
+      "subtitle": "Bugün başlayın ve bölgenizdeki en iyi yetenekleri bulun.",
+      "button": "Şimdi ilan ver"
+    }
+  },
+  "testimonials": {
+    "title": "Kullanıcılarımız ne diyor",
+    "subtitle": "Bölgedeki işverenler ve adaylardan gerçek başarı hikayeleri",
+    "employer": "İşveren",
+    "applicant": "Aday"
+  },
+  "jobsPage": {
+    "title": "Zeven ve Çevresinde İşler",
+    "subtitle": "Bölgede bir sonraki işini bul",
+    "searchPlaceholder": "İş unvanı, şirket veya anahtar kelime...",
+    "allIndustries": "Tüm Sektörler",
+    "allTypes": "Tüm Türler",
+    "industries": "Sektör(ler)",
+    "types": "Tür(ler)",
+    "selectIndustries": "Sektörleri seçin:",
+    "selectTypes": "İstihdam türünü seçin:",
+    "resetAll": "Tümünü sıfırla",
+    "jobsFound": "iş bulundu",
+    "jobFound": "iş bulundu",
+    "sortNewest": "En yeni önce",
+    "sortOldest": "En eski önce",
+    "loading": "İşler yükleniyor...",
+    "noJobsFound": "İş bulunamadı",
+    "noJobsHint": "Farklı arama terimleri veya filtreler deneyin.",
+    "resetFilters": "Filtreleri sıfırla",
+    "viewDetails": "Detayları gör",
+    "today": "Bugün",
+    "yesterday": "Dün",
+    "daysAgo": "{days} gün önce",
+    "weeksAgo": "{weeks} hafta önce",
+    "linkCopied": "Bağlantı kopyalandı!",
+    "industries_list": {
+      "handwerk": "Zanaat",
+      "pflege_gesundheit": "Sağlık ve Bakım",
+      "gastro_hotel": "Gastronomi ve Otel",
+      "einzelhandel": "Perakende",
+      "logistik_transport": "Lojistik ve Nakliye",
+      "industrie_produktion": "Sanayi ve Üretim",
+      "buero_verwaltung": "Ofis ve Yönetim",
+      "it_technik": "BT ve Teknoloji",
+      "bau_architektur": "İnşaat ve Mimarlık",
+      "landwirtschaft": "Tarım",
+      "bildung_soziales": "Eğitim ve Sosyal Hizmetler",
+      "sonstiges": "Diğer"
+    },
+    "employment_types": {
+      "vollzeit": "Tam zamanlı",
+      "teilzeit": "Yarı zamanlı",
+      "minijob": "Mini-iş",
+      "ausbildung": "Çıraklık",
+      "praktikum": "Staj",
+      "werkstudent": "Çalışan Öğrenci"
+    }
+  },
   "help": {
     "title": "Yardım ve Öğreticiler",
     "subtitle": "JobNachbar'ı en iyi şekilde kullanmak için bilmeniz gereken her şey",

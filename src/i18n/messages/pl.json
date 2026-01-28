@@ -1114,6 +1114,139 @@
       }
     }
   },
+  "forEmployersPage": {
+    "badge": "Dla pracodawców",
+    "hero": {
+      "title": "Znajdź najlepszych",
+      "titleHighlight": "pracowników w regionie",
+      "subtitle": "JobNachbar łączy lokalne firmy z wykwalifikowanymi kandydatami z Zeven i okolic. Szybko, łatwo i niedrogo.",
+      "cta": "Zacznij za darmo",
+      "viewPrices": "Zobacz ceny"
+    },
+    "benefits": {
+      "title": "Dlaczego JobNachbar dla pracodawców?",
+      "regional": {
+        "title": "100% Regionalnie",
+        "desc": "Docieraj tylko do kandydatów z Twojego regionu - bez strat."
+      },
+      "affordable": {
+        "title": "Przystępne ceny",
+        "desc": "Uczciwe warunki dla lokalnych firm, bez ukrytych kosztów."
+      },
+      "fast": {
+        "title": "Szybka rekrutacja",
+        "desc": "Średnio 5 wykwalifikowanych aplikacji w ciągu tygodnia."
+      },
+      "matching": {
+        "title": "Inteligentne dopasowanie",
+        "desc": "Nasz system automatycznie znajduje pasujących kandydatów."
+      },
+      "qualified": {
+        "title": "Wykwalifikowani kandydaci",
+        "desc": "Zweryfikowane profile z kompletnymi dokumentami."
+      },
+      "effective": {
+        "title": "Wysoka skuteczność",
+        "desc": "85% naszych stanowisk jest obsadzanych w ciągu 30 dni."
+      }
+    },
+    "howItWorks": {
+      "title": "Jak to działa",
+      "subtitle": "Znajdź nowego pracownika w 3 prostych krokach",
+      "step1": {
+        "title": "Utwórz ogłoszenie",
+        "desc": "Opisz stanowisko i swoje wymagania. Sprawdzamy i zatwierdzamy w ciągu 24 godzin."
+      },
+      "step2": {
+        "title": "Otrzymuj aplikacje",
+        "desc": "Pasujący kandydaci są automatycznie powiadamiani i aplikują bezpośrednio do Ciebie."
+      },
+      "step3": {
+        "title": "Zatrudnij pracownika",
+        "desc": "Wybierz najlepszego kandydata i umów się na rozmowę."
+      }
+    },
+    "pricing": {
+      "title": "Przejrzyste ceny",
+      "subtitle": "Wybierz odpowiedni pakiet dla swojej firmy",
+      "starter": {
+        "name": "Starter",
+        "price": "Za darmo",
+        "desc": "1 ogłoszenie na 30 dni"
+      },
+      "basic": {
+        "name": "Basic",
+        "price": "39€",
+        "desc": "5 ogłoszeń, 10 kontaktów z kandydatami"
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "79€",
+        "desc": "Nieograniczone ogłoszenia i kontakty"
+      },
+      "perMonth": "/miesiąc",
+      "compare": "Porównaj wszystkie ceny"
+    },
+    "cta": {
+      "title": "Gotowy wzmocnić swój zespół?",
+      "subtitle": "Zacznij dziś i znajdź najlepsze talenty z Twojego regionu.",
+      "button": "Dodaj ogłoszenie teraz"
+    }
+  },
+  "testimonials": {
+    "title": "Co mówią nasi użytkownicy",
+    "subtitle": "Prawdziwe historie sukcesu od pracodawców i kandydatów z regionu",
+    "employer": "Pracodawca",
+    "applicant": "Kandydat"
+  },
+  "jobsPage": {
+    "title": "Praca w Zeven i okolicach",
+    "subtitle": "Znajdź swoją następną pracę w regionie",
+    "searchPlaceholder": "Stanowisko, firma lub słowo kluczowe...",
+    "allIndustries": "Wszystkie branże",
+    "allTypes": "Wszystkie rodzaje",
+    "industries": "Branża/e",
+    "types": "Rodzaj(e)",
+    "selectIndustries": "Wybierz branże:",
+    "selectTypes": "Wybierz rodzaj zatrudnienia:",
+    "resetAll": "Zresetuj wszystko",
+    "jobsFound": "ofert pracy",
+    "jobFound": "oferta pracy",
+    "sortNewest": "Najnowsze",
+    "sortOldest": "Najstarsze",
+    "loading": "Ładowanie ofert...",
+    "noJobsFound": "Nie znaleziono ofert",
+    "noJobsHint": "Spróbuj innych wyszukiwań lub filtrów.",
+    "resetFilters": "Zresetuj filtry",
+    "viewDetails": "Zobacz szczegóły",
+    "today": "Dzisiaj",
+    "yesterday": "Wczoraj",
+    "daysAgo": "{days} dni temu",
+    "weeksAgo": "{weeks} tyg. temu",
+    "linkCopied": "Link skopiowany!",
+    "industries_list": {
+      "handwerk": "Rzemiosło",
+      "pflege_gesundheit": "Opieka zdrowotna",
+      "gastro_hotel": "Gastronomia i hotelarstwo",
+      "einzelhandel": "Handel detaliczny",
+      "logistik_transport": "Logistyka i transport",
+      "industrie_produktion": "Przemysł i produkcja",
+      "buero_verwaltung": "Biuro i administracja",
+      "it_technik": "IT i technologia",
+      "bau_architektur": "Budownictwo i architektura",
+      "landwirtschaft": "Rolnictwo",
+      "bildung_soziales": "Edukacja i usługi społeczne",
+      "sonstiges": "Inne"
+    },
+    "employment_types": {
+      "vollzeit": "Pełny etat",
+      "teilzeit": "Częściowy etat",
+      "minijob": "Mini-praca",
+      "ausbildung": "Praktyka zawodowa",
+      "praktikum": "Staż",
+      "werkstudent": "Student pracujący"
+    }
+  },
   "help": {
     "title": "Pomoc i Poradniki",
     "subtitle": "Wszystko, co musisz wiedzieć, aby w pełni korzystać z JobNachbar",
