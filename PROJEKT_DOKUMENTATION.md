@@ -14,6 +14,9 @@
 - **KI-Integration:** Google Gemini API
 - **Internationalisierung:** next-intl (5 Sprachen)
 - **PDF-Verarbeitung:** pdf-parse v2.4.5
+- **Payment:** Stripe Integration
+- **E-Mail:** Resend API
+- **PWA:** Progressive Web App Support
 
 ---
 
@@ -265,6 +268,118 @@ npm run dev
 
 ---
 
+## Progressive Web App (PWA)
+
+### App-Installation
+
+JobNachbar ist als PWA installierbar. Die Installations-Seite `/app-installieren` bietet:
+
+- **Geräte-Erkennung:** Automatische Erkennung von iOS, Android, Desktop
+- **Plattform-spezifische Anleitungen:** 3 Schritte pro Plattform
+- **Vorteile-Sektion:** Schnell, Offline, Push-Benachrichtigungen, Homescreen
+
+### Mobile App Banner
+
+Component: `src/components/MobileAppBanner.tsx`
+
+- Zeigt sich nur auf Mobilgeräten
+- Prüft ob PWA bereits installiert ist
+- Dismissable mit 7-Tage Cookie (`jobnachbar_app_banner_dismissed`)
+
+---
+
+## Cookie & GDPR Compliance
+
+### Cookie Banner
+
+Component: `src/components/CookieBanner.tsx`
+
+Kategorien:
+- **Notwendig:** Immer aktiv (Session, Auth)
+- **Funktional:** Spracheinstellungen
+- **Statistik:** Google Analytics
+- **Marketing:** Meta Pixel
+
+### Consent-Speicherung
+
+```javascript
+// localStorage
+const consent = {
+  necessary: true,
+  functional: boolean,
+  analytics: boolean,
+  marketing: boolean,
+  timestamp: number
+}
+```
+
+### Tracking-Integration
+
+```env
+# .env.local
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_META_PIXEL_ID=XXXXXXXXXX
+```
+
+Scripts werden nur bei Zustimmung geladen:
+- Google Analytics: `consent.analytics === true`
+- Meta Pixel: `consent.marketing === true`
+
+### Cookie-Einstellungen ändern
+
+Footer-Link ruft `openCookieSettings()` auf:
+```typescript
+import { openCookieSettings } from '@/components/CookieBanner'
+```
+
+---
+
+## CRM & Admin
+
+### Admin Dashboard
+
+Pfad: `/admin`
+
+- CRM für Kundenmanagement
+- Subscriptions verwalten
+- Rechnungen erstellen und versenden
+
+### Stripe Integration
+
+- Checkout: `/api/stripe/checkout`
+- Webhook: `/api/stripe/webhook`
+- Automatische Subscription-Aktivierung
+
+---
+
+## Umgebungsvariablen (Erweitert)
+
+```env
+# Supabase
+NEXT_PUBLIC_SUPABASE_URL=xxx
+NEXT_PUBLIC_SUPABASE_ANON_KEY=xxx
+SUPABASE_SERVICE_ROLE_KEY=xxx
+
+# Google Gemini AI
+GEMINI_API_KEY=xxx
+
+# Stripe
+STRIPE_SECRET_KEY=xxx
+STRIPE_WEBHOOK_SECRET=xxx
+
+# Resend (E-Mail)
+RESEND_API_KEY=xxx
+
+# Analytics (Optional)
+NEXT_PUBLIC_GA_MEASUREMENT_ID=xxx
+NEXT_PUBLIC_META_PIXEL_ID=xxx
+
+# App
+NEXT_PUBLIC_SITE_URL=https://jobnachbar.com
+```
+
+---
+
 ## Kontakt & Support
 
 **JobNachbar** - Regionales Jobportal für Zeven und Umgebung
@@ -273,4 +388,4 @@ Website: [jobnachbar.de](https://jobnachbar.de)
 
 ---
 
-*Dokumentation erstellt: Januar 2026*
+*Dokumentation aktualisiert: Januar 2026*
