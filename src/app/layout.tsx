@@ -5,6 +5,7 @@ import IntlProvider from '@/components/providers/IntlProvider'
 import ToastProvider from '@/components/providers/ToastProvider'
 import FeedbackButton from '@/components/FeedbackButton'
 import CookieBanner from '@/components/CookieBanner'
+import MobileAppBanner from '@/components/MobileAppBanner'
 import { getOrganizationSchema, getWebsiteSchema } from '@/lib/seo/schema'
 import './globals.css'
 
@@ -117,6 +118,7 @@ export default async function RootLayout({
       </head>
       <body className={inter.className}>
         <IntlProvider locale={locale} messages={messages}>
+          <MobileAppBanner />
           {children}
           <FeedbackButton />
           <CookieBanner />

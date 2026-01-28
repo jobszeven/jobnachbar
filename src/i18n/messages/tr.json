@@ -518,17 +518,20 @@
   },
   "cookies": {
     "title": "Çerez Ayarları",
-    "description": "Size en iyi deneyimi sunmak için çerezler kullanıyoruz.",
+    "description": "Size en iyi deneyimi sunmak için çerezler kullanıyoruz. Hangi çerezlere izin vermek istediğinize kendiniz karar verebilirsiniz.",
     "necessary": "Gerekli",
-    "necessaryDesc": "Bu çerezler web sitesinin çalışması için gereklidir.",
+    "necessaryDesc": "Bu çerezler web sitesinin çalışması için gereklidir (oturum, kimlik doğrulama).",
+    "functional": "İşlevsel",
+    "functionalDesc": "Dil ayarları ve tercihler gibi gelişmiş özellikleri etkinleştirir.",
     "statistics": "İstatistik",
-    "statisticsDesc": "Ziyaretçilerin web sitesiyle nasıl etkileşimde bulunduğunu anlamamıza yardımcı olur.",
+    "statisticsDesc": "Ziyaretçilerin web sitesiyle nasıl etkileşime girdiğini anlamamıza yardımcı olur (Google Analytics).",
     "marketing": "Pazarlama",
-    "marketingDesc": "İlgili reklamları göstermek için kullanılır.",
-    "acceptAll": "Tümünü kabul et",
-    "acceptNecessary": "Sadece gerekli",
-    "settings": "Ayarlar",
-    "save": "Kaydet"
+    "marketingDesc": "İlgili reklamları görüntülemek için kullanılır (Meta Pixel).",
+    "acceptAll": "Tümünü Kabul Et",
+    "acceptNecessary": "Sadece Gerekli",
+    "settings": "Ayarları Özelleştir",
+    "save": "Seçimi Kaydet",
+    "alwaysOn": "Her Zaman Aktif"
   },
   "onboarding": {
     "welcome": "JobNachbar'a hoş geldiniz!",
@@ -610,7 +613,9 @@
       "imprint": "Künye",
       "privacy": "Gizlilik Politikası",
       "terms": "Kullanım Koşulları",
-      "cookies": "Çerez Ayarları"
+      "cookies": "Çerez Ayarları",
+      "cookieSettings": "Ayarları Değiştir",
+      "app": "Uygulamayı Yükle"
     },
     "jobsIn": "{location} İşleri",
     "copyright": "© {year} JobNachbar. Tüm hakları saklıdır."
@@ -1618,5 +1623,57 @@
         ]
       }
     }
+  },
+  "appInstall": {
+    "hero": { "title": "JobNachbar'ı Uygulama Olarak Yükle", "subtitle": "Daha hızlı erişim, çevrimdışı kullanım ve anlık bildirimler için JobNachbar'ı cihazınıza yükleyin." },
+    "alreadyInstalled": "Uygulama zaten cihazınızda yüklü!",
+    "steps": { "title": "Birkaç adımda kurulum" },
+    "ios": {
+      "step1": { "title": "Paylaş Düğmesine Dokunun", "description": "Safari'de alttaki paylaş simgesine dokunun (yukarı ok işaretli kare).", "button": "Paylaş" },
+      "step2": { "title": "Ana Ekrana Ekle", "description": "Aşağı kaydırın ve 'Ana Ekrana Ekle'ye dokunun.", "button": "Ana Ekrana Ekle" },
+      "step3": { "title": "Tamam!", "description": "'Ekle'ye dokunun, uygulama ana ekranınızda görünecektir." }
+    },
+    "android": {
+      "step1": { "title": "Menüyü Aç", "description": "Chrome'da sağ üstteki üç noktaya (⋮) dokunun.", "button": "Menü (⋮)" },
+      "step2": { "title": "Uygulamayı Yükle", "description": "'Uygulamayı yükle' veya 'Ana Ekrana Ekle'ye dokunun.", "button": "Uygulamayı Yükle" },
+      "step3": { "title": "Tamam!", "description": "Kurulumu onaylayın, uygulama ana ekranınızda görünecektir." }
+    },
+    "desktop": {
+      "step1": { "title": "Desteklenen Tarayıcı Kullanın", "description": "JobNachbar'ı Chrome, Edge veya Brave'de açın.", "button": "Chrome, Edge, Brave" },
+      "step2": { "title": "Yükle'ye Tıklayın", "description": "Adres çubuğundaki yükle simgesine tıklayın (URL'nin sağında).", "button": "Yükle" },
+      "step3": { "title": "Tamam!", "description": "Uygulama yüklenecek ve normal bir program gibi başlatılabilir." }
+    },
+    "benefits": {
+      "title": "Neden Uygulamayı Yüklemeli?",
+      "fast": { "title": "Çok Hızlı", "description": "Uygulama tarayıcıdaki web sitesinden çok daha hızlı yüklenir." },
+      "offline": { "title": "Çevrimdışı Kullanılabilir", "description": "İnternet bağlantısı olmadan bile kaydedilen içeriklere erişin." },
+      "notifications": { "title": "Anlık Bildirimler", "description": "Yeni işler veya başvurular hakkında anında bildirim alın." },
+      "homescreen": { "title": "Hızlı Erişim", "description": "Tarayıcı açmadan doğrudan ana ekrandan uygulamayı başlatın." }
+    },
+    "faq": {
+      "title": "Sık Sorulan Sorular",
+      "q1": { "question": "Uygulama ücretsiz mi?", "answer": "Evet! Kurulum tamamen ücretsizdir. Doğrudan tarayıcı üzerinden kurulan bir Progressive Web App (PWA)'dır." },
+      "q2": { "question": "Çok depolama alanına ihtiyacım var mı?", "answer": "Hayır, uygulama çok küçüktür (5 MB'ın altında) ve cihazınızda minimum yer kaplar." },
+      "q3": { "question": "Uygulamayı nasıl kaldırırım?", "answer": "Diğer uygulamalar gibi: cihazınızda uygulama simgesine uzun basın ve 'Kaldır' veya 'Sil' seçeneğini seçin." }
+    }
+  },
+  "appBanner": { "text": "Uygulama Olarak Yükle", "install": "Yükle" },
+  "homePricing": {
+    "title": "Tekliflerimiz",
+    "subtitle": "Şeffaf ve adil – iş arayanlar ve işverenler için",
+    "forApplicants": {
+      "title": "İş Arayanlar İçin",
+      "free": { "name": "Ücretsiz", "price": "0€", "features": ["İş Arama", "Favorileri Kaydet", "Temel Profil", "E-posta Bildirimleri"] },
+      "premium": { "name": "Premium", "price": "9,99€", "period": "/ay", "features": ["Yapay Zeka Özgeçmiş Kontrolü", "Ön Yazı Oluşturucu", "Mülakat Koçu", "Maaş Pazarlık İpuçları", "Öncelikli Destek"], "badge": "Popüler" },
+      "cta": "Premium'u Şimdi Deneyin"
+    },
+    "forEmployers": {
+      "title": "İşverenler İçin",
+      "starter": { "name": "Başlangıç", "price": "Ücretsiz", "features": ["1 İş İlanı", "30 Gün Süre", "Temel Destek"] },
+      "basic": { "name": "Temel", "price": "49€", "period": "/ay", "features": ["3 İş İlanı", "60 Gün Süre", "Logo Entegrasyonu", "E-posta Desteği"] },
+      "premium": { "name": "Premium", "price": "99€", "period": "/ay", "features": ["10 İş İlanı", "90 Gün Süre", "Öne Çıkan Yerleşim", "Analitik ve Raporlar", "Öncelikli Destek"], "badge": "En İyi Değer" },
+      "cta": "İlanı Şimdi Yayınla"
+    },
+    "allPrices": "Tüm Fiyatları Görüntüle"
   }
 }

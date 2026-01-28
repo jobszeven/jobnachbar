@@ -518,17 +518,20 @@
   },
   "cookies": {
     "title": "Cookie Settings",
-    "description": "We use cookies to provide you with the best experience.",
+    "description": "We use cookies to provide you with the best experience. You can decide which cookies you want to allow.",
     "necessary": "Necessary",
-    "necessaryDesc": "These cookies are required for the website to function.",
+    "necessaryDesc": "These cookies are required for the website to function (session, authentication).",
+    "functional": "Functional",
+    "functionalDesc": "Enable enhanced features like language settings and preferences.",
     "statistics": "Statistics",
-    "statisticsDesc": "Help us understand how visitors interact with the website.",
+    "statisticsDesc": "Help us understand how visitors interact with the website (Google Analytics).",
     "marketing": "Marketing",
-    "marketingDesc": "Used to display relevant advertising.",
-    "acceptAll": "Accept all",
-    "acceptNecessary": "Necessary only",
-    "settings": "Settings",
-    "save": "Save"
+    "marketingDesc": "Used to display relevant advertising (Meta Pixel).",
+    "acceptAll": "Accept All",
+    "acceptNecessary": "Necessary Only",
+    "settings": "Customize Settings",
+    "save": "Save Selection",
+    "alwaysOn": "Always Active"
   },
   "onboarding": {
     "welcome": "Welcome to JobNachbar!",
@@ -610,7 +613,9 @@
       "imprint": "Imprint",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
-      "cookies": "Cookie Settings"
+      "cookies": "Cookie Settings",
+      "cookieSettings": "Change Settings",
+      "app": "Install App"
     },
     "jobsIn": "Jobs in {location}",
     "copyright": "© {year} JobNachbar. All rights reserved."
@@ -1618,5 +1623,60 @@
         ]
       }
     }
+  },
+  "appInstall": {
+    "hero": {
+      "title": "Install JobNachbar as an App",
+      "subtitle": "Install JobNachbar on your device for faster access, offline use, and push notifications."
+    },
+    "alreadyInstalled": "The app is already installed on your device!",
+    "steps": { "title": "Install in a few steps" },
+    "ios": {
+      "step1": { "title": "Tap Share Button", "description": "Tap the share icon at the bottom in Safari (square with arrow pointing up).", "button": "Share" },
+      "step2": { "title": "Add to Home Screen", "description": "Scroll down and tap 'Add to Home Screen'.", "button": "Add to Home Screen" },
+      "step3": { "title": "Done!", "description": "Tap 'Add' and the app will appear on your home screen." }
+    },
+    "android": {
+      "step1": { "title": "Open Menu", "description": "Tap the three dots (⋮) in the top right in Chrome.", "button": "Menu (⋮)" },
+      "step2": { "title": "Install App", "description": "Tap 'Install app' or 'Add to Home Screen'.", "button": "Install App" },
+      "step3": { "title": "Done!", "description": "Confirm the installation and the app will appear on your home screen." }
+    },
+    "desktop": {
+      "step1": { "title": "Use Supported Browser", "description": "Open JobNachbar in Chrome, Edge, or Brave.", "button": "Chrome, Edge, Brave" },
+      "step2": { "title": "Click Install", "description": "Click the install icon in the address bar (right side of the URL).", "button": "Install" },
+      "step3": { "title": "Done!", "description": "The app will be installed and can be launched like a regular program." }
+    },
+    "benefits": {
+      "title": "Why Install the App?",
+      "fast": { "title": "Lightning Fast", "description": "The app loads much faster than the website in a browser." },
+      "offline": { "title": "Available Offline", "description": "Access saved content even without an internet connection." },
+      "notifications": { "title": "Push Notifications", "description": "Get instant notifications about new jobs or applications." },
+      "homescreen": { "title": "Quick Access", "description": "Launch the app directly from your home screen without opening a browser." }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": { "question": "Is the app free?", "answer": "Yes! Installation is completely free. It's a Progressive Web App (PWA) that's installed directly through the browser." },
+      "q2": { "question": "Do I need much storage space?", "answer": "No, the app is very small (under 5 MB) and takes up minimal space on your device." },
+      "q3": { "question": "How do I uninstall the app?", "answer": "Like any other app: long-press the app icon on your device and select 'Uninstall' or 'Remove'." }
+    }
+  },
+  "appBanner": { "text": "Install as App", "install": "Install" },
+  "homePricing": {
+    "title": "Our Offers",
+    "subtitle": "Transparent & fair – for job seekers and employers",
+    "forApplicants": {
+      "title": "For Job Seekers",
+      "free": { "name": "Free", "price": "€0", "features": ["Job Search", "Save Favorites", "Basic Profile", "Email Notifications"] },
+      "premium": { "name": "Premium", "price": "€9.99", "period": "/month", "features": ["AI Resume Check", "Cover Letter Generator", "Interview Coach", "Salary Negotiation Tips", "Priority Support"], "badge": "Popular" },
+      "cta": "Try Premium Now"
+    },
+    "forEmployers": {
+      "title": "For Employers",
+      "starter": { "name": "Starter", "price": "Free", "features": ["1 Job Listing", "30 Days Duration", "Basic Support"] },
+      "basic": { "name": "Basic", "price": "€49", "period": "/month", "features": ["3 Job Listings", "60 Days Duration", "Logo Integration", "Email Support"] },
+      "premium": { "name": "Premium", "price": "€99", "period": "/month", "features": ["10 Job Listings", "90 Days Duration", "Featured Placement", "Analytics & Reports", "Priority Support"], "badge": "Best Value" },
+      "cta": "Post Job Now"
+    },
+    "allPrices": "View All Prices"
   }
 }

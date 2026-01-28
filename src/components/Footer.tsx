@@ -2,7 +2,9 @@
 
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
+import { Smartphone, Cookie } from 'lucide-react'
 import Logo from './Logo'
+import { openCookieSettings } from './CookieBanner'
 
 const locations = [
   { name: 'Zeven', slug: 'zeven' },
@@ -151,6 +153,21 @@ export default function Footer() {
               <li>
                 <Link href="/cookies" className="hover:text-brand-red transition-colors">
                   {t('links.cookies')}
+                </Link>
+              </li>
+              <li>
+                <button
+                  onClick={openCookieSettings}
+                  className="hover:text-brand-red transition-colors flex items-center gap-1"
+                >
+                  <Cookie className="w-3 h-3" />
+                  {t('links.cookieSettings')}
+                </button>
+              </li>
+              <li>
+                <Link href="/app-installieren" className="hover:text-brand-red transition-colors flex items-center gap-1">
+                  <Smartphone className="w-3 h-3" />
+                  {t('links.app')}
                 </Link>
               </li>
             </ul>

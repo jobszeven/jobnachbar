@@ -518,17 +518,20 @@
   },
   "cookies": {
     "title": "Cookie-Einstellungen",
-    "description": "Wir verwenden Cookies, um dir die beste Erfahrung zu bieten.",
+    "description": "Wir verwenden Cookies, um dir die beste Erfahrung zu bieten. Du kannst selbst entscheiden, welche Cookies du zulassen möchtest.",
     "necessary": "Notwendig",
-    "necessaryDesc": "Diese Cookies sind für die Funktion der Website erforderlich.",
+    "necessaryDesc": "Diese Cookies sind für die Funktion der Website erforderlich (Session, Authentifizierung).",
+    "functional": "Funktional",
+    "functionalDesc": "Ermöglichen erweiterte Funktionen wie Spracheinstellungen und Präferenzen.",
     "statistics": "Statistik",
-    "statisticsDesc": "Helfen uns zu verstehen, wie Besucher mit der Website interagieren.",
+    "statisticsDesc": "Helfen uns zu verstehen, wie Besucher mit der Website interagieren (Google Analytics).",
     "marketing": "Marketing",
-    "marketingDesc": "Werden verwendet, um relevante Werbung anzuzeigen.",
+    "marketingDesc": "Werden verwendet, um relevante Werbung anzuzeigen (Meta Pixel).",
     "acceptAll": "Alle akzeptieren",
     "acceptNecessary": "Nur notwendige",
-    "settings": "Einstellungen",
-    "save": "Speichern"
+    "settings": "Einstellungen anpassen",
+    "save": "Auswahl speichern",
+    "alwaysOn": "Immer aktiv"
   },
   "onboarding": {
     "welcome": "Willkommen bei JobNachbar!",
@@ -610,7 +613,9 @@
       "imprint": "Impressum",
       "privacy": "Datenschutz",
       "terms": "AGB",
-      "cookies": "Cookie-Einstellungen"
+      "cookies": "Cookie-Einstellungen",
+      "cookieSettings": "Einstellungen ändern",
+      "app": "App installieren"
     },
     "jobsIn": "Jobs in {location}",
     "copyright": "© {year} JobNachbar. Alle Rechte vorbehalten."
@@ -1618,5 +1623,144 @@
         ]
       }
     }
+  },
+  "appInstall": {
+    "hero": {
+      "title": "JobNachbar als App installieren",
+      "subtitle": "Installiere JobNachbar auf deinem Gerät für schnelleren Zugriff, Offline-Nutzung und Push-Benachrichtigungen."
+    },
+    "alreadyInstalled": "Die App ist bereits auf deinem Gerät installiert!",
+    "steps": {
+      "title": "Installation in wenigen Schritten"
+    },
+    "ios": {
+      "step1": {
+        "title": "Teilen-Button antippen",
+        "description": "Tippe unten in Safari auf das Teilen-Symbol (Quadrat mit Pfeil nach oben).",
+        "button": "Teilen"
+      },
+      "step2": {
+        "title": "Zum Home-Bildschirm hinzufügen",
+        "description": "Scrolle nach unten und tippe auf 'Zum Home-Bildschirm'.",
+        "button": "Zum Home-Bildschirm"
+      },
+      "step3": {
+        "title": "Fertig!",
+        "description": "Tippe auf 'Hinzufügen' und die App erscheint auf deinem Home-Bildschirm."
+      }
+    },
+    "android": {
+      "step1": {
+        "title": "Menü öffnen",
+        "description": "Tippe oben rechts auf die drei Punkte (⋮) in Chrome.",
+        "button": "Menü (⋮)"
+      },
+      "step2": {
+        "title": "App installieren",
+        "description": "Tippe auf 'App installieren' oder 'Zum Startbildschirm hinzufügen'.",
+        "button": "App installieren"
+      },
+      "step3": {
+        "title": "Fertig!",
+        "description": "Bestätige die Installation und die App erscheint auf deinem Startbildschirm."
+      }
+    },
+    "desktop": {
+      "step1": {
+        "title": "Unterstützten Browser verwenden",
+        "description": "Öffne JobNachbar in Chrome, Edge oder Brave.",
+        "button": "Chrome, Edge, Brave"
+      },
+      "step2": {
+        "title": "Installieren klicken",
+        "description": "Klicke auf das Install-Symbol in der Adressleiste (rechts neben der URL).",
+        "button": "Installieren"
+      },
+      "step3": {
+        "title": "Fertig!",
+        "description": "Die App wird installiert und kann wie ein normales Programm gestartet werden."
+      }
+    },
+    "benefits": {
+      "title": "Warum die App installieren?",
+      "fast": {
+        "title": "Blitzschnell",
+        "description": "Die App lädt deutlich schneller als die Website im Browser."
+      },
+      "offline": {
+        "title": "Offline verfügbar",
+        "description": "Greife auch ohne Internetverbindung auf gespeicherte Inhalte zu."
+      },
+      "notifications": {
+        "title": "Push-Benachrichtigungen",
+        "description": "Erhalte sofortige Benachrichtigungen über neue Jobs oder Bewerbungen."
+      },
+      "homescreen": {
+        "title": "Schneller Zugriff",
+        "description": "Starte die App direkt vom Home-Bildschirm ohne Browser zu öffnen."
+      }
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "q1": {
+        "question": "Ist die App kostenlos?",
+        "answer": "Ja! Die Installation ist komplett kostenlos. Es handelt sich um eine Progressive Web App (PWA), die direkt über den Browser installiert wird."
+      },
+      "q2": {
+        "question": "Brauche ich viel Speicherplatz?",
+        "answer": "Nein, die App ist sehr klein (unter 5 MB) und belegt kaum Speicherplatz auf deinem Gerät."
+      },
+      "q3": {
+        "question": "Wie deinstalliere ich die App?",
+        "answer": "Wie jede andere App: Auf dem Gerät lange auf das App-Symbol tippen und 'Deinstallieren' oder 'Entfernen' wählen."
+      }
+    }
+  },
+  "appBanner": {
+    "text": "Als App installieren",
+    "install": "Installieren"
+  },
+  "homePricing": {
+    "title": "Unsere Angebote",
+    "subtitle": "Transparent & fair – für Bewerber und Arbeitgeber",
+    "forApplicants": {
+      "title": "Für Bewerber",
+      "free": {
+        "name": "Kostenlos",
+        "price": "0€",
+        "features": ["Job-Suche", "Favoriten speichern", "Basis-Profil", "E-Mail-Benachrichtigungen"]
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "9,99€",
+        "period": "/Monat",
+        "features": ["KI-Lebenslauf-Check", "Anschreiben-Generator", "Interview-Coach", "Gehaltsverhandlungs-Tipps", "Priority-Support"],
+        "badge": "Beliebt"
+      },
+      "cta": "Jetzt Premium testen"
+    },
+    "forEmployers": {
+      "title": "Für Arbeitgeber",
+      "starter": {
+        "name": "Starter",
+        "price": "Kostenlos",
+        "features": ["1 Stellenanzeige", "30 Tage Laufzeit", "Basis-Support"]
+      },
+      "basic": {
+        "name": "Basic",
+        "price": "49€",
+        "period": "/Monat",
+        "features": ["3 Stellenanzeigen", "60 Tage Laufzeit", "Logo-Integration", "E-Mail-Support"]
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "99€",
+        "period": "/Monat",
+        "features": ["10 Stellenanzeigen", "90 Tage Laufzeit", "Featured-Platzierung", "Analytics & Reports", "Priority-Support"],
+        "badge": "Beste Wahl"
+      },
+      "cta": "Jetzt Stelle schalten"
+    },
+    "allPrices": "Alle Preise anzeigen"
   }
 }

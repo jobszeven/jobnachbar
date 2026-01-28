@@ -518,17 +518,20 @@
   },
   "cookies": {
     "title": "Ustawienia plików cookie",
-    "description": "Używamy plików cookie, aby zapewnić Ci najlepsze doświadczenia.",
+    "description": "Używamy plików cookie, aby zapewnić Ci najlepsze doświadczenie. Możesz sam zdecydować, które pliki cookie chcesz zezwolić.",
     "necessary": "Niezbędne",
-    "necessaryDesc": "Te pliki cookie są wymagane do działania strony.",
-    "statistics": "Statystyki",
-    "statisticsDesc": "Pomagają nam zrozumieć, jak odwiedzający korzystają ze strony.",
-    "marketing": "Marketing",
-    "marketingDesc": "Służą do wyświetlania odpowiednich reklam.",
-    "acceptAll": "Akceptuj wszystkie",
+    "necessaryDesc": "Te pliki cookie są wymagane do działania strony (sesja, uwierzytelnianie).",
+    "functional": "Funkcjonalne",
+    "functionalDesc": "Umożliwiają zaawansowane funkcje, takie jak ustawienia językowe i preferencje.",
+    "statistics": "Statystyczne",
+    "statisticsDesc": "Pomagają nam zrozumieć, jak odwiedzający korzystają ze strony (Google Analytics).",
+    "marketing": "Marketingowe",
+    "marketingDesc": "Służą do wyświetlania odpowiednich reklam (Meta Pixel).",
+    "acceptAll": "Zaakceptuj wszystkie",
     "acceptNecessary": "Tylko niezbędne",
-    "settings": "Ustawienia",
-    "save": "Zapisz"
+    "settings": "Dostosuj ustawienia",
+    "save": "Zapisz wybór",
+    "alwaysOn": "Zawsze aktywne"
   },
   "onboarding": {
     "welcome": "Witaj w JobNachbar!",
@@ -610,7 +613,9 @@
       "imprint": "Impressum",
       "privacy": "Polityka prywatności",
       "terms": "Regulamin",
-      "cookies": "Ustawienia plików cookie"
+      "cookies": "Ustawienia plików cookie",
+      "cookieSettings": "Zmień ustawienia",
+      "app": "Zainstaluj aplikację"
     },
     "jobsIn": "Praca w {location}",
     "copyright": "© {year} JobNachbar. Wszelkie prawa zastrzeżone."
@@ -1618,5 +1623,57 @@
         ]
       }
     }
+  },
+  "appInstall": {
+    "hero": { "title": "Zainstaluj JobNachbar jako aplikację", "subtitle": "Zainstaluj JobNachbar na swoim urządzeniu, aby uzyskać szybszy dostęp, tryb offline i powiadomienia push." },
+    "alreadyInstalled": "Aplikacja jest już zainstalowana na Twoim urządzeniu!",
+    "steps": { "title": "Instalacja w kilku krokach" },
+    "ios": {
+      "step1": { "title": "Dotknij przycisku Udostępnij", "description": "Dotknij ikony udostępniania na dole w Safari (kwadrat ze strzałką w górę).", "button": "Udostępnij" },
+      "step2": { "title": "Dodaj do ekranu głównego", "description": "Przewiń w dół i dotknij 'Dodaj do ekranu głównego'.", "button": "Dodaj do ekranu głównego" },
+      "step3": { "title": "Gotowe!", "description": "Dotknij 'Dodaj', a aplikacja pojawi się na ekranie głównym." }
+    },
+    "android": {
+      "step1": { "title": "Otwórz menu", "description": "Dotknij trzech kropek (⋮) w prawym górnym rogu w Chrome.", "button": "Menu (⋮)" },
+      "step2": { "title": "Zainstaluj aplikację", "description": "Dotknij 'Zainstaluj aplikację' lub 'Dodaj do ekranu głównego'.", "button": "Zainstaluj aplikację" },
+      "step3": { "title": "Gotowe!", "description": "Potwierdź instalację, a aplikacja pojawi się na ekranie głównym." }
+    },
+    "desktop": {
+      "step1": { "title": "Użyj obsługiwanej przeglądarki", "description": "Otwórz JobNachbar w Chrome, Edge lub Brave.", "button": "Chrome, Edge, Brave" },
+      "step2": { "title": "Kliknij Zainstaluj", "description": "Kliknij ikonę instalacji na pasku adresu (po prawej stronie URL).", "button": "Zainstaluj" },
+      "step3": { "title": "Gotowe!", "description": "Aplikacja zostanie zainstalowana i będzie można ją uruchomić jak zwykły program." }
+    },
+    "benefits": {
+      "title": "Dlaczego warto zainstalować aplikację?",
+      "fast": { "title": "Błyskawicznie", "description": "Aplikacja ładuje się znacznie szybciej niż strona w przeglądarce." },
+      "offline": { "title": "Dostępna offline", "description": "Uzyskaj dostęp do zapisanych treści nawet bez połączenia z internetem." },
+      "notifications": { "title": "Powiadomienia push", "description": "Otrzymuj natychmiastowe powiadomienia o nowych ofertach pracy lub aplikacjach." },
+      "homescreen": { "title": "Szybki dostęp", "description": "Uruchom aplikację bezpośrednio z ekranu głównego bez otwierania przeglądarki." }
+    },
+    "faq": {
+      "title": "Często zadawane pytania",
+      "q1": { "question": "Czy aplikacja jest bezpłatna?", "answer": "Tak! Instalacja jest całkowicie bezpłatna. To Progressive Web App (PWA) instalowana bezpośrednio przez przeglądarkę." },
+      "q2": { "question": "Czy potrzebuję dużo miejsca na dysku?", "answer": "Nie, aplikacja jest bardzo mała (poniżej 5 MB) i zajmuje minimalne miejsce na urządzeniu." },
+      "q3": { "question": "Jak odinstalować aplikację?", "answer": "Jak każdą inną aplikację: przytrzymaj ikonę aplikacji na urządzeniu i wybierz 'Odinstaluj' lub 'Usuń'." }
+    }
+  },
+  "appBanner": { "text": "Zainstaluj jako aplikację", "install": "Zainstaluj" },
+  "homePricing": {
+    "title": "Nasza oferta",
+    "subtitle": "Przejrzyście i uczciwie – dla osób szukających pracy i pracodawców",
+    "forApplicants": {
+      "title": "Dla osób szukających pracy",
+      "free": { "name": "Bezpłatnie", "price": "0€", "features": ["Wyszukiwanie pracy", "Zapisz ulubione", "Podstawowy profil", "Powiadomienia e-mail"] },
+      "premium": { "name": "Premium", "price": "9,99€", "period": "/miesiąc", "features": ["AI sprawdzanie CV", "Generator listu motywacyjnego", "Trener rozmów", "Porady dot. negocjacji płacy", "Priorytetowe wsparcie"], "badge": "Popularne" },
+      "cta": "Wypróbuj Premium teraz"
+    },
+    "forEmployers": {
+      "title": "Dla pracodawców",
+      "starter": { "name": "Starter", "price": "Bezpłatnie", "features": ["1 ogłoszenie o pracę", "30 dni trwania", "Podstawowe wsparcie"] },
+      "basic": { "name": "Basic", "price": "49€", "period": "/miesiąc", "features": ["3 ogłoszenia o pracę", "60 dni trwania", "Integracja logo", "Wsparcie e-mail"] },
+      "premium": { "name": "Premium", "price": "99€", "period": "/miesiąc", "features": ["10 ogłoszeń o pracę", "90 dni trwania", "Wyróżnione miejsce", "Analityka i raporty", "Priorytetowe wsparcie"], "badge": "Najlepsza wartość" },
+      "cta": "Zamieść ogłoszenie teraz"
+    },
+    "allPrices": "Zobacz wszystkie ceny"
   }
 }
