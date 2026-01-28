@@ -5,32 +5,16 @@ import Link from 'next/link'
 import { CheckCircle, ArrowRight, HelpCircle, X, Zap, TrendingUp, Clock, Users, Shield, Crown, Sparkles, Building2, User } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { useTranslations } from 'next-intl'
 
 type Tab = 'arbeitgeber' | 'bewerber'
 
-// Applicant pricing data
-const freeFeatures = [
-  'Jobs suchen & bewerben',
-  'Profil erstellen',
-  'Lebenslauf hochladen',
-  '1x Lebenslauf-Check/Monat',
-  '1x Anschreiben-Check/Monat',
-  '3 Interview-Fragen',
-]
-
-const premiumFeatures = [
-  'Alles aus Kostenlos',
-  'Unbegrenzt KI-Tools nutzen',
-  'Lebenslauf-Generator mit PDF (3 Vorlagen)',
-  'Anschreiben-Generator mit PDF',
-  'Interview-Coach unbegrenzt',
-  'Detaillierter Gehaltsvergleich',
-  'Priority-Badge bei Bewerbungen',
-  'Keine Werbung',
-]
-
 export default function PreisePage() {
+  const t = useTranslations('pricingPage')
   const [activeTab, setActiveTab] = useState<Tab>('arbeitgeber')
+
+  const freeFeatures = t.raw('applicant.free.features') as string[]
+  const premiumFeatures = t.raw('applicant.premium.features') as string[]
 
   const spotsTotal = 50
   const spotsTaken = 34
