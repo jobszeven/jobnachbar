@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Suspense } from 'react'
 import { getTranslations } from 'next-intl/server'
-import { Users, Zap, MapPin, CheckCircle, ArrowRight, Clock, Shield, Euro } from 'lucide-react'
+import { Users, Zap, MapPin, CheckCircle, ArrowRight, Clock, Shield, Euro, FileText, PenTool, MessageSquare, TrendingUp } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import TestimonialsSlider from '@/components/TestimonialsSlider'
@@ -71,6 +71,81 @@ export default async function Home() {
 
       {/* Testimonials Slider */}
       <TestimonialsSlider />
+
+      {/* AI Tools Section */}
+      <section className="py-20 bg-brand-dark-card">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              {t('aiTools.title')}
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              {t('aiTools.subtitle')}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Lebenslauf-Check */}
+            <div className="card hover:border-red-500/50 transition-colors group">
+              <div className="w-14 h-14 bg-red-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-red-500/30 transition-colors">
+                <FileText className="w-7 h-7 text-red-500" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-2">{t('aiTools.resumeCheck.title')}</h3>
+              <p className="text-gray-400 text-sm mb-4">{t('aiTools.resumeCheck.desc')}</p>
+              <Link href="/tools/lebenslauf-check" className="inline-flex items-center text-red-500 hover:text-red-400 font-medium text-sm">
+                {t('aiTools.tryNow')}
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Anschreiben-Generator */}
+            <div className="card hover:border-blue-500/50 transition-colors group">
+              <div className="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-500/30 transition-colors">
+                <PenTool className="w-7 h-7 text-blue-500" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-2">{t('aiTools.coverLetter.title')}</h3>
+              <p className="text-gray-400 text-sm mb-4">{t('aiTools.coverLetter.desc')}</p>
+              <Link href="/tools/anschreiben-generator" className="inline-flex items-center text-blue-500 hover:text-blue-400 font-medium text-sm">
+                {t('aiTools.tryNow')}
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Interview-Coach */}
+            <div className="card hover:border-green-500/50 transition-colors group">
+              <div className="w-14 h-14 bg-green-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-green-500/30 transition-colors">
+                <MessageSquare className="w-7 h-7 text-green-500" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-2">{t('aiTools.interviewCoach.title')}</h3>
+              <p className="text-gray-400 text-sm mb-4">{t('aiTools.interviewCoach.desc')}</p>
+              <Link href="/tools/interview-coach" className="inline-flex items-center text-green-500 hover:text-green-400 font-medium text-sm">
+                {t('aiTools.tryNow')}
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Gehaltsverhandlung */}
+            <div className="card hover:border-yellow-500/50 transition-colors group">
+              <div className="w-14 h-14 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-yellow-500/30 transition-colors">
+                <TrendingUp className="w-7 h-7 text-yellow-500" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-2">{t('aiTools.salaryNegotiation.title')}</h3>
+              <p className="text-gray-400 text-sm mb-4">{t('aiTools.salaryNegotiation.desc')}</p>
+              <Link href="/tools/gehaltsverhandlung" className="inline-flex items-center text-yellow-500 hover:text-yellow-400 font-medium text-sm">
+                {t('aiTools.tryNow')}
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/tools" className="btn-primary inline-flex items-center text-lg px-8 py-4">
+              {t('aiTools.viewAll')}
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Stats Section */}
       <Suspense

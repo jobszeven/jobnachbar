@@ -30,6 +30,7 @@
     "jobs": "Znajdź pracę",
     "forEmployers": "Dla pracodawców",
     "pricing": "Cennik",
+    "aiTools": "Narzędzia AI",
     "applicationTips": "Porady aplikacyjne",
     "contact": "Kontakt",
     "login": "Zaloguj się",
@@ -170,6 +171,28 @@
       "primary": "Dodaj ofertę teraz",
       "secondary": "Pytania? Skontaktuj się z nami",
       "button": "Zacznij za darmo"
+    },
+    "aiTools": {
+      "title": "Narzedzia aplikacyjne wspierane przez AI",
+      "subtitle": "Nasze narzedzia AI pomoga Ci zoptymalizowac aplikacje i przygotowac sie do rynku pracy.",
+      "resumeCheck": {
+        "title": "Sprawdzanie CV",
+        "desc": "Pozwol naszej AI przeanalizowac Twoje CV i otrzymaj sugestie ulepszenia."
+      },
+      "coverLetter": {
+        "title": "Generator listu motywacyjnego",
+        "desc": "Twórz indywidualne listy motywacyjne dla kazdego stanowiska z pomoca naszej AI."
+      },
+      "interviewCoach": {
+        "title": "Trener rozmów kwalifikacyjnych",
+        "desc": "Cwicz typowe pytania rekrutacyjne i otrzymuj feedback od naszej AI."
+      },
+      "salaryNegotiation": {
+        "title": "Negocjacje placowe",
+        "desc": "Dowiedz sie, ile mozesz zarobic w swoim regionie i otrzymaj wskazówki negocjacyjne."
+      },
+      "tryNow": "Wypróbuj teraz",
+      "viewAll": "Odkryj wszystkie narzedzia AI"
     }
   },
   "jobs": {
@@ -1245,6 +1268,219 @@
       "ausbildung": "Praktyka zawodowa",
       "praktikum": "Staż",
       "werkstudent": "Student pracujący"
+    }
+  },
+  "pricingPage": {
+    "tabs": {
+      "forEmployers": "Dla pracodawców",
+      "forApplicants": "Dla kandydatów"
+    },
+    "employer": {
+      "launchBanner": {
+        "badge": "OFERTA STARTOWA",
+        "discount": "60% zniżki dla pierwszych {total} firm – zostało tylko <strong>{left} miejsc</strong>!"
+      },
+      "hero": {
+        "title": "Uczciwe ceny dla regionalnych firm",
+        "subtitle": "Brak ukrytych kosztów. Brak prowizji od wynagrodzeń."
+      },
+      "scarcity": {
+        "label": "Miejsca w ofercie startowej",
+        "progress": "{taken} z {total} zajętych",
+        "note": "Te ceny obowiązują tylko podczas fazy startowej!"
+      },
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "description": "Na próbę",
+          "price": "0€",
+          "period": "/miesiąc",
+          "features": [
+            "1 ogłoszenie online",
+            "Przeglądaj aplikacje (podgląd)",
+            "Odblokuj dane kontaktowe: <strong>9,90€</strong> za kandydata",
+            "E-mail gdy ktoś aplikuje"
+          ],
+          "cta": "Zacznij za darmo"
+        },
+        "basic": {
+          "name": "Basic",
+          "badge": "Popularne",
+          "description": "Dla aktywnej rekrutacji",
+          "oldPrice": "99€",
+          "price": "39€",
+          "period": "/miesiąc",
+          "discount": "60% ZNIŻKI",
+          "features": [
+            "<strong>5</strong> ogłoszeń jednocześnie",
+            "<strong>10</strong> kontaktów miesięcznie w cenie",
+            "Dodatkowe kontakty: <strong>4,90€</strong>",
+            "Znajdziemy dla Ciebie pasujących kandydatów",
+            "1x wyróżnienie ogłoszenia na górze (miesięcznie)"
+          ],
+          "upsells": {
+            "title": "Opcjonalne dodatki:",
+            "boost": "Ponownie wyróżnij ogłoszenie",
+            "boostPrice": "+29€",
+            "facebook": "Opublikuj w grupie Facebook",
+            "facebookPrice": "+49€"
+          },
+          "cta": "Wybierz Basic"
+        },
+        "premium": {
+          "name": "Premium",
+          "badge": "Wszystko w cenie",
+          "description": "Maksymalny zasięg",
+          "oldPrice": "199€",
+          "price": "79€",
+          "period": "/miesiąc",
+          "discount": "60% ZNIŻKI",
+          "features": [
+            "<strong>Nieograniczona</strong> liczba ogłoszeń",
+            "<strong>Nieograniczona</strong> liczba kontaktów z kandydatami",
+            "Wszystkie ogłoszenia zawsze na górze",
+            "2x publikacja na Facebook miesięcznie",
+            "Powiadomienia WhatsApp",
+            "Osobisty opiekun klienta"
+          ],
+          "cta": "Wybierz Premium"
+        }
+      },
+      "comparison": {
+        "title": "Dlaczego płacić 10x więcej gdzie indziej?",
+        "subtitle": "Oszczędź do <strong>6 720€/rok</strong> w porównaniu do StepStone",
+        "headers": {
+          "feature": "Co otrzymujesz",
+          "jobnachbar": "JobNachbar",
+          "stepstone": "StepStone",
+          "indeed": "Indeed",
+          "arbeitsagentur": "Urząd Pracy",
+          "meinestadt": "meinestadt.de"
+        },
+        "rows": {
+          "price": "Cena/miesiąc",
+          "localApplicants": "Tylko lokalni kandydaci",
+          "findApplicants": "Znajdziemy kandydatów za Ciebie",
+          "howFast": "Jak szybko online?",
+          "poor": "Słabo",
+          "slow": "Wolno"
+        },
+        "values": {
+          "jobnachbar": {
+            "price": "od 39€",
+            "speed": "<24 godziny"
+          },
+          "stepstone": {
+            "price": "599€+",
+            "speed": "2-3 dni"
+          },
+          "indeed": {
+            "price": "350€+",
+            "speed": "1-2 dni"
+          },
+          "arbeitsagentur": {
+            "price": "0€"
+          },
+          "meinestadt": {
+            "price": "299€+",
+            "speed": "1-2 dni"
+          }
+        }
+      },
+      "trust": {
+        "dataInGermany": {
+          "title": "Dane w Niemczech",
+          "subtitle": "Zgodność z RODO"
+        },
+        "cancelAnytime": {
+          "title": "Anuluj w każdej chwili",
+          "subtitle": "Bez minimalnego okresu"
+        },
+        "regional": {
+          "title": "100% Regionalnie",
+          "subtitle": "Tylko lokalni kandydaci"
+        },
+        "fairPrices": {
+          "title": "Uczciwe ceny",
+          "subtitle": "Brak ukrytych kosztów"
+        }
+      },
+      "faq": {
+        "title": "Najczęściej zadawane pytania",
+        "discountDuration": {
+          "question": "Jak długo obowiązuje zniżka?",
+          "answer": "Zniżka 60% obowiązuje dla pierwszych 50 firm. Jeśli zarezerwujesz teraz, zachowasz cenę na stałe – tak długo jak pozostaniesz klientem."
+        },
+        "cancelAnytime": {
+          "question": "Czy mogę anulować w każdej chwili?",
+          "answer": "Tak, możesz anulować subskrypcję w dowolnym momencie na koniec miesiąca. Brak minimalnego okresu, brak drobnego druku."
+        }
+      },
+      "cta": {
+        "title": "Zostało tylko {spots} miejsc w cenie startowej!",
+        "subtitle": "60% zniżki – na stałe, tak długo jak pozostaniesz klientem.",
+        "button": "Zabezpiecz cenę startową teraz"
+      }
+    },
+    "applicant": {
+      "hero": {
+        "badge": "Premium dla kandydatów",
+        "title": "Zdobądź przewagę",
+        "subtitle": "Z JobNachbar Premium otrzymujesz nieograniczony dostęp do wszystkich narzędzi AI i zwiększasz swoje szanse na wymarzoną pracę."
+      },
+      "free": {
+        "name": "Darmowe",
+        "description": "Na początek",
+        "price": "0€",
+        "period": "/miesiąc",
+        "features": [
+          "Szukaj i aplikuj o pracę",
+          "Utwórz profil",
+          "Prześlij CV",
+          "1x sprawdzenie CV/miesiąc",
+          "1x sprawdzenie listu/miesiąc",
+          "3 pytania rekrutacyjne"
+        ],
+        "cta": "Zacznij za darmo"
+      },
+      "premium": {
+        "name": "Premium",
+        "badge": "POLECANE",
+        "description": "Dla maksymalnych szans",
+        "price": "4,99€",
+        "period": "/miesiąc",
+        "yearlyOffer": "lub 29€/rok (oszczędź 50%)",
+        "features": [
+          "Wszystko z Darmowego",
+          "Nieograniczone narzędzia AI",
+          "Generator CV z PDF",
+          "Generator listów z PDF",
+          "Nieograniczony trener rozmów",
+          "Szczegółowe porównanie wynagrodzeń",
+          "Znaczek priorytetowy w aplikacjach"
+        ],
+        "cta": "Zostań Premium"
+      },
+      "faq": {
+        "title": "Najczęściej zadawane pytania",
+        "payment": {
+          "question": "Jak mogę zapłacić?",
+          "answer": "Otrzymasz fakturę e-mailem i możesz wygodnie zapłacić przelewem. Po otrzymaniu płatności Twój status Premium zostanie automatycznie aktywowany."
+        },
+        "cancel": {
+          "question": "Czy mogę anulować w każdej chwili?",
+          "answer": "Tak, możesz anulować w dowolnym momencie na koniec okresu rozliczeniowego. Wystarczy krótki e-mail na info@jobnachbar.com."
+        },
+        "data": {
+          "question": "Co się dzieje z moimi danymi?",
+          "answer": "Twoje dane są przechowywane zgodnie z RODO w Niemczech. Po anulowaniu możesz zażądać usunięcia wszystkich danych."
+        }
+      },
+      "cta": {
+        "title": "Zacznij teraz z Premium",
+        "subtitle": "Korzystaj z wszystkich narzędzi AI bez ograniczeń i zwiększ swoje szanse na pracę.",
+        "button": "Zacznij za 4,99€/miesiąc"
+      }
     }
   },
   "help": {

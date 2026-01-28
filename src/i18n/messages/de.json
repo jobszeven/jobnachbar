@@ -30,6 +30,7 @@
     "jobs": "Jobs finden",
     "forEmployers": "Für Arbeitgeber",
     "pricing": "Preise",
+    "aiTools": "KI-Tools",
     "applicationTips": "Bewerbungstipps",
     "contact": "Kontakt",
     "login": "Anmelden",
@@ -170,6 +171,28 @@
       "primary": "Jetzt Stelle ausschreiben",
       "secondary": "Fragen? Kontaktiere uns",
       "button": "Kostenlos starten"
+    },
+    "aiTools": {
+      "title": "KI-gestutzte Bewerbungstools",
+      "subtitle": "Unsere KI-Tools helfen dir, deine Bewerbung zu optimieren und dich optimal auf den Arbeitsmarkt vorzubereiten.",
+      "resumeCheck": {
+        "title": "Lebenslauf-Check",
+        "desc": "Lass deinen Lebenslauf von unserer KI analysieren und erhalte Verbesserungsvorschlage."
+      },
+      "coverLetter": {
+        "title": "Anschreiben-Generator",
+        "desc": "Erstelle individuelle Anschreiben fur jede Stelle mit Hilfe unserer KI."
+      },
+      "interviewCoach": {
+        "title": "Interview-Coach",
+        "desc": "Ube typische Vorstellungsgesprach-Fragen und erhalte Feedback von unserer KI."
+      },
+      "salaryNegotiation": {
+        "title": "Gehaltsverhandlung",
+        "desc": "Erfahre, was du in deiner Region verdienen kannst und erhalte Verhandlungstipps."
+      },
+      "tryNow": "Jetzt testen",
+      "viewAll": "Alle KI-Tools entdecken"
     }
   },
   "jobs": {
@@ -1245,6 +1268,219 @@
       "ausbildung": "Ausbildung",
       "praktikum": "Praktikum",
       "werkstudent": "Werkstudent"
+    }
+  },
+  "pricingPage": {
+    "tabs": {
+      "forEmployers": "Für Arbeitgeber",
+      "forApplicants": "Für Bewerber"
+    },
+    "employer": {
+      "launchBanner": {
+        "badge": "STARTANGEBOT",
+        "discount": "60% Rabatt für die ersten {total} Unternehmen – nur noch <strong>{left} Plätze</strong> verfügbar!"
+      },
+      "hero": {
+        "title": "Faire Preise für regionale Unternehmen",
+        "subtitle": "Keine versteckten Kosten. Keine Provision auf Gehälter."
+      },
+      "scarcity": {
+        "label": "Startangebot-Plätze",
+        "progress": "{taken} von {total} vergeben",
+        "note": "Diese Preise gelten nur während der Startphase!"
+      },
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "description": "Zum Ausprobieren",
+          "price": "0€",
+          "period": "/Monat",
+          "features": [
+            "1 Stellenanzeige online",
+            "Bewerbungen ansehen (Vorschau)",
+            "Kontaktdaten freischalten: <strong>9,90€</strong> pro Bewerber",
+            "E-Mail wenn sich jemand bewirbt"
+          ],
+          "cta": "Kostenlos starten"
+        },
+        "basic": {
+          "name": "Basic",
+          "badge": "Beliebt",
+          "description": "Für aktive Suche",
+          "oldPrice": "99€",
+          "price": "39€",
+          "period": "/Monat",
+          "discount": "60% RABATT",
+          "features": [
+            "<strong>5</strong> Stellenanzeigen gleichzeitig",
+            "<strong>10</strong> Kontakte pro Monat inklusive",
+            "Weitere Kontakte: <strong>4,90€</strong>",
+            "Wir finden passende Bewerber für dich",
+            "1x Anzeige ganz oben zeigen (pro Monat)"
+          ],
+          "upsells": {
+            "title": "Optional dazu buchen:",
+            "boost": "Anzeige nochmal oben zeigen",
+            "boostPrice": "+29€",
+            "facebook": "In Facebook-Gruppe posten",
+            "facebookPrice": "+49€"
+          },
+          "cta": "Basic wählen"
+        },
+        "premium": {
+          "name": "Premium",
+          "badge": "Alles drin",
+          "description": "Maximale Reichweite",
+          "oldPrice": "199€",
+          "price": "79€",
+          "period": "/Monat",
+          "discount": "60% RABATT",
+          "features": [
+            "<strong>Unbegrenzt</strong> Stellenanzeigen",
+            "<strong>Unbegrenzt</strong> Bewerber kontaktieren",
+            "Alle Anzeigen immer ganz oben",
+            "2x Facebook-Posting pro Monat",
+            "WhatsApp-Benachrichtigungen",
+            "Persönlicher Ansprechpartner"
+          ],
+          "cta": "Premium wählen"
+        }
+      },
+      "comparison": {
+        "title": "Warum woanders 10x mehr zahlen?",
+        "subtitle": "Spare bis zu <strong>€6.720/Jahr</strong> im Vergleich zu StepStone",
+        "headers": {
+          "feature": "Was du bekommst",
+          "jobnachbar": "JobNachbar",
+          "stepstone": "StepStone",
+          "indeed": "Indeed",
+          "arbeitsagentur": "Arbeitsagentur",
+          "meinestadt": "meinestadt.de"
+        },
+        "rows": {
+          "price": "Preis/Monat",
+          "localApplicants": "Nur lokale Bewerber",
+          "findApplicants": "Wir finden Bewerber für dich",
+          "howFast": "Wie schnell online?",
+          "poor": "Schlecht",
+          "slow": "Langsam"
+        },
+        "values": {
+          "jobnachbar": {
+            "price": "ab 39€",
+            "speed": "<24 Stunden"
+          },
+          "stepstone": {
+            "price": "599€+",
+            "speed": "2-3 Tage"
+          },
+          "indeed": {
+            "price": "350€+",
+            "speed": "1-2 Tage"
+          },
+          "arbeitsagentur": {
+            "price": "0€"
+          },
+          "meinestadt": {
+            "price": "299€+",
+            "speed": "1-2 Tage"
+          }
+        }
+      },
+      "trust": {
+        "dataInGermany": {
+          "title": "Daten in Deutschland",
+          "subtitle": "DSGVO-konform"
+        },
+        "cancelAnytime": {
+          "title": "Jederzeit kündbar",
+          "subtitle": "Keine Mindestlaufzeit"
+        },
+        "regional": {
+          "title": "100% Regional",
+          "subtitle": "Nur lokale Bewerber"
+        },
+        "fairPrices": {
+          "title": "Faire Preise",
+          "subtitle": "Keine versteckten Kosten"
+        }
+      },
+      "faq": {
+        "title": "Häufige Fragen",
+        "discountDuration": {
+          "question": "Wie lange gilt der Rabatt?",
+          "answer": "Der 60% Rabatt gilt für die ersten 50 Unternehmen. Wer jetzt bucht, behält den Preis dauerhaft – solange du Kunde bleibst."
+        },
+        "cancelAnytime": {
+          "question": "Kann ich jederzeit kündigen?",
+          "answer": "Ja, du kannst dein Abo jederzeit zum Monatsende kündigen. Keine Mindestlaufzeit, kein Kleingedrucktes."
+        }
+      },
+      "cta": {
+        "title": "Nur noch {spots} Plätze zum Startpreis!",
+        "subtitle": "60% Rabatt – dauerhaft, solange du Kunde bleibst.",
+        "button": "Jetzt Startpreis sichern"
+      }
+    },
+    "applicant": {
+      "hero": {
+        "badge": "Premium für Bewerber",
+        "title": "Hol dir den Vorsprung",
+        "subtitle": "Mit JobNachbar Premium bekommst du unbegrenzten Zugang zu allen KI-Tools und erhöhst deine Chancen auf deinen Traumjob."
+      },
+      "free": {
+        "name": "Kostenlos",
+        "description": "Für den Einstieg",
+        "price": "0€",
+        "period": "/Monat",
+        "features": [
+          "Jobs suchen & bewerben",
+          "Profil erstellen",
+          "Lebenslauf hochladen",
+          "1x Lebenslauf-Check/Monat",
+          "1x Anschreiben-Check/Monat",
+          "3 Interview-Fragen"
+        ],
+        "cta": "Kostenlos starten"
+      },
+      "premium": {
+        "name": "Premium",
+        "badge": "EMPFOHLEN",
+        "description": "Für maximale Chancen",
+        "price": "4,99€",
+        "period": "/Monat",
+        "yearlyOffer": "oder 29€/Jahr (spar 50%)",
+        "features": [
+          "Alles aus Kostenlos",
+          "Unbegrenzt KI-Tools nutzen",
+          "Lebenslauf-Generator mit PDF",
+          "Anschreiben-Generator mit PDF",
+          "Interview-Coach unbegrenzt",
+          "Detaillierter Gehaltsvergleich",
+          "Priority-Badge bei Bewerbungen"
+        ],
+        "cta": "Premium werden"
+      },
+      "faq": {
+        "title": "Häufige Fragen",
+        "payment": {
+          "question": "Wie kann ich bezahlen?",
+          "answer": "Du erhältst eine Rechnung per E-Mail und kannst bequem per Überweisung bezahlen. Nach Zahlungseingang wird dein Premium-Status automatisch aktiviert."
+        },
+        "cancel": {
+          "question": "Kann ich jederzeit kündigen?",
+          "answer": "Ja, du kannst jederzeit zum Ende des Abrechnungszeitraums kündigen. Eine kurze E-Mail an info@jobnachbar.com genügt."
+        },
+        "data": {
+          "question": "Was passiert mit meinen Daten?",
+          "answer": "Deine Daten werden DSGVO-konform in Deutschland gespeichert. Bei Kündigung kannst du alle Daten löschen lassen."
+        }
+      },
+      "cta": {
+        "title": "Starte jetzt mit Premium",
+        "subtitle": "Nutze alle KI-Tools unbegrenzt und erhöhe deine Jobchancen.",
+        "button": "Für 4,99€/Monat starten"
+      }
     }
   },
   "help": {

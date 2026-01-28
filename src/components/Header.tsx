@@ -176,7 +176,8 @@ export default function Header({ variant = 'default' }: HeaderProps) {
     main: [
       { href: '/jobs', label: t('jobs') },
       { href: '/fuer-arbeitgeber', label: t('forEmployers') },
-      { href: '/preise', label: 'Preise' },
+      { href: '/preise', label: t('pricing') },
+      { href: '/tools', label: t('aiTools') },
       { href: '/bewerbungstipps', label: t('applicationTips') },
     ],
     footer: [

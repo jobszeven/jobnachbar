@@ -30,6 +30,7 @@
     "jobs": "İş Bul",
     "forEmployers": "İşverenler İçin",
     "pricing": "Fiyatlar",
+    "aiTools": "Yapay Zeka Araçları",
     "applicationTips": "Başvuru İpuçları",
     "contact": "İletişim",
     "login": "Giriş Yap",
@@ -170,6 +171,28 @@
       "primary": "Şimdi ilan yayınla",
       "secondary": "Soruların mı var? Bize ulaş",
       "button": "Ücretsiz Başla"
+    },
+    "aiTools": {
+      "title": "Yapay Zeka Destekli Basvuru Araclari",
+      "subtitle": "Yapay zeka araclarimiz basvurunuzu optimize etmenize ve is piyasasina hazirlanmaniza yardimci olur.",
+      "resumeCheck": {
+        "title": "Ozgecmis Kontrolu",
+        "desc": "Ozgecmisinizi yapay zekamiz tarafindan analiz ettirin ve iyilestirme onerileri alin."
+      },
+      "coverLetter": {
+        "title": "On Yazi Olusturucu",
+        "desc": "Yapay zekamizin yardimiyla her pozisyon icin bireysel on yazilar olusturun."
+      },
+      "interviewCoach": {
+        "title": "Mulakat Kocu",
+        "desc": "Tipik mulakat sorularini pratik yapin ve yapay zekamizdan geri bildirim alin."
+      },
+      "salaryNegotiation": {
+        "title": "Maas Muzakeresi",
+        "desc": "Bolgenizde ne kadar kazanabileceginizi ogrenin ve muzakere ipuclari alin."
+      },
+      "tryNow": "Simdi dene",
+      "viewAll": "Tum yapay zeka araclarini kesfedin"
     }
   },
   "jobs": {
@@ -1245,6 +1268,219 @@
       "ausbildung": "Çıraklık",
       "praktikum": "Staj",
       "werkstudent": "Çalışan Öğrenci"
+    }
+  },
+  "pricingPage": {
+    "tabs": {
+      "forEmployers": "İşverenler İçin",
+      "forApplicants": "Adaylar İçin"
+    },
+    "employer": {
+      "launchBanner": {
+        "badge": "LANSMAN TEKLİFİ",
+        "discount": "İlk {total} şirket için %60 indirim – sadece <strong>{left} yer</strong> kaldı!"
+      },
+      "hero": {
+        "title": "Bölgesel şirketler için adil fiyatlar",
+        "subtitle": "Gizli masraf yok. Maaşlardan komisyon yok."
+      },
+      "scarcity": {
+        "label": "Lansman teklifi yerleri",
+        "progress": "{total} üzerinden {taken} alındı",
+        "note": "Bu fiyatlar sadece lansman döneminde geçerlidir!"
+      },
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "description": "Denemek için",
+          "price": "0€",
+          "period": "/ay",
+          "features": [
+            "1 iş ilanı online",
+            "Başvuruları görüntüle (önizleme)",
+            "İletişim bilgilerini aç: aday başına <strong>9,90€</strong>",
+            "Biri başvurduğunda e-posta"
+          ],
+          "cta": "Ücretsiz başla"
+        },
+        "basic": {
+          "name": "Basic",
+          "badge": "Popüler",
+          "description": "Aktif arama için",
+          "oldPrice": "99€",
+          "price": "39€",
+          "period": "/ay",
+          "discount": "%60 İNDİRİM",
+          "features": [
+            "<strong>5</strong> iş ilanı aynı anda",
+            "<strong>10</strong> iletişim ayda dahil",
+            "Ek iletişim: <strong>4,90€</strong>",
+            "Sizin için uygun adaylar buluyoruz",
+            "Ayda 1x ilanı üste çıkarma"
+          ],
+          "upsells": {
+            "title": "Opsiyonel eklentiler:",
+            "boost": "İlanı tekrar üste çıkar",
+            "boostPrice": "+29€",
+            "facebook": "Facebook grubunda paylaş",
+            "facebookPrice": "+49€"
+          },
+          "cta": "Basic seç"
+        },
+        "premium": {
+          "name": "Premium",
+          "badge": "Her şey dahil",
+          "description": "Maksimum erişim",
+          "oldPrice": "199€",
+          "price": "79€",
+          "period": "/ay",
+          "discount": "%60 İNDİRİM",
+          "features": [
+            "<strong>Sınırsız</strong> iş ilanı",
+            "<strong>Sınırsız</strong> aday iletişimi",
+            "Tüm ilanlar her zaman üstte",
+            "Ayda 2x Facebook paylaşımı",
+            "WhatsApp bildirimleri",
+            "Kişisel hesap yöneticisi"
+          ],
+          "cta": "Premium seç"
+        }
+      },
+      "comparison": {
+        "title": "Neden başka yerde 10 kat fazla ödeyesiniz?",
+        "subtitle": "StepStone'a kıyasla <strong>yılda 6.720€</strong>'ya kadar tasarruf edin",
+        "headers": {
+          "feature": "Ne alıyorsunuz",
+          "jobnachbar": "JobNachbar",
+          "stepstone": "StepStone",
+          "indeed": "Indeed",
+          "arbeitsagentur": "İş Kurumu",
+          "meinestadt": "meinestadt.de"
+        },
+        "rows": {
+          "price": "Fiyat/ay",
+          "localApplicants": "Sadece yerel adaylar",
+          "findApplicants": "Sizin için aday buluyoruz",
+          "howFast": "Ne kadar hızlı online?",
+          "poor": "Zayıf",
+          "slow": "Yavaş"
+        },
+        "values": {
+          "jobnachbar": {
+            "price": "39€'dan",
+            "speed": "<24 saat"
+          },
+          "stepstone": {
+            "price": "599€+",
+            "speed": "2-3 gün"
+          },
+          "indeed": {
+            "price": "350€+",
+            "speed": "1-2 gün"
+          },
+          "arbeitsagentur": {
+            "price": "0€"
+          },
+          "meinestadt": {
+            "price": "299€+",
+            "speed": "1-2 gün"
+          }
+        }
+      },
+      "trust": {
+        "dataInGermany": {
+          "title": "Almanya'da Veri",
+          "subtitle": "KVKK uyumlu"
+        },
+        "cancelAnytime": {
+          "title": "İstediğiniz zaman iptal",
+          "subtitle": "Minimum süre yok"
+        },
+        "regional": {
+          "title": "%100 Bölgesel",
+          "subtitle": "Sadece yerel adaylar"
+        },
+        "fairPrices": {
+          "title": "Adil Fiyatlar",
+          "subtitle": "Gizli masraf yok"
+        }
+      },
+      "faq": {
+        "title": "Sıkça Sorulan Sorular",
+        "discountDuration": {
+          "question": "İndirim ne kadar sürer?",
+          "answer": "%60 indirim ilk 50 şirket için geçerlidir. Şimdi rezervasyon yaparsanız, müşteri kaldığınız sürece fiyatı kalıcı olarak korursunuz."
+        },
+        "cancelAnytime": {
+          "question": "İstediğim zaman iptal edebilir miyim?",
+          "answer": "Evet, aboneliğinizi ay sonunda istediğiniz zaman iptal edebilirsiniz. Minimum süre yok, ince yazı yok."
+        }
+      },
+      "cta": {
+        "title": "Lansman fiyatında sadece {spots} yer kaldı!",
+        "subtitle": "%60 indirim – müşteri kaldığınız sürece kalıcı.",
+        "button": "Lansman fiyatını şimdi garantile"
+      }
+    },
+    "applicant": {
+      "hero": {
+        "badge": "Adaylar için Premium",
+        "title": "Avantajınızı yakalayın",
+        "subtitle": "JobNachbar Premium ile tüm yapay zeka araçlarına sınırsız erişim kazanın ve hayalinizdeki işe ulaşma şansınızı artırın."
+      },
+      "free": {
+        "name": "Ücretsiz",
+        "description": "Başlamak için",
+        "price": "0€",
+        "period": "/ay",
+        "features": [
+          "İş ara ve başvur",
+          "Profil oluştur",
+          "CV yükle",
+          "Ayda 1x CV kontrolü",
+          "Ayda 1x ön yazı kontrolü",
+          "3 mülakat sorusu"
+        ],
+        "cta": "Ücretsiz başla"
+      },
+      "premium": {
+        "name": "Premium",
+        "badge": "ÖNERİLEN",
+        "description": "Maksimum şans için",
+        "price": "4,99€",
+        "period": "/ay",
+        "yearlyOffer": "veya 29€/yıl (%50 tasarruf)",
+        "features": [
+          "Ücretsiz'deki her şey",
+          "Sınırsız yapay zeka araçları",
+          "PDF ile CV oluşturucu",
+          "PDF ile ön yazı oluşturucu",
+          "Sınırsız mülakat koçu",
+          "Detaylı maaş karşılaştırması",
+          "Başvurularda öncelik rozeti"
+        ],
+        "cta": "Premium ol"
+      },
+      "faq": {
+        "title": "Sıkça Sorulan Sorular",
+        "payment": {
+          "question": "Nasıl ödeme yapabilirim?",
+          "answer": "E-posta ile fatura alırsınız ve banka havalesiyle rahatça ödeme yapabilirsiniz. Ödeme alındıktan sonra Premium statünüz otomatik olarak aktif edilir."
+        },
+        "cancel": {
+          "question": "İstediğim zaman iptal edebilir miyim?",
+          "answer": "Evet, fatura döneminin sonunda istediğiniz zaman iptal edebilirsiniz. info@jobnachbar.com adresine kısa bir e-posta yeterli."
+        },
+        "data": {
+          "question": "Verilerime ne olur?",
+          "answer": "Verileriniz Almanya'da KVKK uyumlu olarak saklanır. İptal durumunda tüm verilerin silinmesini talep edebilirsiniz."
+        }
+      },
+      "cta": {
+        "title": "Şimdi Premium ile başla",
+        "subtitle": "Tüm yapay zeka araçlarını sınırsız kullanın ve iş şansınızı artırın.",
+        "button": "Ayda 4,99€ ile başla"
+      }
     }
   },
   "help": {

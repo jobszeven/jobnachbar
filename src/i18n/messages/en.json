@@ -30,6 +30,7 @@
     "jobs": "Find Jobs",
     "forEmployers": "For Employers",
     "pricing": "Pricing",
+    "aiTools": "AI Tools",
     "applicationTips": "Application Tips",
     "contact": "Contact",
     "login": "Log in",
@@ -170,6 +171,28 @@
       "primary": "Post a job now",
       "secondary": "Questions? Contact us",
       "button": "Start for free"
+    },
+    "aiTools": {
+      "title": "AI-Powered Application Tools",
+      "subtitle": "Our AI tools help you optimize your application and prepare for the job market.",
+      "resumeCheck": {
+        "title": "Resume Check",
+        "desc": "Have your resume analyzed by our AI and get improvement suggestions."
+      },
+      "coverLetter": {
+        "title": "Cover Letter Generator",
+        "desc": "Create individual cover letters for each position with the help of our AI."
+      },
+      "interviewCoach": {
+        "title": "Interview Coach",
+        "desc": "Practice typical interview questions and get feedback from our AI."
+      },
+      "salaryNegotiation": {
+        "title": "Salary Negotiation",
+        "desc": "Find out what you can earn in your region and get negotiation tips."
+      },
+      "tryNow": "Try now",
+      "viewAll": "Discover all AI tools"
     }
   },
   "jobs": {
@@ -1245,6 +1268,219 @@
       "ausbildung": "Apprenticeship",
       "praktikum": "Internship",
       "werkstudent": "Working Student"
+    }
+  },
+  "pricingPage": {
+    "tabs": {
+      "forEmployers": "For Employers",
+      "forApplicants": "For Applicants"
+    },
+    "employer": {
+      "launchBanner": {
+        "badge": "LAUNCH OFFER",
+        "discount": "60% discount for the first {total} companies – only <strong>{left} spots</strong> left!"
+      },
+      "hero": {
+        "title": "Fair prices for regional companies",
+        "subtitle": "No hidden costs. No commission on salaries."
+      },
+      "scarcity": {
+        "label": "Launch offer spots",
+        "progress": "{taken} of {total} taken",
+        "note": "These prices only apply during the launch phase!"
+      },
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "description": "To try it out",
+          "price": "€0",
+          "period": "/month",
+          "features": [
+            "1 job listing online",
+            "View applications (preview)",
+            "Unlock contact details: <strong>€9.90</strong> per applicant",
+            "Email when someone applies"
+          ],
+          "cta": "Start for free"
+        },
+        "basic": {
+          "name": "Basic",
+          "badge": "Popular",
+          "description": "For active recruiting",
+          "oldPrice": "€99",
+          "price": "€39",
+          "period": "/month",
+          "discount": "60% OFF",
+          "features": [
+            "<strong>5</strong> job listings at once",
+            "<strong>10</strong> contacts per month included",
+            "Additional contacts: <strong>€4.90</strong>",
+            "We find matching applicants for you",
+            "1x listing boost to top (per month)"
+          ],
+          "upsells": {
+            "title": "Optional add-ons:",
+            "boost": "Boost listing to top again",
+            "boostPrice": "+€29",
+            "facebook": "Post in Facebook group",
+            "facebookPrice": "+€49"
+          },
+          "cta": "Choose Basic"
+        },
+        "premium": {
+          "name": "Premium",
+          "badge": "All inclusive",
+          "description": "Maximum reach",
+          "oldPrice": "€199",
+          "price": "€79",
+          "period": "/month",
+          "discount": "60% OFF",
+          "features": [
+            "<strong>Unlimited</strong> job listings",
+            "<strong>Unlimited</strong> applicant contacts",
+            "All listings always at the top",
+            "2x Facebook posting per month",
+            "WhatsApp notifications",
+            "Personal account manager"
+          ],
+          "cta": "Choose Premium"
+        }
+      },
+      "comparison": {
+        "title": "Why pay 10x more elsewhere?",
+        "subtitle": "Save up to <strong>€6,720/year</strong> compared to StepStone",
+        "headers": {
+          "feature": "What you get",
+          "jobnachbar": "JobNachbar",
+          "stepstone": "StepStone",
+          "indeed": "Indeed",
+          "arbeitsagentur": "Employment Agency",
+          "meinestadt": "meinestadt.de"
+        },
+        "rows": {
+          "price": "Price/month",
+          "localApplicants": "Only local applicants",
+          "findApplicants": "We find applicants for you",
+          "howFast": "How fast online?",
+          "poor": "Poor",
+          "slow": "Slow"
+        },
+        "values": {
+          "jobnachbar": {
+            "price": "from €39",
+            "speed": "<24 hours"
+          },
+          "stepstone": {
+            "price": "€599+",
+            "speed": "2-3 days"
+          },
+          "indeed": {
+            "price": "€350+",
+            "speed": "1-2 days"
+          },
+          "arbeitsagentur": {
+            "price": "€0"
+          },
+          "meinestadt": {
+            "price": "€299+",
+            "speed": "1-2 days"
+          }
+        }
+      },
+      "trust": {
+        "dataInGermany": {
+          "title": "Data in Germany",
+          "subtitle": "GDPR compliant"
+        },
+        "cancelAnytime": {
+          "title": "Cancel anytime",
+          "subtitle": "No minimum term"
+        },
+        "regional": {
+          "title": "100% Regional",
+          "subtitle": "Only local applicants"
+        },
+        "fairPrices": {
+          "title": "Fair Prices",
+          "subtitle": "No hidden costs"
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "discountDuration": {
+          "question": "How long does the discount last?",
+          "answer": "The 60% discount applies to the first 50 companies. If you book now, you keep the price permanently – as long as you remain a customer."
+        },
+        "cancelAnytime": {
+          "question": "Can I cancel anytime?",
+          "answer": "Yes, you can cancel your subscription at any time at the end of the month. No minimum term, no fine print."
+        }
+      },
+      "cta": {
+        "title": "Only {spots} spots left at launch price!",
+        "subtitle": "60% discount – permanently, as long as you stay a customer.",
+        "button": "Secure launch price now"
+      }
+    },
+    "applicant": {
+      "hero": {
+        "badge": "Premium for Applicants",
+        "title": "Get your advantage",
+        "subtitle": "With JobNachbar Premium you get unlimited access to all AI tools and increase your chances of landing your dream job."
+      },
+      "free": {
+        "name": "Free",
+        "description": "To get started",
+        "price": "€0",
+        "period": "/month",
+        "features": [
+          "Search & apply for jobs",
+          "Create profile",
+          "Upload resume",
+          "1x resume check/month",
+          "1x cover letter check/month",
+          "3 interview questions"
+        ],
+        "cta": "Start for free"
+      },
+      "premium": {
+        "name": "Premium",
+        "badge": "RECOMMENDED",
+        "description": "For maximum chances",
+        "price": "€4.99",
+        "period": "/month",
+        "yearlyOffer": "or €29/year (save 50%)",
+        "features": [
+          "Everything from Free",
+          "Unlimited AI tools",
+          "Resume generator with PDF",
+          "Cover letter generator with PDF",
+          "Unlimited interview coach",
+          "Detailed salary comparison",
+          "Priority badge on applications"
+        ],
+        "cta": "Get Premium"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "payment": {
+          "question": "How can I pay?",
+          "answer": "You will receive an invoice by email and can conveniently pay by bank transfer. After payment is received, your Premium status is automatically activated."
+        },
+        "cancel": {
+          "question": "Can I cancel anytime?",
+          "answer": "Yes, you can cancel at any time at the end of the billing period. A short email to info@jobnachbar.com is all it takes."
+        },
+        "data": {
+          "question": "What happens to my data?",
+          "answer": "Your data is stored GDPR-compliant in Germany. Upon cancellation, you can have all data deleted."
+        }
+      },
+      "cta": {
+        "title": "Start with Premium now",
+        "subtitle": "Use all AI tools unlimited and increase your job chances.",
+        "button": "Start for €4.99/month"
+      }
     }
   },
   "help": {
