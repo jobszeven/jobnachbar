@@ -88,6 +88,13 @@ export default function AdminDashboard({ stats }: AdminDashboardProps) {
 
   const quickLinks = [
     {
+      title: 'CRM',
+      description: 'Kunden & Rechnungen',
+      icon: Building2,
+      href: '/admin/crm',
+      color: 'red',
+    },
+    {
       title: 'Abonnements',
       description: `${stats.pendingSubscriptions} ausstehend`,
       icon: Crown,
@@ -102,13 +109,6 @@ export default function AdminDashboard({ stats }: AdminDashboardProps) {
       href: '/admin/feedback',
       color: 'blue',
       badge: stats.unreadFeedback > 0,
-    },
-    {
-      title: 'Benutzer',
-      description: 'Verwaltung',
-      icon: Users,
-      href: '/admin/users',
-      color: 'green',
     },
     {
       title: 'Einstellungen',
