@@ -44,6 +44,19 @@
       "resendFailed": "Pomylka pry povtornіy vіdpravtsі lіsta"
     }
   },
+  "emailVerified": {
+    "title": "Email uspishno pidtverdzheno!",
+    "subtitle": "Vash oblikovyi zapys teper aktyvnyi.",
+    "description": "Teper vy mozhete korystuvatysya vsima funktsiyamy JobNachbar.",
+    "toDashboardApplicant": "Do paneli kandydata",
+    "toDashboardEmployer": "Do paneli robotodavtsya",
+    "toHome": "Na holovnu storinku",
+    "or": "abo",
+    "tip": "Porada:",
+    "tipApplicant": "Zapovnit sviy profil, shchob otrymuvaty krashchi propozytsii roboty.",
+    "tipEmployer": "Stvoritнайт svoje pershe oholoshennya pro robotu ta znajdit vidpovidnykh kandydativ.",
+    "thankYou": "Dyakuyemo, shcho korystuyetesya JobNachbar!"
+  },
   "nav": {
     "home": "Головна",
     "jobs": "Знайти роботу",

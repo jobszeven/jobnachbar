@@ -44,6 +44,19 @@
       "resendFailed": "Blad podczas ponownego wysylania e-maila"
     }
   },
+  "emailVerified": {
+    "title": "E-mail zostal pomyslnie zweryfikowany!",
+    "subtitle": "Twoje konto jest teraz aktywne.",
+    "description": "Mozesz teraz korzystac ze wszystkich funkcji JobNachbar.",
+    "toDashboardApplicant": "Przejdz do Panelu Kandydata",
+    "toDashboardEmployer": "Przejdz do Panelu Pracodawcy",
+    "toHome": "Przejdz do Strony Glownej",
+    "or": "lub",
+    "tip": "Wskazowka:",
+    "tipApplicant": "Uzupelnij swoj profil, aby otrzymywac lepsze dopasowania ofert pracy.",
+    "tipEmployer": "Utworz teraz swoje pierwsze ogloszenie o prace i znajdz odpowiednich kandydatow.",
+    "thankYou": "Dziekujemy za korzystanie z JobNachbar!"
+  },
   "nav": {
     "home": "Strona główna",
     "jobs": "Znajdź pracę",

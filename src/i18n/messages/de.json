@@ -44,6 +44,19 @@
       "resendFailed": "Fehler beim erneuten Senden der E-Mail"
     }
   },
+  "emailVerified": {
+    "title": "E-Mail erfolgreich verifiziert!",
+    "subtitle": "Dein Konto ist jetzt aktiv.",
+    "description": "Du kannst jetzt alle Funktionen von JobNachbar nutzen.",
+    "toDashboardApplicant": "Zum Bewerber-Dashboard",
+    "toDashboardEmployer": "Zum Arbeitgeber-Dashboard",
+    "toHome": "Zur Startseite",
+    "or": "oder",
+    "tip": "Tipp:",
+    "tipApplicant": "Vervollständige dein Profil, um bessere Job-Matches zu erhalten.",
+    "tipEmployer": "Erstelle jetzt deine erste Stellenanzeige und finde passende Bewerber.",
+    "thankYou": "Vielen Dank, dass du JobNachbar nutzt!"
+  },
   "nav": {
     "home": "Startseite",
     "jobs": "Jobs finden",

@@ -44,6 +44,19 @@
       "resendFailed": "E-posta tekrar gonderilirken hata olustu"
     }
   },
+  "emailVerified": {
+    "title": "E-posta basariyla dogrulandi!",
+    "subtitle": "Hesabiniz artik aktif.",
+    "description": "Artik JobNachbar'in tum ozelliklerini kullanabilirsiniz.",
+    "toDashboardApplicant": "Aday Paneline Git",
+    "toDashboardEmployer": "Isveren Paneline Git",
+    "toHome": "Ana Sayfaya Git",
+    "or": "veya",
+    "tip": "Ipucu:",
+    "tipApplicant": "Daha iyi is eslestirmeleri almak icin profilinizi tamamlayin.",
+    "tipEmployer": "Simdi ilk is ilani olusturun ve uygun adaylar bulmaya baslayin.",
+    "thankYou": "JobNachbar'i kullandiginiz icin tesekkur ederiz!"
+  },
   "nav": {
     "home": "Ana Sayfa",
     "jobs": "İş Bul",

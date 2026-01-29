@@ -38,18 +38,13 @@ export async function GET(request: NextRequest) {
     const { data, error } = await supabase.auth.exchangeCodeForSession(code)
 
     if (!error && data.user) {
-      // Get user type to redirect to correct dashboard
-      const userType = data.user.user_metadata?.user_type
+      // Get user type to pass to success page
+      const userType = data.user.user_metadata?.user_type || 'applicant'
 
-      if (userType === 'employer') {
-        return NextResponse.redirect(
-          new URL('/dashboard/arbeitgeber?welcome=true&verified=true', request.url)
-        )
-      } else {
-        return NextResponse.redirect(
-          new URL('/dashboard/bewerber?welcome=true&verified=true', request.url)
-        )
-      }
+      // Redirect to email verified success page
+      return NextResponse.redirect(
+        new URL(`/email-verifiziert?type=${userType}`, request.url)
+      )
     }
   }
 

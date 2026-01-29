@@ -44,6 +44,19 @@
       "resendFailed": "Error resending the email"
     }
   },
+  "emailVerified": {
+    "title": "Email successfully verified!",
+    "subtitle": "Your account is now active.",
+    "description": "You can now use all features of JobNachbar.",
+    "toDashboardApplicant": "Go to Applicant Dashboard",
+    "toDashboardEmployer": "Go to Employer Dashboard",
+    "toHome": "Go to Homepage",
+    "or": "or",
+    "tip": "Tip:",
+    "tipApplicant": "Complete your profile to receive better job matches.",
+    "tipEmployer": "Create your first job posting now and find suitable applicants.",
+    "thankYou": "Thank you for using JobNachbar!"
+  },
   "nav": {
     "home": "Home",
     "jobs": "Find Jobs",
