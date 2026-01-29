@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
-import { Menu, X, ChevronRight, User, LogOut, Settings, Heart, Bell, Briefcase, CheckCircle, Download } from 'lucide-react'
+import { Menu, X, ChevronRight, User, LogOut, Settings, Heart, Bell, Briefcase, CheckCircle, Download, Smartphone } from 'lucide-react'
 import Logo from './Logo'
 import LanguageSwitcher from './LanguageSwitcher'
 import { createClient } from '@/lib/supabase/client'
@@ -504,6 +504,18 @@ export default function Header({ variant = 'default' }: HeaderProps) {
                     </Link>
                   </>
                 )}
+              </div>
+
+              {/* App Install Link */}
+              <div className="px-4 pb-4">
+                <Link
+                  href="/app-installieren"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center w-full py-3 px-4 bg-gradient-to-r from-brand-red/20 to-orange-500/20 border border-brand-red/30 text-white rounded-lg hover:from-brand-red/30 hover:to-orange-500/30 transition-colors"
+                >
+                  <Smartphone className="w-5 h-5 mr-2 text-brand-red" />
+                  App installieren
+                </Link>
               </div>
 
               <div className="mt-auto p-4 border-t border-gray-800">

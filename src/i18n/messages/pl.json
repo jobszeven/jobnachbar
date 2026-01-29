@@ -1675,5 +1675,181 @@
       "cta": "Zamieść ogłoszenie teraz"
     },
     "allPrices": "Zobacz wszystkie ceny"
+  },
+  "terms": {
+    "meta": {
+      "title": "Regulamin - JobNachbar",
+      "description": "Regulamin korzystania z JobNachbar"
+    },
+    "title": "Regulamin",
+    "sections": {
+      "scope": {
+        "title": "§1 Zakres",
+        "content": "Niniejszy Regulamin ma zastosowanie do wszystkich umów między JobNachbar a użytkownikami platformy. Odmienne warunki użytkownika nie są uznawane, chyba że JobNachbar wyraźnie wyrazi na nie pisemną zgodę."
+      },
+      "services": {
+        "title": "§2 Opis usług",
+        "content": "JobNachbar prowadzi internetowy portal pracy dla regionu Zeven i okolic. Osoby poszukujące pracy mogą bezpłatnie utworzyć profil i aplikować na stanowiska. Pracodawcy mogą publikować ogłoszenia o pracę i kontaktować się z kandydatami."
+      },
+      "registration": {
+        "title": "§3 Rejestracja i konta użytkowników",
+        "content": "Do korzystania z niektórych funkcji wymagana jest rejestracja. Użytkownik jest zobowiązany do podania prawdziwych informacji i zachowania poufności swoich danych dostępowych. JobNachbar może zawiesić konto w przypadku podejrzenia nadużycia."
+      },
+      "pricing": {
+        "title": "§4 Ceny i warunki płatności",
+        "content": "Korzystanie dla osób poszukujących pracy jest bezpłatne. Dla pracodawców obowiązują stawki podane na stronie cennika. Wszystkie ceny zawierają ustawowy podatek VAT. Faktury są płatne w ciągu 14 dni od daty wystawienia."
+      },
+      "contract": {
+        "title": "§5 Okres umowy i wypowiedzenie",
+        "content": "Subskrypcje odnawiają się automatycznie na zarezerwowany okres, chyba że zostaną anulowane przed wygaśnięciem. Wypowiedzenie jest możliwe w dowolnym momencie na koniec okresu rozliczeniowego. Bezpłatne konta można usunąć w dowolnym momencie."
+      },
+      "liability": {
+        "title": "§6 Odpowiedzialność",
+        "content": "JobNachbar ponosi odpowiedzialność tylko za szkody spowodowane umyślnym lub rażąco niedbałym działaniem. JobNachbar nie gwarantuje dokładności treści zamieszczanych przez użytkowników. Odpowiedzialność za szkody pośrednie jest wyłączona."
+      },
+      "dataProtection": {
+        "title": "§7 Ochrona danych",
+        "content": "Przetwarzanie danych osobowych odbywa się zgodnie z naszą polityką prywatności i obowiązującymi przepisami o ochronie danych. Korzystając z platformy, użytkownik wyraża zgodę na przetwarzanie swoich danych w celach określonych w polityce prywatności."
+      },
+      "final": {
+        "title": "§8 Postanowienia końcowe",
+        "content": "Obowiązuje prawo niemieckie. Miejscem jurysdykcji jest, w zakresie dozwolonym prawem, siedziba JobNachbar. W przypadku nieważności poszczególnych postanowień, ważność pozostałych postanowień pozostaje nienaruszona. Stan na: styczeń 2026"
+      }
+    }
+  },
+  "tools": {
+    "poweredBy": "Narzędzia aplikacyjne wspierane przez AI",
+    "hero": {
+      "title": "Zoptymalizuj swoją aplikację dzięki AI",
+      "subtitle": "Skorzystaj z naszych bezpłatnych narzędzi AI, aby ulepszyć swoje CV, stworzyć przekonujące listy motywacyjne i przygotować się do rozmów kwalifikacyjnych."
+    },
+    "resumeCheck": {
+      "title": "Sprawdzenie CV",
+      "description": "Pozwól naszej AI przeanalizować Twoje CV i otrzymaj konkretne sugestie ulepszeń."
+    },
+    "coverLetterGenerator": {
+      "title": "Generator listów motywacyjnych",
+      "description": "Twórz indywidualne listy motywacyjne do każdego stanowiska – spersonalizowane i przekonujące."
+    },
+    "interviewCoach": {
+      "title": "Trener rozmów kwalifikacyjnych",
+      "description": "Ćwicz typowe pytania na rozmowach kwalifikacyjnych i otrzymuj informacje zwrotne na temat swoich odpowiedzi."
+    },
+    "salaryNegotiation": {
+      "title": "Negocjacje płacowe",
+      "description": "Dowiedz się, ile możesz zarobić i otrzymaj wskazówki dotyczące negocjacji płacowych."
+    },
+    "freeUsesLabel": "{count}x za darmo",
+    "unlimitedWithPremium": "Bez limitu z Premium",
+    "premium": {
+      "title": "Korzystaj ze wszystkich narzędzi bez ograniczeń",
+      "description": "Z JobNachbar Premium otrzymujesz nieograniczony dostęp do wszystkich narzędzi AI, eksport PDF i ekskluzywne funkcje.",
+      "cta": "Odkryj Premium"
+    }
+  },
+  "register": {
+    "alreadyRegistered": "Już zarejestrowany? Zaloguj się",
+    "chooseAccountType": "Jak chcesz korzystać z JobNachbar?",
+    "chooseAccountTypeSubtitle": "Wybierz swoją rolę – możesz dodać drugą rolę później.",
+    "applicant": {
+      "title": "Jako osoba szukająca pracy",
+      "description": "Znajdź wymarzoną pracę w regionie i aplikuj kilkoma kliknięciami.",
+      "benefit1": "Bezpłatna rejestracja i aplikowanie",
+      "benefit2": "Automatyczne propozycje pracy",
+      "benefit3": "Narzędzia aplikacyjne wspierane przez AI",
+      "cta": "Rozpocznij jako szukający pracy"
+    },
+    "employer": {
+      "title": "Jako pracodawca",
+      "description": "Znajdź wykwalifikowanych pracowników z Twojego regionu.",
+      "benefit1": "Pierwsze ogłoszenie za darmo",
+      "benefit2": "Regionalni kandydaci",
+      "benefit3": "Łatwe zarządzanie kandydatami",
+      "cta": "Rozpocznij jako pracodawca"
+    },
+    "canAddOtherAccountLater": "Możesz później w dowolnym momencie dodać drugą rolę do swojego konta."
+  },
+  "forApplicantsPage": {
+    "badge": "Dla szukających pracy",
+    "hero": {
+      "title": "Znajdź wymarzoną pracę",
+      "titleHighlight": "w swojej okolicy",
+      "subtitle": "JobNachbar łączy Cię z najlepszymi pracodawcami w Zeven i okolicach. Bezpłatnie, szybko i ze wsparciem AI.",
+      "cta": "Zarejestruj się za darmo",
+      "browseJobs": "Przeglądaj oferty"
+    },
+    "benefits": {
+      "title": "Twoje korzyści z JobNachbar",
+      "regional": {
+        "title": "100% Regionalnie",
+        "desc": "Tylko prawdziwe oferty z Zeven i promienia 30km. Bez dojazdów do Hamburga."
+      },
+      "free": {
+        "title": "Całkowicie za darmo",
+        "desc": "Rejestracja, aplikowanie i wszystkie podstawowe funkcje są dla Ciebie bezpłatne."
+      },
+      "aiTools": {
+        "title": "Narzędzia wspierane przez AI",
+        "desc": "Sprawdzenie CV, generator listów motywacyjnych i trener rozmów pomagają w aplikowaniu."
+      },
+      "fast": {
+        "title": "Szybka aplikacja",
+        "desc": "Aplikuj jednym kliknięciem – Twój profil trafia bezpośrednio do pracodawcy."
+      },
+      "matching": {
+        "title": "Automatyczne dopasowanie",
+        "desc": "Znajdujemy oferty dopasowane do Ciebie i automatycznie Cię powiadamiamy."
+      },
+      "privacy": {
+        "title": "Twoje dane są bezpieczne",
+        "desc": "Zgodność z RODO, serwery w Niemczech. Ty decydujesz, kto widzi Twój profil."
+      }
+    },
+    "howItWorks": {
+      "title": "Jak to działa",
+      "subtitle": "3 proste kroki do nowej pracy",
+      "step1": {
+        "title": "Stwórz profil",
+        "desc": "Zarejestruj się za darmo i stwórz profil z preferowaną branżą, wynagrodzeniem i lokalizacją."
+      },
+      "step2": {
+        "title": "Odkryj oferty",
+        "desc": "Przeglądaj regionalne oferty pracy lub bądź automatycznie informowany o pasujących ofertach."
+      },
+      "step3": {
+        "title": "Aplikuj",
+        "desc": "Aplikuj jednym kliknięciem. Wykorzystaj nasze narzędzia AI do idealnej aplikacji."
+      }
+    },
+    "tools": {
+      "badge": "Narzędzia aplikacyjne wspierane przez AI",
+      "title": "Zoptymalizuj swoją aplikację",
+      "subtitle": "Nasze bezpłatne narzędzia AI pomogą Ci się wyróżnić.",
+      "resume": {
+        "title": "Sprawdzenie CV",
+        "desc": "Pozwól przeanalizować swoje CV i otrzymaj sugestie ulepszeń."
+      },
+      "coverLetter": {
+        "title": "Generator listów motywacyjnych",
+        "desc": "Twórz przekonujące listy motywacyjne do każdego stanowiska."
+      },
+      "interview": {
+        "title": "Trener rozmów",
+        "desc": "Ćwicz typowe pytania rekrutacyjne z informacją zwrotną AI."
+      },
+      "viewAll": "Odkryj wszystkie narzędzia AI"
+    },
+    "stats": {
+      "activeJobs": "Aktywne oferty",
+      "companies": "Firm",
+      "radius": "Promień szukania",
+      "free": "Bezpłatnie dla kandydatów"
+    },
+    "cta": {
+      "title": "Gotowy na kolejny krok w karierze?",
+      "subtitle": "Zarejestruj się teraz za darmo i znajdź wymarzoną pracę w regionie.",
+      "register": "Zarejestruj się teraz",
+      "browseJobs": "Najpierw zobacz oferty"
+    }
   }
 }

@@ -1678,5 +1678,181 @@
       "cta": "Post Job Now"
     },
     "allPrices": "View All Prices"
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of Service - JobNachbar",
+      "description": "Terms of Service for JobNachbar"
+    },
+    "title": "Terms of Service",
+    "sections": {
+      "scope": {
+        "title": "§1 Scope",
+        "content": "These Terms of Service apply to all contracts between JobNachbar and users of the platform. Deviating conditions of the user are not recognized unless JobNachbar expressly agrees to their validity in writing."
+      },
+      "services": {
+        "title": "§2 Service Description",
+        "content": "JobNachbar operates an online job board for the Zeven region and surrounding areas. Job seekers can create a profile for free and apply for positions. Employers can publish job advertisements and contact applicants."
+      },
+      "registration": {
+        "title": "§3 Registration and User Accounts",
+        "content": "Registration is required to use certain features. The user is obligated to provide truthful information and keep their access data confidential. JobNachbar may suspend the account if misuse is suspected."
+      },
+      "pricing": {
+        "title": "§4 Prices and Payment Terms",
+        "content": "Usage for job seekers is free. For employers, the rates listed on the pricing page apply. All prices include statutory VAT. Invoices are payable within 14 days of the invoice date."
+      },
+      "contract": {
+        "title": "§5 Contract Term and Termination",
+        "content": "Subscriptions renew automatically for the booked period unless cancelled before expiration. Cancellation is possible at any time at the end of the billing period. Free accounts can be deleted at any time."
+      },
+      "liability": {
+        "title": "§6 Liability",
+        "content": "JobNachbar is only liable for damages caused by intentional or grossly negligent conduct. JobNachbar does not guarantee the accuracy of content posted by users. Liability for indirect damages is excluded."
+      },
+      "dataProtection": {
+        "title": "§7 Data Protection",
+        "content": "The processing of personal data is carried out in accordance with our privacy policy and applicable data protection laws. By using the platform, the user agrees to the processing of their data for the purposes stated in the privacy policy."
+      },
+      "final": {
+        "title": "§8 Final Provisions",
+        "content": "German law applies. The place of jurisdiction is, as far as legally permissible, the registered office of JobNachbar. Should individual provisions be invalid, the validity of the remaining provisions remains unaffected. As of: January 2026"
+      }
+    }
+  },
+  "tools": {
+    "poweredBy": "AI-powered application tools",
+    "hero": {
+      "title": "Optimize your application with AI",
+      "subtitle": "Use our free AI tools to improve your resume, create compelling cover letters, and prepare for interviews."
+    },
+    "resumeCheck": {
+      "title": "Resume Check",
+      "description": "Have your resume analyzed by our AI and receive specific improvement suggestions."
+    },
+    "coverLetterGenerator": {
+      "title": "Cover Letter Generator",
+      "description": "Create individual cover letters for each position – personalized and convincing."
+    },
+    "interviewCoach": {
+      "title": "Interview Coach",
+      "description": "Practice typical interview questions and get feedback on your answers."
+    },
+    "salaryNegotiation": {
+      "title": "Salary Negotiation",
+      "description": "Find out what you can earn and get tips for salary negotiation."
+    },
+    "freeUsesLabel": "{count}x free",
+    "unlimitedWithPremium": "Unlimited with Premium",
+    "premium": {
+      "title": "Use all tools unlimited",
+      "description": "With JobNachbar Premium you get unlimited access to all AI tools, PDF export and exclusive features.",
+      "cta": "Discover Premium"
+    }
+  },
+  "register": {
+    "alreadyRegistered": "Already registered? Log in",
+    "chooseAccountType": "How would you like to use JobNachbar?",
+    "chooseAccountTypeSubtitle": "Choose your role – you can add the other role later.",
+    "applicant": {
+      "title": "As Job Seeker",
+      "description": "Find your dream job in the region and apply with just a few clicks.",
+      "benefit1": "Register & apply for free",
+      "benefit2": "Automatic job suggestions",
+      "benefit3": "AI-powered application tools",
+      "cta": "Start as Job Seeker"
+    },
+    "employer": {
+      "title": "As Employer",
+      "description": "Find qualified employees from your region.",
+      "benefit1": "First ad for free",
+      "benefit2": "Regional applicants",
+      "benefit3": "Easy applicant management",
+      "cta": "Start as Employer"
+    },
+    "canAddOtherAccountLater": "You can add the other role to your account at any time later."
+  },
+  "forApplicantsPage": {
+    "badge": "For Job Seekers",
+    "hero": {
+      "title": "Find your dream job",
+      "titleHighlight": "near you",
+      "subtitle": "JobNachbar connects you with the best employers in Zeven and the surrounding area. Free, fast and with AI support.",
+      "cta": "Register for free",
+      "browseJobs": "Browse jobs"
+    },
+    "benefits": {
+      "title": "Your benefits with JobNachbar",
+      "regional": {
+        "title": "100% Regional",
+        "desc": "Only real jobs from Zeven and 30km radius. No commuting to Hamburg."
+      },
+      "free": {
+        "title": "Completely free",
+        "desc": "Registration, applications and all basic features are free for you."
+      },
+      "aiTools": {
+        "title": "AI-powered tools",
+        "desc": "Resume check, cover letter generator and interview coach help you with your application."
+      },
+      "fast": {
+        "title": "Apply quickly",
+        "desc": "Apply with one click – your profile goes directly to the employer."
+      },
+      "matching": {
+        "title": "Automatic matching",
+        "desc": "We find jobs that suit you and notify you automatically."
+      },
+      "privacy": {
+        "title": "Your data is secure",
+        "desc": "GDPR compliant, servers in Germany. You decide who sees your profile."
+      }
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "subtitle": "3 simple steps to your new job",
+      "step1": {
+        "title": "Create profile",
+        "desc": "Register for free and create your profile with preferred industry, salary and location."
+      },
+      "step2": {
+        "title": "Discover jobs",
+        "desc": "Browse regional job offers or get automatically informed about matching jobs."
+      },
+      "step3": {
+        "title": "Apply",
+        "desc": "Apply with one click. Use our AI tools for the perfect application."
+      }
+    },
+    "tools": {
+      "badge": "AI-powered application tools",
+      "title": "Optimize your application",
+      "subtitle": "Our free AI tools help you stand out from the crowd.",
+      "resume": {
+        "title": "Resume Check",
+        "desc": "Have your resume analyzed and get improvement suggestions."
+      },
+      "coverLetter": {
+        "title": "Cover Letter Generator",
+        "desc": "Create compelling cover letters for every position."
+      },
+      "interview": {
+        "title": "Interview Coach",
+        "desc": "Practice typical interview questions with AI feedback."
+      },
+      "viewAll": "Discover all AI tools"
+    },
+    "stats": {
+      "activeJobs": "Active jobs",
+      "companies": "Companies",
+      "radius": "Search radius",
+      "free": "Free for applicants"
+    },
+    "cta": {
+      "title": "Ready for your next career step?",
+      "subtitle": "Register now for free and find your dream job in the region.",
+      "register": "Register now",
+      "browseJobs": "View jobs first"
+    }
   }
 }

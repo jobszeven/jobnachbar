@@ -151,11 +151,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/cookies" className="hover:text-brand-red transition-colors">
-                  {t('links.cookies')}
-                </Link>
-              </li>
-              <li>
                 <button
                   onClick={openCookieSettings}
                   className="hover:text-brand-red transition-colors flex items-center gap-1"

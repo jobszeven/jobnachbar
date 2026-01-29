@@ -1762,5 +1762,181 @@
       "cta": "Jetzt Stelle schalten"
     },
     "allPrices": "Alle Preise anzeigen"
+  },
+  "terms": {
+    "meta": {
+      "title": "AGB - JobNachbar",
+      "description": "Allgemeine Geschäftsbedingungen von JobNachbar"
+    },
+    "title": "Allgemeine Geschäftsbedingungen",
+    "sections": {
+      "scope": {
+        "title": "§1 Geltungsbereich",
+        "content": "Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge zwischen JobNachbar und den Nutzern der Plattform. Abweichende Bedingungen des Nutzers werden nicht anerkannt, es sei denn, JobNachbar stimmt ihrer Geltung ausdrücklich schriftlich zu."
+      },
+      "services": {
+        "title": "§2 Leistungsbeschreibung",
+        "content": "JobNachbar betreibt eine Online-Jobbörse für die Region Zeven und Umgebung. Arbeitssuchende können kostenlos ein Profil erstellen und sich auf Stellen bewerben. Arbeitgeber können Stellenanzeigen veröffentlichen und Bewerber kontaktieren."
+      },
+      "registration": {
+        "title": "§3 Registrierung und Nutzerkonten",
+        "content": "Für die Nutzung bestimmter Funktionen ist eine Registrierung erforderlich. Der Nutzer ist verpflichtet, wahrheitsgemäße Angaben zu machen und seine Zugangsdaten vertraulich zu behandeln. Bei Verdacht auf Missbrauch kann JobNachbar das Konto sperren."
+      },
+      "pricing": {
+        "title": "§4 Preise und Zahlungsbedingungen",
+        "content": "Die Nutzung für Arbeitssuchende ist kostenlos. Für Arbeitgeber gelten die auf der Preisseite angegebenen Tarife. Alle Preise verstehen sich inklusive der gesetzlichen Mehrwertsteuer. Rechnungen sind innerhalb von 14 Tagen nach Rechnungsstellung zu bezahlen."
+      },
+      "contract": {
+        "title": "§5 Vertragslaufzeit und Kündigung",
+        "content": "Abonnements verlängern sich automatisch um den gebuchten Zeitraum, sofern nicht vor Ablauf gekündigt wird. Die Kündigung kann jederzeit zum Ende des Abrechnungszeitraums erfolgen. Bei kostenloser Nutzung kann das Konto jederzeit gelöscht werden."
+      },
+      "liability": {
+        "title": "§6 Haftung",
+        "content": "JobNachbar haftet nur für Schäden, die auf vorsätzlichem oder grob fahrlässigem Verhalten beruhen. Für die Richtigkeit der von Nutzern eingestellten Inhalte übernimmt JobNachbar keine Gewähr. Die Haftung für mittelbare Schäden ist ausgeschlossen."
+      },
+      "dataProtection": {
+        "title": "§7 Datenschutz",
+        "content": "Die Verarbeitung personenbezogener Daten erfolgt gemäß unserer Datenschutzerklärung und den geltenden Datenschutzgesetzen. Durch die Nutzung der Plattform stimmt der Nutzer der Verarbeitung seiner Daten zu den in der Datenschutzerklärung genannten Zwecken zu."
+      },
+      "final": {
+        "title": "§8 Schlussbestimmungen",
+        "content": "Es gilt deutsches Recht. Gerichtsstand ist, soweit gesetzlich zulässig, der Sitz von JobNachbar. Sollten einzelne Bestimmungen unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. Stand: Januar 2026"
+      }
+    }
+  },
+  "tools": {
+    "poweredBy": "KI-gestützte Bewerbungstools",
+    "hero": {
+      "title": "Optimiere deine Bewerbung mit KI",
+      "subtitle": "Nutze unsere kostenlosen KI-Tools, um deinen Lebenslauf zu verbessern, überzeugende Anschreiben zu erstellen und dich auf Vorstellungsgespräche vorzubereiten."
+    },
+    "resumeCheck": {
+      "title": "Lebenslauf-Check",
+      "description": "Lass deinen Lebenslauf von unserer KI analysieren und erhalte konkrete Verbesserungsvorschläge."
+    },
+    "coverLetterGenerator": {
+      "title": "Anschreiben-Generator",
+      "description": "Erstelle individuelle Anschreiben für jede Stelle – personalisiert und überzeugend."
+    },
+    "interviewCoach": {
+      "title": "Interview-Coach",
+      "description": "Übe typische Vorstellungsgespräch-Fragen und erhalte Feedback zu deinen Antworten."
+    },
+    "salaryNegotiation": {
+      "title": "Gehaltsverhandlung",
+      "description": "Erfahre, was du verdienen kannst und erhalte Tipps für die Gehaltsverhandlung."
+    },
+    "freeUsesLabel": "{count}x kostenlos",
+    "unlimitedWithPremium": "Unbegrenzt mit Premium",
+    "premium": {
+      "title": "Alle Tools unbegrenzt nutzen",
+      "description": "Mit JobNachbar Premium erhältst du unbegrenzten Zugang zu allen KI-Tools, PDF-Export und exklusive Features.",
+      "cta": "Premium entdecken"
+    }
+  },
+  "register": {
+    "alreadyRegistered": "Bereits registriert? Anmelden",
+    "chooseAccountType": "Wie möchtest du JobNachbar nutzen?",
+    "chooseAccountTypeSubtitle": "Wähle deine Rolle – du kannst später auch die andere Rolle hinzufügen.",
+    "applicant": {
+      "title": "Als Bewerber",
+      "description": "Finde deinen Traumjob in der Region und bewirb dich mit wenigen Klicks.",
+      "benefit1": "Kostenlos registrieren & bewerben",
+      "benefit2": "Automatische Job-Vorschläge",
+      "benefit3": "KI-gestützte Bewerbungstools",
+      "cta": "Als Bewerber starten"
+    },
+    "employer": {
+      "title": "Als Arbeitgeber",
+      "description": "Finden Sie qualifizierte Mitarbeiter aus Ihrer Region.",
+      "benefit1": "Erste Anzeige kostenlos",
+      "benefit2": "Regionale Bewerber",
+      "benefit3": "Einfache Bewerberverwaltung",
+      "cta": "Als Arbeitgeber starten"
+    },
+    "canAddOtherAccountLater": "Du kannst später jederzeit auch die andere Rolle zu deinem Konto hinzufügen."
+  },
+  "forApplicantsPage": {
+    "badge": "Für Bewerber",
+    "hero": {
+      "title": "Finde deinen Traumjob",
+      "titleHighlight": "in deiner Nähe",
+      "subtitle": "JobNachbar verbindet dich mit den besten Arbeitgebern in Zeven und Umgebung. Kostenlos, schnell und mit KI-Unterstützung.",
+      "cta": "Kostenlos registrieren",
+      "browseJobs": "Jobs durchsuchen"
+    },
+    "benefits": {
+      "title": "Deine Vorteile mit JobNachbar",
+      "regional": {
+        "title": "100% Regional",
+        "desc": "Nur echte Jobs aus Zeven und 30km Umgebung. Keine Pendelei nach Hamburg."
+      },
+      "free": {
+        "title": "Komplett kostenlos",
+        "desc": "Registrierung, Bewerbung und alle Basis-Funktionen sind für dich kostenlos."
+      },
+      "aiTools": {
+        "title": "KI-gestützte Tools",
+        "desc": "Lebenslauf-Check, Anschreiben-Generator und Interview-Coach helfen dir bei der Bewerbung."
+      },
+      "fast": {
+        "title": "Schnell bewerben",
+        "desc": "Mit einem Klick bewerben – dein Profil geht direkt an den Arbeitgeber."
+      },
+      "matching": {
+        "title": "Automatisches Matching",
+        "desc": "Wir finden Jobs, die zu dir passen und benachrichtigen dich automatisch."
+      },
+      "privacy": {
+        "title": "Deine Daten sind sicher",
+        "desc": "DSGVO-konform, Server in Deutschland. Du bestimmst, wer dein Profil sieht."
+      }
+    },
+    "howItWorks": {
+      "title": "So funktioniert's",
+      "subtitle": "In 3 einfachen Schritten zu deinem neuen Job",
+      "step1": {
+        "title": "Profil erstellen",
+        "desc": "Registriere dich kostenlos und erstelle dein Profil mit Wunschbranche, Gehalt und Standort."
+      },
+      "step2": {
+        "title": "Jobs entdecken",
+        "desc": "Durchsuche regionale Stellenangebote oder lass dich automatisch über passende Jobs informieren."
+      },
+      "step3": {
+        "title": "Bewerben",
+        "desc": "Bewirb dich mit einem Klick. Nutze unsere KI-Tools für die perfekte Bewerbung."
+      }
+    },
+    "tools": {
+      "badge": "KI-gestützte Bewerbungstools",
+      "title": "Optimiere deine Bewerbung",
+      "subtitle": "Unsere kostenlosen KI-Tools helfen dir, dich von der Masse abzuheben.",
+      "resume": {
+        "title": "Lebenslauf-Check",
+        "desc": "Lass deinen Lebenslauf analysieren und erhalte Verbesserungsvorschläge."
+      },
+      "coverLetter": {
+        "title": "Anschreiben-Generator",
+        "desc": "Erstelle überzeugende Anschreiben für jede Stelle."
+      },
+      "interview": {
+        "title": "Interview-Coach",
+        "desc": "Übe typische Vorstellungsgespräch-Fragen mit KI-Feedback."
+      },
+      "viewAll": "Alle KI-Tools entdecken"
+    },
+    "stats": {
+      "activeJobs": "Aktive Jobs",
+      "companies": "Unternehmen",
+      "radius": "Suchradius",
+      "free": "Kostenlos für Bewerber"
+    },
+    "cta": {
+      "title": "Bereit für deinen nächsten Karriereschritt?",
+      "subtitle": "Registriere dich jetzt kostenlos und finde deinen Traumjob in der Region.",
+      "register": "Jetzt registrieren",
+      "browseJobs": "Erst Jobs ansehen"
+    }
   }
 }

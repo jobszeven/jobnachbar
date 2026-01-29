@@ -1675,5 +1675,181 @@
       "cta": "İlanı Şimdi Yayınla"
     },
     "allPrices": "Tüm Fiyatları Görüntüle"
+  },
+  "terms": {
+    "meta": {
+      "title": "Kullanım Koşulları - JobNachbar",
+      "description": "JobNachbar Kullanım Koşulları"
+    },
+    "title": "Kullanım Koşulları",
+    "sections": {
+      "scope": {
+        "title": "§1 Kapsam",
+        "content": "Bu Kullanım Koşulları, JobNachbar ile platform kullanıcıları arasındaki tüm sözleşmeler için geçerlidir. JobNachbar yazılı olarak açıkça kabul etmedikçe, kullanıcının farklı koşulları tanınmaz."
+      },
+      "services": {
+        "title": "§2 Hizmet Açıklaması",
+        "content": "JobNachbar, Zeven bölgesi ve çevresi için çevrimiçi bir iş ilanı platformu işletmektedir. İş arayanlar ücretsiz profil oluşturabilir ve pozisyonlara başvurabilir. İşverenler iş ilanı yayınlayabilir ve başvuru sahipleriyle iletişime geçebilir."
+      },
+      "registration": {
+        "title": "§3 Kayıt ve Kullanıcı Hesapları",
+        "content": "Belirli özellikleri kullanmak için kayıt gereklidir. Kullanıcı doğru bilgi vermek ve erişim verilerini gizli tutmakla yükümlüdür. Kötüye kullanım şüphesi durumunda JobNachbar hesabı askıya alabilir."
+      },
+      "pricing": {
+        "title": "§4 Fiyatlar ve Ödeme Koşulları",
+        "content": "İş arayanlar için kullanım ücretsizdir. İşverenler için fiyatlandırma sayfasındaki tarifeler geçerlidir. Tüm fiyatlar yasal KDV dahildir. Faturalar, fatura tarihinden itibaren 14 gün içinde ödenmelidir."
+      },
+      "contract": {
+        "title": "§5 Sözleşme Süresi ve Fesih",
+        "content": "Abonelikler, sona ermeden önce iptal edilmediği sürece rezerve edilen süre için otomatik olarak yenilenir. Faturalandırma döneminin sonunda her zaman iptal mümkündür. Ücretsiz hesaplar her zaman silinebilir."
+      },
+      "liability": {
+        "title": "§6 Sorumluluk",
+        "content": "JobNachbar yalnızca kasıtlı veya ağır ihmal sonucu oluşan zararlardan sorumludur. JobNachbar, kullanıcılar tarafından yayınlanan içeriklerin doğruluğunu garanti etmez. Dolaylı zararlar için sorumluluk hariç tutulmuştur."
+      },
+      "dataProtection": {
+        "title": "§7 Veri Koruma",
+        "content": "Kişisel verilerin işlenmesi, gizlilik politikamız ve geçerli veri koruma yasalarına uygun olarak gerçekleştirilir. Platformu kullanarak kullanıcı, verilerinin gizlilik politikasında belirtilen amaçlar için işlenmesini kabul eder."
+      },
+      "final": {
+        "title": "§8 Son Hükümler",
+        "content": "Alman hukuku geçerlidir. Yargı yeri, yasal olarak izin verildiği ölçüde JobNachbar'ın kayıtlı merkezi bulunduğu yerdir. Bireysel hükümlerin geçersiz olması durumunda, kalan hükümlerin geçerliliği etkilenmez. Tarih: Ocak 2026"
+      }
+    }
+  },
+  "tools": {
+    "poweredBy": "Yapay zeka destekli başvuru araçları",
+    "hero": {
+      "title": "Başvurunuzu yapay zeka ile optimize edin",
+      "subtitle": "Özgeçmişinizi geliştirmek, etkileyici ön yazılar oluşturmak ve mülakata hazırlanmak için ücretsiz yapay zeka araçlarımızı kullanın."
+    },
+    "resumeCheck": {
+      "title": "Özgeçmiş Kontrolü",
+      "description": "Özgeçmişinizi yapay zekamız tarafından analiz ettirin ve somut iyileştirme önerileri alın."
+    },
+    "coverLetterGenerator": {
+      "title": "Ön Yazı Oluşturucu",
+      "description": "Her pozisyon için bireysel ön yazılar oluşturun – kişiselleştirilmiş ve ikna edici."
+    },
+    "interviewCoach": {
+      "title": "Mülakat Koçu",
+      "description": "Tipik mülakat sorularını pratik yapın ve cevaplarınız hakkında geri bildirim alın."
+    },
+    "salaryNegotiation": {
+      "title": "Maaş Pazarlığı",
+      "description": "Ne kazanabileceğinizi öğrenin ve maaş pazarlığı için ipuçları alın."
+    },
+    "freeUsesLabel": "{count}x ücretsiz",
+    "unlimitedWithPremium": "Premium ile sınırsız",
+    "premium": {
+      "title": "Tüm araçları sınırsız kullanın",
+      "description": "JobNachbar Premium ile tüm yapay zeka araçlarına, PDF dışa aktarımına ve özel özelliklere sınırsız erişim elde edin.",
+      "cta": "Premium'u keşfedin"
+    }
+  },
+  "register": {
+    "alreadyRegistered": "Zaten kayıtlı mısınız? Giriş yapın",
+    "chooseAccountType": "JobNachbar'ı nasıl kullanmak istersiniz?",
+    "chooseAccountTypeSubtitle": "Rolünüzü seçin – daha sonra diğer rolü ekleyebilirsiniz.",
+    "applicant": {
+      "title": "İş Arayan Olarak",
+      "description": "Bölgenizdeki hayalinizdeki işi bulun ve birkaç tıklamayla başvurun.",
+      "benefit1": "Ücretsiz kayıt ve başvuru",
+      "benefit2": "Otomatik iş önerileri",
+      "benefit3": "Yapay zeka destekli başvuru araçları",
+      "cta": "İş arayan olarak başla"
+    },
+    "employer": {
+      "title": "İşveren Olarak",
+      "description": "Bölgenizden nitelikli çalışanlar bulun.",
+      "benefit1": "İlk ilan ücretsiz",
+      "benefit2": "Bölgesel adaylar",
+      "benefit3": "Kolay aday yönetimi",
+      "cta": "İşveren olarak başla"
+    },
+    "canAddOtherAccountLater": "Daha sonra istediğiniz zaman diğer rolü hesabınıza ekleyebilirsiniz."
+  },
+  "forApplicantsPage": {
+    "badge": "İş Arayanlar İçin",
+    "hero": {
+      "title": "Hayalinizdeki işi bulun",
+      "titleHighlight": "yakınınızda",
+      "subtitle": "JobNachbar sizi Zeven ve çevresindeki en iyi işverenlerle buluşturur. Ücretsiz, hızlı ve yapay zeka destekli.",
+      "cta": "Ücretsiz kayıt ol",
+      "browseJobs": "İşlere göz at"
+    },
+    "benefits": {
+      "title": "JobNachbar ile avantajlarınız",
+      "regional": {
+        "title": "%100 Bölgesel",
+        "desc": "Sadece Zeven ve 30km çevresinden gerçek işler. Hamburg'a gidip gelme yok."
+      },
+      "free": {
+        "title": "Tamamen ücretsiz",
+        "desc": "Kayıt, başvuru ve tüm temel özellikler sizin için ücretsiz."
+      },
+      "aiTools": {
+        "title": "Yapay zeka destekli araçlar",
+        "desc": "Özgeçmiş kontrolü, ön yazı oluşturucu ve mülakat koçu başvurunuzda size yardımcı olur."
+      },
+      "fast": {
+        "title": "Hızlı başvuru",
+        "desc": "Tek tıklamayla başvurun – profiliniz doğrudan işverene gider."
+      },
+      "matching": {
+        "title": "Otomatik eşleştirme",
+        "desc": "Size uygun işleri bulur ve sizi otomatik olarak bilgilendiririz."
+      },
+      "privacy": {
+        "title": "Verileriniz güvende",
+        "desc": "GDPR uyumlu, Almanya'daki sunucular. Profilinizi kimin göreceğine siz karar verirsiniz."
+      }
+    },
+    "howItWorks": {
+      "title": "Nasıl çalışır",
+      "subtitle": "Yeni işinize 3 basit adımda ulaşın",
+      "step1": {
+        "title": "Profil oluştur",
+        "desc": "Ücretsiz kayıt olun ve tercih ettiğiniz sektör, maaş ve konum ile profilinizi oluşturun."
+      },
+      "step2": {
+        "title": "İşleri keşfet",
+        "desc": "Bölgesel iş ilanlarına göz atın veya uygun işler hakkında otomatik olarak bilgilendirilsin."
+      },
+      "step3": {
+        "title": "Başvur",
+        "desc": "Tek tıklamayla başvurun. Mükemmel başvuru için yapay zeka araçlarımızı kullanın."
+      }
+    },
+    "tools": {
+      "badge": "Yapay zeka destekli başvuru araçları",
+      "title": "Başvurunuzu optimize edin",
+      "subtitle": "Ücretsiz yapay zeka araçlarımız kalabalıktan sıyrılmanıza yardımcı olur.",
+      "resume": {
+        "title": "Özgeçmiş Kontrolü",
+        "desc": "Özgeçmişinizi analiz ettirin ve iyileştirme önerileri alın."
+      },
+      "coverLetter": {
+        "title": "Ön Yazı Oluşturucu",
+        "desc": "Her pozisyon için etkileyici ön yazılar oluşturun."
+      },
+      "interview": {
+        "title": "Mülakat Koçu",
+        "desc": "Yapay zeka geri bildirimi ile tipik mülakat sorularını pratik yapın."
+      },
+      "viewAll": "Tüm yapay zeka araçlarını keşfet"
+    },
+    "stats": {
+      "activeJobs": "Aktif iş ilanı",
+      "companies": "Şirket",
+      "radius": "Arama yarıçapı",
+      "free": "Adaylar için ücretsiz"
+    },
+    "cta": {
+      "title": "Bir sonraki kariyer adımınıza hazır mısınız?",
+      "subtitle": "Şimdi ücretsiz kayıt olun ve bölgenizdeki hayalinizdeki işi bulun.",
+      "register": "Şimdi kayıt ol",
+      "browseJobs": "Önce işlere bak"
+    }
   }
 }
