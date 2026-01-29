@@ -139,6 +139,7 @@ export default async function Page() {
 - `home` - Homepage
 - `jobsPage` - Jobsuche
 - `forEmployersPage` - Für Arbeitgeber
+- `forApplicantsPage` - Für Bewerber
 - `pricingPage` - Preise
 - `testimonials` - Kundenstimmen
 - `aboutPage` - Über uns
@@ -224,6 +225,7 @@ NEXT_PUBLIC_APP_URL=https://jobnachbar.de
 | `/jobs` | Jobsuche | ✅ |
 | `/jobs/[id]` | Job-Details | ✅ |
 | `/fuer-arbeitgeber` | Für Arbeitgeber | ✅ |
+| `/fuer-bewerber` | Für Bewerber | ✅ |
 | `/preise` | Preise & Pakete | ✅ |
 | `/ueber-uns` | Über uns | ✅ |
 | `/branchen` | Branchen-Übersicht | ✅ |
@@ -365,21 +367,111 @@ import { openCookieSettings } from '@/components/CookieBanner'
 
 ---
 
+## Benutzerrollen
+
+### Übersicht der Rollen
+
+| Rolle | Beschreibung | Zugang |
+|-------|--------------|--------|
+| **Bewerber** (jobseeker) | Arbeitssuchende, die sich auf Stellen bewerben | `/dashboard/bewerber` |
+| **Arbeitgeber** (employer) | Unternehmen, die Stellen ausschreiben | `/dashboard/arbeitgeber` |
+| **Admin** | Systemadministratoren mit vollem Zugriff | `/admin` |
+
+### Benutzer-Felder in Supabase
+
+```sql
+-- users Tabelle
+id UUID PRIMARY KEY
+auth_id UUID (Referenz zu auth.users)
+email TEXT
+user_type TEXT ('jobseeker' | 'employer')
+is_admin BOOLEAN DEFAULT false
+is_premium BOOLEAN DEFAULT false
+```
+
+### Admin-Zugang einrichten
+
+1. **User registrieren** über `/registrieren`
+2. **In Supabase** die `users` Tabelle öffnen
+3. **Benutzer finden** und `is_admin` auf `true` setzen
+
+```sql
+UPDATE users SET is_admin = true WHERE email = 'admin@example.com';
+```
+
+4. **Einloggen** unter `/login`
+5. **Admin-Dashboard** aufrufen unter `/admin`
+
+---
+
 ## CRM & Admin
 
 ### Admin Dashboard
 
 Pfad: `/admin`
 
-- CRM für Kundenmanagement
-- Subscriptions verwalten
-- Rechnungen erstellen und versenden
+**Voraussetzung:** Benutzer muss `is_admin = true` in der Datenbank haben.
 
-### Stripe Integration
+**Verfügbare Admin-Routen:**
 
-- Checkout: `/api/stripe/checkout`
-- Webhook: `/api/stripe/webhook`
-- Automatische Subscription-Aktivierung
+| Pfad | Beschreibung |
+|------|--------------|
+| `/admin` | Haupt-Dashboard mit Statistiken |
+| `/admin/crm` | CRM-System für Kundenmanagement |
+| `/admin/crm/companies/[id]` | Einzelne Firma verwalten |
+| `/admin/crm/invoices` | Rechnungsverwaltung |
+| `/admin/subscriptions` | Abonnements verwalten |
+| `/admin/abo-anfragen` | Neue Abo-Anfragen bearbeiten |
+| `/admin/einstellungen` | Admin-Einstellungen |
+
+### Admin-Funktionen
+
+- **Statistiken:** Benutzer, Jobs, Bewerbungen, Umsatz
+- **CRM:** Firmen verwalten, Notizen hinzufügen, Kontakthistorie
+- **Rechnungen:** Erstellen, versenden, Status verfolgen
+- **Subscriptions:** Genehmigen, aktivieren, kündigen
+
+---
+
+## Stripe Integration
+
+### Erforderliche Umgebungsvariablen
+
+```env
+# Stripe Payment
+# Aus dem Stripe Dashboard: https://dashboard.stripe.com/apikeys
+STRIPE_SECRET_KEY=sk_live_xxxxx          # oder sk_test_xxxxx für Testmodus
+STRIPE_PUBLISHABLE_KEY=pk_live_xxxxx     # oder pk_test_xxxxx für Testmodus
+
+# Webhook Secret aus: https://dashboard.stripe.com/webhooks
+STRIPE_WEBHOOK_SECRET=whsec_xxxxx
+```
+
+### Stripe Webhook einrichten
+
+1. **Stripe Dashboard** öffnen → Developers → Webhooks
+2. **Endpoint hinzufügen:** `https://jobnachbar.de/api/stripe/webhook`
+3. **Events auswählen:**
+   - `checkout.session.completed`
+   - `invoice.paid`
+   - `payment_intent.succeeded`
+4. **Webhook Secret** kopieren und in `.env.local` eintragen
+
+### Zahlungsablauf
+
+1. Nutzer wählt Abo-Paket auf `/preise`
+2. Klick auf "Jetzt kaufen" → Stripe Checkout Session
+3. Bezahlung über Stripe (Karte oder SEPA)
+4. Webhook empfängt `checkout.session.completed`
+5. Automatische Aktivierung des Abos in der Datenbank
+6. Bestätigungs-Email an den Kunden
+
+### Preise (in Cent)
+
+| Paket | 1 Monat | 3 Monate | 6 Monate |
+|-------|---------|----------|----------|
+| Basic | 49,00 € | 139,00 € | 249,00 € |
+| Premium | 99,00 € | 279,00 € | 549,00 € |
 
 ---
 

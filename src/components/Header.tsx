@@ -175,10 +175,10 @@ export default function Header({ variant = 'default' }: HeaderProps) {
   const menuLinks = {
     main: [
       { href: '/jobs', label: t('jobs') },
+      { href: '/fuer-bewerber', label: t('forApplicants') },
       { href: '/fuer-arbeitgeber', label: t('forEmployers') },
       { href: '/preise', label: t('pricing') },
       { href: '/tools', label: t('aiTools') },
-      { href: '/bewerbungstipps', label: t('applicationTips') },
     ],
     footer: [
       { href: '/kontakt', label: t('contact') },
