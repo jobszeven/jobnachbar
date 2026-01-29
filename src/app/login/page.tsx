@@ -31,6 +31,14 @@ export default function Login() {
 
       if (authError) throw authError
 
+      // Check if email is verified
+      if (!data.user?.email_confirmed_at) {
+        // Sign out and redirect to verification page
+        await supabase.auth.signOut()
+        router.push('/verifizierung-ausstehend?email=' + encodeURIComponent(email))
+        return
+      }
+
       const userType = data.user?.user_metadata?.user_type
 
       if (userType === 'employer') {

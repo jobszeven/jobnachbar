@@ -25,6 +25,25 @@
     "noResults": "Keine Ergebnisse gefunden",
     "tryAgain": "Erneut versuchen"
   },
+  "verification": {
+    "title": "E-Mail bestätigen",
+    "subtitle": "Wir haben dir eine Bestätigungs-E-Mail gesendet an:",
+    "checkInbox": "Öffne dein E-Mail-Postfach und suche nach der E-Mail von JobNachbar.",
+    "clickLink": "Klicke auf den Bestätigungslink in der E-Mail.",
+    "startUsing": "Du wirst automatisch zu deinem Dashboard weitergeleitet.",
+    "checkSpam": "E-Mail nicht erhalten? Prüfe deinen Spam-Ordner.",
+    "resendButton": "E-Mail erneut senden",
+    "resendCooldown": "Erneut senden in {seconds}s",
+    "resent": "E-Mail wurde erneut gesendet!",
+    "sending": "Wird gesendet...",
+    "wrongEmail": "Falsche E-Mail-Adresse?",
+    "registerAgain": "Erneut registrieren",
+    "alreadyVerified": "E-Mail bereits bestätigt?",
+    "loginNow": "Jetzt anmelden",
+    "errors": {
+      "resendFailed": "Fehler beim erneuten Senden der E-Mail"
+    }
+  },
   "nav": {
     "home": "Startseite",
     "jobs": "Jobs finden",

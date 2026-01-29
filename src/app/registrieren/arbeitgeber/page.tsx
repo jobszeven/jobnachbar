@@ -89,7 +89,7 @@ function ArbeitgeberRegistrierungContent() {
     try {
       const supabase = createClient()
       
-      // 1. Create auth user
+      // 1. Create auth user with email verification
       const { data: authData, error: authError } = await supabase.auth.signUp({
         email: formData.email,
         password: formData.password,
@@ -97,7 +97,8 @@ function ArbeitgeberRegistrierungContent() {
           data: {
             user_type: 'employer',
             company_name: formData.companyName,
-          }
+          },
+          emailRedirectTo: `${window.location.origin}/auth/callback`,
         }
       })
       
@@ -129,9 +130,9 @@ function ArbeitgeberRegistrierungContent() {
         })
       
       if (profileError) throw profileError
-      
-      // Success - redirect to dashboard
-      router.push('/dashboard/arbeitgeber?welcome=true')
+
+      // Success - redirect to email verification page
+      router.push('/verifizierung-ausstehend?email=' + encodeURIComponent(formData.email))
       
     } catch (err: any) {
       setError(err.message || 'Ein Fehler ist aufgetreten')
@@ -156,18 +157,24 @@ function ArbeitgeberRegistrierungContent() {
       }
     }
     if (step === 2) {
-      if (!formData.companyName || !formData.contactPerson) {
+      if (!formData.companyName || !formData.contactPerson || !formData.phone) {
         setError('Bitte fülle alle Pflichtfelder aus')
         return
       }
     }
     if (step === 3) {
-      if (!formData.zipCode || !formData.city) {
+      if (!formData.street || !formData.zipCode || !formData.city) {
         setError('Bitte fülle alle Pflichtfelder aus')
         return
       }
     }
-    
+    if (step === 4) {
+      if (!formData.industry || !formData.companySize) {
+        setError('Bitte fülle alle Pflichtfelder aus')
+        return
+      }
+    }
+
     setError('')
     setStep(prev => prev + 1)
   }
@@ -299,13 +306,14 @@ function ArbeitgeberRegistrierungContent() {
                   />
                 </div>
                 <div>
-                  <label className="input-label">Telefonnummer</label>
+                  <label className="input-label">Telefonnummer *</label>
                   <input
                     type="tel"
                     className="input-field"
                     placeholder="04281 12345"
                     value={formData.phone}
                     onChange={e => updateFormData('phone', e.target.value)}
+                    required
                   />
                 </div>
               </div>
@@ -320,13 +328,14 @@ function ArbeitgeberRegistrierungContent() {
               
               <div className="space-y-4">
                 <div>
-                  <label className="input-label">Straße & Hausnummer</label>
+                  <label className="input-label">Straße & Hausnummer *</label>
                   <input
                     type="text"
                     className="input-field"
                     placeholder="Musterstraße 123"
                     value={formData.street}
                     onChange={e => updateFormData('street', e.target.value)}
+                    required
                   />
                 </div>
                 <div className="grid grid-cols-2 gap-4">
@@ -374,11 +383,12 @@ function ArbeitgeberRegistrierungContent() {
                   />
                 </div>
                 <div>
-                  <label className="input-label">Branche</label>
+                  <label className="input-label">Branche *</label>
                   <select
                     className="input-field"
                     value={formData.industry}
                     onChange={e => updateFormData('industry', e.target.value)}
+                    required
                   >
                     <option value="">Bitte wählen...</option>
                     {INDUSTRIES.map(ind => (
@@ -387,11 +397,12 @@ function ArbeitgeberRegistrierungContent() {
                   </select>
                 </div>
                 <div>
-                  <label className="input-label">Unternehmensgröße</label>
+                  <label className="input-label">Unternehmensgröße *</label>
                   <select
                     className="input-field"
                     value={formData.companySize}
                     onChange={e => updateFormData('companySize', e.target.value)}
+                    required
                   >
                     <option value="">Bitte wählen...</option>
                     {COMPANY_SIZES.map(size => (

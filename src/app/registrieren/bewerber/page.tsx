@@ -96,7 +96,7 @@ export default function BewerberRegistrierung() {
     try {
       const supabase = createClient()
 
-      // 1. Create auth user
+      // 1. Create auth user with email verification
       const { data: authData, error: authError } = await supabase.auth.signUp({
         email: formData.email,
         password: formData.password,
@@ -105,7 +105,8 @@ export default function BewerberRegistrierung() {
             user_type: 'applicant',
             first_name: formData.firstName,
             last_name: formData.lastName,
-          }
+          },
+          emailRedirectTo: `${window.location.origin}/auth/callback`,
         }
       })
 
@@ -139,8 +140,8 @@ export default function BewerberRegistrierung() {
 
       if (profileError) throw profileError
 
-      // Success - redirect to dashboard
-      router.push('/dashboard/bewerber?welcome=true')
+      // Success - redirect to email verification page
+      router.push('/verifizierung-ausstehend?email=' + encodeURIComponent(formData.email))
 
     } catch (err: any) {
       setError(err.message || t('applicant.errors.genericError'))
@@ -166,13 +167,19 @@ export default function BewerberRegistrierung() {
       }
     }
     if (step === 2) {
-      if (!formData.firstName || !formData.lastName) {
+      if (!formData.firstName || !formData.lastName || !formData.phone) {
         setError(t('applicant.errors.fillRequired'))
         return
       }
     }
     if (step === 3) {
       if (!formData.zipCode || !formData.city) {
+        setError(t('applicant.errors.fillRequired'))
+        return
+      }
+    }
+    if (step === 4) {
+      if (!formData.jobTitleWanted || formData.industries.length === 0 || formData.employmentTypes.length === 0) {
         setError(t('applicant.errors.fillRequired'))
         return
       }
@@ -306,13 +313,14 @@ export default function BewerberRegistrierung() {
                   </div>
                 </div>
                 <div>
-                  <label className="input-label">{t('applicant.step2.phone')}</label>
+                  <label className="input-label">{t('applicant.step2.phone')} *</label>
                   <input
                     type="tel"
                     className="input-field"
                     placeholder={t('applicant.step2.phonePlaceholder')}
                     value={formData.phone}
                     onChange={e => updateFormData('phone', e.target.value)}
+                    required
                   />
                 </div>
                 <div>
@@ -386,18 +394,19 @@ export default function BewerberRegistrierung() {
 
               <div className="space-y-6">
                 <div>
-                  <label className="input-label">{t('applicant.step4.jobTitle')}</label>
+                  <label className="input-label">{t('applicant.step4.jobTitle')} *</label>
                   <input
                     type="text"
                     className="input-field"
                     placeholder={t('applicant.step4.jobTitlePlaceholder')}
                     value={formData.jobTitleWanted}
                     onChange={e => updateFormData('jobTitleWanted', e.target.value)}
+                    required
                   />
                 </div>
 
                 <div>
-                  <label className="input-label">{t('applicant.step4.industries')}</label>
+                  <label className="input-label">{t('applicant.step4.industries')} *</label>
                   <div className="grid grid-cols-2 gap-2 mt-2">
                     {INDUSTRIES.map(industry => (
                       <label
@@ -420,7 +429,7 @@ export default function BewerberRegistrierung() {
                 </div>
 
                 <div>
-                  <label className="input-label">{t('applicant.step4.employmentTypes')}</label>
+                  <label className="input-label">{t('applicant.step4.employmentTypes')} *</label>
                   <div className="grid grid-cols-2 gap-2 mt-2">
                     {EMPLOYMENT_TYPES.map(type => (
                       <label

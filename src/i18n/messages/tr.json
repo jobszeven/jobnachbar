@@ -25,6 +25,25 @@
     "noResults": "Sonuç bulunamadı",
     "tryAgain": "Tekrar dene"
   },
+  "verification": {
+    "title": "E-postanizi onaylayin",
+    "subtitle": "Size bir onay e-postasi gonderdik:",
+    "checkInbox": "E-posta gelen kutunuzu acin ve JobNachbar'dan gelen e-postayi arayin.",
+    "clickLink": "E-postadaki onay bagantisina tiklayin.",
+    "startUsing": "Otomatik olarak kontrol panelinize yonlendirileceksiniz.",
+    "checkSpam": "E-posta almadin mi? Spam klasorunuzu kontrol edin.",
+    "resendButton": "E-postayi tekrar gonder",
+    "resendCooldown": "{seconds}s icinde tekrar gonder",
+    "resent": "E-posta tekrar gonderildi!",
+    "sending": "Gonderiliyor...",
+    "wrongEmail": "Yanlis e-posta adresi mi?",
+    "registerAgain": "Tekrar kayit ol",
+    "alreadyVerified": "E-posta zaten onaylandi mi?",
+    "loginNow": "Simdi giris yap",
+    "errors": {
+      "resendFailed": "E-posta tekrar gonderilirken hata olustu"
+    }
+  },
   "nav": {
     "home": "Ana Sayfa",
     "jobs": "İş Bul",

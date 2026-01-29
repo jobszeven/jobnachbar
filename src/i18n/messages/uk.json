@@ -25,6 +25,25 @@
     "noResults": "Результатів не знайдено",
     "tryAgain": "Спробувати ще раз"
   },
+  "verification": {
+    "title": "Pidtverdіt vash email",
+    "subtitle": "Mi nadіslali vam lіst pіdtverdzhennya na adresu:",
+    "checkInbox": "Vіdkriyte svoyu poshtovu skrinku і znajdіt lіst vіd JobNachbar.",
+    "clickLink": "Natysnіt na posylannya pіdtverdzhennya v lіstі.",
+    "startUsing": "Vas avtomatychno bude peresprymovano do vashoi paneli keruvannya.",
+    "checkSpam": "Ne otrymaly lіst? Perevіrte papku spam.",
+    "resendButton": "Nadіslaty lіst povtorno",
+    "resendCooldown": "Nadіslaty povtorno cherez {seconds}s",
+    "resent": "Lіst bulo nadіslano povtorno!",
+    "sending": "Nadsilaetsa...",
+    "wrongEmail": "Nepravylna adresa elektronnoї poshty?",
+    "registerAgain": "Zareyestruvatysya znovu",
+    "alreadyVerified": "Email vzhe pidtverdzheno?",
+    "loginNow": "Uvіyty zaraz",
+    "errors": {
+      "resendFailed": "Pomylka pry povtornіy vіdpravtsі lіsta"
+    }
+  },
   "nav": {
     "home": "Головна",
     "jobs": "Знайти роботу",

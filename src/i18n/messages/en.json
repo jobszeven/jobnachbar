@@ -25,6 +25,25 @@
     "noResults": "No results found",
     "tryAgain": "Try again"
   },
+  "verification": {
+    "title": "Confirm your email",
+    "subtitle": "We have sent a confirmation email to:",
+    "checkInbox": "Open your email inbox and look for the email from JobNachbar.",
+    "clickLink": "Click on the confirmation link in the email.",
+    "startUsing": "You will be automatically redirected to your dashboard.",
+    "checkSpam": "Didn't receive the email? Check your spam folder.",
+    "resendButton": "Resend email",
+    "resendCooldown": "Resend in {seconds}s",
+    "resent": "Email has been resent!",
+    "sending": "Sending...",
+    "wrongEmail": "Wrong email address?",
+    "registerAgain": "Register again",
+    "alreadyVerified": "Email already verified?",
+    "loginNow": "Log in now",
+    "errors": {
+      "resendFailed": "Error resending the email"
+    }
+  },
   "nav": {
     "home": "Home",
     "jobs": "Find Jobs",

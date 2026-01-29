@@ -25,6 +25,25 @@
     "noResults": "Nie znaleziono wyników",
     "tryAgain": "Spróbuj ponownie"
   },
+  "verification": {
+    "title": "Potwierdz swoj e-mail",
+    "subtitle": "Wyslalismy Ci e-mail potwierdzajacy na adres:",
+    "checkInbox": "Otworz skrzynke odbiorcza i poszukaj wiadomosci od JobNachbar.",
+    "clickLink": "Kliknij link potwierdzajacy w wiadomosci e-mail.",
+    "startUsing": "Zostaniesz automatycznie przekierowany do swojego panelu.",
+    "checkSpam": "Nie otrzymales e-maila? Sprawdz folder spam.",
+    "resendButton": "Wyslij e-mail ponownie",
+    "resendCooldown": "Wyslij ponownie za {seconds}s",
+    "resent": "E-mail zostal wyslany ponownie!",
+    "sending": "Wysylanie...",
+    "wrongEmail": "Nieprawidlowy adres e-mail?",
+    "registerAgain": "Zarejestruj sie ponownie",
+    "alreadyVerified": "E-mail juz potwierdzony?",
+    "loginNow": "Zaloguj sie teraz",
+    "errors": {
+      "resendFailed": "Blad podczas ponownego wysylania e-maila"
+    }
+  },
   "nav": {
     "home": "Strona główna",
     "jobs": "Znajdź pracę",

@@ -70,9 +70,18 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(redirectUrl)
   }
 
+  // Redirect to verification page if email is not confirmed
+  if (isProtectedRoute && user && !user.email_confirmed_at) {
+    const redirectUrl = new URL('/verifizierung-ausstehend', request.url)
+    if (user.email) {
+      redirectUrl.searchParams.set('email', user.email)
+    }
+    return NextResponse.redirect(redirectUrl)
+  }
+
   // Redirect logged-in users away from auth pages
   const authRoutes = ['/login', '/registrieren']
-  const isAuthRoute = authRoutes.some(route => 
+  const isAuthRoute = authRoutes.some(route =>
     request.nextUrl.pathname.startsWith(route)
   )
 
@@ -82,6 +91,21 @@ export async function middleware(request: NextRequest) {
     if (userType === 'employer') {
       return NextResponse.redirect(new URL('/dashboard/arbeitgeber', request.url))
     } else {
+      return NextResponse.redirect(new URL('/dashboard/bewerber', request.url))
+    }
+  }
+
+  // Prevent cross-role dashboard access
+  if (user && user.email_confirmed_at) {
+    const userType = user.user_metadata?.user_type
+
+    // Employer trying to access applicant dashboard
+    if (request.nextUrl.pathname.startsWith('/dashboard/bewerber') && userType === 'employer') {
+      return NextResponse.redirect(new URL('/dashboard/arbeitgeber', request.url))
+    }
+
+    // Applicant trying to access employer dashboard
+    if (request.nextUrl.pathname.startsWith('/dashboard/arbeitgeber') && userType === 'applicant') {
       return NextResponse.redirect(new URL('/dashboard/bewerber', request.url))
     }
   }
