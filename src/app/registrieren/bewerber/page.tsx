@@ -113,32 +113,37 @@ export default function BewerberRegistrierung() {
       if (authError) throw authError
       if (!authData.user) throw new Error(t('applicant.errors.registrationFailed'))
 
-      // 2. Create user profile
-      const { error: profileError } = await supabase
-        .from('users')
-        .insert({
-          auth_id: authData.user.id,
+      // 2. Create user profile via API (bypasses RLS)
+      const profileResponse = await fetch('/api/register/applicant', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          authId: authData.user.id,
           email: formData.email,
-          first_name: formData.firstName,
-          last_name: formData.lastName,
+          firstName: formData.firstName,
+          lastName: formData.lastName,
           phone: formData.phone,
-          birthdate: formData.birthdate || null,
-          zip_code: formData.zipCode,
+          birthdate: formData.birthdate,
+          zipCode: formData.zipCode,
           city: formData.city,
-          radius_km: formData.radiusKm,
-          job_title_wanted: formData.jobTitleWanted,
+          radiusKm: formData.radiusKm,
+          jobTitleWanted: formData.jobTitleWanted,
           industries: formData.industries,
-          employment_types: formData.employmentTypes,
-          experience_years: formData.experienceYears,
-          available_from: formData.availableFrom || null,
-          salary_expectation: formData.salaryExpectation,
-          about_me: formData.aboutMe,
-          email_notifications: formData.emailNotifications,
-          whatsapp_notifications: formData.whatsappNotifications,
-          whatsapp_number: formData.whatsappNumber,
-        })
+          employmentTypes: formData.employmentTypes,
+          experienceYears: formData.experienceYears,
+          availableFrom: formData.availableFrom,
+          salaryExpectation: formData.salaryExpectation,
+          aboutMe: formData.aboutMe,
+          emailNotifications: formData.emailNotifications,
+          whatsappNotifications: formData.whatsappNotifications,
+          whatsappNumber: formData.whatsappNumber,
+        }),
+      })
 
-      if (profileError) throw profileError
+      if (!profileResponse.ok) {
+        const errorData = await profileResponse.json()
+        throw new Error(errorData.error || t('applicant.errors.genericError'))
+      }
 
       // Success - redirect to email verification page
       router.push('/verifizierung-ausstehend?email=' + encodeURIComponent(formData.email))

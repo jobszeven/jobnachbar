@@ -104,32 +104,32 @@ function ArbeitgeberRegistrierungContent() {
       
       if (authError) throw authError
       if (!authData.user) throw new Error('Registrierung fehlgeschlagen')
-      
-      // Calculate subscription expiry (1 month from now for paid plans)
-      const expiryDate = new Date()
-      expiryDate.setMonth(expiryDate.getMonth() + 1)
-      
-      // 2. Create company profile
-      const { error: profileError } = await supabase
-        .from('companies')
-        .insert({
-          auth_id: authData.user.id,
+
+      // 2. Create company profile via API (bypasses RLS)
+      const profileResponse = await fetch('/api/register/employer', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          authId: authData.user.id,
           email: formData.email,
-          company_name: formData.companyName,
-          contact_person: formData.contactPerson,
+          companyName: formData.companyName,
+          contactPerson: formData.contactPerson,
           phone: formData.phone,
           street: formData.street,
-          zip_code: formData.zipCode,
+          zipCode: formData.zipCode,
           city: formData.city,
           website: formData.website,
-          industry: formData.industry || null,
-          company_size: formData.companySize,
-          about_company: formData.aboutCompany,
-          subscription_tier: formData.selectedPlan,
-          subscription_expires: formData.selectedPlan === 'free' ? null : expiryDate.toISOString(),
-        })
-      
-      if (profileError) throw profileError
+          industry: formData.industry,
+          companySize: formData.companySize,
+          aboutCompany: formData.aboutCompany,
+          selectedPlan: formData.selectedPlan,
+        }),
+      })
+
+      if (!profileResponse.ok) {
+        const errorData = await profileResponse.json()
+        throw new Error(errorData.error || 'Firmenprofil konnte nicht erstellt werden')
+      }
 
       // Success - redirect to email verification page
       router.push('/verifizierung-ausstehend?email=' + encodeURIComponent(formData.email))
