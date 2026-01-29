@@ -1752,13 +1752,90 @@
     "alreadyRegistered": "Już zarejestrowany? Zaloguj się",
     "chooseAccountType": "Jak chcesz korzystać z JobNachbar?",
     "chooseAccountTypeSubtitle": "Wybierz swoją rolę – możesz dodać drugą rolę później.",
+    "back": "Wstecz",
+    "next": "Dalej",
     "applicant": {
       "title": "Jako osoba szukająca pracy",
       "description": "Znajdź wymarzoną pracę w regionie i aplikuj kilkoma kliknięciami.",
       "benefit1": "Bezpłatna rejestracja i aplikowanie",
       "benefit2": "Automatyczne propozycje pracy",
       "benefit3": "Narzędzia aplikacyjne wspierane przez AI",
-      "cta": "Rozpocznij jako szukający pracy"
+      "cta": "Rozpocznij jako szukający pracy",
+      "step1": {
+        "title": "Utwórz konto",
+        "subtitle": "Wprowadź dane logowania",
+        "email": "Adres e-mail",
+        "emailPlaceholder": "twoj@email.pl",
+        "password": "Hasło",
+        "passwordPlaceholder": "Minimum 8 znaków",
+        "passwordConfirm": "Potwierdź hasło",
+        "passwordConfirmPlaceholder": "Powtórz hasło"
+      },
+      "step2": {
+        "title": "Dane osobowe",
+        "subtitle": "Opowiedz nam o sobie",
+        "firstName": "Imię",
+        "firstNamePlaceholder": "Jan",
+        "lastName": "Nazwisko",
+        "lastNamePlaceholder": "Kowalski",
+        "phone": "Telefon",
+        "phonePlaceholder": "+49 123 456789",
+        "birthdate": "Data urodzenia"
+      },
+      "step3": {
+        "title": "Twoja lokalizacja",
+        "subtitle": "Gdzie chcesz pracować?",
+        "zipCode": "Kod pocztowy",
+        "zipCodePlaceholder": "27404",
+        "city": "Miasto",
+        "cityPlaceholder": "Zeven",
+        "radius": "Promień szukania: {km} km"
+      },
+      "step4": {
+        "title": "Preferencje pracy",
+        "subtitle": "Czego szukasz?",
+        "jobTitle": "Poszukiwane stanowisko",
+        "jobTitlePlaceholder": "np. Elektryk, Sprzedawca",
+        "industries": "Preferowane branże",
+        "employmentTypes": "Rodzaj zatrudnienia",
+        "experience": "Doświadczenie zawodowe",
+        "experienceOptions": {
+          "entry": "Początkujący",
+          "1-2": "1-2 lata",
+          "3-5": "3-5 lat",
+          "6-10": "6-10 lat",
+          "10+": "Ponad 10 lat"
+        },
+        "availableFrom": "Dostępny od",
+        "salaryExpectation": "Oczekiwania płacowe",
+        "salaryPlaceholder": "np. 3000 € brutto"
+      },
+      "step5": {
+        "title": "O Tobie",
+        "subtitle": "Prawie gotowe!",
+        "aboutMe": "O mnie",
+        "aboutMePlaceholder": "Opowiedz krótko o sobie, swoich mocnych stronach i czego szukasz...",
+        "notificationsLabel": "Powiadomienia",
+        "emailNotifications": "Powiadomienia e-mail",
+        "emailNotificationsDesc": "Otrzymuj nowe oferty pracy e-mailem",
+        "whatsappNotifications": "Powiadomienia WhatsApp",
+        "whatsappNotificationsDesc": "Otrzymuj nowe oferty przez WhatsApp",
+        "whatsappNumber": "Numer WhatsApp",
+        "whatsappNumberPlaceholder": "+49 123 456789",
+        "termsText": "Rejestrując się akceptujesz",
+        "terms": "Regulamin",
+        "and": "i",
+        "privacy": "Politykę prywatności",
+        "submit": "Zakończ rejestrację",
+        "submitting": "Rejestrowanie..."
+      },
+      "errors": {
+        "registrationFailed": "Rejestracja nie powiodła się",
+        "fillRequired": "Wypełnij wszystkie wymagane pola",
+        "passwordMismatch": "Hasła nie są zgodne",
+        "passwordLength": "Hasło musi mieć minimum 8 znaków",
+        "genericError": "Wystąpił błąd"
+      }
     },
     "employer": {
       "title": "Jako pracodawca",
@@ -1852,5 +1929,187 @@
       "register": "Zarejestruj się teraz",
       "browseJobs": "Najpierw zobacz oferty"
     }
+  },
+  "login": {
+    "title": "Witaj ponownie",
+    "subtitle": "Zaloguj się, aby kontynuować",
+    "email": "Adres e-mail",
+    "emailPlaceholder": "twoj@email.pl",
+    "password": "Hasło",
+    "rememberMe": "Zapamiętaj mnie",
+    "forgotPassword": "Zapomniałeś hasła?",
+    "submit": "Zaloguj się",
+    "loggingIn": "Logowanie...",
+    "noAccount": "Nie masz konta?",
+    "asApplicant": "Jako szukający pracy",
+    "asEmployer": "Jako pracodawca",
+    "resetEmailSent": "E-mail do resetowania hasła został wysłany!",
+    "errors": {
+      "invalidCredentials": "Nieprawidłowe dane logowania",
+      "enterEmail": "Wprowadź swój adres e-mail",
+      "generic": "Wystąpił błąd"
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Polityka prywatności - JobNachbar",
+      "description": "Polityka prywatności JobNachbar"
+    },
+    "title": "Polityka prywatności",
+    "sections": {
+      "overview": {
+        "title": "1. Prywatność w skrócie",
+        "content": "Poniższe uwagi zawierają prosty przegląd tego, co dzieje się z Twoimi danymi osobowymi podczas odwiedzania tej strony."
+      },
+      "responsible": {
+        "title": "2. Strona odpowiedzialna"
+      },
+      "dataCollection": {
+        "title": "3. Zbieranie danych na tej stronie",
+        "cookies": {
+          "title": "Pliki cookie",
+          "content": "Nasza strona używa plików cookie. Są to małe pliki tekstowe, które przeglądarka zapisuje na Twoim urządzeniu."
+        },
+        "serverLogs": {
+          "title": "Pliki dziennika serwera",
+          "content": "Dostawca stron automatycznie zbiera i przechowuje informacje w plikach dziennika serwera."
+        }
+      },
+      "registration": {
+        "title": "4. Rejestracja na tej stronie",
+        "content": "Możesz zarejestrować się na tej stronie, aby korzystać z dodatkowych funkcji."
+      },
+      "rights": {
+        "title": "5. Twoje prawa",
+        "content": "Masz prawo do bezpłatnej informacji o przechowywanych danych osobowych, ich pochodzeniu i odbiorcach oraz celu przetwarzania danych, a także prawo do poprawienia lub usunięcia tych danych."
+      },
+      "hosting": {
+        "title": "6. Hosting",
+        "content": "Nasza strona jest hostowana przez Vercel Inc."
+      },
+      "supabase": {
+        "title": "7. Supabase",
+        "content": "Używamy Supabase do uwierzytelniania i przechowywania danych."
+      }
+    }
+  },
+  "imprint": {
+    "meta": {
+      "title": "Nota prawna - JobNachbar",
+      "description": "Nota prawna i informacje o JobNachbar"
+    },
+    "title": "Nota prawna",
+    "backToHome": "Powrót do strony głównej",
+    "sections": {
+      "legalInfo": {
+        "title": "Informacje zgodnie z § 5 TMG",
+        "country": "Niemcy"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "email": "E-mail"
+      },
+      "profession": {
+        "title": "Tytuł zawodowy",
+        "description": "Usługi w zakresie marketingu online i tworzenia stron internetowych"
+      },
+      "authority": {
+        "title": "Organ nadzoru",
+        "description": "Urząd Handlowy Miasta Zeven"
+      },
+      "vatId": {
+        "title": "NIP",
+        "description": "Numer identyfikacji podatkowej zgodnie z § 27 a niemieckiej ustawy o VAT:",
+        "pending": "W trakcie aplikacji"
+      },
+      "responsible": {
+        "title": "Odpowiedzialny za treść zgodnie z § 55 ust. 2 RStV"
+      },
+      "dispute": {
+        "title": "Rozwiązywanie sporów",
+        "description": "Komisja Europejska zapewnia platformę do rozwiązywania sporów online (OS):",
+        "noParticipation": "Nie jesteśmy skłonni ani zobowiązani do uczestnictwa w postępowaniach rozstrzygania sporów przed organem arbitrażowym dla konsumentów."
+      },
+      "liability": {
+        "title": "Odpowiedzialność za treść",
+        "content1": "Jako dostawca usług jesteśmy odpowiedzialni za własne treści na tych stronach zgodnie z ogólnymi przepisami.",
+        "content2": "Zgodnie z §§ 8-10 TMG nie jesteśmy zobowiązani do monitorowania przekazywanych lub przechowywanych informacji osób trzecich."
+      },
+      "links": {
+        "title": "Odpowiedzialność za linki",
+        "description": "Nasza oferta zawiera linki do zewnętrznych stron internetowych osób trzecich, na których treść nie mamy wpływu."
+      },
+      "copyright": {
+        "title": "Prawa autorskie",
+        "description": "Treści i dzieła utworzone przez operatorów strony na tych stronach podlegają niemieckiemu prawu autorskiemu."
+      }
+    }
+  },
+  "premium": {
+    "badge": "Członkostwo Premium",
+    "hero": {
+      "subtitle": "Zmaksymalizuj swoje szanse dzięki ekskluzywnym funkcjom"
+    },
+    "priceCard": {
+      "title": "Premium dla szukających pracy",
+      "price": "9,99 €",
+      "period": "/ miesiąc",
+      "cancelAnytime": "Anuluj w dowolnym momencie",
+      "upgradeNow": "Ulepsz teraz"
+    },
+    "features": {
+      "title": "Co otrzymujesz",
+      "freeLabel": "Bezpłatne",
+      "premiumLabel": "Premium"
+    },
+    "testimonials": {
+      "title": "Co mówią nasi użytkownicy"
+    },
+    "faq": {
+      "title": "Często zadawane pytania",
+      "cancelAnytime": {
+        "question": "Czy mogę anulować w dowolnym momencie?",
+        "answer": "Tak, możesz anulować subskrypcję Premium w dowolnym momencie na koniec okresu rozliczeniowego."
+      },
+      "payment": {
+        "question": "Jakie metody płatności są dostępne?",
+        "answer": "Akceptujemy kartę kredytową, PayPal i polecenie zapłaty SEPA."
+      },
+      "freeUsage": {
+        "question": "Czy mogę korzystać z JobNachbar za darmo?",
+        "answer": "Tak, wszystkie podstawowe funkcje są bezpłatne. Premium oferuje dodatkowe korzyści."
+      },
+      "trial": {
+        "question": "Czy jest okres próbny?",
+        "answer": "Możesz wypróbować wszystkie narzędzia AI kilka razy za darmo przed podjęciem decyzji o Premium."
+      }
+    },
+    "cta": {
+      "title": "Gotowy, aby zacząć?",
+      "subtitle": "Zostań członkiem Premium i zabezpiecz wszystkie korzyści.",
+      "button": "Przejdź na Premium"
+    }
+  },
+  "industries": {
+    "handwerk": "Rzemiosło",
+    "pflege_gesundheit": "Opieka zdrowotna",
+    "gastro_hotel": "Gastronomia i hotelarstwo",
+    "einzelhandel": "Handel detaliczny",
+    "logistik_transport": "Logistyka i transport",
+    "industrie_produktion": "Przemysł i produkcja",
+    "buero_verwaltung": "Biuro i administracja",
+    "it_technik": "IT i technologia",
+    "bau_architektur": "Budownictwo",
+    "landwirtschaft": "Rolnictwo",
+    "bildung_soziales": "Edukacja i sprawy społeczne",
+    "sonstiges": "Inne"
+  },
+  "employmentTypes": {
+    "vollzeit": "Pełny etat",
+    "teilzeit": "Niepełny etat",
+    "minijob": "Mini praca",
+    "ausbildung": "Praktyka zawodowa",
+    "praktikum": "Staż",
+    "werkstudent": "Student pracujący"
   }
 }

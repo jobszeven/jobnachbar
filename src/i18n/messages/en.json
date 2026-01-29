@@ -646,26 +646,25 @@
   },
   "industries": {
     "handwerk": "Crafts",
-    "pflege_gesundheit": "Healthcare",
-    "gastro_hotel": "Gastronomy & Hotel",
+    "pflege_gesundheit": "Healthcare & Nursing",
+    "gastro_hotel": "Hospitality",
     "einzelhandel": "Retail",
     "logistik_transport": "Logistics & Transport",
-    "industrie_produktion": "Industry & Production",
+    "industrie_produktion": "Manufacturing",
     "buero_verwaltung": "Office & Administration",
     "it_technik": "IT & Technology",
-    "bau_architektur": "Construction & Architecture",
+    "bau_architektur": "Construction",
     "landwirtschaft": "Agriculture",
-    "bildung_soziales": "Education & Social Work",
+    "bildung_soziales": "Education & Social",
     "sonstiges": "Other"
   },
   "employmentTypes": {
     "vollzeit": "Full-time",
     "teilzeit": "Part-time",
-    "minijob": "Mini-job",
+    "minijob": "Mini job",
     "ausbildung": "Apprenticeship",
     "praktikum": "Internship",
-    "werkstudent": "Working Student",
-    "freelance": "Freelance"
+    "werkstudent": "Working student"
   },
   "email": {
     "greeting": "Hello {name}",
@@ -1755,13 +1754,90 @@
     "alreadyRegistered": "Already registered? Log in",
     "chooseAccountType": "How would you like to use JobNachbar?",
     "chooseAccountTypeSubtitle": "Choose your role – you can add the other role later.",
+    "back": "Back",
+    "next": "Next",
     "applicant": {
       "title": "As Job Seeker",
       "description": "Find your dream job in the region and apply with just a few clicks.",
       "benefit1": "Register & apply for free",
       "benefit2": "Automatic job suggestions",
       "benefit3": "AI-powered application tools",
-      "cta": "Start as Job Seeker"
+      "cta": "Start as Job Seeker",
+      "step1": {
+        "title": "Create your account",
+        "subtitle": "Enter your login credentials",
+        "email": "Email address",
+        "emailPlaceholder": "your@email.com",
+        "password": "Password",
+        "passwordPlaceholder": "At least 8 characters",
+        "passwordConfirm": "Confirm password",
+        "passwordConfirmPlaceholder": "Repeat password"
+      },
+      "step2": {
+        "title": "Personal Information",
+        "subtitle": "Tell us about yourself",
+        "firstName": "First name",
+        "firstNamePlaceholder": "John",
+        "lastName": "Last name",
+        "lastNamePlaceholder": "Doe",
+        "phone": "Phone",
+        "phonePlaceholder": "+49 123 456789",
+        "birthdate": "Date of birth"
+      },
+      "step3": {
+        "title": "Your Location",
+        "subtitle": "Where do you want to work?",
+        "zipCode": "ZIP code",
+        "zipCodePlaceholder": "27404",
+        "city": "City",
+        "cityPlaceholder": "Zeven",
+        "radius": "Search radius: {km} km"
+      },
+      "step4": {
+        "title": "Job Preferences",
+        "subtitle": "What are you looking for?",
+        "jobTitle": "Desired position",
+        "jobTitlePlaceholder": "e.g. Electrician, Sales",
+        "industries": "Preferred industries",
+        "employmentTypes": "Employment type",
+        "experience": "Work experience",
+        "experienceOptions": {
+          "entry": "Entry level",
+          "1-2": "1-2 years",
+          "3-5": "3-5 years",
+          "6-10": "6-10 years",
+          "10+": "More than 10 years"
+        },
+        "availableFrom": "Available from",
+        "salaryExpectation": "Salary expectation",
+        "salaryPlaceholder": "e.g. €3,000 gross"
+      },
+      "step5": {
+        "title": "About You",
+        "subtitle": "Almost done!",
+        "aboutMe": "About me",
+        "aboutMePlaceholder": "Tell us briefly about yourself, your strengths and what you're looking for...",
+        "notificationsLabel": "Notifications",
+        "emailNotifications": "Email notifications",
+        "emailNotificationsDesc": "Receive new jobs via email",
+        "whatsappNotifications": "WhatsApp notifications",
+        "whatsappNotificationsDesc": "Receive new jobs via WhatsApp",
+        "whatsappNumber": "WhatsApp number",
+        "whatsappNumberPlaceholder": "+49 123 456789",
+        "termsText": "By registering you accept our",
+        "terms": "Terms",
+        "and": "and",
+        "privacy": "Privacy Policy",
+        "submit": "Complete registration",
+        "submitting": "Registering..."
+      },
+      "errors": {
+        "registrationFailed": "Registration failed",
+        "fillRequired": "Please fill in all required fields",
+        "passwordMismatch": "Passwords do not match",
+        "passwordLength": "Password must be at least 8 characters long",
+        "genericError": "An error occurred"
+      }
     },
     "employer": {
       "title": "As Employer",
@@ -1854,6 +1930,166 @@
       "subtitle": "Register now for free and find your dream job in the region.",
       "register": "Register now",
       "browseJobs": "View jobs first"
+    }
+  },
+  "login": {
+    "title": "Welcome back",
+    "subtitle": "Sign in to continue",
+    "email": "Email address",
+    "emailPlaceholder": "your@email.com",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "submit": "Sign in",
+    "loggingIn": "Signing in...",
+    "noAccount": "Don't have an account?",
+    "asApplicant": "As Job Seeker",
+    "asEmployer": "As Employer",
+    "resetEmailSent": "Password reset email sent!",
+    "errors": {
+      "invalidCredentials": "Invalid credentials",
+      "enterEmail": "Please enter your email address",
+      "generic": "An error occurred"
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy - JobNachbar",
+      "description": "Privacy Policy of JobNachbar"
+    },
+    "title": "Privacy Policy",
+    "sections": {
+      "overview": {
+        "title": "1. Privacy at a Glance",
+        "content": "The following notes provide a simple overview of what happens to your personal data when you visit this website."
+      },
+      "responsible": {
+        "title": "2. Responsible Party"
+      },
+      "dataCollection": {
+        "title": "3. Data Collection on This Website",
+        "cookies": {
+          "title": "Cookies",
+          "content": "Our website uses cookies. These are small text files that your web browser stores on your device."
+        },
+        "serverLogs": {
+          "title": "Server Log Files",
+          "content": "The provider of the pages automatically collects and stores information in server log files."
+        }
+      },
+      "registration": {
+        "title": "4. Registration on This Website",
+        "content": "You can register on this website to use additional features."
+      },
+      "rights": {
+        "title": "5. Your Rights",
+        "content": "You have the right to free information about your stored personal data, its origin and recipients, and the purpose of data processing, as well as a right to correction or deletion of this data."
+      },
+      "hosting": {
+        "title": "6. Hosting",
+        "content": "Our website is hosted by Vercel Inc."
+      },
+      "supabase": {
+        "title": "7. Supabase",
+        "content": "We use Supabase for authentication and data storage."
+      }
+    }
+  },
+  "imprint": {
+    "meta": {
+      "title": "Legal Notice - JobNachbar",
+      "description": "Legal notice and information about JobNachbar"
+    },
+    "title": "Legal Notice",
+    "backToHome": "Back to homepage",
+    "sections": {
+      "legalInfo": {
+        "title": "Information according to § 5 TMG",
+        "country": "Germany"
+      },
+      "contact": {
+        "title": "Contact",
+        "email": "Email"
+      },
+      "profession": {
+        "title": "Professional Title",
+        "description": "Services in online marketing and web development"
+      },
+      "authority": {
+        "title": "Supervisory Authority",
+        "description": "Trade Office of the City of Zeven"
+      },
+      "vatId": {
+        "title": "VAT ID",
+        "description": "VAT identification number according to § 27 a of the German VAT Act:",
+        "pending": "In application"
+      },
+      "responsible": {
+        "title": "Responsible for content according to § 55 Abs. 2 RStV"
+      },
+      "dispute": {
+        "title": "Dispute Resolution",
+        "description": "The European Commission provides a platform for online dispute resolution (OS):",
+        "noParticipation": "We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board."
+      },
+      "liability": {
+        "title": "Liability for Content",
+        "content1": "As a service provider, we are responsible for our own content on these pages according to general laws.",
+        "content2": "According to §§ 8 to 10 TMG, we are not obliged to monitor transmitted or stored third-party information."
+      },
+      "links": {
+        "title": "Liability for Links",
+        "description": "Our offer contains links to external third-party websites over whose content we have no influence."
+      },
+      "copyright": {
+        "title": "Copyright",
+        "description": "The content and works created by the site operators on these pages are subject to German copyright law."
+      }
+    }
+  },
+  "premium": {
+    "badge": "Premium Membership",
+    "hero": {
+      "subtitle": "Maximize your chances with exclusive features"
+    },
+    "priceCard": {
+      "title": "Premium for Job Seekers",
+      "price": "€9.99",
+      "period": "/ month",
+      "cancelAnytime": "Cancel anytime",
+      "upgradeNow": "Upgrade now"
+    },
+    "features": {
+      "title": "What you get",
+      "freeLabel": "Free",
+      "premiumLabel": "Premium"
+    },
+    "testimonials": {
+      "title": "What our users say"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "cancelAnytime": {
+        "question": "Can I cancel anytime?",
+        "answer": "Yes, you can cancel your Premium subscription at any time at the end of the billing period."
+      },
+      "payment": {
+        "question": "What payment methods are available?",
+        "answer": "We accept credit card, PayPal and SEPA direct debit."
+      },
+      "freeUsage": {
+        "question": "Can I use JobNachbar for free?",
+        "answer": "Yes, all basic features are free. Premium offers additional benefits."
+      },
+      "trial": {
+        "question": "Is there a trial period?",
+        "answer": "You can try all AI tools multiple times for free before deciding on Premium."
+      }
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Become a Premium member now and secure all benefits.",
+      "button": "Go Premium"
     }
   }
 }

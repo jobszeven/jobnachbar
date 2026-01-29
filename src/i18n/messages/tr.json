@@ -645,26 +645,26 @@
     }
   },
   "industries": {
-    "handwerk": "El Sanatları",
-    "pflege_gesundheit": "Sağlık Hizmetleri",
+    "handwerk": "Zanaat",
+    "pflege_gesundheit": "Sağlık & Bakım",
     "gastro_hotel": "Gastronomi & Otel",
     "einzelhandel": "Perakende",
-    "logistik_transport": "Lojistik & Nakliye",
+    "logistik_transport": "Lojistik & Taşımacılık",
     "industrie_produktion": "Sanayi & Üretim",
     "buero_verwaltung": "Ofis & Yönetim",
     "it_technik": "BT & Teknoloji",
     "bau_architektur": "İnşaat & Mimarlık",
     "landwirtschaft": "Tarım",
-    "bildung_soziales": "Eğitim & Sosyal Hizmetler",
+    "bildung_soziales": "Eğitim & Sosyal",
     "sonstiges": "Diğer"
   },
   "employmentTypes": {
-    "vollzeit": "Tam Zamanlı",
-    "teilzeit": "Yarı Zamanlı",
-    "minijob": "Mini İş",
-    "ausbildung": "Staj",
-    "praktikum": "Pratik",
-    "werkstudent": "Çalışan Öğrenci",
+    "vollzeit": "Tam zamanlı",
+    "teilzeit": "Yarı zamanlı",
+    "minijob": "Mini iş",
+    "ausbildung": "Stajyerlik",
+    "praktikum": "Staj",
+    "werkstudent": "Çalışan öğrenci",
     "freelance": "Serbest"
   },
   "email": {
@@ -1752,13 +1752,90 @@
     "alreadyRegistered": "Zaten kayıtlı mısınız? Giriş yapın",
     "chooseAccountType": "JobNachbar'ı nasıl kullanmak istersiniz?",
     "chooseAccountTypeSubtitle": "Rolünüzü seçin – daha sonra diğer rolü ekleyebilirsiniz.",
+    "back": "Geri",
+    "next": "İleri",
     "applicant": {
       "title": "İş Arayan Olarak",
       "description": "Bölgenizdeki hayalinizdeki işi bulun ve birkaç tıklamayla başvurun.",
       "benefit1": "Ücretsiz kayıt ve başvuru",
       "benefit2": "Otomatik iş önerileri",
       "benefit3": "Yapay zeka destekli başvuru araçları",
-      "cta": "İş arayan olarak başla"
+      "cta": "İş arayan olarak başla",
+      "step1": {
+        "title": "Hesabınızı oluşturun",
+        "subtitle": "Giriş bilgilerinizi girin",
+        "email": "E-posta adresi",
+        "emailPlaceholder": "sizin@email.com",
+        "password": "Şifre",
+        "passwordPlaceholder": "En az 8 karakter",
+        "passwordConfirm": "Şifreyi onayla",
+        "passwordConfirmPlaceholder": "Şifreyi tekrarla"
+      },
+      "step2": {
+        "title": "Kişisel Bilgiler",
+        "subtitle": "Bize kendinizden bahsedin",
+        "firstName": "Ad",
+        "firstNamePlaceholder": "Ahmet",
+        "lastName": "Soyad",
+        "lastNamePlaceholder": "Yılmaz",
+        "phone": "Telefon",
+        "phonePlaceholder": "+49 123 456789",
+        "birthdate": "Doğum tarihi"
+      },
+      "step3": {
+        "title": "Konumunuz",
+        "subtitle": "Nerede çalışmak istiyorsunuz?",
+        "zipCode": "Posta kodu",
+        "zipCodePlaceholder": "27404",
+        "city": "Şehir",
+        "cityPlaceholder": "Zeven",
+        "radius": "Arama yarıçapı: {km} km"
+      },
+      "step4": {
+        "title": "İş Tercihleri",
+        "subtitle": "Ne arıyorsunuz?",
+        "jobTitle": "İstenen pozisyon",
+        "jobTitlePlaceholder": "örn. Elektrikçi, Satış",
+        "industries": "Tercih edilen sektörler",
+        "employmentTypes": "İstihdam türü",
+        "experience": "İş deneyimi",
+        "experienceOptions": {
+          "entry": "Yeni mezun",
+          "1-2": "1-2 yıl",
+          "3-5": "3-5 yıl",
+          "6-10": "6-10 yıl",
+          "10+": "10 yıldan fazla"
+        },
+        "availableFrom": "Müsait tarih",
+        "salaryExpectation": "Maaş beklentisi",
+        "salaryPlaceholder": "örn. 3.000 € brüt"
+      },
+      "step5": {
+        "title": "Hakkınızda",
+        "subtitle": "Neredeyse bitti!",
+        "aboutMe": "Hakkımda",
+        "aboutMePlaceholder": "Kendinizden, güçlü yönlerinizden ve ne aradığınızdan kısaca bahsedin...",
+        "notificationsLabel": "Bildirimler",
+        "emailNotifications": "E-posta bildirimleri",
+        "emailNotificationsDesc": "Yeni işleri e-posta ile alın",
+        "whatsappNotifications": "WhatsApp bildirimleri",
+        "whatsappNotificationsDesc": "Yeni işleri WhatsApp ile alın",
+        "whatsappNumber": "WhatsApp numarası",
+        "whatsappNumberPlaceholder": "+49 123 456789",
+        "termsText": "Kaydolarak kabul ediyorsunuz",
+        "terms": "Kullanım Koşulları",
+        "and": "ve",
+        "privacy": "Gizlilik Politikası",
+        "submit": "Kaydı tamamla",
+        "submitting": "Kaydediliyor..."
+      },
+      "errors": {
+        "registrationFailed": "Kayıt başarısız",
+        "fillRequired": "Lütfen tüm gerekli alanları doldurun",
+        "passwordMismatch": "Şifreler eşleşmiyor",
+        "passwordLength": "Şifre en az 8 karakter olmalıdır",
+        "genericError": "Bir hata oluştu"
+      }
     },
     "employer": {
       "title": "İşveren Olarak",
@@ -1851,6 +1928,166 @@
       "subtitle": "Şimdi ücretsiz kayıt olun ve bölgenizdeki hayalinizdeki işi bulun.",
       "register": "Şimdi kayıt ol",
       "browseJobs": "Önce işlere bak"
+    }
+  },
+  "login": {
+    "title": "Tekrar hoş geldiniz",
+    "subtitle": "Devam etmek için giriş yapın",
+    "email": "E-posta adresi",
+    "emailPlaceholder": "sizin@email.com",
+    "password": "Şifre",
+    "rememberMe": "Beni hatırla",
+    "forgotPassword": "Şifremi unuttum?",
+    "submit": "Giriş yap",
+    "loggingIn": "Giriş yapılıyor...",
+    "noAccount": "Hesabınız yok mu?",
+    "asApplicant": "İş Arayan Olarak",
+    "asEmployer": "İşveren Olarak",
+    "resetEmailSent": "Şifre sıfırlama e-postası gönderildi!",
+    "errors": {
+      "invalidCredentials": "Geçersiz kimlik bilgileri",
+      "enterEmail": "Lütfen e-posta adresinizi girin",
+      "generic": "Bir hata oluştu"
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Gizlilik Politikası - JobNachbar",
+      "description": "JobNachbar Gizlilik Politikası"
+    },
+    "title": "Gizlilik Politikası",
+    "sections": {
+      "overview": {
+        "title": "1. Gizlilik Özeti",
+        "content": "Aşağıdaki notlar, bu web sitesini ziyaret ettiğinizde kişisel verilerinize ne olduğuna dair basit bir genel bakış sunar."
+      },
+      "responsible": {
+        "title": "2. Sorumlu Taraf"
+      },
+      "dataCollection": {
+        "title": "3. Bu Web Sitesinde Veri Toplama",
+        "cookies": {
+          "title": "Çerezler",
+          "content": "Web sitemiz çerezler kullanmaktadır. Bunlar, web tarayıcınızın cihazınızda depoladığı küçük metin dosyalarıdır."
+        },
+        "serverLogs": {
+          "title": "Sunucu Günlük Dosyaları",
+          "content": "Sayfaların sağlayıcısı, sunucu günlük dosyalarında otomatik olarak bilgi toplar ve saklar."
+        }
+      },
+      "registration": {
+        "title": "4. Bu Web Sitesinde Kayıt",
+        "content": "Ek özellikleri kullanmak için bu web sitesine kaydolabilirsiniz."
+      },
+      "rights": {
+        "title": "5. Haklarınız",
+        "content": "Saklanan kişisel verileriniz, kaynağı ve alıcıları ve veri işleme amacı hakkında ücretsiz bilgi alma hakkına ve bu verilerin düzeltilmesi veya silinmesi hakkına sahipsiniz."
+      },
+      "hosting": {
+        "title": "6. Barındırma",
+        "content": "Web sitemiz Vercel Inc. tarafından barındırılmaktadır."
+      },
+      "supabase": {
+        "title": "7. Supabase",
+        "content": "Kimlik doğrulama ve veri depolama için Supabase kullanıyoruz."
+      }
+    }
+  },
+  "imprint": {
+    "meta": {
+      "title": "Yasal Bildirim - JobNachbar",
+      "description": "JobNachbar hakkında yasal bildirim ve bilgiler"
+    },
+    "title": "Yasal Bildirim",
+    "backToHome": "Ana sayfaya dön",
+    "sections": {
+      "legalInfo": {
+        "title": "§ 5 TMG'ye göre bilgiler",
+        "country": "Almanya"
+      },
+      "contact": {
+        "title": "İletişim",
+        "email": "E-posta"
+      },
+      "profession": {
+        "title": "Meslek Unvanı",
+        "description": "Çevrimiçi pazarlama ve web geliştirme hizmetleri"
+      },
+      "authority": {
+        "title": "Denetim Makamı",
+        "description": "Zeven Belediyesi Ticaret Ofisi"
+      },
+      "vatId": {
+        "title": "KDV Kimlik No",
+        "description": "Alman KDV Yasası § 27 a'ya göre KDV kimlik numarası:",
+        "pending": "Başvuru aşamasında"
+      },
+      "responsible": {
+        "title": "§ 55 Abs. 2 RStV'ye göre içerikten sorumlu"
+      },
+      "dispute": {
+        "title": "Anlaşmazlık Çözümü",
+        "description": "Avrupa Komisyonu çevrimiçi anlaşmazlık çözümü (OS) için bir platform sağlar:",
+        "noParticipation": "Bir tüketici tahkim kurulu önünde anlaşmazlık çözümü süreçlerine katılmaya istekli veya zorunlu değiliz."
+      },
+      "liability": {
+        "title": "İçerik Sorumluluğu",
+        "content1": "Bir hizmet sağlayıcı olarak, genel yasalara göre bu sayfalardaki kendi içeriğimizden sorumluyuz.",
+        "content2": "§§ 8-10 TMG'ye göre, iletilen veya depolanan üçüncü taraf bilgilerini izlemekle yükümlü değiliz."
+      },
+      "links": {
+        "title": "Bağlantı Sorumluluğu",
+        "description": "Teklifimiz, içerikleri üzerinde hiçbir etkimizin olmadığı harici üçüncü taraf web sitelerine bağlantılar içerir."
+      },
+      "copyright": {
+        "title": "Telif Hakkı",
+        "description": "Site operatörleri tarafından bu sayfalarda oluşturulan içerik ve eserler Alman telif hakkı yasasına tabidir."
+      }
+    }
+  },
+  "premium": {
+    "badge": "Premium Üyelik",
+    "hero": {
+      "subtitle": "Özel özelliklerle şansınızı artırın"
+    },
+    "priceCard": {
+      "title": "İş Arayanlar için Premium",
+      "price": "9,99 €",
+      "period": "/ ay",
+      "cancelAnytime": "İstediğiniz zaman iptal edin",
+      "upgradeNow": "Şimdi yükseltin"
+    },
+    "features": {
+      "title": "Ne elde edersiniz",
+      "freeLabel": "Ücretsiz",
+      "premiumLabel": "Premium"
+    },
+    "testimonials": {
+      "title": "Kullanıcılarımız ne diyor"
+    },
+    "faq": {
+      "title": "Sık Sorulan Sorular",
+      "cancelAnytime": {
+        "question": "İstediğim zaman iptal edebilir miyim?",
+        "answer": "Evet, Premium aboneliğinizi faturalandırma döneminin sonunda istediğiniz zaman iptal edebilirsiniz."
+      },
+      "payment": {
+        "question": "Hangi ödeme yöntemleri mevcut?",
+        "answer": "Kredi kartı, PayPal ve SEPA doğrudan borçlandırma kabul ediyoruz."
+      },
+      "freeUsage": {
+        "question": "JobNachbar'ı ücretsiz kullanabilir miyim?",
+        "answer": "Evet, tüm temel özellikler ücretsizdir. Premium ek avantajlar sunar."
+      },
+      "trial": {
+        "question": "Deneme süresi var mı?",
+        "answer": "Premium'a karar vermeden önce tüm yapay zeka araçlarını birkaç kez ücretsiz deneyebilirsiniz."
+      }
+    },
+    "cta": {
+      "title": "Başlamaya hazır mısınız?",
+      "subtitle": "Şimdi Premium üye olun ve tüm avantajları güvence altına alın.",
+      "button": "Premium ol"
     }
   }
 }

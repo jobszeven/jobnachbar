@@ -647,7 +647,7 @@
   "industries": {
     "handwerk": "Handwerk",
     "pflege_gesundheit": "Pflege & Gesundheit",
-    "gastro_hotel": "Gastro & Hotel",
+    "gastro_hotel": "Gastronomie & Hotel",
     "einzelhandel": "Einzelhandel",
     "logistik_transport": "Logistik & Transport",
     "industrie_produktion": "Industrie & Produktion",
@@ -1845,7 +1845,82 @@
       "benefit1": "Kostenlos registrieren & bewerben",
       "benefit2": "Automatische Job-Vorschläge",
       "benefit3": "KI-gestützte Bewerbungstools",
-      "cta": "Als Bewerber starten"
+      "cta": "Als Bewerber starten",
+      "step1": {
+        "title": "Erstelle deinen Account",
+        "subtitle": "Gib deine Login-Daten ein",
+        "email": "E-Mail-Adresse",
+        "emailPlaceholder": "deine@email.de",
+        "password": "Passwort",
+        "passwordPlaceholder": "Mindestens 8 Zeichen",
+        "passwordConfirm": "Passwort bestätigen",
+        "passwordConfirmPlaceholder": "Passwort wiederholen"
+      },
+      "step2": {
+        "title": "Persönliche Daten",
+        "subtitle": "Erzähl uns etwas über dich",
+        "firstName": "Vorname",
+        "firstNamePlaceholder": "Max",
+        "lastName": "Nachname",
+        "lastNamePlaceholder": "Mustermann",
+        "phone": "Telefon",
+        "phonePlaceholder": "+49 123 456789",
+        "birthdate": "Geburtsdatum"
+      },
+      "step3": {
+        "title": "Dein Standort",
+        "subtitle": "Wo möchtest du arbeiten?",
+        "zipCode": "PLZ",
+        "zipCodePlaceholder": "27404",
+        "city": "Stadt",
+        "cityPlaceholder": "Zeven",
+        "radius": "Suchradius: {km} km"
+      },
+      "step4": {
+        "title": "Job-Präferenzen",
+        "subtitle": "Was suchst du?",
+        "jobTitle": "Gewünschte Position",
+        "jobTitlePlaceholder": "z.B. Elektriker, Verkäufer",
+        "industries": "Bevorzugte Branchen",
+        "employmentTypes": "Anstellungsart",
+        "experience": "Berufserfahrung",
+        "experienceOptions": {
+          "entry": "Berufseinsteiger",
+          "1-2": "1-2 Jahre",
+          "3-5": "3-5 Jahre",
+          "6-10": "6-10 Jahre",
+          "10+": "Mehr als 10 Jahre"
+        },
+        "availableFrom": "Verfügbar ab",
+        "salaryExpectation": "Gehaltsvorstellung",
+        "salaryPlaceholder": "z.B. 3.000 € brutto"
+      },
+      "step5": {
+        "title": "Über dich",
+        "subtitle": "Fast geschafft!",
+        "aboutMe": "Über mich",
+        "aboutMePlaceholder": "Erzähle kurz von dir, deinen Stärken und was du suchst...",
+        "notificationsLabel": "Benachrichtigungen",
+        "emailNotifications": "E-Mail-Benachrichtigungen",
+        "emailNotificationsDesc": "Erhalte neue Jobs per E-Mail",
+        "whatsappNotifications": "WhatsApp-Benachrichtigungen",
+        "whatsappNotificationsDesc": "Erhalte neue Jobs per WhatsApp",
+        "whatsappNumber": "WhatsApp-Nummer",
+        "whatsappNumberPlaceholder": "+49 123 456789",
+        "termsText": "Mit der Registrierung akzeptierst du unsere",
+        "terms": "AGB",
+        "and": "und",
+        "privacy": "Datenschutzerklärung",
+        "submit": "Registrierung abschließen",
+        "submitting": "Wird registriert..."
+      },
+      "errors": {
+        "registrationFailed": "Registrierung fehlgeschlagen",
+        "fillRequired": "Bitte fülle alle Pflichtfelder aus",
+        "passwordMismatch": "Die Passwörter stimmen nicht überein",
+        "passwordLength": "Das Passwort muss mindestens 8 Zeichen lang sein",
+        "genericError": "Ein Fehler ist aufgetreten"
+      }
     },
     "employer": {
       "title": "Als Arbeitgeber",
@@ -1855,7 +1930,9 @@
       "benefit3": "Einfache Bewerberverwaltung",
       "cta": "Als Arbeitgeber starten"
     },
-    "canAddOtherAccountLater": "Du kannst später jederzeit auch die andere Rolle zu deinem Konto hinzufügen."
+    "canAddOtherAccountLater": "Du kannst später jederzeit auch die andere Rolle zu deinem Konto hinzufügen.",
+    "back": "Zurück",
+    "next": "Weiter"
   },
   "forApplicantsPage": {
     "badge": "Für Bewerber",
@@ -1938,6 +2015,166 @@
       "subtitle": "Registriere dich jetzt kostenlos und finde deinen Traumjob in der Region.",
       "register": "Jetzt registrieren",
       "browseJobs": "Erst Jobs ansehen"
+    }
+  },
+  "login": {
+    "title": "Willkommen zurück",
+    "subtitle": "Melde dich an, um fortzufahren",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "deine@email.de",
+    "password": "Passwort",
+    "rememberMe": "Angemeldet bleiben",
+    "forgotPassword": "Passwort vergessen?",
+    "submit": "Anmelden",
+    "loggingIn": "Wird angemeldet...",
+    "noAccount": "Noch kein Konto?",
+    "asApplicant": "Als Bewerber",
+    "asEmployer": "Als Arbeitgeber",
+    "resetEmailSent": "E-Mail zum Zurücksetzen wurde gesendet!",
+    "errors": {
+      "invalidCredentials": "Ungültige Anmeldedaten",
+      "enterEmail": "Bitte gib deine E-Mail-Adresse ein",
+      "generic": "Ein Fehler ist aufgetreten"
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Datenschutz - JobNachbar",
+      "description": "Datenschutzerklärung von JobNachbar"
+    },
+    "title": "Datenschutzerklärung",
+    "sections": {
+      "overview": {
+        "title": "1. Datenschutz auf einen Blick",
+        "content": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen."
+      },
+      "responsible": {
+        "title": "2. Verantwortliche Stelle"
+      },
+      "dataCollection": {
+        "title": "3. Datenerfassung auf dieser Website",
+        "cookies": {
+          "title": "Cookies",
+          "content": "Unsere Website verwendet Cookies. Das sind kleine Textdateien, die Ihr Webbrowser auf Ihrem Endgerät speichert."
+        },
+        "serverLogs": {
+          "title": "Server-Log-Dateien",
+          "content": "Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien."
+        }
+      },
+      "registration": {
+        "title": "4. Registrierung auf dieser Website",
+        "content": "Sie können sich auf dieser Website registrieren, um zusätzliche Funktionen auf der Seite zu nutzen."
+      },
+      "rights": {
+        "title": "5. Ihre Rechte",
+        "content": "Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung oder Löschung dieser Daten."
+      },
+      "hosting": {
+        "title": "6. Hosting",
+        "content": "Unsere Website wird bei Vercel Inc. gehostet."
+      },
+      "supabase": {
+        "title": "7. Supabase",
+        "content": "Wir nutzen Supabase für die Authentifizierung und Datenspeicherung."
+      }
+    }
+  },
+  "imprint": {
+    "meta": {
+      "title": "Impressum - JobNachbar",
+      "description": "Impressum und rechtliche Informationen von JobNachbar"
+    },
+    "title": "Impressum",
+    "backToHome": "Zurück zur Startseite",
+    "sections": {
+      "legalInfo": {
+        "title": "Angaben gemäß § 5 TMG",
+        "country": "Deutschland"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "email": "E-Mail"
+      },
+      "profession": {
+        "title": "Berufsbezeichnung",
+        "description": "Dienstleistungen im Bereich Online-Marketing und Webentwicklung"
+      },
+      "authority": {
+        "title": "Zuständige Aufsichtsbehörde",
+        "description": "Gewerbeamt der Stadt Zeven"
+      },
+      "vatId": {
+        "title": "Umsatzsteuer-ID",
+        "description": "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:",
+        "pending": "In Beantragung"
+      },
+      "responsible": {
+        "title": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV"
+      },
+      "dispute": {
+        "title": "Streitschlichtung",
+        "description": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:",
+        "noParticipation": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+      },
+      "liability": {
+        "title": "Haftung für Inhalte",
+        "content1": "Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.",
+        "content2": "Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen."
+      },
+      "links": {
+        "title": "Haftung für Links",
+        "description": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben."
+      },
+      "copyright": {
+        "title": "Urheberrecht",
+        "description": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht."
+      }
+    }
+  },
+  "premium": {
+    "badge": "Premium Mitgliedschaft",
+    "hero": {
+      "subtitle": "Maximiere deine Chancen mit exklusiven Features"
+    },
+    "priceCard": {
+      "title": "Premium für Bewerber",
+      "price": "9,99 €",
+      "period": "/ Monat",
+      "cancelAnytime": "Jederzeit kündbar",
+      "upgradeNow": "Jetzt upgraden"
+    },
+    "features": {
+      "title": "Was du bekommst",
+      "freeLabel": "Kostenlos",
+      "premiumLabel": "Premium"
+    },
+    "testimonials": {
+      "title": "Das sagen unsere Nutzer"
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "cancelAnytime": {
+        "question": "Kann ich jederzeit kündigen?",
+        "answer": "Ja, du kannst dein Premium-Abo jederzeit zum Ende des Abrechnungszeitraums kündigen."
+      },
+      "payment": {
+        "question": "Welche Zahlungsmethoden gibt es?",
+        "answer": "Wir akzeptieren Kreditkarte, PayPal und SEPA-Lastschrift."
+      },
+      "freeUsage": {
+        "question": "Kann ich JobNachbar auch kostenlos nutzen?",
+        "answer": "Ja, alle Grundfunktionen sind kostenlos. Premium bietet zusätzliche Vorteile."
+      },
+      "trial": {
+        "question": "Gibt es eine Testphase?",
+        "answer": "Du kannst alle KI-Tools mehrfach kostenlos testen, bevor du dich für Premium entscheidest."
+      }
+    },
+    "cta": {
+      "title": "Bereit durchzustarten?",
+      "subtitle": "Werde jetzt Premium-Mitglied und sichere dir alle Vorteile.",
+      "button": "Premium werden"
     }
   }
 }
