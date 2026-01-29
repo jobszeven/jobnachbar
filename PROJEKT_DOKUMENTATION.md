@@ -145,7 +145,18 @@ export default async function Page() {
 - `applicationTips` - Bewerbungstipps
 - `industriesPage` - Branchen
 - `resumeCheck` - Lebenslauf-Check
+- `tools` - KI-Tools Übersicht
+- `login` - Anmeldeseite
+- `register` - Registrierung
+- `premium` - Premium-Seite
+- `legal` - Impressum
+- `privacy` - Datenschutz
+- `terms` - AGB
+- `appInstall` - App-Installation (PWA)
+- `appBanner` - Mobile App Banner
+- `cookies` - Cookie Banner
 - `footer` - Footer
+- `common` - Gemeinsame Texte
 
 ---
 
@@ -231,15 +242,35 @@ NEXT_PUBLIC_APP_URL=https://jobnachbar.de
 | `/tools/interview-coach` | Interview-Vorbereitung | ✅ |
 | `/tools/gehaltsverhandlung` | Gehaltsverhandlung | ✅ |
 
+### Rechtliche Seiten
+
+| Pfad | Beschreibung | i18n |
+|------|--------------|------|
+| `/impressum` | Impressum | ✅ |
+| `/datenschutz` | Datenschutzerklärung | ✅ |
+| `/agb` | Allgemeine Geschäftsbedingungen | ✅ |
+
+### Premium & Registrierung
+
+| Pfad | Beschreibung | i18n |
+|------|--------------|------|
+| `/premium` | Premium-Mitgliedschaft | ✅ |
+| `/login` | Anmeldung | ✅ |
+| `/registrieren` | Registrierungs-Auswahl | ✅ |
+| `/registrieren/bewerber` | Bewerber-Registrierung | ✅ |
+| `/registrieren/arbeitgeber` | Arbeitgeber-Registrierung | ✅ |
+| `/app-installieren` | PWA-Installation | ✅ |
+
 ### Authentifizierte Seiten
 
 | Pfad | Beschreibung |
 |------|--------------|
-| `/dashboard` | Benutzer-Dashboard |
-| `/dashboard/jobs` | Meine Jobs (Arbeitgeber) |
-| `/dashboard/profile` | Profil bearbeiten |
-| `/auth/login` | Anmeldung |
-| `/auth/register` | Registrierung |
+| `/dashboard/arbeitgeber` | Arbeitgeber-Dashboard |
+| `/dashboard/bewerber` | Bewerber-Dashboard |
+| `/dashboard/arbeitgeber/stelle-erstellen` | Neue Stelle erstellen |
+| `/dashboard/arbeitgeber/bewerbungen` | Bewerbungen verwalten |
+| `/dashboard/bewerber/favoriten` | Gemerkte Jobs |
+| `/dashboard/bewerber/profil` | Profil bearbeiten |
 
 ---
 

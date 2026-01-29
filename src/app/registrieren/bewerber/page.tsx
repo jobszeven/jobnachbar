@@ -6,54 +6,59 @@ import { useRouter } from 'next/navigation'
 import { ArrowLeft, ArrowRight, CheckCircle, Loader2 } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import Logo from '@/components/Logo'
-
-const INDUSTRIES = [
-  { value: 'handwerk', label: 'Handwerk' },
-  { value: 'pflege_gesundheit', label: 'Pflege & Gesundheit' },
-  { value: 'gastro_hotel', label: 'Gastro & Hotel' },
-  { value: 'einzelhandel', label: 'Einzelhandel' },
-  { value: 'logistik_transport', label: 'Logistik & Transport' },
-  { value: 'industrie_produktion', label: 'Industrie & Produktion' },
-  { value: 'buero_verwaltung', label: 'Büro & Verwaltung' },
-  { value: 'it_technik', label: 'IT & Technik' },
-  { value: 'bau_architektur', label: 'Bau & Architektur' },
-  { value: 'landwirtschaft', label: 'Landwirtschaft' },
-  { value: 'bildung_soziales', label: 'Bildung & Soziales' },
-  { value: 'sonstiges', label: 'Sonstiges' },
-]
-
-const EMPLOYMENT_TYPES = [
-  { value: 'vollzeit', label: 'Vollzeit' },
-  { value: 'teilzeit', label: 'Teilzeit' },
-  { value: 'minijob', label: 'Minijob' },
-  { value: 'ausbildung', label: 'Ausbildung' },
-  { value: 'praktikum', label: 'Praktikum' },
-  { value: 'werkstudent', label: 'Werkstudent' },
-]
+import { useTranslations } from 'next-intl'
 
 export default function BewerberRegistrierung() {
   const router = useRouter()
+  const t = useTranslations('register')
+  const tIndustries = useTranslations('industries')
+  const tEmploymentTypes = useTranslations('employmentTypes')
+
   const [step, setStep] = useState(1)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
-  
+
+  const INDUSTRIES = [
+    { value: 'handwerk', label: tIndustries('handwerk') },
+    { value: 'pflege_gesundheit', label: tIndustries('pflege_gesundheit') },
+    { value: 'gastro_hotel', label: tIndustries('gastro_hotel') },
+    { value: 'einzelhandel', label: tIndustries('einzelhandel') },
+    { value: 'logistik_transport', label: tIndustries('logistik_transport') },
+    { value: 'industrie_produktion', label: tIndustries('industrie_produktion') },
+    { value: 'buero_verwaltung', label: tIndustries('buero_verwaltung') },
+    { value: 'it_technik', label: tIndustries('it_technik') },
+    { value: 'bau_architektur', label: tIndustries('bau_architektur') },
+    { value: 'landwirtschaft', label: tIndustries('landwirtschaft') },
+    { value: 'bildung_soziales', label: tIndustries('bildung_soziales') },
+    { value: 'sonstiges', label: tIndustries('sonstiges') },
+  ]
+
+  const EMPLOYMENT_TYPES = [
+    { value: 'vollzeit', label: tEmploymentTypes('vollzeit') },
+    { value: 'teilzeit', label: tEmploymentTypes('teilzeit') },
+    { value: 'minijob', label: tEmploymentTypes('minijob') },
+    { value: 'ausbildung', label: tEmploymentTypes('ausbildung') },
+    { value: 'praktikum', label: tEmploymentTypes('praktikum') },
+    { value: 'werkstudent', label: tEmploymentTypes('werkstudent') },
+  ]
+
   const [formData, setFormData] = useState({
     // Step 1: Account
     email: '',
     password: '',
     passwordConfirm: '',
-    
+
     // Step 2: Personal Info
     firstName: '',
     lastName: '',
     phone: '',
     birthdate: '',
-    
+
     // Step 3: Location
     zipCode: '',
     city: '',
     radiusKm: 30,
-    
+
     // Step 4: Job Preferences
     jobTitleWanted: '',
     industries: [] as string[],
@@ -61,7 +66,7 @@ export default function BewerberRegistrierung() {
     experienceYears: 0,
     availableFrom: '',
     salaryExpectation: '',
-    
+
     // Step 5: About
     aboutMe: '',
     emailNotifications: true,
@@ -87,10 +92,10 @@ export default function BewerberRegistrierung() {
   const handleSubmit = async () => {
     setLoading(true)
     setError('')
-    
+
     try {
       const supabase = createClient()
-      
+
       // 1. Create auth user
       const { data: authData, error: authError } = await supabase.auth.signUp({
         email: formData.email,
@@ -103,10 +108,10 @@ export default function BewerberRegistrierung() {
           }
         }
       })
-      
+
       if (authError) throw authError
-      if (!authData.user) throw new Error('Registrierung fehlgeschlagen')
-      
+      if (!authData.user) throw new Error(t('applicant.errors.registrationFailed'))
+
       // 2. Create user profile
       const { error: profileError } = await supabase
         .from('users')
@@ -131,14 +136,14 @@ export default function BewerberRegistrierung() {
           whatsapp_notifications: formData.whatsappNotifications,
           whatsapp_number: formData.whatsappNumber,
         })
-      
+
       if (profileError) throw profileError
-      
+
       // Success - redirect to dashboard
       router.push('/dashboard/bewerber?welcome=true')
-      
+
     } catch (err: any) {
-      setError(err.message || 'Ein Fehler ist aufgetreten')
+      setError(err.message || t('applicant.errors.genericError'))
     } finally {
       setLoading(false)
     }
@@ -148,31 +153,31 @@ export default function BewerberRegistrierung() {
     // Validation for each step
     if (step === 1) {
       if (!formData.email || !formData.password) {
-        setError('Bitte fülle alle Pflichtfelder aus')
+        setError(t('applicant.errors.fillRequired'))
         return
       }
       if (formData.password !== formData.passwordConfirm) {
-        setError('Passwörter stimmen nicht überein')
+        setError(t('applicant.errors.passwordMismatch'))
         return
       }
       if (formData.password.length < 8) {
-        setError('Passwort muss mindestens 8 Zeichen haben')
+        setError(t('applicant.errors.passwordLength'))
         return
       }
     }
     if (step === 2) {
       if (!formData.firstName || !formData.lastName) {
-        setError('Bitte fülle alle Pflichtfelder aus')
+        setError(t('applicant.errors.fillRequired'))
         return
       }
     }
     if (step === 3) {
       if (!formData.zipCode || !formData.city) {
-        setError('Bitte fülle alle Pflichtfelder aus')
+        setError(t('applicant.errors.fillRequired'))
         return
       }
     }
-    
+
     setError('')
     setStep(prev => prev + 1)
   }
@@ -192,7 +197,7 @@ export default function BewerberRegistrierung() {
               <Logo size="md" />
             </Link>
             <Link href="/login" className="text-gray-300 hover:text-white transition-colors">
-              Bereits registriert? Anmelden
+              {t('alreadyRegistered')}
             </Link>
           </div>
         </div>
@@ -203,11 +208,11 @@ export default function BewerberRegistrierung() {
         <div className="mb-8">
           <div className="flex justify-between mb-2">
             {[1, 2, 3, 4, 5].map(i => (
-              <div 
+              <div
                 key={i}
                 className={`flex items-center justify-center w-10 h-10 rounded-full text-sm font-medium
-                  ${i < step ? 'bg-brand-emerald text-white' : 
-                    i === step ? 'bg-brand-blue text-brand-navy' : 
+                  ${i < step ? 'bg-brand-emerald text-white' :
+                    i === step ? 'bg-brand-blue text-brand-navy' :
                     'bg-gray-700 text-gray-400'}`}
               >
                 {i < step ? <CheckCircle className="w-5 h-5" /> : i}
@@ -215,7 +220,7 @@ export default function BewerberRegistrierung() {
             ))}
           </div>
           <div className="h-2 bg-gray-700 rounded-full">
-            <div 
+            <div
               className="h-2 bg-brand-blue rounded-full transition-all"
               style={{ width: `${(step / 5) * 100}%` }}
             />
@@ -233,36 +238,36 @@ export default function BewerberRegistrierung() {
           {/* Step 1: Account */}
           {step === 1 && (
             <div>
-              <h2 className="text-2xl font-bold text-white mb-2">Account erstellen</h2>
-              <p className="text-gray-400 mb-6">Deine Login-Daten für JobNachbar</p>
-              
+              <h2 className="text-2xl font-bold text-white mb-2">{t('applicant.step1.title')}</h2>
+              <p className="text-gray-400 mb-6">{t('applicant.step1.subtitle')}</p>
+
               <div className="space-y-4">
                 <div>
-                  <label className="input-label">E-Mail Adresse *</label>
+                  <label className="input-label">{t('applicant.step1.email')} *</label>
                   <input
                     type="email"
                     className="input-field"
-                    placeholder="max@beispiel.de"
+                    placeholder={t('applicant.step1.emailPlaceholder')}
                     value={formData.email}
                     onChange={e => updateFormData('email', e.target.value)}
                   />
                 </div>
                 <div>
-                  <label className="input-label">Passwort *</label>
+                  <label className="input-label">{t('applicant.step1.password')} *</label>
                   <input
                     type="password"
                     className="input-field"
-                    placeholder="Mindestens 8 Zeichen"
+                    placeholder={t('applicant.step1.passwordPlaceholder')}
                     value={formData.password}
                     onChange={e => updateFormData('password', e.target.value)}
                   />
                 </div>
                 <div>
-                  <label className="input-label">Passwort wiederholen *</label>
+                  <label className="input-label">{t('applicant.step1.passwordConfirm')} *</label>
                   <input
                     type="password"
                     className="input-field"
-                    placeholder="Passwort bestätigen"
+                    placeholder={t('applicant.step1.passwordConfirmPlaceholder')}
                     value={formData.passwordConfirm}
                     onChange={e => updateFormData('passwordConfirm', e.target.value)}
                   />
@@ -274,44 +279,44 @@ export default function BewerberRegistrierung() {
           {/* Step 2: Personal Info */}
           {step === 2 && (
             <div>
-              <h2 className="text-2xl font-bold text-white mb-2">Persönliche Daten</h2>
-              <p className="text-gray-400 mb-6">Wie können Arbeitgeber dich erreichen?</p>
-              
+              <h2 className="text-2xl font-bold text-white mb-2">{t('applicant.step2.title')}</h2>
+              <p className="text-gray-400 mb-6">{t('applicant.step2.subtitle')}</p>
+
               <div className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="input-label">Vorname *</label>
+                    <label className="input-label">{t('applicant.step2.firstName')} *</label>
                     <input
                       type="text"
                       className="input-field"
-                      placeholder="Max"
+                      placeholder={t('applicant.step2.firstNamePlaceholder')}
                       value={formData.firstName}
                       onChange={e => updateFormData('firstName', e.target.value)}
                     />
                   </div>
                   <div>
-                    <label className="input-label">Nachname *</label>
+                    <label className="input-label">{t('applicant.step2.lastName')} *</label>
                     <input
                       type="text"
                       className="input-field"
-                      placeholder="Mustermann"
+                      placeholder={t('applicant.step2.lastNamePlaceholder')}
                       value={formData.lastName}
                       onChange={e => updateFormData('lastName', e.target.value)}
                     />
                   </div>
                 </div>
                 <div>
-                  <label className="input-label">Telefonnummer</label>
+                  <label className="input-label">{t('applicant.step2.phone')}</label>
                   <input
                     type="tel"
                     className="input-field"
-                    placeholder="0151 12345678"
+                    placeholder={t('applicant.step2.phonePlaceholder')}
                     value={formData.phone}
                     onChange={e => updateFormData('phone', e.target.value)}
                   />
                 </div>
                 <div>
-                  <label className="input-label">Geburtsdatum</label>
+                  <label className="input-label">{t('applicant.step2.birthdate')}</label>
                   <input
                     type="date"
                     className="input-field"
@@ -326,35 +331,35 @@ export default function BewerberRegistrierung() {
           {/* Step 3: Location */}
           {step === 3 && (
             <div>
-              <h2 className="text-2xl font-bold text-white mb-2">Dein Standort</h2>
-              <p className="text-gray-400 mb-6">Wo möchtest du arbeiten?</p>
-              
+              <h2 className="text-2xl font-bold text-white mb-2">{t('applicant.step3.title')}</h2>
+              <p className="text-gray-400 mb-6">{t('applicant.step3.subtitle')}</p>
+
               <div className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="input-label">Postleitzahl *</label>
+                    <label className="input-label">{t('applicant.step3.zipCode')} *</label>
                     <input
                       type="text"
                       className="input-field"
-                      placeholder="27404"
+                      placeholder={t('applicant.step3.zipCodePlaceholder')}
                       maxLength={5}
                       value={formData.zipCode}
                       onChange={e => updateFormData('zipCode', e.target.value)}
                     />
                   </div>
                   <div>
-                    <label className="input-label">Stadt *</label>
+                    <label className="input-label">{t('applicant.step3.city')} *</label>
                     <input
                       type="text"
                       className="input-field"
-                      placeholder="Zeven"
+                      placeholder={t('applicant.step3.cityPlaceholder')}
                       value={formData.city}
                       onChange={e => updateFormData('city', e.target.value)}
                     />
                   </div>
                 </div>
                 <div>
-                  <label className="input-label">Suchradius: {formData.radiusKm} km</label>
+                  <label className="input-label">{t('applicant.step3.radius', { km: formData.radiusKm })}</label>
                   <input
                     type="range"
                     min="5"
@@ -376,30 +381,30 @@ export default function BewerberRegistrierung() {
           {/* Step 4: Job Preferences */}
           {step === 4 && (
             <div>
-              <h2 className="text-2xl font-bold text-white mb-2">Was suchst du?</h2>
-              <p className="text-gray-400 mb-6">Je genauer, desto bessere Matches</p>
-              
+              <h2 className="text-2xl font-bold text-white mb-2">{t('applicant.step4.title')}</h2>
+              <p className="text-gray-400 mb-6">{t('applicant.step4.subtitle')}</p>
+
               <div className="space-y-6">
                 <div>
-                  <label className="input-label">Gewünschter Job / Berufsbezeichnung</label>
+                  <label className="input-label">{t('applicant.step4.jobTitle')}</label>
                   <input
                     type="text"
                     className="input-field"
-                    placeholder="z.B. KFZ-Mechatroniker, Pflegefachkraft, Verkäufer"
+                    placeholder={t('applicant.step4.jobTitlePlaceholder')}
                     value={formData.jobTitleWanted}
                     onChange={e => updateFormData('jobTitleWanted', e.target.value)}
                   />
                 </div>
 
                 <div>
-                  <label className="input-label">Branchen (mehrere möglich)</label>
+                  <label className="input-label">{t('applicant.step4.industries')}</label>
                   <div className="grid grid-cols-2 gap-2 mt-2">
                     {INDUSTRIES.map(industry => (
                       <label
                         key={industry.value}
                         className={`flex items-center p-3 rounded-lg border cursor-pointer transition-colors
-                          ${formData.industries.includes(industry.value) 
-                            ? 'border-brand-red bg-brand-blue/10 text-white' 
+                          ${formData.industries.includes(industry.value)
+                            ? 'border-brand-red bg-brand-blue/10 text-white'
                             : 'border-gray-700 text-gray-400 hover:border-gray-600'}`}
                       >
                         <input
@@ -415,14 +420,14 @@ export default function BewerberRegistrierung() {
                 </div>
 
                 <div>
-                  <label className="input-label">Beschäftigungsart (mehrere möglich)</label>
+                  <label className="input-label">{t('applicant.step4.employmentTypes')}</label>
                   <div className="grid grid-cols-2 gap-2 mt-2">
                     {EMPLOYMENT_TYPES.map(type => (
                       <label
                         key={type.value}
                         className={`flex items-center p-3 rounded-lg border cursor-pointer transition-colors
-                          ${formData.employmentTypes.includes(type.value) 
-                            ? 'border-brand-red bg-brand-blue/10 text-white' 
+                          ${formData.employmentTypes.includes(type.value)
+                            ? 'border-brand-red bg-brand-blue/10 text-white'
                             : 'border-gray-700 text-gray-400 hover:border-gray-600'}`}
                       >
                         <input
@@ -439,21 +444,21 @@ export default function BewerberRegistrierung() {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="input-label">Berufserfahrung (Jahre)</label>
+                    <label className="input-label">{t('applicant.step4.experience')}</label>
                     <select
                       className="input-field"
                       value={formData.experienceYears}
                       onChange={e => updateFormData('experienceYears', parseInt(e.target.value))}
                     >
-                      <option value={0}>Keine / Berufseinsteiger</option>
-                      <option value={1}>1-2 Jahre</option>
-                      <option value={3}>3-5 Jahre</option>
-                      <option value={6}>6-10 Jahre</option>
-                      <option value={10}>Mehr als 10 Jahre</option>
+                      <option value={0}>{t('applicant.step4.experienceOptions.entry')}</option>
+                      <option value={1}>{t('applicant.step4.experienceOptions.1-2')}</option>
+                      <option value={3}>{t('applicant.step4.experienceOptions.3-5')}</option>
+                      <option value={6}>{t('applicant.step4.experienceOptions.6-10')}</option>
+                      <option value={10}>{t('applicant.step4.experienceOptions.10+')}</option>
                     </select>
                   </div>
                   <div>
-                    <label className="input-label">Verfügbar ab</label>
+                    <label className="input-label">{t('applicant.step4.availableFrom')}</label>
                     <input
                       type="date"
                       className="input-field"
@@ -464,11 +469,11 @@ export default function BewerberRegistrierung() {
                 </div>
 
                 <div>
-                  <label className="input-label">Gehaltsvorstellung (optional)</label>
+                  <label className="input-label">{t('applicant.step4.salaryExpectation')}</label>
                   <input
                     type="text"
                     className="input-field"
-                    placeholder="z.B. 2.500€ brutto, 15€/Stunde, Verhandlungsbasis"
+                    placeholder={t('applicant.step4.salaryPlaceholder')}
                     value={formData.salaryExpectation}
                     onChange={e => updateFormData('salaryExpectation', e.target.value)}
                   />
@@ -480,28 +485,28 @@ export default function BewerberRegistrierung() {
           {/* Step 5: About & Notifications */}
           {step === 5 && (
             <div>
-              <h2 className="text-2xl font-bold text-white mb-2">Fast geschafft!</h2>
-              <p className="text-gray-400 mb-6">Erzähl uns noch etwas über dich</p>
-              
+              <h2 className="text-2xl font-bold text-white mb-2">{t('applicant.step5.title')}</h2>
+              <p className="text-gray-400 mb-6">{t('applicant.step5.subtitle')}</p>
+
               <div className="space-y-6">
                 <div>
-                  <label className="input-label">Über mich (optional)</label>
+                  <label className="input-label">{t('applicant.step5.aboutMe')}</label>
                   <textarea
                     className="input-field min-h-[120px]"
-                    placeholder="Was macht dich aus? Welche Stärken hast du? Was ist dir bei der Arbeit wichtig?"
+                    placeholder={t('applicant.step5.aboutMePlaceholder')}
                     value={formData.aboutMe}
                     onChange={e => updateFormData('aboutMe', e.target.value)}
                   />
                 </div>
 
                 <div className="border-t border-gray-700 pt-6">
-                  <label className="input-label mb-4">Wie möchtest du über neue Jobs informiert werden?</label>
-                  
+                  <label className="input-label mb-4">{t('applicant.step5.notificationsLabel')}</label>
+
                   <div className="space-y-3">
                     <label className="flex items-center justify-between p-4 rounded-lg border border-gray-700 cursor-pointer hover:border-gray-600">
                       <div>
-                        <div className="text-white font-medium">E-Mail Benachrichtigungen</div>
-                        <div className="text-sm text-gray-400">Neue passende Jobs per E-Mail erhalten</div>
+                        <div className="text-white font-medium">{t('applicant.step5.emailNotifications')}</div>
+                        <div className="text-sm text-gray-400">{t('applicant.step5.emailNotificationsDesc')}</div>
                       </div>
                       <input
                         type="checkbox"
@@ -513,8 +518,8 @@ export default function BewerberRegistrierung() {
 
                     <label className="flex items-center justify-between p-4 rounded-lg border border-gray-700 cursor-pointer hover:border-gray-600">
                       <div>
-                        <div className="text-white font-medium">WhatsApp Benachrichtigungen</div>
-                        <div className="text-sm text-gray-400">Sofortige Alerts auf dein Handy</div>
+                        <div className="text-white font-medium">{t('applicant.step5.whatsappNotifications')}</div>
+                        <div className="text-sm text-gray-400">{t('applicant.step5.whatsappNotificationsDesc')}</div>
                       </div>
                       <input
                         type="checkbox"
@@ -526,11 +531,11 @@ export default function BewerberRegistrierung() {
 
                     {formData.whatsappNotifications && (
                       <div className="ml-4">
-                        <label className="input-label">WhatsApp Nummer</label>
+                        <label className="input-label">{t('applicant.step5.whatsappNumber')}</label>
                         <input
                           type="tel"
                           className="input-field"
-                          placeholder="0151 12345678"
+                          placeholder={t('applicant.step5.whatsappNumberPlaceholder')}
                           value={formData.whatsappNumber}
                           onChange={e => updateFormData('whatsappNumber', e.target.value)}
                         />
@@ -540,9 +545,9 @@ export default function BewerberRegistrierung() {
                 </div>
 
                 <div className="text-sm text-gray-400">
-                  Mit der Registrierung akzeptierst du unsere{' '}
-                  <Link href="/agb" className="text-brand-red hover:underline">AGB</Link> und{' '}
-                  <Link href="/datenschutz" className="text-brand-red hover:underline">Datenschutzerklärung</Link>.
+                  {t('applicant.step5.termsText')}{' '}
+                  <Link href="/agb" className="text-brand-red hover:underline">{t('applicant.step5.terms')}</Link> {t('applicant.step5.and')}{' '}
+                  <Link href="/datenschutz" className="text-brand-red hover:underline">{t('applicant.step5.privacy')}</Link>.
                 </div>
               </div>
             </div>
@@ -556,7 +561,7 @@ export default function BewerberRegistrierung() {
                 className="flex items-center text-gray-400 hover:text-white transition-colors"
               >
                 <ArrowLeft className="w-5 h-5 mr-2" />
-                Zurück
+                {t('back')}
               </button>
             ) : (
               <div />
@@ -564,7 +569,7 @@ export default function BewerberRegistrierung() {
 
             {step < 5 ? (
               <button onClick={nextStep} className="btn-primary flex items-center">
-                Weiter
+                {t('next')}
                 <ArrowRight className="w-5 h-5 ml-2" />
               </button>
             ) : (
@@ -576,11 +581,11 @@ export default function BewerberRegistrierung() {
                 {loading ? (
                   <>
                     <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                    Wird erstellt...
+                    {t('applicant.step5.submitting')}
                   </>
                 ) : (
                   <>
-                    Registrierung abschließen
+                    {t('applicant.step5.submit')}
                     <CheckCircle className="w-5 h-5 ml-2" />
                   </>
                 )}

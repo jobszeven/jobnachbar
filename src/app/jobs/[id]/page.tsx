@@ -1,35 +1,33 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { 
-  MapPin, Clock, Building2, ArrowLeft, 
+import {
+  MapPin, Clock, Building2, ArrowLeft,
   Calendar, Euro, CheckCircle, Send, Share2, Heart, Briefcase, Eye
 } from 'lucide-react'
 import { createClient } from '@/lib/supabase/server'
+import { getTranslations } from 'next-intl/server'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
-const INDUSTRIES: Record<string, string> = {
-  handwerk: 'Handwerk',
-  pflege_gesundheit: 'Pflege & Gesundheit',
-  gastro_hotel: 'Gastro & Hotel',
-  einzelhandel: 'Einzelhandel',
-  logistik_transport: 'Logistik & Transport',
-  industrie_produktion: 'Industrie & Produktion',
-  buero_verwaltung: 'Büro & Verwaltung',
-  it_technik: 'IT & Technik',
-  bau_architektur: 'Bau & Architektur',
-  landwirtschaft: 'Landwirtschaft',
-  bildung_soziales: 'Bildung & Soziales',
-  sonstiges: 'Sonstiges',
+const EMPLOYMENT_TYPES: Record<string, string> = {
+  'vollzeit': 'Vollzeit',
+  'teilzeit': 'Teilzeit',
+  'minijob': 'Minijob',
+  'ausbildung': 'Ausbildung',
+  'praktikum': 'Praktikum',
+  'werkstudent': 'Werkstudent',
 }
 
-const EMPLOYMENT_TYPES: Record<string, string> = {
-  vollzeit: 'Vollzeit',
-  teilzeit: 'Teilzeit',
-  minijob: 'Minijob',
-  ausbildung: 'Ausbildung',
-  praktikum: 'Praktikum',
-  werkstudent: 'Werkstudent',
+const INDUSTRIES: Record<string, string> = {
+  'handwerk': 'Handwerk',
+  'einzelhandel': 'Einzelhandel',
+  'gastronomie': 'Gastronomie & Hotellerie',
+  'gesundheit': 'Gesundheit & Pflege',
+  'logistik': 'Logistik & Transport',
+  'industrie': 'Industrie & Produktion',
+  'buero': 'Büro & Verwaltung',
+  'it': 'IT & Technik',
+  'sonstiges': 'Sonstiges',
 }
 
 async function getJob(id: string) {
