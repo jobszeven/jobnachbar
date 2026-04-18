@@ -81,7 +81,7 @@ export default function LebenslaufCheckPage() {
         <div className="max-w-4xl mx-auto">
           <Link href="/tools" className="inline-flex items-center text-gray-400 hover:text-white mb-4">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Zurück zu KI-Tools
+            Zurück zu Bewerbungstools
           </Link>
           <div className="flex items-center gap-4">
             <div className="w-14 h-14 bg-brand-red/20 rounded-xl flex items-center justify-center">
@@ -92,7 +92,7 @@ export default function LebenslaufCheckPage() {
                 Lebenslauf-Check
               </h1>
               <p className="text-gray-400">
-                Lass deinen Lebenslauf von unserer KI analysieren
+                Lass deinen Lebenslauf professionell analysieren
               </p>
             </div>
           </div>
@@ -237,7 +237,7 @@ Zum Beispiel:
                     {/* Download Button */}
                     <button
                       onClick={() => {
-                        const content = `LEBENSLAUF-ANALYSE\n\nBewertung: ${result.score}/100 - ${getScoreLabel(result.score)}\n\n${result.summary}\n\nSTÄRKEN:\n${result.strengths.map(s => `• ${s}`).join('\n')}\n\nVERBESSERUNGSPOTENZIAL:\n${result.improvements.map(i => `• ${i}`).join('\n')}\n\nKONKRETE VORSCHLÄGE:\n${result.suggestions.map(s => `• ${s}`).join('\n')}\n\n---\nErstellt mit JobNachbar KI-Tools\nwww.jobnachbar.com`
+                        const content = `LEBENSLAUF-ANALYSE\n\nBewertung: ${result.score}/100 - ${getScoreLabel(result.score)}\n\n${result.summary}\n\nSTÄRKEN:\n${result.strengths.map(s => `• ${s}`).join('\n')}\n\nVERBESSERUNGSPOTENZIAL:\n${result.improvements.map(i => `• ${i}`).join('\n')}\n\nKONKRETE VORSCHLÄGE:\n${result.suggestions.map(s => `• ${s}`).join('\n')}\n\n---\nErstellt mit JobNachbar Bewerbungstools\nwww.jobnachbar.com`
                         const blob = new Blob([content], { type: 'text/plain' })
                         const url = URL.createObjectURL(blob)
                         const a = document.createElement('a')

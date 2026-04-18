@@ -1,0 +1,63 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1D1D1F"/>
+
+  <!-- Background pattern -->
+  <circle cx="240" cy="315" r="300" fill="#E63946" opacity="0.05"/>
+  <circle cx="960" cy="315" r="300" fill="#E63946" opacity="0.05"/>
+
+  <!-- Top accent bar -->
+  <rect width="1200" height="8" fill="url(#gradient-top)"/>
+  <defs>
+    <linearGradient id="gradient-top" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#E63946"/>
+      <stop offset="100%" stop-color="#FF4D5A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Logo container -->
+  <g transform="translate(380, 150)">
+    <!-- Logo background -->
+    <rect width="80" height="80" rx="20" fill="url(#gradient-logo)"/>
+    <defs>
+      <linearGradient id="gradient-logo" x1="0" y1="0" x2="80" y2="80">
+        <stop offset="0%" stop-color="#E63946"/>
+        <stop offset="100%" stop-color="#C62E3A"/>
+      </linearGradient>
+    </defs>
+
+    <!-- Briefcase icon -->
+    <path d="M 66 30 L 54 30 L 54 26 C 54 23.8 52.2 22 50 22 L 30 22 C 27.8 22 26 23.8 26 26 L 26 30 L 14 30 C 11.8 30 10 31.8 10 34 L 10 62 C 10 64.2 11.8 66 14 66 L 66 66 C 68.2 66 70 64.2 70 62 L 70 34 C 70 31.8 68.2 30 66 30 Z M 30 26 L 50 26 L 50 30 L 30 30 L 30 26 Z M 66 62 L 14 62 L 14 34 L 66 34 L 66 62 Z" fill="#F8F8F8"/>
+    <circle cx="58" cy="48" r="5" fill="#F8F8F8"/>
+  </g>
+
+  <!-- Brand name -->
+  <text x="490" y="210" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="800" fill="#F8F8F8" letter-spacing="-0.02em">JobNachbar</text>
+
+  <!-- Tagline -->
+  <text x="600" y="300" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="700" fill="#F8F8F8" text-anchor="middle">Jobs in deiner Nähe</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="360" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="400" fill="#AEAEB2" text-anchor="middle">Die lokale Jobbörse für Zeven und Umgebung</text>
+
+  <!-- Location badge -->
+  <g transform="translate(320, 420)">
+    <!-- Badge background -->
+    <rect width="560" height="60" rx="12" fill="rgba(230, 57, 70, 0.15)" stroke="#E63946" stroke-width="2" stroke-opacity="0.3"/>
+
+    <!-- Location icon -->
+    <path d="M 40 15 C 35.05 15 31 19.05 31 24 C 31 31.25 40 45 40 45 C 40 45 49 31.25 49 24 C 49 19.05 44.95 15 40 15 Z M 40 27.5 C 38.62 27.5 37.5 26.38 37.5 25 C 37.5 23.62 38.62 22.5 40 22.5 C 41.38 22.5 42.5 23.62 42.5 25 C 42.5 26.38 41.38 27.5 40 27.5 Z" fill="#E63946"/>
+
+    <!-- Location text -->
+    <text x="70" y="40" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="600" fill="#E63946">Zeven &amp; Landkreis Rotenburg</text>
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect y="622" width="1200" height="8" fill="url(#gradient-bottom)"/>
+  <defs>
+    <linearGradient id="gradient-bottom" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#E63946"/>
+      <stop offset="100%" stop-color="#FF4D5A"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -141,7 +141,8 @@ function ArbeitgeberDashboardContent() {
   const newApplications = applications.filter(a => a.status === 'new')
   const totalViews = jobs.reduce((sum, job) => sum + (job.views || 0), 0)
   
-  const planLimits = PLAN_LIMITS[company?.subscription_tier as keyof typeof PLAN_LIMITS] || PLAN_LIMITS.free
+  const currentPlan = company?.subscription_tier || 'free'
+  const planLimits = PLAN_LIMITS[currentPlan as keyof typeof PLAN_LIMITS] || PLAN_LIMITS.free
   const canPostMoreJobs = activeJobs.length < planLimits.jobs
 
   if (loading) {
@@ -188,8 +189,8 @@ function ArbeitgeberDashboardContent() {
               {company?.company_name}
             </h1>
             <p className="text-gray-400 mt-1">
-              {company?.subscription_tier === 'free' ? 'Starter' : 
-               company?.subscription_tier === 'basic' ? 'Basic' : 'Premium'} Plan
+              {currentPlan === 'free' ? 'Starter' :
+               currentPlan === 'basic' ? 'Basic' : 'Premium'} Plan
               {company?.subscription_expires && (
                 <span className="ml-2">
                   • gültig bis {new Date(company.subscription_expires).toLocaleDateString('de-DE')}
@@ -236,6 +237,28 @@ function ArbeitgeberDashboardContent() {
             <p className="text-sm text-gray-400">Aufrufe gesamt</p>
           </div>
         </div>
+
+        {/* Abo Card */}
+        {currentPlan !== 'premium' && (
+          <Link href="/dashboard/arbeitgeber/abo" className="block mb-8">
+            <div className="card bg-gradient-to-r from-brand-red/10 to-orange-500/10 border-brand-red/30 hover:border-brand-red/50 transition-colors">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-brand-red/20 rounded-full flex items-center justify-center">
+                    <CreditCard className="w-6 h-6 text-brand-red" />
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold">
+                      {currentPlan === 'free' ? 'Upgrade auf Basic oder Premium' : 'Upgrade auf Premium'}
+                    </p>
+                    <p className="text-gray-400 text-sm">Mehr Stellen, mehr Kontakte, mehr Erfolg</p>
+                  </div>
+                </div>
+                <ChevronRight className="w-5 h-5 text-gray-400" />
+              </div>
+            </div>
+          </Link>
+        )}
 
         {/* Tabs */}
         <div className="flex space-x-1 border-b border-gray-800 mb-6">

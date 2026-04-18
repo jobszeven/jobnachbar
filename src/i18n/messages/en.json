@@ -63,7 +63,7 @@
     "forApplicants": "For Job Seekers",
     "forEmployers": "For Employers",
     "pricing": "Pricing",
-    "aiTools": "AI Tools",
+    "aiTools": "Application Tools",
     "applicationTips": "Application Tips",
     "contact": "Contact",
     "login": "Log in",
@@ -206,26 +206,26 @@
       "button": "Start for free"
     },
     "aiTools": {
-      "title": "AI-Powered Application Tools",
-      "subtitle": "Our AI tools help you optimize your application and prepare for the job market.",
+      "title": "JobNachbar Application Tools",
+      "subtitle": "Our smart tools help you optimize your application and prepare for the job market.",
       "resumeCheck": {
         "title": "Resume Check",
-        "desc": "Have your resume analyzed by our AI and get improvement suggestions."
+        "desc": "Have your resume analyzed and get improvement suggestions."
       },
       "coverLetter": {
         "title": "Cover Letter Generator",
-        "desc": "Create individual cover letters for each position with the help of our AI."
+        "desc": "Create individual cover letters for each position with professional support."
       },
       "interviewCoach": {
         "title": "Interview Coach",
-        "desc": "Practice typical interview questions and get feedback from our AI."
+        "desc": "Practice typical interview questions and get professional feedback."
       },
       "salaryNegotiation": {
         "title": "Salary Negotiation",
         "desc": "Find out what you can earn in your region and get negotiation tips."
       },
       "tryNow": "Try now",
-      "viewAll": "Discover all AI tools"
+      "viewAll": "Discover all application tools"
     }
   },
   "jobs": {
@@ -417,7 +417,7 @@
     },
     "premium": {
       "title": "Premium Features",
-      "description": "With JobNachbar Premium you get unlimited access to all AI tools.",
+      "description": "With JobNachbar Premium you get unlimited access to all application tools.",
       "upgrade": "Go Premium"
     },
     "usage": {
@@ -452,7 +452,7 @@
         "yearlyPrice": "€29/year",
         "features": [
           "Everything from Free",
-          "Unlimited AI tools",
+          "Unlimited application tools",
           "Resume generator with PDF",
           "Cover letter generator with PDF",
           "Unlimited Interview Coach",
@@ -592,7 +592,7 @@
         "description": "We automatically show you jobs that match your profile."
       },
       "step6": {
-        "title": "Use our AI tools",
+        "title": "Use our application tools",
         "description": "Resume check, cover letter generator and more."
       },
       "step7": {
@@ -707,7 +707,7 @@
   },
   "coverLetterPage": {
     "title": "Cover Letter Generator",
-    "subtitle": "Create individual cover letters with AI",
+    "subtitle": "Create individual cover letters automatically",
     "backLink": "Back to Application Tips",
     "form": {
       "title": "Your Information",
@@ -802,7 +802,7 @@
       "maximum": "Maximum",
       "hints": "Notes",
       "negotiationTips": "Negotiation Tips",
-      "loadTips": "Load AI negotiation tips",
+      "loadTips": "Load negotiation tips",
       "noResult": "Salary Estimate",
       "noResultHint": "Select industry and experience to get an estimate."
     },
@@ -833,7 +833,7 @@
   },
   "resumeCheckPage": {
     "title": "Resume Check",
-    "subtitle": "Have your resume analyzed by our AI",
+    "subtitle": "Have your resume analyzed automatically",
     "backLink": "Back to Application Tips",
     "input": {
       "title": "Enter Resume",
@@ -846,7 +846,7 @@
       "processing": "Processing file..."
     },
     "analyze": {
-      "button": "Analyze with AI",
+      "button": "Analyze Resume",
       "analyzing": "Analyzing..."
     },
     "pdf": {
@@ -875,9 +875,9 @@
       "needsWork": "Improvements recommended",
       "strengths": "Strengths",
       "improvements": "Improvement Suggestions",
-      "suggestions": "AI Recommendations",
+      "suggestions": "Recommendations",
       "noResult": "No analysis yet",
-      "noResultHint": "Enter your resume on the left and click \"Analyze with AI\""
+      "noResultHint": "Enter your resume on the left and click \"Analyze Resume\""
     },
     "errors": {
       "invalidFileType": "Please upload a PDF, DOC, DOCX or TXT file",
@@ -921,7 +921,7 @@
     "findJobs": "Find jobs in {industry}",
     "cta": {
       "title": "Ready for your application?",
-      "subtitle": "Use our free AI tools to improve your application.",
+      "subtitle": "Use our free tools to improve your application.",
       "browseJobs": "Browse Jobs",
       "resumeCheck": "Start Resume Check"
     },
@@ -1017,27 +1017,27 @@
     }
   },
   "tipsPage": {
-    "badge": "AI-Powered Tools",
+    "badge": "Smart Application Tools",
     "title": "Application Tips",
-    "subtitle": "Everything you need for a successful application. Use our AI tools for resume, cover letter and more.",
+    "subtitle": "Everything you need for a successful application. Use our smart tools for resume, cover letter and more.",
     "tools": {
       "resume": {
         "title": "Resume",
-        "description": "Have your resume checked by our AI and get improvement suggestions. Create professional PDFs.",
+        "description": "Have your resume checked and get improvement suggestions. Create professional PDFs.",
         "cta": "Check Resume",
-        "features": ["AI Analysis", "PDF Generator", "10 Design Templates"]
+        "features": ["Automatic Analysis", "PDF Generator", "10 Design Templates"]
       },
       "coverLetter": {
         "title": "Cover Letter",
-        "description": "Generate individual cover letters for each position. Our AI helps you strike the perfect tone.",
+        "description": "Generate individual cover letters for each position. JobNachbar helps you strike the perfect tone.",
         "cta": "Create Cover Letter",
-        "features": ["AI Generator", "PDF Export", "Fully Customizable"]
+        "features": ["Smart Generator", "PDF Export", "Fully Customizable"]
       },
       "interview": {
         "title": "Job Interview",
-        "description": "Prepare for common questions with our AI interview coach and practice your answers.",
+        "description": "Prepare for common questions with our interview coach and practice your answers.",
         "cta": "Practice Interview",
-        "features": ["Industry Questions", "AI Feedback", "Tips & Tricks"]
+        "features": ["Industry Questions", "Professional Feedback", "Tips & Tricks"]
       },
       "salary": {
         "title": "Salary Negotiation",
@@ -1048,7 +1048,7 @@
     },
     "premium": {
       "title": "Unlimited with Premium",
-      "description": "With JobNachbar Premium you get unlimited access to all AI tools, PDF generator and exclusive features for only €4.99/month.",
+      "description": "With JobNachbar Premium you get unlimited access to all application tools, PDF generator and exclusive features for only €4.99/month.",
       "cta": "Discover Premium"
     }
   },
@@ -1110,7 +1110,7 @@
     "applicant": {
       "free": {
         "question": "Is JobNachbar free?",
-        "answer": "Yes, the basic version is completely free for applicants. You can register, search for jobs and apply without paying a cent. For advanced features like unlimited AI tools, there's JobNachbar Premium."
+        "answer": "Yes, the basic version is completely free for applicants. You can register, search for jobs and apply without paying a cent. For advanced features like unlimited application tools, there's JobNachbar Premium."
       },
       "region": {
         "question": "Which region does JobNachbar cover?",
@@ -1126,7 +1126,7 @@
       },
       "premium": {
         "question": "What is JobNachbar Premium?",
-        "answer": "With Premium (€4.99/month) you get unlimited access to our AI tools: Resume Generator, Cover Letter Generator, Interview Coach and more."
+        "answer": "With Premium (€4.99/month) you get unlimited access to our application tools: Resume Generator, Cover Letter Generator, Interview Coach and more."
       },
       "notifications": {
         "question": "How do I find out about new matching jobs?",
@@ -1463,7 +1463,7 @@
       "hero": {
         "badge": "Premium for Applicants",
         "title": "Get your advantage",
-        "subtitle": "With JobNachbar Premium you get unlimited access to all AI tools and increase your chances of landing your dream job."
+        "subtitle": "With JobNachbar Premium you get unlimited access to all application tools and increase your chances of landing your dream job."
       },
       "free": {
         "name": "Free",
@@ -1489,7 +1489,7 @@
         "yearlyOffer": "or €29/year (save 50%)",
         "features": [
           "Everything from Free",
-          "Unlimited AI tools",
+          "Unlimited application tools",
           "Resume generator with PDF",
           "Cover letter generator with PDF",
           "Unlimited interview coach",
@@ -1515,7 +1515,7 @@
       },
       "cta": {
         "title": "Start with Premium now",
-        "subtitle": "Use all AI tools unlimited and increase your job chances.",
+        "subtitle": "Use all application tools unlimited and increase your job chances.",
         "button": "Start for €4.99/month"
       }
     }
@@ -1568,12 +1568,12 @@
         ]
       },
       "aiTools": {
-        "title": "Using AI Tools",
+        "title": "Using Application Tools",
         "description": "Guide for Resume Check & more",
         "content": [
-          "JobNachbar offers free AI tools for your application:",
+          "JobNachbar offers free application tools:",
           "• Resume Check: Have your resume analyzed and improved",
-          "• Cover Letter Generator: Create individual cover letters with AI",
+          "• Cover Letter Generator: Create individual cover letters automatically",
           "• Interview Coach: Practice typical questions for your industry",
           "• Salary Calculator: Find out what you can earn",
           "Find all tools under 'Application Tips' in the menu."
@@ -1584,7 +1584,7 @@
         "description": "What does JobNachbar Premium offer?",
         "content": [
           "With Premium you get:",
-          "• Unlimited AI tool usage",
+          "• Unlimited application tool usage",
           "• Your profile is shown to employers with priority",
           "• Extended filter options",
           "• No advertising",
@@ -1699,7 +1699,7 @@
     "forApplicants": {
       "title": "For Job Seekers",
       "free": { "name": "Free", "price": "€0", "features": ["Job Search", "Save Favorites", "Basic Profile", "Email Notifications"] },
-      "premium": { "name": "Premium", "price": "€9.99", "period": "/month", "features": ["AI Resume Check", "Cover Letter Generator", "Interview Coach", "Salary Negotiation Tips", "Priority Support"], "badge": "Popular" },
+      "premium": { "name": "Premium", "price": "€9.99", "period": "/month", "features": ["Resume Check", "Cover Letter Generator", "Interview Coach", "Salary Negotiation Tips", "Priority Support"], "badge": "Popular" },
       "cta": "Try Premium Now"
     },
     "forEmployers": {
@@ -1753,14 +1753,14 @@
     }
   },
   "tools": {
-    "poweredBy": "AI-powered application tools",
+    "poweredBy": "JobNachbar Application Tools",
     "hero": {
-      "title": "Optimize your application with AI",
-      "subtitle": "Use our free AI tools to improve your resume, create compelling cover letters, and prepare for interviews."
+      "title": "Optimize your application with JobNachbar",
+      "subtitle": "Use our free tools to improve your resume, create compelling cover letters, and prepare for interviews."
     },
     "resumeCheck": {
       "title": "Resume Check",
-      "description": "Have your resume analyzed by our AI and receive specific improvement suggestions."
+      "description": "Have your resume analyzed and receive specific improvement suggestions."
     },
     "coverLetterGenerator": {
       "title": "Cover Letter Generator",
@@ -1778,7 +1778,7 @@
     "unlimitedWithPremium": "Unlimited with Premium",
     "premium": {
       "title": "Use all tools unlimited",
-      "description": "With JobNachbar Premium you get unlimited access to all AI tools, PDF export and exclusive features.",
+      "description": "With JobNachbar Premium you get unlimited access to all application tools, PDF export and exclusive features.",
       "cta": "Discover Premium"
     }
   },
@@ -1793,7 +1793,7 @@
       "description": "Find your dream job in the region and apply with just a few clicks.",
       "benefit1": "Register & apply for free",
       "benefit2": "Automatic job suggestions",
-      "benefit3": "AI-powered application tools",
+      "benefit3": "Smart application tools",
       "cta": "Start as Job Seeker",
       "step1": {
         "title": "Create your account",
@@ -1886,7 +1886,7 @@
     "hero": {
       "title": "Find your dream job",
       "titleHighlight": "near you",
-      "subtitle": "JobNachbar connects you with the best employers in Zeven and the surrounding area. Free, fast and with AI support.",
+      "subtitle": "JobNachbar connects you with the best employers in Zeven and the surrounding area. Free, fast and with smart application support.",
       "cta": "Register for free",
       "browseJobs": "Browse jobs"
     },
@@ -1901,7 +1901,7 @@
         "desc": "Registration, applications and all basic features are free for you."
       },
       "aiTools": {
-        "title": "AI-powered tools",
+        "title": "Smart application tools",
         "desc": "Resume check, cover letter generator and interview coach help you with your application."
       },
       "fast": {
@@ -1930,13 +1930,13 @@
       },
       "step3": {
         "title": "Apply",
-        "desc": "Apply with one click. Use our AI tools for the perfect application."
+        "desc": "Apply with one click. Use our smart tools for the perfect application."
       }
     },
     "tools": {
-      "badge": "AI-powered application tools",
+      "badge": "JobNachbar Application Tools",
       "title": "Optimize your application",
-      "subtitle": "Our free AI tools help you stand out from the crowd.",
+      "subtitle": "Our free smart tools help you stand out from the crowd.",
       "resume": {
         "title": "Resume Check",
         "desc": "Have your resume analyzed and get improvement suggestions."
@@ -1947,9 +1947,9 @@
       },
       "interview": {
         "title": "Interview Coach",
-        "desc": "Practice typical interview questions with AI feedback."
+        "desc": "Practice typical interview questions with professional feedback."
       },
-      "viewAll": "Discover all AI tools"
+      "viewAll": "Discover all application tools"
     },
     "stats": {
       "activeJobs": "Active jobs",
@@ -2115,7 +2115,7 @@
       },
       "trial": {
         "question": "Is there a trial period?",
-        "answer": "You can try all AI tools multiple times for free before deciding on Premium."
+        "answer": "You can try all application tools multiple times for free before deciding on Premium."
       }
     },
     "cta": {

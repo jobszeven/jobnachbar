@@ -10,7 +10,7 @@ const locations = [
   { name: 'Zeven', slug: 'zeven' },
   { name: 'Rotenburg (Wümme)', slug: 'rotenburg-wuemme' },
   { name: 'Sittensen', slug: 'sittensen' },
-  { name: 'Bremervörde', slug: 'bremervoerde' },
+  { name: 'Bremervörde', slug: 'bremervorde' },
   { name: 'Tarmstedt', slug: 'tarmstedt' },
   { name: 'Scheeßel', slug: 'scheessel' },
 ]

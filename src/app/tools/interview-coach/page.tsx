@@ -90,7 +90,7 @@ export default function InterviewCoachPage() {
         <div className="max-w-4xl mx-auto">
           <Link href="/tools" className="inline-flex items-center text-gray-400 hover:text-white mb-4">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Zurück zu KI-Tools
+            Zurück zu Bewerbungstools
           </Link>
           <div className="flex items-center gap-4">
             <div className="w-14 h-14 bg-green-500/20 rounded-xl flex items-center justify-center">
@@ -286,7 +286,7 @@ export default function InterviewCoachPage() {
                   {/* Download Button */}
                   <button
                     onClick={() => {
-                      const content = `INTERVIEW-VORBEREITUNG\n\nPosition: ${formData.jobTitle}\nUnternehmen: ${formData.companyName}\nBranche: ${formData.industry}\n\n---\n\nHÄUFIGE FRAGEN & ANTWORTEN:\n\n${result.commonQuestions.map((q, i) => `${i + 1}. ${q.question}\n   Antwort: ${q.suggestedAnswer}`).join('\n\n')}\n\n---\n\nALLGEMEINE TIPPS:\n${result.tips.map(t => `• ${t}`).join('\n')}\n\n---\n\nRECHERCHE-EMPFEHLUNGEN:\n${result.companyResearch.map(r => `• ${r}`).join('\n')}\n\n---\nErstellt mit JobNachbar KI-Tools\nwww.jobnachbar.com`
+                      const content = `INTERVIEW-VORBEREITUNG\n\nPosition: ${formData.jobTitle}\nUnternehmen: ${formData.companyName}\nBranche: ${formData.industry}\n\n---\n\nHÄUFIGE FRAGEN & ANTWORTEN:\n\n${result.commonQuestions.map((q, i) => `${i + 1}. ${q.question}\n   Antwort: ${q.suggestedAnswer}`).join('\n\n')}\n\n---\n\nALLGEMEINE TIPPS:\n${result.tips.map(t => `• ${t}`).join('\n')}\n\n---\n\nRECHERCHE-EMPFEHLUNGEN:\n${result.companyResearch.map(r => `• ${r}`).join('\n')}\n\n---\nErstellt mit JobNachbar Bewerbungstools\nwww.jobnachbar.com`
                       const blob = new Blob([content], { type: 'text/plain' })
                       const url = URL.createObjectURL(blob)
                       const a = document.createElement('a')

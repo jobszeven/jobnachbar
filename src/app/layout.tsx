@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-image.png',
+        url: '/api/og?title=Jobs%20in%20Zeven%20und%20Umgebung&subtitle=Die%20lokale%20Jobbörse%20für%20den%20Landkreis%20Rotenburg',
         width: 1200,
         height: 630,
         alt: 'JobNachbar - Lokale Jobs in Zeven und Umgebung',
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'JobNachbar - Jobs in Zeven und Umgebung',
     description: 'Die lokale Jobbörse für Zeven, Rotenburg und den Landkreis Rotenburg (Wümme).',
-    images: ['/og-image.png'],
+    images: ['/api/og?title=Jobs%20in%20Zeven%20und%20Umgebung&subtitle=Die%20lokale%20Jobbörse%20für%20den%20Landkreis%20Rotenburg'],
   },
   icons: {
     icon: [

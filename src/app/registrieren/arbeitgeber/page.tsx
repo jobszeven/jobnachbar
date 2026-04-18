@@ -31,8 +31,8 @@ const COMPANY_SIZES = [
 
 const PLANS = {
   free: { name: 'Starter', price: 0, jobs: 1, applications: 3 },
-  basic: { name: 'Basic', price: 49, jobs: 5, applications: 10 },
-  premium: { name: 'Premium', price: 99, jobs: 'Unbegrenzt', applications: 'Unbegrenzt' },
+  basic: { name: 'Basic', price: 39, jobs: 5, applications: 10 },
+  premium: { name: 'Premium', price: 79, jobs: 'Unbegrenzt', applications: 'Unbegrenzt' },
 }
 
 export default function ArbeitgeberRegistrierung() {
@@ -97,6 +97,7 @@ function ArbeitgeberRegistrierungContent() {
           data: {
             user_type: 'employer',
             company_name: formData.companyName,
+            selected_plan: formData.selectedPlan,
           },
           emailRedirectTo: `${window.location.origin}/auth/callback`,
         }
@@ -479,7 +480,7 @@ function ArbeitgeberRegistrierungContent() {
                       <div className="text-white font-semibold">Basic</div>
                       <div className="text-sm text-gray-400">5 Stellenanzeigen, 10 Bewerbungen/Monat, Matching</div>
                     </div>
-                    <div className="text-2xl font-bold text-white">49€<span className="text-sm font-normal text-gray-400">/Monat</span></div>
+                    <div className="text-2xl font-bold text-white">{PLANS.basic.price}€<span className="text-sm font-normal text-gray-400">/Monat</span></div>
                   </div>
                 </label>
 
@@ -503,7 +504,7 @@ function ArbeitgeberRegistrierungContent() {
                       <div className="text-white font-semibold">Premium</div>
                       <div className="text-sm text-gray-400">Unbegrenzt alles, Prioritäts-Platzierung, WhatsApp-Alerts</div>
                     </div>
-                    <div className="text-2xl font-bold text-white">99€<span className="text-sm font-normal text-gray-400">/Monat</span></div>
+                    <div className="text-2xl font-bold text-white">{PLANS.premium.price}€<span className="text-sm font-normal text-gray-400">/Monat</span></div>
                   </div>
                 </label>
               </div>

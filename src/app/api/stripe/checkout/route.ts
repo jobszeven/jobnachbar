@@ -14,19 +14,30 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY!
 )
 
+// Preise in Cents (€ * 100)
 const PRICES = {
-  basic_1: { price: 4900, name: 'Basic Abo (1 Monat)', months: 1, tier: 'basic' },
-  basic_3: { price: 13900, name: 'Basic Abo (3 Monate)', months: 3, tier: 'basic' },
-  basic_6: { price: 24900, name: 'Basic Abo (6 Monate)', months: 6, tier: 'basic' },
-  premium_1: { price: 9900, name: 'Premium Abo (1 Monat)', months: 1, tier: 'premium' },
-  premium_3: { price: 27900, name: 'Premium Abo (3 Monate)', months: 3, tier: 'premium' },
-  premium_6: { price: 54900, name: 'Premium Abo (6 Monate)', months: 6, tier: 'premium' },
+  // Arbeitgeber Basic: 39€/Monat
+  basic_1: { price: 3900, name: 'Basic Abo (1 Monat)', months: 1, tier: 'basic' },
+  basic_3: { price: 11100, name: 'Basic Abo (3 Monate)', months: 3, tier: 'basic' }, // 37€/Monat
+  basic_6: { price: 19800, name: 'Basic Abo (6 Monate)', months: 6, tier: 'basic' }, // 33€/Monat
+  // Arbeitgeber Premium: 79€/Monat
+  premium_1: { price: 7900, name: 'Premium Abo (1 Monat)', months: 1, tier: 'premium' },
+  premium_3: { price: 22500, name: 'Premium Abo (3 Monate)', months: 3, tier: 'premium' }, // 75€/Monat
+  premium_6: { price: 42000, name: 'Premium Abo (6 Monate)', months: 6, tier: 'premium' }, // 70€/Monat
+  // Bewerber Premium: 4,99€/Monat
+  bewerber_1: { price: 499, name: 'Bewerber Premium (1 Monat)', months: 1, tier: 'bewerber_premium' },
+  bewerber_12: { price: 2900, name: 'Bewerber Premium (1 Jahr)', months: 12, tier: 'bewerber_premium' }, // 29€/Jahr
 }
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     const { priceId, userId, companyId } = body
+
+    // Dynamische Base URL für lokale Entwicklung vs Production
+    const host = request.headers.get('host') || 'jobnachbar.com'
+    const protocol = host.includes('localhost') ? 'http' : 'https'
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || `${protocol}://${host}`
 
     if (!priceId || !PRICES[priceId as keyof typeof PRICES]) {
       return NextResponse.json(
@@ -82,8 +93,8 @@ export async function POST(request: NextRequest) {
         tier: priceConfig.tier,
         months: priceConfig.months.toString(),
       },
-      success_url: `${process.env.NEXT_PUBLIC_SITE_URL}/premium/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.NEXT_PUBLIC_SITE_URL}/preise`,
+      success_url: `${baseUrl}/premium/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${baseUrl}/preise`,
       billing_address_collection: 'required',
       invoice_creation: {
         enabled: true,

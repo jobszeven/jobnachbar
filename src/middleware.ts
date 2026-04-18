@@ -71,7 +71,9 @@ export async function middleware(request: NextRequest) {
   }
 
   // Redirect to verification page if email is not confirmed
-  if (isProtectedRoute && user && !user.email_confirmed_at) {
+  // Prevent redirect loop by checking if already on verification page
+  if (isProtectedRoute && user && !user.email_confirmed_at &&
+      !request.nextUrl.pathname.startsWith('/verifizierung-ausstehend')) {
     const redirectUrl = new URL('/verifizierung-ausstehend', request.url)
     if (user.email) {
       redirectUrl.searchParams.set('email', user.email)
@@ -108,6 +110,19 @@ export async function middleware(request: NextRequest) {
     if (request.nextUrl.pathname.startsWith('/dashboard/arbeitgeber') && userType === 'applicant') {
       return NextResponse.redirect(new URL('/dashboard/bewerber', request.url))
     }
+  }
+
+  // Admin route protection - only allow users with is_admin flag
+  if (request.nextUrl.pathname.startsWith('/admin') && user) {
+    const isAdmin = user.user_metadata?.is_admin === true
+    if (!isAdmin) {
+      return NextResponse.redirect(new URL('/', request.url))
+    }
+  }
+
+  // Redirect non-authenticated users from admin
+  if (request.nextUrl.pathname.startsWith('/admin') && !user) {
+    return NextResponse.redirect(new URL('/login', request.url))
   }
 
   return response

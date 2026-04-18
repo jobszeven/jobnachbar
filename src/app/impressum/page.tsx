@@ -38,6 +38,7 @@ export default async function Impressum() {
 
           <h2 className="text-xl font-semibold text-white mt-8 mb-4">{t('sections.contact.title')}</h2>
           <p className="text-gray-300">
+            Telefon: <a href="tel:+4915204753679" className="text-brand-red hover:underline">+49 152 04753679</a><br />
             {t('sections.contact.email')}: <a href="mailto:info@jobnachbar.com" className="text-brand-red hover:underline">info@jobnachbar.com</a>
           </p>
 

@@ -177,19 +177,19 @@ export default async function AdminEinstellungenPage() {
                 <tr className="border-b border-gray-800">
                   <td className="py-3 px-4">Starter</td>
                   <td className="py-3 px-4">Arbeitgeber</td>
-                  <td className="py-3 px-4 text-right">29,00 €</td>
-                  <td className="py-3 px-4 text-right">einmalig</td>
+                  <td className="py-3 px-4 text-right">0,00 €</td>
+                  <td className="py-3 px-4 text-right">kostenlos</td>
                 </tr>
                 <tr className="border-b border-gray-800">
                   <td className="py-3 px-4">Basic</td>
                   <td className="py-3 px-4">Arbeitgeber</td>
-                  <td className="py-3 px-4 text-right">49,00 €</td>
+                  <td className="py-3 px-4 text-right">39,00 €</td>
                   <td className="py-3 px-4 text-right">pro Monat</td>
                 </tr>
                 <tr>
                   <td className="py-3 px-4">Premium</td>
                   <td className="py-3 px-4">Arbeitgeber</td>
-                  <td className="py-3 px-4 text-right">99,00 €</td>
+                  <td className="py-3 px-4 text-right">79,00 €</td>
                   <td className="py-3 px-4 text-right">pro Monat</td>
                 </tr>
               </tbody>

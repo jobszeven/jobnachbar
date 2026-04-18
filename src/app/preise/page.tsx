@@ -24,6 +24,12 @@ export default function PreisePage() {
   const spotsLeft = spotsTotal - spotsTaken
   const percentageFilled = (spotsTaken / spotsTotal) * 100
 
+  // Get raw HTML strings and interpolate manually for dangerouslySetInnerHTML
+  const launchBannerDiscount = (t.raw('employer.launchBanner.discount') as string)
+    .replace('{total}', String(spotsTotal))
+    .replace('{left}', String(spotsLeft))
+  const comparisonSubtitle = t.raw('employer.comparison.subtitle') as string
+
   return (
     <div className="min-h-screen bg-brand-dark">
       <Header />
@@ -76,9 +82,7 @@ export default function PreisePage() {
               </div>
               <span
                 className="text-white/90"
-                dangerouslySetInnerHTML={{
-                  __html: t('employer.launchBanner.discount', { total: spotsTotal, left: spotsLeft })
-                }}
+                dangerouslySetInnerHTML={{ __html: launchBannerDiscount }}
               />
             </div>
           </div>
@@ -208,7 +212,7 @@ export default function PreisePage() {
             <div className="mt-16">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">{t('employer.comparison.title')}</h2>
-                <p className="text-gray-400" dangerouslySetInnerHTML={{ __html: t('employer.comparison.subtitle') }} />
+                <p className="text-gray-400" dangerouslySetInnerHTML={{ __html: comparisonSubtitle }} />
               </div>
 
               <div className="overflow-x-auto -mx-4 px-4">

@@ -4,10 +4,10 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - KI-Tools - JobNachbar',
-    default: 'KI-Tools - JobNachbar',
+    template: '%s - Bewerbungstools - JobNachbar',
+    default: 'Bewerbungstools - JobNachbar',
   },
-  description: 'Nutze unsere KI-Tools für deine Bewerbung: Lebenslauf-Check, Anschreiben-Generator, Interview-Coach und mehr.',
+  description: 'Nutze unsere Bewerbungstools für deine Bewerbung: Lebenslauf-Check, Anschreiben-Generator, Interview-Coach und mehr.',
 }
 
 export default function ToolsLayout({

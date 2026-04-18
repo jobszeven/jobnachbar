@@ -302,7 +302,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
                                             onClick={() => { markAsRead(notification.id); setShowNotifications(false) }}
                                             className="text-xs text-brand-red hover:underline mt-2 inline-block"
                                           >
-                                            Ansehen
+                                            {t('view') || 'Ansehen'}
                                           </Link>
                                         )}
                                       </div>
@@ -388,14 +388,14 @@ export default function Header({ variant = 'default' }: HeaderProps) {
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div className="flex items-center gap-3">
               <Download className="w-5 h-5 text-brand-red" />
-              <span className="text-white text-sm">JobNachbar als App installieren?</span>
+              <span className="text-white text-sm">{t('installPrompt') || 'JobNachbar als App installieren?'}</span>
             </div>
             <div className="flex items-center gap-2">
               <button
                 onClick={handleInstall}
                 className="px-3 py-1.5 bg-brand-red text-white text-sm rounded-lg hover:bg-brand-red-dark transition-colors"
               >
-                Installieren
+                {t('install') || 'Installieren'}
               </button>
               <button
                 onClick={() => setShowInstallPrompt(false)}
@@ -514,7 +514,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
                   className="flex items-center w-full py-3 px-4 bg-gradient-to-r from-brand-red/20 to-orange-500/20 border border-brand-red/30 text-white rounded-lg hover:from-brand-red/30 hover:to-orange-500/30 transition-colors"
                 >
                   <Smartphone className="w-5 h-5 mr-2 text-brand-red" />
-                  App installieren
+                  {t('installApp') || 'App installieren'}
                 </Link>
               </div>
 

@@ -40,11 +40,9 @@ export async function POST(request: Request) {
       )
     }
 
-    // Calculate subscription expiry (1 month from now for paid plans)
-    const expiryDate = new Date()
-    expiryDate.setMonth(expiryDate.getMonth() + 1)
-
     // Insert company profile using admin client (bypasses RLS)
+    // NOTE: subscription_tier is always 'free' at registration
+    // It will be updated to the paid tier AFTER successful payment via Stripe webhook
     const { data, error } = await supabaseAdmin
       .from('companies')
       .insert({
@@ -60,8 +58,8 @@ export async function POST(request: Request) {
         industry: industry || null,
         company_size: companySize || null,
         about_company: aboutCompany || null,
-        subscription_tier: selectedPlan || 'free',
-        subscription_expires: selectedPlan === 'free' ? null : expiryDate.toISOString(),
+        subscription_tier: 'free', // Always start as free, upgrade after payment
+        subscription_expires: null,
       })
       .select()
       .single()

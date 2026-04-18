@@ -96,7 +96,7 @@ export default function GehaltsverhandlungPage() {
         <div className="max-w-4xl mx-auto">
           <Link href="/tools" className="inline-flex items-center text-gray-400 hover:text-white mb-4">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Zurück zu KI-Tools
+            Zurück zu Bewerbungstools
           </Link>
           <div className="flex items-center gap-4">
             <div className="w-14 h-14 bg-purple-500/20 rounded-xl flex items-center justify-center">
@@ -314,7 +314,7 @@ export default function GehaltsverhandlungPage() {
                   {/* Download Button */}
                   <button
                     onClick={() => {
-                      const content = `GEHALTSVERHANDLUNG - TIPPS & STRATEGIEN\n\nPosition: ${formData.jobTitle}\nErfahrung: ${formData.experience}\nStandort: ${formData.location}\n${formData.currentSalary ? `Aktuelles Gehalt: ${formData.currentSalary}` : ''}\n\n---\n\nGESCHÄTZTE GEHALTSSPANNE:\n${formatCurrency(result.marketRange.min)} - ${formatCurrency(result.marketRange.max)} brutto/Jahr\n\n---\n\nVERHANDLUNGSTIPPS:\n${result.tips.map(t => `• ${t}`).join('\n')}\n\n---\n\nFORMULIERUNGSHILFEN:\n${result.scripts.map((s, i) => `${i + 1}. "${s}"`).join('\n\n')}\n\n---\n\nVORBEREITUNG:\n${result.preparation.map(p => `• ${p}`).join('\n')}\n\n---\nErstellt mit JobNachbar KI-Tools\nwww.jobnachbar.com`
+                      const content = `GEHALTSVERHANDLUNG - TIPPS & STRATEGIEN\n\nPosition: ${formData.jobTitle}\nErfahrung: ${formData.experience}\nStandort: ${formData.location}\n${formData.currentSalary ? `Aktuelles Gehalt: ${formData.currentSalary}` : ''}\n\n---\n\nGESCHÄTZTE GEHALTSSPANNE:\n${formatCurrency(result.marketRange.min)} - ${formatCurrency(result.marketRange.max)} brutto/Jahr\n\n---\n\nVERHANDLUNGSTIPPS:\n${result.tips.map(t => `• ${t}`).join('\n')}\n\n---\n\nFORMULIERUNGSHILFEN:\n${result.scripts.map((s, i) => `${i + 1}. "${s}"`).join('\n\n')}\n\n---\n\nVORBEREITUNG:\n${result.preparation.map(p => `• ${p}`).join('\n')}\n\n---\nErstellt mit JobNachbar Bewerbungstools\nwww.jobnachbar.com`
                       const blob = new Blob([content], { type: 'text/plain' })
                       const url = URL.createObjectURL(blob)
                       const a = document.createElement('a')

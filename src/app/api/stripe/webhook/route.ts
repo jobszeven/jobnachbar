@@ -84,21 +84,23 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
   const endDate = new Date()
   endDate.setMonth(endDate.getMonth() + monthsNum)
 
-  // Create subscription in database
-  const { data: subscription, error: subError } = await supabase
-    .from('subscriptions')
-    .insert({
-      company_id: companyId,
-      tier: tier || 'premium',
-      price_monthly: (session.amount_total || 0) / 100 / monthsNum,
-      expires_at: endDate.toISOString().split('T')[0],
-      status: 'active'
-    })
-    .select()
-    .single()
+  // Create subscription in database (graceful - table might not exist)
+  try {
+    const { error: subError } = await supabase
+      .from('subscriptions')
+      .insert({
+        company_id: companyId,
+        tier: tier || 'premium',
+        price_monthly: (session.amount_total || 0) / 100 / monthsNum,
+        expires_at: endDate.toISOString().split('T')[0],
+        status: 'active'
+      })
 
-  if (subError) {
-    console.error('Error creating subscription:', subError)
+    if (subError) {
+      console.warn('Subscription table insert failed (table might not exist):', subError.message)
+    }
+  } catch (e) {
+    console.warn('Subscription insert skipped:', e)
   }
 
   // Update company subscription tier
@@ -118,64 +120,75 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
     .single()
 
   if (company) {
-    // Generate invoice number
-    const { data: invoiceNumber } = await supabase.rpc('generate_invoice_number')
+    // Optional: Create invoice (graceful - tables might not exist)
+    try {
+      const { data: invoiceNumber } = await supabase.rpc('generate_invoice_number')
+      const amountCents = session.amount_total || 0
+      const taxRate = 19
+      const netCents = Math.round(amountCents / 1.19)
+      const taxCents = amountCents - netCents
 
-    // Create invoice in our system
-    const amountCents = session.amount_total || 0
-    const taxRate = 19
-    const netCents = Math.round(amountCents / 1.19)
-    const taxCents = amountCents - netCents
+      await supabase.from('invoices').insert({
+        invoice_number: invoiceNumber || `INV-${Date.now()}`,
+        company_id: companyId,
+        customer_name: company.company_name,
+        customer_email: company.email,
+        customer_address: session.customer_details?.address?.line1 || '',
+        customer_city: session.customer_details?.address?.city || '',
+        customer_zip: session.customer_details?.address?.postal_code || '',
+        due_date: new Date().toISOString().split('T')[0],
+        subtotal_cents: netCents,
+        tax_rate: taxRate,
+        tax_cents: taxCents,
+        total_cents: amountCents,
+        status: 'paid',
+        paid_at: new Date().toISOString(),
+        payment_method: 'stripe',
+        payment_reference: session.payment_intent as string
+      })
+    } catch (e) {
+      console.warn('Invoice creation skipped:', e)
+    }
 
-    await supabase.from('invoices').insert({
-      invoice_number: invoiceNumber,
-      company_id: companyId,
-      customer_name: company.company_name,
-      customer_email: company.email,
-      customer_address: session.customer_details?.address?.line1 || '',
-      customer_city: session.customer_details?.address?.city || '',
-      customer_zip: session.customer_details?.address?.postal_code || '',
-      due_date: new Date().toISOString().split('T')[0],
-      subtotal_cents: netCents,
-      tax_rate: taxRate,
-      tax_cents: taxCents,
-      total_cents: amountCents,
-      status: 'paid',
-      paid_at: new Date().toISOString(),
-      payment_method: 'stripe',
-      payment_reference: session.payment_intent as string
-    })
+    // Optional: Log CRM activity (graceful)
+    try {
+      const amountCents = session.amount_total || 0
+      await supabase.from('crm_activities').insert({
+        company_id: companyId,
+        activity_type: 'payment_received',
+        title: 'Stripe-Zahlung erhalten',
+        description: `${tier === 'premium' ? 'Premium' : 'Basic'} Abo für ${monthsNum} Monate aktiviert (${(amountCents / 100).toFixed(2)}€)`,
+        performed_by: 'stripe'
+      })
+    } catch (e) {
+      console.warn('CRM activity logging skipped:', e)
+    }
 
-    // Log activity
-    await supabase.from('crm_activities').insert({
-      company_id: companyId,
-      activity_type: 'payment_received',
-      title: 'Stripe-Zahlung erhalten',
-      description: `${tier === 'premium' ? 'Premium' : 'Basic'} Abo für ${monthsNum} Monate aktiviert (${(amountCents / 100).toFixed(2)}€)`,
-      performed_by: 'stripe'
-    })
-
-    // Send welcome email
-    await resend.emails.send({
-      from: 'JobNachbar <info@jobnachbar.com>',
-      to: company.email,
-      subject: 'Willkommen bei JobNachbar Premium!',
-      html: `
-        <h2>Hallo ${company.contact_person},</h2>
-        <p>Vielen Dank für Ihre Bestellung!</p>
-        <p>Ihr <strong>${tier === 'premium' ? 'Premium' : 'Basic'}</strong> Abo ist jetzt aktiv.</p>
-        <p><strong>Gültig bis:</strong> ${endDate.toLocaleDateString('de-DE')}</p>
-        <p>Sie können jetzt alle Features nutzen:</p>
-        <ul>
-          <li>Unbegrenzte Stellenanzeigen</li>
-          <li>Bewerbungen direkt einsehen</li>
-          <li>Premium-Support</li>
-        </ul>
-        <p><a href="${process.env.NEXT_PUBLIC_SITE_URL}/dashboard/arbeitgeber" style="background-color: #E63946; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block;">Zum Dashboard</a></p>
-        <p>Bei Fragen stehen wir Ihnen gerne zur Verfügung.</p>
-        <p>Ihr JobNachbar Team</p>
-      `
-    })
+    // Send welcome email (important - but don't fail webhook)
+    try {
+      await resend.emails.send({
+        from: 'JobNachbar <info@jobnachbar.com>',
+        to: company.email,
+        subject: 'Willkommen bei JobNachbar Premium!',
+        html: `
+          <h2>Hallo ${company.contact_person},</h2>
+          <p>Vielen Dank für Ihre Bestellung!</p>
+          <p>Ihr <strong>${tier === 'premium' ? 'Premium' : 'Basic'}</strong> Abo ist jetzt aktiv.</p>
+          <p><strong>Gültig bis:</strong> ${endDate.toLocaleDateString('de-DE')}</p>
+          <p>Sie können jetzt alle Features nutzen:</p>
+          <ul>
+            <li>Unbegrenzte Stellenanzeigen</li>
+            <li>Bewerbungen direkt einsehen</li>
+            <li>Premium-Support</li>
+          </ul>
+          <p><a href="${process.env.NEXT_PUBLIC_SITE_URL}/dashboard/arbeitgeber" style="background-color: #E63946; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block;">Zum Dashboard</a></p>
+          <p>Bei Fragen stehen wir Ihnen gerne zur Verfügung.</p>
+          <p>Ihr JobNachbar Team</p>
+        `
+      })
+    } catch (e) {
+      console.error('Welcome email failed:', e)
+    }
   }
 
   console.log('Checkout completed successfully for company:', companyId)

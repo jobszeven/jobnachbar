@@ -207,25 +207,25 @@
     },
     "aiTools": {
       "title": "Yapay Zeka Destekli Basvuru Araclari",
-      "subtitle": "Yapay zeka araclarimiz basvurunuzu optimize etmenize ve is piyasasina hazirlanmaniza yardimci olur.",
+      "subtitle": "Akıllı araçlarımız başvurunuzu optimize etmenize ve iş piyasasına hazırlanmanıza yardımcı olur.",
       "resumeCheck": {
         "title": "Ozgecmis Kontrolu",
-        "desc": "Ozgecmisinizi yapay zekamiz tarafindan analiz ettirin ve iyilestirme onerileri alin."
+        "desc": "Özgeçmişinizi profesyonel olarak analiz ettirin ve iyileştirme önerileri alın."
       },
       "coverLetter": {
         "title": "On Yazi Olusturucu",
-        "desc": "Yapay zekamizin yardimiyla her pozisyon icin bireysel on yazilar olusturun."
+        "desc": "Akıllı araçlarımızın yardımıyla her pozisyon için bireysel ön yazılar oluşturun."
       },
       "interviewCoach": {
         "title": "Mulakat Kocu",
-        "desc": "Tipik mulakat sorularini pratik yapin ve yapay zekamizdan geri bildirim alin."
+        "desc": "Tipik mülakat sorularını pratik yapın ve profesyonel geri bildirim alın."
       },
       "salaryNegotiation": {
         "title": "Maas Muzakeresi",
         "desc": "Bolgenizde ne kadar kazanabileceginizi ogrenin ve muzakere ipuclari alin."
       },
       "tryNow": "Simdi dene",
-      "viewAll": "Tum yapay zeka araclarini kesfedin"
+      "viewAll": "Tüm başvuru araçlarını keşfedin"
     }
   },
   "jobs": {
@@ -417,7 +417,7 @@
     },
     "premium": {
       "title": "Premium Özellikler",
-      "description": "JobNachbar Premium ile tüm yapay zeka araçlarına sınırsız erişim elde edin.",
+      "description": "JobNachbar Premium ile tüm profesyonel araçlara sınırsız erişim elde edin.",
       "upgrade": "Premium Ol"
     },
     "usage": {
@@ -452,7 +452,7 @@
         "yearlyPrice": "29€/yıl",
         "features": [
           "Ücretsiz'deki her şey",
-          "Sınırsız yapay zeka araçları",
+          "Sınırsız başvuru araçları",
           "PDF ile özgeçmiş oluşturucu",
           "PDF ile ön yazı oluşturucu",
           "Sınırsız mülakat koçu",
@@ -708,7 +708,7 @@
   },
   "coverLetterPage": {
     "title": "Ön Yazı Oluşturucu",
-    "subtitle": "AI ile bireysel ön yazılar oluşturun",
+    "subtitle": "Akıllı araçlarla bireysel ön yazılar oluşturun",
     "backLink": "Başvuru İpuçlarına Dön",
     "form": {
       "title": "Bilgileriniz",
@@ -803,7 +803,7 @@
       "maximum": "Maksimum",
       "hints": "Notlar",
       "negotiationTips": "Pazarlık İpuçları",
-      "loadTips": "AI pazarlık ipuçlarını yükle",
+      "loadTips": "Pazarlık ipuçlarını yükle",
       "noResult": "Maaş Tahmini",
       "noResultHint": "Tahmin almak için sektör ve deneyim seçin."
     },
@@ -834,7 +834,7 @@
   },
   "resumeCheckPage": {
     "title": "Özgeçmiş Kontrolü",
-    "subtitle": "Özgeçmişinizi AI'mız tarafından analiz ettirin",
+    "subtitle": "Özgeçmişinizi profesyonel olarak analiz ettirin",
     "backLink": "Başvuru İpuçlarına Dön",
     "input": {
       "title": "Özgeçmiş Girin",
@@ -847,7 +847,7 @@
       "processing": "Dosya işleniyor..."
     },
     "analyze": {
-      "button": "AI ile Analiz Et",
+      "button": "Analiz Et",
       "analyzing": "Analiz ediliyor..."
     },
     "pdf": {
@@ -876,9 +876,9 @@
       "needsWork": "İyileştirmeler önerilir",
       "strengths": "Güçlü Yönler",
       "improvements": "İyileştirme Önerileri",
-      "suggestions": "AI Önerileri",
+      "suggestions": "Akıllı Öneriler",
       "noResult": "Henüz analiz yok",
-      "noResultHint": "Sol tarafa özgeçmişinizi girin ve \"AI ile Analiz Et\"e tıklayın"
+      "noResultHint": "Sol tarafa özgeçmişinizi girin ve \"Analiz Et\"e tıklayın"
     },
     "errors": {
       "invalidFileType": "Lütfen PDF, DOC, DOCX veya TXT dosyası yükleyin",
@@ -922,7 +922,7 @@
     "findJobs": "{industry} iş ilanlarını bul",
     "cta": {
       "title": "Başvurunuz için hazır mısınız?",
-      "subtitle": "Başvurunuzu geliştirmek için ücretsiz AI araçlarımızı kullanın.",
+      "subtitle": "Başvurunuzu geliştirmek için ücretsiz başvuru araçlarımızı kullanın.",
       "browseJobs": "İşlere Göz At",
       "resumeCheck": "Özgeçmiş Kontrolü Başlat"
     },
@@ -1018,27 +1018,27 @@
     }
   },
   "tipsPage": {
-    "badge": "AI Destekli Araçlar",
+    "badge": "Profesyonel Başvuru Araçları",
     "title": "Başvuru İpuçları",
-    "subtitle": "Başarılı bir başvuru için ihtiyacınız olan her şey. Özgeçmiş, ön yazı ve daha fazlası için AI araçlarımızı kullanın.",
+    "subtitle": "Başarılı bir başvuru için ihtiyacınız olan her şey. Özgeçmiş, ön yazı ve daha fazlası için akıllı araçlarımızı kullanın.",
     "tools": {
       "resume": {
         "title": "Özgeçmiş",
-        "description": "Özgeçmişinizi AI'mız tarafından kontrol ettirin ve iyileştirme önerileri alın. Profesyonel PDF'ler oluşturun.",
+        "description": "Özgeçmişinizi profesyonel olarak kontrol ettirin ve iyileştirme önerileri alın. Profesyonel PDF'ler oluşturun.",
         "cta": "Özgeçmiş Kontrol Et",
-        "features": ["AI Analizi", "PDF Oluşturucu", "10 Tasarım Şablonu"]
+        "features": ["Otomatik Analiz", "PDF Oluşturucu", "10 Tasarım Şablonu"]
       },
       "coverLetter": {
         "title": "Ön Yazı",
-        "description": "Her pozisyon için bireysel ön yazılar oluşturun. AI'mız mükemmel tonu yakalamanıza yardımcı olur.",
+        "description": "Her pozisyon için bireysel ön yazılar oluşturun. Akıllı araçlarımız mükemmel tonu yakalamanıza yardımcı olur.",
         "cta": "Ön Yazı Oluştur",
-        "features": ["AI Oluşturucu", "PDF Dışa Aktarma", "Tamamen Özelleştirilebilir"]
+        "features": ["Akıllı Oluşturucu", "PDF Dışa Aktarma", "Tamamen Özelleştirilebilir"]
       },
       "interview": {
         "title": "İş Görüşmesi",
-        "description": "AI mülakat koçumuzla sık sorulan sorulara hazırlanın ve cevaplarınızı pratik yapın.",
+        "description": "Mülakat koçumuzla sık sorulan sorulara hazırlanın ve cevaplarınızı pratik yapın.",
         "cta": "Görüşme Pratiği",
-        "features": ["Sektör Soruları", "AI Geri Bildirimi", "İpuçları ve Püf Noktaları"]
+        "features": ["Sektör Soruları", "Profesyonel Geri Bildirim", "İpuçları ve Püf Noktaları"]
       },
       "salary": {
         "title": "Maaş Pazarlığı",
@@ -1049,7 +1049,7 @@
     },
     "premium": {
       "title": "Premium ile Sınırsız",
-      "description": "JobNachbar Premium ile tüm AI araçlarına, PDF oluşturucuya ve özel özelliklere sadece aylık 4,99€ karşılığında sınırsız erişim elde edin.",
+      "description": "JobNachbar Premium ile tüm başvuru araçlarına, PDF oluşturucuya ve özel özelliklere sadece aylık 4,99€ karşılığında sınırsız erişim elde edin.",
       "cta": "Premium'u Keşfet"
     }
   },
@@ -1111,7 +1111,7 @@
     "applicant": {
       "free": {
         "question": "JobNachbar ücretsiz mi?",
-        "answer": "Evet, adaylar için temel sürüm tamamen ücretsizdir. Bir kuruş ödemeden kayıt olabilir, iş arayabilir ve başvurabilirsiniz. Sınırsız AI araçları gibi gelişmiş özellikler için JobNachbar Premium var."
+        "answer": "Evet, adaylar için temel sürüm tamamen ücretsizdir. Bir kuruş ödemeden kayıt olabilir, iş arayabilir ve başvurabilirsiniz. Sınırsız başvuru araçları gibi gelişmiş özellikler için JobNachbar Premium var."
       },
       "region": {
         "question": "JobNachbar hangi bölgeyi kapsıyor?",
@@ -1127,7 +1127,7 @@
       },
       "premium": {
         "question": "JobNachbar Premium nedir?",
-        "answer": "Premium (aylık 4,99€) ile AI araçlarımıza sınırsız erişim elde edersiniz: Özgeçmiş Oluşturucu, Ön Yazı Oluşturucu, Mülakat Koçu ve daha fazlası."
+        "answer": "Premium (aylık 4,99€) ile başvuru araçlarımıza sınırsız erişim elde edersiniz: Özgeçmiş Oluşturucu, Ön Yazı Oluşturucu, Mülakat Koçu ve daha fazlası."
       },
       "notifications": {
         "question": "Yeni uygun işleri nasıl öğrenebilirim?",
@@ -1464,7 +1464,7 @@
       "hero": {
         "badge": "Adaylar için Premium",
         "title": "Avantajınızı yakalayın",
-        "subtitle": "JobNachbar Premium ile tüm yapay zeka araçlarına sınırsız erişim kazanın ve hayalinizdeki işe ulaşma şansınızı artırın."
+        "subtitle": "JobNachbar Premium ile tüm profesyonel araçlara sınırsız erişim kazanın ve hayalinizdeki işe ulaşma şansınızı artırın."
       },
       "free": {
         "name": "Ücretsiz",
@@ -1490,7 +1490,7 @@
         "yearlyOffer": "veya 29€/yıl (%50 tasarruf)",
         "features": [
           "Ücretsiz'deki her şey",
-          "Sınırsız yapay zeka araçları",
+          "Sınırsız başvuru araçları",
           "PDF ile CV oluşturucu",
           "PDF ile ön yazı oluşturucu",
           "Sınırsız mülakat koçu",
@@ -1516,7 +1516,7 @@
       },
       "cta": {
         "title": "Şimdi Premium ile başla",
-        "subtitle": "Tüm yapay zeka araçlarını sınırsız kullanın ve iş şansınızı artırın.",
+        "subtitle": "Tüm başvuru araçlarını sınırsız kullanın ve iş şansınızı artırın.",
         "button": "Ayda 4,99€ ile başla"
       }
     }
@@ -1569,12 +1569,12 @@
         ]
       },
       "aiTools": {
-        "title": "AI Araçlarını Kullanma",
+        "title": "Başvuru Araçlarını Kullanma",
         "description": "Özgeçmiş Kontrolü ve daha fazlası için kılavuz",
         "content": [
-          "JobNachbar, başvurunuz için ücretsiz AI araçları sunar:",
+          "JobNachbar, başvurunuz için ücretsiz profesyonel araçlar sunar:",
           "• Özgeçmiş Kontrolü: Özgeçmişinizi analiz ettirin ve iyileştirin",
-          "• Ön Yazı Oluşturucu: AI ile bireysel ön yazılar oluşturun",
+          "• Ön Yazı Oluşturucu: Akıllı araçlarla bireysel ön yazılar oluşturun",
           "• Mülakat Koçu: Sektörünüz için tipik soruları çalışın",
           "• Maaş Hesaplayıcı: Ne kazanabileceğinizi öğrenin",
           "Tüm araçları menüde 'Başvuru İpuçları' altında bulabilirsiniz."
@@ -1585,7 +1585,7 @@
         "description": "JobNachbar Premium ne sunar?",
         "content": [
           "Premium ile şunları elde edersiniz:",
-          "• Sınırsız AI aracı kullanımı",
+          "• Sınırsız başvuru aracı kullanımı",
           "• Profiliniz işverenlere öncelikli gösterilir",
           "• Genişletilmiş filtre seçenekleri",
           "• Reklam yok",
@@ -1751,14 +1751,14 @@
     }
   },
   "tools": {
-    "poweredBy": "Yapay zeka destekli başvuru araçları",
+    "poweredBy": "Profesyonel başvuru araçları",
     "hero": {
-      "title": "Başvurunuzu yapay zeka ile optimize edin",
-      "subtitle": "Özgeçmişinizi geliştirmek, etkileyici ön yazılar oluşturmak ve mülakata hazırlanmak için ücretsiz yapay zeka araçlarımızı kullanın."
+      "title": "Başvurunuzu akıllı araçlarla optimize edin",
+      "subtitle": "Özgeçmişinizi geliştirmek, etkileyici ön yazılar oluşturmak ve mülakata hazırlanmak için ücretsiz akıllı araçlarımızı kullanın."
     },
     "resumeCheck": {
       "title": "Özgeçmiş Kontrolü",
-      "description": "Özgeçmişinizi yapay zekamız tarafından analiz ettirin ve somut iyileştirme önerileri alın."
+      "description": "Özgeçmişinizi profesyonel olarak analiz ettirin ve somut iyileştirme önerileri alın."
     },
     "coverLetterGenerator": {
       "title": "Ön Yazı Oluşturucu",
@@ -1776,7 +1776,7 @@
     "unlimitedWithPremium": "Premium ile sınırsız",
     "premium": {
       "title": "Tüm araçları sınırsız kullanın",
-      "description": "JobNachbar Premium ile tüm yapay zeka araçlarına, PDF dışa aktarımına ve özel özelliklere sınırsız erişim elde edin.",
+      "description": "JobNachbar Premium ile tüm profesyonel araçlara, PDF dışa aktarımına ve özel özelliklere sınırsız erişim elde edin.",
       "cta": "Premium'u keşfedin"
     }
   },
@@ -1884,7 +1884,7 @@
     "hero": {
       "title": "Hayalinizdeki işi bulun",
       "titleHighlight": "yakınınızda",
-      "subtitle": "JobNachbar sizi Zeven ve çevresindeki en iyi işverenlerle buluşturur. Ücretsiz, hızlı ve yapay zeka destekli.",
+      "subtitle": "JobNachbar sizi Zeven ve çevresindeki en iyi işverenlerle buluşturur. Ücretsiz, hızlı ve akıllı araçlarla destekli.",
       "cta": "Ücretsiz kayıt ol",
       "browseJobs": "İşlere göz at"
     },
@@ -1899,7 +1899,7 @@
         "desc": "Kayıt, başvuru ve tüm temel özellikler sizin için ücretsiz."
       },
       "aiTools": {
-        "title": "Yapay zeka destekli araçlar",
+        "title": "Akıllı başvuru araçları",
         "desc": "Özgeçmiş kontrolü, ön yazı oluşturucu ve mülakat koçu başvurunuzda size yardımcı olur."
       },
       "fast": {
@@ -1928,13 +1928,13 @@
       },
       "step3": {
         "title": "Başvur",
-        "desc": "Tek tıklamayla başvurun. Mükemmel başvuru için yapay zeka araçlarımızı kullanın."
+        "desc": "Tek tıklamayla başvurun. Mükemmel başvuru için akıllı araçlarımızı kullanın."
       }
     },
     "tools": {
-      "badge": "Yapay zeka destekli başvuru araçları",
+      "badge": "Profesyonel başvuru araçları",
       "title": "Başvurunuzu optimize edin",
-      "subtitle": "Ücretsiz yapay zeka araçlarımız kalabalıktan sıyrılmanıza yardımcı olur.",
+      "subtitle": "Ücretsiz akıllı araçlarımız kalabalıktan sıyrılmanıza yardımcı olur.",
       "resume": {
         "title": "Özgeçmiş Kontrolü",
         "desc": "Özgeçmişinizi analiz ettirin ve iyileştirme önerileri alın."
@@ -1945,9 +1945,9 @@
       },
       "interview": {
         "title": "Mülakat Koçu",
-        "desc": "Yapay zeka geri bildirimi ile tipik mülakat sorularını pratik yapın."
+        "desc": "Profesyonel geri bildirim ile tipik mülakat sorularını pratik yapın."
       },
-      "viewAll": "Tüm yapay zeka araçlarını keşfet"
+      "viewAll": "Tüm başvuru araçlarını keşfet"
     },
     "stats": {
       "activeJobs": "Aktif iş ilanı",
@@ -2113,7 +2113,7 @@
       },
       "trial": {
         "question": "Deneme süresi var mı?",
-        "answer": "Premium'a karar vermeden önce tüm yapay zeka araçlarını birkaç kez ücretsiz deneyebilirsiniz."
+        "answer": "Premium'a karar vermeden önce tüm profesyonel araçları birkaç kez ücretsiz deneyebilirsiniz."
       }
     },
     "cta": {
